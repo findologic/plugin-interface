@@ -11,12 +11,11 @@ abstract class Vat
 {
 	public		$id;
 	public		$countryId;
-	public		$taxIdNumber;
+	public		$vatNumber;
 	public		$startedAt;
 	public		$locationId;
 	public		$marginScheme;
 	public		$isRestrictedToDigitalItems;
-	public		$isStandard;
 	public		$location;
 	public		$country;
 	public		$vatRates;

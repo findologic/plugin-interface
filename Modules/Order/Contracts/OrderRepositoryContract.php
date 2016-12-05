@@ -24,14 +24,14 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
-	 * Create an order
+	 * Create an order.
 	 */
 	public function createOrder(
 		array $data
 	):Order;
 
 	/**
-	 * Update an order
+	 * Updates the order specified by the id.
 	 */
 	public function updateOrder(
 		array $data, 
@@ -46,7 +46,7 @@ interface OrderRepositoryContract
 	):bool;
 
 	/**
-	 * Restore an order
+	 * Undos a deletion of a previously deleted order
 	 */
 	public function undeleteOrder(
 		int $orderId, 
@@ -54,7 +54,7 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
-	 * Checks whether an order has been deleted or not.
+	 * Checks wheither an order has been deleted or not.
 	 */
 	public function isDeleted(
 		int $orderId
@@ -68,7 +68,7 @@ interface OrderRepositoryContract
 	):OrderScheduler;
 
 	/**
-	 * List orders of a contact
+	 * List orders for a contact id
 	 */
 	public function allOrdersByContact(
 		int $contactId, 
@@ -78,7 +78,7 @@ interface OrderRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Get latest order of a contact
+	 * Get latest order for a contact id
 	 */
 	public function getLatestOrderByContactId(
 		int $contactId, 
@@ -95,10 +95,16 @@ interface OrderRepositoryContract
 	):array;
 
 	/**
-	 * List package numbers of an order
+	 * Sets the filter array.
 	 */
-	public function getPackageNumbers(
-		int $orderId
-	):array;
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
 
 }

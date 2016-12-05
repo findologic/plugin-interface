@@ -65,4 +65,37 @@ interface ContactRepositoryContract
 		int $subTypeId
 	):Contact;
 
+	/**
+	 * Pushes a sorting order to a collection.
+	 */
+	public function pushSortingOrder(
+		string $field, 
+		string $direction = "asc"
+	):SortableContract;
+
+	/**
+	 * Applies the sorting order on the underlying builder instance
+	 */
+	public function applySortingOrder(
+	):SortableContract;
+
+	/**
+	 * Clears the sorting order on the underlying builder instance
+	 */
+	public function clearSortingOrder(
+	):SortableContract;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
 }

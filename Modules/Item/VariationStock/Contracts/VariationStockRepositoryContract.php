@@ -51,13 +51,4 @@ interface VariationStockRepositoryContract
 		array $data
 	):array;
 
-	/**
-	 * Redistribute stock
-	 */
-	public function redistributeStock(
-		int $itemId, 
-		int $variationId, 
-		array $data
-	):PaginatedResult;
-
 }

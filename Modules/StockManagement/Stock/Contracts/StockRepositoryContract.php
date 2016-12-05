@@ -55,11 +55,4 @@ interface StockRepositoryContract
 		array $data
 	);
 
-	/**
-	 * Redistribute stock
-	 */
-	public function redistributeStock(
-		array $data
-	);
-
 }

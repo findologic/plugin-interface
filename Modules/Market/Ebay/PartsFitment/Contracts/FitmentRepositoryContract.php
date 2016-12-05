@@ -42,4 +42,24 @@ interface FitmentRepositoryContract
 		int $id
 	):bool;
 
+	/**
+	 * Pushes a sorting order to a collection.
+	 */
+	public function pushSortingOrder(
+		string $field, 
+		string $direction = "asc"
+	):SortableContract;
+
+	/**
+	 * Applies the sorting order on the underlying builder instance
+	 */
+	public function applySortingOrder(
+	):SortableContract;
+
+	/**
+	 * Clears the sorting order on the underlying builder instance
+	 */
+	public function clearSortingOrder(
+	):SortableContract;
+
 }
