@@ -3,7 +3,6 @@ namespace Plenty\Validation;
 
 use Plenty\Validation\Contracts\AttributeHelperContract;
 use Plenty\Validation\Contracts\Attribute;
-use Plenty\Validation\DummyAttribute;
 
 /**
  * RulesCollection

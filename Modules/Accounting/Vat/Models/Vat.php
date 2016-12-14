@@ -11,17 +11,18 @@ abstract class Vat
 {
 	public		$id;
 	public		$countryId;
-	public		$vatNumber;
+	public		$taxIdNumber;
 	public		$startedAt;
 	public		$locationId;
 	public		$marginScheme;
 	public		$isRestrictedToDigitalItems;
+	public		$isStandard;
 	public		$location;
 	public		$country;
 	public		$vatRates;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

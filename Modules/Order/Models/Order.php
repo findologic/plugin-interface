@@ -36,7 +36,7 @@ abstract class Order
 	public		$dates;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

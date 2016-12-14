@@ -2,6 +2,7 @@
 namespace Plenty\Plugin\Templates\Extensions;
 
 use \Twig_Extension as TwigExtension;
+use TwigBridge\Twig\Globals;
 
 /**
  * Twig extension

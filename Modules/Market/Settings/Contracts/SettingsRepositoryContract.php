@@ -47,7 +47,7 @@ interface SettingsRepositoryContract
 	 */
 	public function delete(
 		int $id
-	);
+	):bool;
 
 	/**
 	 * Delete all settings for a given type and marketplace ID.

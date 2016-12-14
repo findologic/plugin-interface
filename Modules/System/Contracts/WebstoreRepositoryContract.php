@@ -35,4 +35,11 @@ interface WebstoreRepositoryContract
 		int $storeIdentifier
 	):Webstore;
 
+	/**
+	 * Shows a specific webstore
+	 */
+	public function findById(
+		int $clientId
+	):Webstore;
+
 }

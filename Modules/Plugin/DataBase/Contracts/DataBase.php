@@ -18,9 +18,8 @@ interface DataBase
 	):\Plenty\Modules\Plugin\DataBase\Contracts\Model;
 
 	public function query(
-		string $tableName, 
-		array $queryParams
-	):array;
+		string $modelClassName
+	):\Plenty\Modules\Plugin\DataBase\Contracts\Query;
 
 	public function delete(
 		\Plenty\Modules\Plugin\DataBase\Contracts\Model $model

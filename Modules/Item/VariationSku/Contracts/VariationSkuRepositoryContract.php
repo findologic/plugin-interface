@@ -15,7 +15,7 @@ interface VariationSkuRepositoryContract
 	 */
 	public function generateSku(
 		int $variationId, 
-		float $marketId, 
+		int $marketId, 
 		int $accountId, 
 		 $sku = null, 
 		bool $setLastExportedTimestamp = true

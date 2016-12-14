@@ -14,7 +14,7 @@ abstract class CountryState
 	public		$isoCode3166;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

@@ -4,7 +4,7 @@ namespace Plenty\Modules\StockManagement\Stock\Models;
 use Carbon\Carbon;
 
 /**
- * The stock storage location model. It represents the stock of a storage location.
+ * The stock storage location model contains all information about the stock that is stored at one storage location.
  */
 abstract class StockStorageLocation 
 {
@@ -16,7 +16,7 @@ abstract class StockStorageLocation
 	public		$updatedAt;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

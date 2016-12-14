@@ -3,9 +3,9 @@ namespace Plenty\Modules\DataExchange\Contracts;
 
 use Plenty\Modules\DataExchange\Models\FormatSetting;
 use \DOMElement;
+use \DOMText;
 use \DOMCdataSection;
 use \DOMAttr;
-use \DOMText;
 
 /**
  * generator for xml content

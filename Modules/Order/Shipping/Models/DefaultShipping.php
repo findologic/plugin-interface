@@ -16,7 +16,7 @@ abstract class DefaultShipping
 	public		$paymentMethod3;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

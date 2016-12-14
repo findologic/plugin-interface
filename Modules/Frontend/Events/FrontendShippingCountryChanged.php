@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Events;
 
 
 /**
- * Event that gets fired when the selected shipping country is changed from the frontend
+ * The event is triggered when the shipping country is changed in the online store.
  */
 abstract class FrontendShippingCountryChanged 
 {
@@ -15,7 +15,7 @@ abstract class FrontendShippingCountryChanged
 	):int;
 
 	/**
-	 * Sets the ID of the shipping country. The ID must be specified.
+	 * Updates the ID of the shipping country. The ID must be specified.
 	 */
 	abstract public function setShippingCountryId(
 		int $shippingCountryId

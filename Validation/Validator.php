@@ -5,7 +5,6 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Validation\Contracts\AttributeHelperContract;
 use \Validator as BaseValidator;
 use Plenty\Validation\Contracts\Attribute;
-use Plenty\Validation\DummyAttribute;
 
 /**
  * Base Validator Class

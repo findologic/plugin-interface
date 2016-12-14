@@ -29,9 +29,10 @@ abstract class OrderItem
 	public		$countryVat;
 	public		$amounts;
 	public		$properties;
+	public		$orderProperties;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

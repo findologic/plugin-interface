@@ -3,7 +3,7 @@ namespace Plenty\Modules\Payment\Method\Models;
 
 
 /**
- * PaymentMethod
+ * The payment method model
  */
 abstract class PaymentMethod 
 {
@@ -13,7 +13,7 @@ abstract class PaymentMethod
 	public		$name;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

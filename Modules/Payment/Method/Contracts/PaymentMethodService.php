@@ -3,7 +3,7 @@ namespace Plenty\Modules\Payment\Method\Contracts;
 
 
 /**
- * the method of payment service
+ * The payment method service
  */
 abstract class PaymentMethodService 
 {

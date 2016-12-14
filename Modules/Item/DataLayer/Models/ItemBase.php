@@ -81,7 +81,7 @@ abstract class ItemBase
 	public		$tradoriaCategory;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

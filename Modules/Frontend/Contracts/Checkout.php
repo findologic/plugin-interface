@@ -42,6 +42,9 @@ interface Checkout
 		string $currency
 	);
 
+	/**
+	 * Updates the ID of the order referrer. The ID must be specified.
+	 */
 	public function setBasketReferrerId(
 		int $referrerId
 	);

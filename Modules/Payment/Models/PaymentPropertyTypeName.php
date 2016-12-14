@@ -3,7 +3,7 @@ namespace Plenty\Modules\Payment\Models;
 
 
 /**
- * payment property type name model
+ * The payment property type name model
  */
 abstract class PaymentPropertyTypeName 
 {
@@ -13,7 +13,7 @@ abstract class PaymentPropertyTypeName
 	public		$name;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

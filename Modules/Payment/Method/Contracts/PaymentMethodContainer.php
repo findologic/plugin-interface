@@ -3,7 +3,7 @@ namespace Plenty\Modules\Payment\Method\Contracts;
 
 
 /**
- * payment method container
+ * The payment method container
  */
 interface PaymentMethodContainer 
 {

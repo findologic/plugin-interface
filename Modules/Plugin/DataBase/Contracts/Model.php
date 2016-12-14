@@ -15,8 +15,11 @@ abstract class Model
 	const FIELD_TYPE_STRING = 'string';
 
 	const FIELD_TYPE_BOOL = 'bool';
+
+	const FIELD_TYPE_ARRAY = 'array';
 	protected		$primaryKeyFieldName = "id";
 	protected		$primaryKeyFieldType = "int";
+	protected		$autoIncrementPrimaryKey = true;
 	
 	abstract public function getTableName(
 	):string;

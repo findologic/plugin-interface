@@ -3,7 +3,7 @@ namespace Plenty\Modules\Payment\Models;
 
 
 /**
- * payment order relation model
+ * The payment order relation model
  */
 abstract class PaymentOrderRelation 
 {
@@ -13,7 +13,7 @@ abstract class PaymentOrderRelation
 	public		$assignedAt;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array

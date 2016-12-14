@@ -3,7 +3,7 @@ namespace Plenty\Modules\Payment\History\Models;
 
 
 /**
- * the payment history
+ * The payment history model
  */
 abstract class PaymentHistory 
 {
@@ -13,7 +13,7 @@ abstract class PaymentHistory
 	public		$value;
 	
 	/**
-	 * returns this model as an array
+	 * Returns this model as an array.
 	 */
 	public function toArray(
 	):array
