@@ -7,6 +7,10 @@ namespace Plenty\Modules\Account\Address\Models;
  */
 abstract class AddressOptionTypeName 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$typeId;
 	public		$lang;

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 
 
 /**
- * session storage model for customer data
+ * The session storage model for customer data.
  */
 abstract class Customer 
 {

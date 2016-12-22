@@ -8,6 +8,10 @@ use Plenty\Modules\Authentication\Models\User;
  */
 abstract class TicketOwner 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$ticketId;
 	public		$userId;
 	public		$roleId;

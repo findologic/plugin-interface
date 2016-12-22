@@ -5,6 +5,10 @@ use Illuminate\Database\Eloquent\Collection;
 
 abstract class SalesPriceCustomerClass 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$priceId;
 	public		$customerClassId;
 	public		$createdAt;

@@ -7,6 +7,10 @@ namespace Plenty\Modules\Account\Contact\ContactEvent\Models;
  */
 abstract class ContactEvent 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$eventId;
 	public		$contactId;
 	public		$userId;

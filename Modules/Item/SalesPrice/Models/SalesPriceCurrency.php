@@ -5,6 +5,10 @@ use Illuminate\Database\Eloquent\Collection;
 
 abstract class SalesPriceCurrency 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$priceId;
 	public		$currency;
 	public		$createdAt;

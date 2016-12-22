@@ -449,4 +449,25 @@ The value is null.
 		return ["Dummy"];
 	}
 
+	/**
+	 * The field under validation must be a valid w3c formated date time string.
+	 */
+	public function dateW3C(
+		bool $allowTimestamps = false
+	):DummyAttribute
+	{
+		return $this;
+	}
+
+	/**
+	 * Add custom Role
+	 */
+	public function customRule(
+		string $rule, 
+		array $params
+	):DummyAttribute
+	{
+		return $this;
+	}
+
 }

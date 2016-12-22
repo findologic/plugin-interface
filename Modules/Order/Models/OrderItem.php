@@ -10,6 +10,10 @@ use Carbon\Carbon;
  */
 abstract class OrderItem 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$orderId;
 	public		$typeId;

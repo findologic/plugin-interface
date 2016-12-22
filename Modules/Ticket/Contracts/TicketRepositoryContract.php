@@ -8,7 +8,7 @@ use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * The TicketRepositoryContract is the interface for the ticket repository. This interface allows to list tickets by filters
+ * The TicketRepositoryContract is the interface for the ticket repository. This interface allows to list tickets by filters.
  */
 interface TicketRepositoryContract 
 {

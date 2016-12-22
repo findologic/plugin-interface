@@ -10,6 +10,12 @@ use Plenty\Modules\Item\VariationDescription\Models\VariationDescription;
  */
 abstract class ItemSet 
 {
+
+	const UPDATED_AT = 'timestamp';
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
 	public		$id;
 	public		$name;
 	public		$categories;

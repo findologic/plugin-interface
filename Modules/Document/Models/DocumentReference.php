@@ -7,6 +7,10 @@ namespace Plenty\Modules\Document\Models;
  */
 abstract class DocumentReference 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$documentId;
 	public		$type;
 	public		$value;

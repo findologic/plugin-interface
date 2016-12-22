@@ -7,6 +7,10 @@ namespace Plenty\Modules\ItemSet\Models;
  */
 abstract class ItemSetConfig 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$setId;
 	public		$rebate;
 	public		$minPrice;

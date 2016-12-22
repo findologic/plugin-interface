@@ -18,7 +18,7 @@ abstract class EventProceduresService
 		string $eventType, 
 		array $procedureNames, 
 		string $procedureClass, 
-		string $procedureGroup = Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry::PROCEDURE_GROUP_ORDER
+		string $procedureGroup = \Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry::PROCEDURE_GROUP_ORDER
 	):bool;
 
 }

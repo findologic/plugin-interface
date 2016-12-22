@@ -7,6 +7,10 @@ namespace Plenty\Modules\Item\ItemImage\Models;
  */
 abstract class ItemImage 
 {
+
+	const CREATED_AT = 'plenty_item_image_main_insert';
+
+	const UPDATED_AT = 'plenty_item_image_main_last_update';
 	public		$id;
 	public		$itemId;
 	public		$fileType;

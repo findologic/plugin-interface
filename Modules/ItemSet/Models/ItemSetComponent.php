@@ -8,6 +8,10 @@ use Plenty\Modules\ItemSet\Models\ItemSet;
  */
 abstract class ItemSetComponent 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$setId;
 	public		$itemId;

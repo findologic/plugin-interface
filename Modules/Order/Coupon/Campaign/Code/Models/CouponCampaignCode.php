@@ -9,6 +9,14 @@ use Plenty\Modules\Order\Coupon\Campaign\Models\CouponCampaign;
  */
 abstract class CouponCampaignCode 
 {
+
+	const MIN_CODE_LENGTH = 6;
+
+	const MAX_CODE_LENGTH = 24;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$code;
 	public		$campaignId;
 	public		$disable;

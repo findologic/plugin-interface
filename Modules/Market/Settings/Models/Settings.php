@@ -3,13 +3,16 @@ namespace Plenty\Modules\Market\Settings\Models;
 
 use Plenty\Modules\Category\Models\Category;
 use Plenty\Modules\Item\Attribute\Models\Attribute;
-use Plenty\Modules\Item\Property\Models\PropertyItem;
 
 /**
  * The market settings model.
  */
 abstract class Settings 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$marketplaceId;
 	public		$type;

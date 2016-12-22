@@ -7,6 +7,10 @@ namespace Plenty\Modules\Template\Design\Config\Models;
  */
 abstract class Design 
 {
+
+	const CREATED_AT = 'inserted';
+
+	const UPDATED_AT = 'last_update';
 	public		$designName;
 	public		$imageDir;
 	public		$export;

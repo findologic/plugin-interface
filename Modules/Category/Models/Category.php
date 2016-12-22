@@ -8,6 +8,12 @@ use Illuminate\Database\Eloquent\Collection;
  */
 abstract class Category 
 {
+
+	const MAX_ITEMS_PER_PAGE = 50;
+
+	const UPDATED_AT = 'plenty_category_last_update_timestamp';
+
+	const CREATED_AT = 'createdAt';
 	public		$id;
 	public		$parentCategoryId;
 	public		$level;

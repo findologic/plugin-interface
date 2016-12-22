@@ -7,6 +7,10 @@ namespace Plenty\Modules\Ticket\Models;
  */
 abstract class TicketRoleName 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$roleId;
 	public		$lang;

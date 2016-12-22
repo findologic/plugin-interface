@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Coupon\Code\Validation\Models;
  */
 abstract class CouponCodeValidationItem 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$amount;
 	public		$noCoupon;
 	public		$quantity;

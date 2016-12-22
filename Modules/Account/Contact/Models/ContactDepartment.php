@@ -7,6 +7,10 @@ namespace Plenty\Modules\Account\Contact\Models;
  */
 abstract class ContactDepartment 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$position;
 	public		$names;

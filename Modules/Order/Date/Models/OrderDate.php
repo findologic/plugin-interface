@@ -9,13 +9,16 @@ use Carbon\Carbon;
  */
 abstract class OrderDate 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$orderId;
 	public		$typeId;
 	public		$date;
 	public		$createdAt;
 	public		$updatedAt;
-	public		$order;
 	public		$type;
 	
 	/**

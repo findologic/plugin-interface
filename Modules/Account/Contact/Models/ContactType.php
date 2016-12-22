@@ -8,6 +8,22 @@ use Illuminate\Database\Eloquent\Collection;
  */
 abstract class ContactType 
 {
+
+	const TYPE_CUSTOMER = 1;
+
+	const TYPE_SALES_LEAD = 2;
+
+	const TYPE_SALES_REPRESENTATIVE = 3;
+
+	const TYPE_SUPPLIER = 4;
+
+	const TYPE_PRODUCER = 5;
+
+	const TYPE_PARTNER = 6;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$position;
 	public		$nonErasable;

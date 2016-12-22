@@ -22,6 +22,14 @@ interface Attribute
 	):Attribute;
 
 	/**
+	 * Add custom Role
+	 */
+	public function customRule(
+		string $rule, 
+		array $params
+	):Attribute;
+
+	/**
 	 * The field under validation must be a valid URL according to the checkdnsrr PHP function.
 	 */
 	public function activeUrl(
@@ -96,6 +104,13 @@ interface Attribute
 	 */
 	public function dateFormat(
 		string $format
+	):Attribute;
+
+	/**
+	 * The field under validation must be a valid w3c formated date time string.
+	 */
+	public function dateW3C(
+		bool $allowTimestamps = false
 	):Attribute;
 
 	/**

@@ -7,6 +7,10 @@ namespace Plenty\Modules\Ticket\Models;
  */
 abstract class TicketStatus 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$typeId;
 	public		$position;

@@ -8,6 +8,10 @@ use Plenty\Modules\Order\Shipping\Countries\Models\Country;
  */
 abstract class PaymentMethod 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$name;
 	public		$minimumGross;

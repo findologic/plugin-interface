@@ -7,6 +7,10 @@ namespace Plenty\Modules\Category\Models;
  */
 abstract class CategoryBranchMarketplace 
 {
+
+	const CREATED_AT = 'created_at';
+
+	const UPDATED_AT = 'updated_at';
 	public		$plenty_category_branch_marketplace_branch_id;
 	public		$plenty_category_branch_marketplace_webstore_id;
 	public		$plenty_category_branch_marketplace_marketplace_id;

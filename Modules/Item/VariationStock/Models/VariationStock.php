@@ -7,6 +7,10 @@ namespace Plenty\Modules\Item\VariationStock\Models;
  */
 abstract class VariationStock 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$itemId;
 	public		$variationId;
 	public		$warehouseId;

@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Currency\Models;
  */
 abstract class CurrencyName 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$currency;
 	public		$lang;

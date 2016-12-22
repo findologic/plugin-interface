@@ -7,6 +7,14 @@ namespace Plenty\Modules\Order\Referrer\Models;
  */
 abstract class OrderReferrer 
 {
+
+	const MIN_VALUE = 9;
+
+	const MAX_VALUE = 100;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$isEditable;
 	public		$backendName;

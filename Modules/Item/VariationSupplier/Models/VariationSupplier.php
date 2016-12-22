@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\VariationSupplier\Models;
  */
 abstract class VariationSupplier 
 {
+
+	const CREATED_AT = 'plenty_item_variation_supplier_last_update_timestamp';
+
+	const UPDATED_AT = 'plenty_item_variation_supplier_created_timestamp';
+
+	const ITEMS_PER_PAGE = 50;
 	public		$id;
 	public		$variationId;
 	public		$supplierId;

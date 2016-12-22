@@ -2,12 +2,19 @@
 namespace Plenty\Modules\Item\Variation\Models;
 
 use Plenty\Modules\Item\VariationDefaultCategory\Models\VariationDefaultCategory;
+use Plenty\Modules\Item\Item\Models\Item;
 
 /**
  * Variation
  */
 abstract class Variation 
 {
+
+	const MAX_ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$isMain;
 	public		$mainVariationId;
@@ -74,6 +81,7 @@ abstract class Variation
 	public		$images;
 	public		$variationAttributeValues;
 	public		$parent;
+	public		$item;
 	
 	/**
 	 * Returns this model as an array.

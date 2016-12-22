@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Shipping\ParcelService\Models;
  */
 abstract class ParcelServicePreset 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$parcelServiceId;
 	public		$backendName;

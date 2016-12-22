@@ -7,6 +7,10 @@ namespace Plenty\Modules\Item\Attribute\Models;
  */
 abstract class AttributeValueSet 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$attributeValueSetId;
 	public		$attributeId;
 	public		$valueId;

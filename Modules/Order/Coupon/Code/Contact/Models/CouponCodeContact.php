@@ -8,6 +8,10 @@ use Carbon\Carbon;
  */
 abstract class CouponCodeContact 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$code;
 	public		$contactId;
 	public		$openAmount;

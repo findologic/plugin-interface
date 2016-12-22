@@ -9,6 +9,10 @@ use Plenty\Modules\Order\Shipping\Countries\Models\Country;
  */
 abstract class Currency 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$currency;
 	public		$htmlCode;
 	public		$unicodeSign;

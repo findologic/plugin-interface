@@ -13,6 +13,10 @@ use Plenty\Modules\Authentication\Models\User;
  */
 abstract class Order 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$typeId;
 	public		$methodOfPaymentId;

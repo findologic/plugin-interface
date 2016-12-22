@@ -35,4 +35,10 @@ abstract class Request
 		bool $deep = false
 	);
 
+	/**
+	 * Returns the request body content.
+	 */
+	abstract public function getContent(
+	):string;
+
 }

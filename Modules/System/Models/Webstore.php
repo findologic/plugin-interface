@@ -7,6 +7,10 @@ namespace Plenty\Modules\System\Models;
  */
 abstract class Webstore 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$name;
 	public		$type;

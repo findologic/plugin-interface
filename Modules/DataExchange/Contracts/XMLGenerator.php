@@ -29,7 +29,7 @@ abstract class XMLGenerator
 	protected function root(
 	):\DOMElement
 	{
-		return new DOMElement(null);
+		return new \DOMElement(null);
 	}
 
 	/**
@@ -48,7 +48,7 @@ abstract class XMLGenerator
 		 $value = null
 	):\DOMElement
 	{
-		return new DOMElement(null);
+		return new \DOMElement(null);
 	}
 
 	/**
@@ -58,7 +58,7 @@ abstract class XMLGenerator
 		string $data
 	):\DOMCdataSection
 	{
-		return new DOMCdataSection(null);
+		return new \DOMCdataSection(null);
 	}
 
 	/**
@@ -69,7 +69,7 @@ abstract class XMLGenerator
 		 $value = null
 	):\DOMAttr
 	{
-		return new DOMAttr(null);
+		return new \DOMAttr(null);
 	}
 
 	/**
@@ -79,7 +79,7 @@ abstract class XMLGenerator
 		string $content
 	):\DOMText
 	{
-		return new DOMText(null);
+		return new \DOMText(null);
 	}
 
 	protected function addContent(

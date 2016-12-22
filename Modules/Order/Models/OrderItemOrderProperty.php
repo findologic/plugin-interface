@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Models;
  */
 abstract class OrderItemOrderProperty 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$propertyId;
 	public		$value;
 	public		$fileUrl;

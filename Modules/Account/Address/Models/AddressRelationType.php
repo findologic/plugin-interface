@@ -8,6 +8,24 @@ use Illuminate\Database\Eloquent\Collection;
  */
 abstract class AddressRelationType 
 {
+
+	const BILLING_ADDRESS = 1;
+
+	const DELIVERY_ADDRESS = 2;
+
+	const SENDER_ADDRESS = 3;
+
+	const RETURN_ADDRESS = 4;
+
+	const CLIENT_ADDRESS = 5;
+
+	const CONTRACTOR_ADDRESS = 6;
+
+	const WAREHOUSE_ADDRESS = 7;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$position;
 	public		$nonErasable;

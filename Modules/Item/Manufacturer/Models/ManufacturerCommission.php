@@ -8,6 +8,10 @@ use Plenty\Modules\Item\Manufacturer\Models\Manufacturer;
  */
 abstract class ManufacturerCommission 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$manufacturerId;
 	public		$clientId;

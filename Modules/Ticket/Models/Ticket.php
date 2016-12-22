@@ -8,6 +8,10 @@ use Plenty\Modules\Account\Contact\Models\Contact;
  */
 abstract class Ticket 
 {
+
+	const UPDATED_AT = 'last_update_timestamp';
+
+	const CREATED_AT = 'create_timestamp';
 	public		$id;
 	public		$typeId;
 	public		$priorityId;

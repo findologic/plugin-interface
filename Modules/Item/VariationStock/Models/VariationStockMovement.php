@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\VariationStock\Models;
  */
 abstract class VariationStockMovement 
 {
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$itemId;
 	public		$variationId;

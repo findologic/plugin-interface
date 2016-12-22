@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\VariationWarehouse\Models;
  */
 abstract class VariationWarehouse 
 {
+
+	const CREATED_AT = 'plenty_item_variation_warehouse_last_update_timestamp';
+
+	const UPDATED_AT = 'plenty_item_variation_warehouse_created_timestamp';
+
+	const ITEMS_PER_PAGE = 50;
 	public		$variationId;
 	public		$warehouseId;
 	public		$warehouseZoneId;

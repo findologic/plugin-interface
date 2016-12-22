@@ -27,8 +27,9 @@ interface CategoryRepositoryContract
 	 * Returns all linklist categories as tree.
 	 */
 	public function getLinklistTree(
-		string $type = "all", 
-		string $lang = "de"
+		string $type, 
+		string $lang, 
+		int $clientId
 	):array;
 
 	/**
@@ -36,7 +37,8 @@ interface CategoryRepositoryContract
 	 */
 	public function getLinklistList(
 		string $type = "all", 
-		string $lang = "de"
+		string $lang = "de", 
+		int $clientId = null
 	):array;
 
 	/**

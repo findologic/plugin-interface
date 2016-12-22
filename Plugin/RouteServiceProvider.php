@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Plugin;
 
+use Illuminate\Routing\Router;
 
 /**
  * Route service provider

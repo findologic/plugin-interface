@@ -8,6 +8,12 @@ use Carbon\Carbon;
  */
 abstract class Stock 
 {
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$itemId;
 	public		$variationId;
 	public		$warehouseId;

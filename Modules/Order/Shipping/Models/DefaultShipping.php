@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Shipping\Models;
  */
 abstract class DefaultShipping 
 {
+
+	const CREATED_AT = 'created_at';
+
+	const UPDATED_AT = 'updated_at';
 	public		$id;
 	public		$referrerId;
 	public		$shippingDestinationId;

@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Collection;
  */
 abstract class Fitment 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$marketId;
 	public		$name;

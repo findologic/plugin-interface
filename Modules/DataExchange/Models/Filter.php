@@ -7,6 +7,10 @@ namespace Plenty\Modules\DataExchange\Models;
  */
 abstract class Filter 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$createdAt;
 	public		$updatedAt;

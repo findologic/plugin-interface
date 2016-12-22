@@ -8,6 +8,16 @@ use Plenty\Modules\Order\Models\Legacy\Order;
  */
 abstract class ContactBank 
 {
+
+	const CUSTOMER = 'customer';
+
+	const BACKEND = 'backend';
+
+	const IMPORT = 'import';
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$contactId;
 	public		$orderId;

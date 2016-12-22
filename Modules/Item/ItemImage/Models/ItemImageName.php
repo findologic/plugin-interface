@@ -7,6 +7,10 @@ namespace Plenty\Modules\Item\ItemImage\Models;
  */
 abstract class ItemImageName 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$imageId;
 	public		$lang;
 	public		$name;

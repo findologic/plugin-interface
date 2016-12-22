@@ -11,6 +11,10 @@ use Plenty\Modules\StockManagement\Warehouse\Management\Models\StorageLocation;
  */
 abstract class Warehouse 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$name;
 	public		$note;

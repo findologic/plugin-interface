@@ -7,6 +7,10 @@ namespace Plenty\Modules\Account\Contact\Models;
  */
 abstract class ContactOptionSubTypeName 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$subTypeId;
 	public		$lang;

@@ -7,6 +7,20 @@ namespace Plenty\Modules\DataExchange\Models;
  */
 abstract class Export 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
+
+	const DATA_TYPE_ITEM = 'item';
+
+	const OUTPUT_TYPE_ADMIN = 'admin';
+
+	const OUTPUT_TYPE_DOWNLOAD = 'download';
+
+	const OUTPUT_TYPE_FTP = 'ftp';
+
+	const DEFAULT_ITEMS_PER_PAGE = 50;
 	public		$id;
 	public		$name;
 	public		$type;

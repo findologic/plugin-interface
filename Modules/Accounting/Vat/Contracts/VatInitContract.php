@@ -6,13 +6,13 @@ use Plenty\Modules\Accounting\Vat\Exceptions\VatException;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
 
 /**
- * Provides methods for vat initialization and vat rate or vat field detection.
+ * This interface provides methods to initialize the detection of a VAT configuration and to actually detect VAT rates or VAT fields.
  */
 interface VatInitContract 
 {
 
 	/**
-	 * Initialize the VAT system data.
+	 * Initialize the VAT system data
 	 */
 	public function init(
 		int $billingCountryId, 
@@ -23,13 +23,13 @@ interface VatInitContract
 	);
 
 	/**
-	 * Get whether the VAT system is already initialized or not.
+	 * Get whether the VAT system is already initialized or not
 	 */
 	public function isInitialized(
 	):bool;
 
 	/**
-	 * Get the vat field for the given vat rate.
+	 * Get the VAT field for a VAT rate
 	 */
 	public function getVatField(
 		float $vatRate, 
@@ -37,7 +37,7 @@ interface VatInitContract
 	):int;
 
 	/**
-	 * Get the vat rate for the given vat field.
+	 * Get the VAT rate of a VAT field
 	 */
 	public function getVatRate(
 		int $vatField, 
@@ -45,21 +45,21 @@ interface VatInitContract
 	):float;
 
 	/**
-	 * Get the Vat instance used.
+	 * Get the VAT configuration to be used for VAT calculation
 	 */
 	public function getUsingVat(
 		bool $restrictedToDigitalItems = false
 	):Vat;
 
 	/**
-	 * Get the vat rates of the using Vat instance.
+	 * Get the VAT rates to be used for VAT calculation
 	 */
 	public function getUsingVatRates(
 		bool $restrictedToDigitalItems = false
 	):array;
 
 	/**
-	 * Get a standard VAT configuration by location ID
+	 * Get a standard VAT configuration of an accounting location
 	 */
 	public function getStandardVatByLocationId(
 		int $locationId, 

@@ -9,6 +9,10 @@ use Plenty\Modules\Account\Contact\Models\Contact;
  */
 abstract class Account 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$number;
 	public		$companyName;

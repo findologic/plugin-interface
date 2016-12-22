@@ -5,6 +5,12 @@ use Illuminate\Database\Eloquent\Collection;
 
 abstract class SalesPrice 
 {
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$position;
 	public		$minimumOrderQuantity;

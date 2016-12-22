@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 
 
 /**
- * session storage model for forum data
+ * The session storage model for forum data.
  */
 abstract class Forum 
 {

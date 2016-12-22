@@ -8,6 +8,10 @@ use Carbon\Carbon;
  */
 abstract class OrderAmountVat 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$orderAmountId;
 	public		$countryVatId;

@@ -7,6 +7,10 @@ namespace Plenty\Modules\Payment\Models;
  */
 abstract class PaymentPropertyType 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$erasable;
 	public		$position;

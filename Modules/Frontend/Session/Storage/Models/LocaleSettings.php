@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 
 
 /**
- * session storage model for locale settings
+ * The session storage model for locale settings.
  */
 abstract class LocaleSettings 
 {

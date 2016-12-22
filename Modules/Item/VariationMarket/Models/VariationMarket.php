@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\VariationMarket\Models;
  */
 abstract class VariationMarket 
 {
+
+	const CREATED_AT = 'plenty_item_variation_link_marketplace_created';
+
+	const ITEMS_PER_PAGE = 50;
+
+	const UPDATED_AT = 'updatedAt';
 	public		$variationId;
 	public		$marketId;
 	public		$createdAt;

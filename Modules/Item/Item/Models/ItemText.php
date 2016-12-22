@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\Item\Models;
  */
 abstract class ItemText 
 {
+
+	const UPDATED_AT = 'timestamp';
+
+	const MAX_ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
 	public		$lang;
 	public		$name1;
 	public		$name2;

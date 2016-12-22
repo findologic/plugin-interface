@@ -7,6 +7,12 @@ namespace Plenty\Modules\Account\Newsletter\Models;
  */
 abstract class NewsletterEmail 
 {
+
+	const DEFAULT_ITEMS_PER_PAGE = 10;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$directory;
 	public		$customerId;

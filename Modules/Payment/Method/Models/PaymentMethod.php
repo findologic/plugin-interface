@@ -7,6 +7,10 @@ namespace Plenty\Modules\Payment\Method\Models;
  */
 abstract class PaymentMethod 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$pluginKey;
 	public		$paymentKey;

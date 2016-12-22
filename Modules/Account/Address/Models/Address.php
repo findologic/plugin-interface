@@ -9,6 +9,14 @@ use Plenty\Modules\Order\Shipping\Countries\Models\Country;
  */
 abstract class Address 
 {
+
+	const PACKSTATION = 'PACKSTATION';
+
+	const POSTFILIALE = 'POSTFILIALE';
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$name1;
 	public		$name2;

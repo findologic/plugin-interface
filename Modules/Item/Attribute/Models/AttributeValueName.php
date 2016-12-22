@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\Attribute\Models;
  */
 abstract class AttributeValueName 
 {
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$valueId;
 	public		$lang;
 	public		$name;

@@ -12,6 +12,10 @@ use Plenty\Modules\Account\OrderSummary\Models\OrderSummary;
  */
 abstract class Contact 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$externalId;
 	public		$number;

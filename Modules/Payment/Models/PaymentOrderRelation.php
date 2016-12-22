@@ -7,6 +7,10 @@ namespace Plenty\Modules\Payment\Models;
  */
 abstract class PaymentOrderRelation 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$paymentId;
 	public		$orderId;

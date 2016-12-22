@@ -8,6 +8,10 @@ use Plenty\Modules\Document\Models\Document;
  */
 abstract class CategoryDetails 
 {
+
+	const UPDATED_AT = 'plenty_category_details_last_update_timestamp';
+
+	const CREATED_AT = 'createdAt';
 	public		$categoryId;
 	public		$plentyId;
 	public		$lang;

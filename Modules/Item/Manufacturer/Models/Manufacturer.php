@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\Manufacturer\Models;
  */
 abstract class Manufacturer 
 {
+
+	const UPDATED_AT = 'plenty_producer_last_update_timestamp';
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
 	public		$name;
 	public		$id;
 	public		$logo;

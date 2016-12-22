@@ -9,6 +9,10 @@ use Plenty\Modules\StockManagement\Warehouse\Models\Warehouse;
  */
 abstract class Rack 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$name;
 	public		$position;

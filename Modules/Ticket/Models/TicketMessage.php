@@ -7,6 +7,10 @@ namespace Plenty\Modules\Ticket\Models;
  */
 abstract class TicketMessage 
 {
+
+	const CREATED_AT = 'create_timestamp';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$ticketId;
 	public		$userId;

@@ -7,6 +7,10 @@ namespace Plenty\Modules\Category\Models;
  */
 abstract class CategoryClient 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$plentyId;
 	
 	/**

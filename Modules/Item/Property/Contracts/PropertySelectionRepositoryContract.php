@@ -12,27 +12,27 @@ interface PropertySelectionRepositoryContract
 
 	public function create(
 		array $data, 
-		int $propertyItemId
+		int $propertyId
 	):PropertySelection;
 
 	public function delete(
-		int $propertyItemId, 
+		int $propertyId, 
 		string $lang
 	):boolean;
 
 	public function update(
 		array $data, 
-		int $propertyItemId, 
+		int $propertyId, 
 		string $lang
 	):PropertySelection;
 
 	public function findOne(
-		int $propertyItemId, 
+		int $propertyId, 
 		string $lang
 	):PropertySelection;
 
-	public function findByPropertyItemId(
-		int $propertyItemId
+	public function findByPropertyId(
+		int $propertyId
 	):PropertySelection;
 
 }

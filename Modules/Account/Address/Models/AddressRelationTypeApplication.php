@@ -7,6 +7,16 @@ namespace Plenty\Modules\Account\Address\Models;
  */
 abstract class AddressRelationTypeApplication 
 {
+
+	const APPLICATION_CONTACT = 'contact';
+
+	const APPLICATION_ORDER = 'order';
+
+	const APPLICATION_WAREHOUSE = 'warehouse';
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$typeId;
 	public		$application;

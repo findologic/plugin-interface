@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Collection;
  */
 abstract class CategoryTemplate 
 {
+
+	const CREATED_AT = 'created_at';
+
+	const UPDATED_AT = 'updated_at';
 	public		$categoryId;
 	public		$plentyId;
 	public		$lang;

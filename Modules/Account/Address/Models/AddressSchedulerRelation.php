@@ -8,6 +8,10 @@ use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
  */
 abstract class AddressSchedulerRelation 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$schedulerId;
 	public		$typeId;

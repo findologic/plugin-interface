@@ -11,6 +11,10 @@ use Plenty\Modules\Account\Address\Models\AddressRelationType;
  */
 abstract class Order 
 {
+
+	const UPDATED_AT = 'last_update';
+
+	const CREATED_AT = 'order_main_entry_timestamp';
 	public		$id;
 	public		$orderType;
 	public		$contactId;

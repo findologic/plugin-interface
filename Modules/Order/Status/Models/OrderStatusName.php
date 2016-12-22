@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Status\Models;
  */
 abstract class OrderStatusName 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$statusId;
 	public		$backendName;

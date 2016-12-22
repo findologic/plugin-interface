@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\Item\Models;
  */
 abstract class Item 
 {
+
+	const UPDATED_AT = 'timestamp';
+
+	const MAX_ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
 	public		$id;
 	public		$position;
 	public		$type;

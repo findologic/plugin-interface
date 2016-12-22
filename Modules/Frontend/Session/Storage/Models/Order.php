@@ -3,7 +3,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 
 
 /**
- * session storage model for order data
+ * The session storage model for order data.
  */
 abstract class Order 
 {

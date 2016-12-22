@@ -7,6 +7,12 @@ namespace Plenty\Modules\Item\Attribute\Models;
  */
 abstract class Attribute 
 {
+
+	const UPDATED_AT = 'plenty_attribute_last_update_timestamp';
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
 	public		$id;
 	public		$backendName;
 	public		$position;

@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Date\Models;
  */
 abstract class OrderDateTypeName 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$typeId;
 	public		$lang;

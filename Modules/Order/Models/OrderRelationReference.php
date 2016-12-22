@@ -9,6 +9,20 @@ use Plenty\Modules\Account\Models\Account;
  */
 abstract class OrderRelationReference 
 {
+
+	const REFERENCE_TYPE_CONTACT = 'contact';
+
+	const REFERENCE_TYPE_ACCOUNT = 'account';
+
+	const REFERENCE_TYPE_WAREHOUSE = 'warehouse';
+
+	const RELATION_TYPE_SENDER = 'sender';
+
+	const RELATION_TYPE_RECEIVER = 'receiver';
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$orderId;
 	public		$referenceType;

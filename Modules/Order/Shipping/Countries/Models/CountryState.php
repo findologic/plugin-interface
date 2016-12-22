@@ -7,6 +7,10 @@ namespace Plenty\Modules\Order\Shipping\Countries\Models;
  */
 abstract class CountryState 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$countryId;
 	public		$isoCode;

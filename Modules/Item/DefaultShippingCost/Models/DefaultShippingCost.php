@@ -7,6 +7,10 @@ namespace Plenty\Modules\Item\DefaultShippingCost\Models;
  */
 abstract class DefaultShippingCost 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$itemId;
 	public		$profileId;

@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\ItemProperty\Models;
 
-use Plenty\Modules\Item\Property\Models\PropertyItem;
+use Plenty\Modules\Item\Property\Models\Property;
 use Plenty\Modules\Item\Property\Models\PropertySelection;
 
 /**
@@ -9,15 +9,21 @@ use Plenty\Modules\Item\Property\Models\PropertySelection;
  */
 abstract class ItemProperty 
 {
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$itemId;
-	public		$propertyItemId;
+	public		$propertyId;
 	public		$propertySelectionId;
 	public		$valueInt;
 	public		$valueFloat;
 	public		$valueFile;
 	public		$surcharge;
-	public		$propertyItem;
+	public		$property;
 	public		$propertySelection;
 	
 	/**

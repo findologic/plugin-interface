@@ -7,6 +7,12 @@ namespace Plenty\Modules\Category\Models;
  */
 abstract class CategoryBranch 
 {
+
+	const MAX_ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$categoryId;
 	public		$category1Id;
 	public		$category2Id;

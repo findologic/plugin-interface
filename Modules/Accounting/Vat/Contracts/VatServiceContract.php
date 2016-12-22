@@ -4,13 +4,13 @@ namespace Plenty\Modules\Accounting\Vat\Contracts;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
 
 /**
- * Provides methods for quick vat field/rate/name search on a given Vat instance.
+ * Provides methods for a quick search of VAT fields, VAT rates and VAT names of a specific VAT configuration.
  */
 interface VatServiceContract 
 {
 
 	/**
-	 * Get the vat field for the given vat rate.
+	 * Get the VAT field for a VAT rate.
 	 */
 	public function getVatField(
 		Vat $vat, 
@@ -18,7 +18,7 @@ interface VatServiceContract
 	):int;
 
 	/**
-	 * Get the vat rate for the given vat field.
+	 * Get the VAT rate for a VAT field.
 	 */
 	public function getVatRate(
 		Vat $vat, 
@@ -26,7 +26,7 @@ interface VatServiceContract
 	):float;
 
 	/**
-	 * Get the vat name for the given vat field.
+	 * Get the name of a VAT field.
 	 */
 	public function getVatName(
 		Vat $vat, 

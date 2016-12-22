@@ -8,6 +8,12 @@ use Plenty\Modules\Item\Unit\Models\Unit;
  */
 abstract class UnitCombination 
 {
+
+	const ITEMS_PER_PAGE = 50;
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$unitId;
 	public		$content;

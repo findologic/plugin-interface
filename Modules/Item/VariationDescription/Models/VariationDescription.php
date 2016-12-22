@@ -1,12 +1,17 @@
 <?php
 namespace Plenty\Modules\Item\VariationDescription\Models;
 
+use Plenty\Modules\Item\Item\Models\Item;
 
 /**
  * Variation Default Category
  */
 abstract class VariationDescription 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$itemId;
 	public		$lang;
