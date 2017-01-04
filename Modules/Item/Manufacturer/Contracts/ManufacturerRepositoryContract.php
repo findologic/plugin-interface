@@ -2,23 +2,24 @@
 namespace Plenty\Modules\Item\Manufacturer\Contracts;
 
 use Plenty\Modules\Item\Manufacturer\Models\Manufacturer;
+use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * Repository for item manufacturers
+ * The contract for the manufacturer repository
  */
 interface ManufacturerRepositoryContract 
 {
 
 	/**
-	 * store a new manufacturer
+	 * Creates a manufacturer.
 	 */
 	public function create(
 		array $data
 	):Manufacturer;
 
 	/**
-	 * Update an existing manufacturer
+	 * Updates a manufacturer. The ID of the manufacturer must be specified.
 	 */
 	public function update(
 		array $data, 
@@ -26,19 +27,22 @@ interface ManufacturerRepositoryContract
 	):Manufacturer;
 
 	/**
-	 * Delete a manufacturer by the manufacturer id
+	 * Deletes a manufacturer. The ID of the manufacturer must be specified.
 	 */
 	public function delete(
 		int $manufacturerId
-	);
+	):DeleteResponse;
 
 	/**
-	 * Find an existing Manufacturer
+	 * Gets a manufacturer. The ID of the manufacturer must be specified.
 	 */
 	public function findById(
 		int $manufacturerId
 	):Manufacturer;
 
+	/**
+	 * Lists all manufacturers.
+	 */
 	public function all(
 		array $columns = [], 
 		int $perPage = 50, 
@@ -46,7 +50,7 @@ interface ManufacturerRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Search manufacturers by Filter
+	 * Lists manufacturers by filter
 	 */
 	public function search(
 		array $params = [], 

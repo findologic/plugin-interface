@@ -14,7 +14,7 @@ interface ItemSetComponentRepositoryContract
 {
 
 	/**
-	 * Return item set component by given id
+	 * Gets an item set component. The ID of the item set component must be specified.
 	 */
 	public function show(
 		int $id, 
@@ -22,7 +22,7 @@ interface ItemSetComponentRepositoryContract
 	):ItemSetComponent;
 
 	/**
-	 * Return item set component by given set id and id
+	 * Gets an item set component. The item ID of the item set and the component ID must be specified.
 	 */
 	public function get(
 		int $setId, 
@@ -30,7 +30,7 @@ interface ItemSetComponentRepositoryContract
 	):ItemSetComponent;
 
 	/**
-	 * Create a new item set component
+	 * Creates an item set component.
 	 */
 	public function create(
 		int $setConfigId, 
@@ -38,7 +38,7 @@ interface ItemSetComponentRepositoryContract
 	):ItemSetComponent;
 
 	/**
-	 * Create new item set components
+	 * Creates a link between an item and a set item and adds the item as a set component.
 	 */
 	public function createComponents(
 		int $setId, 
@@ -46,7 +46,7 @@ interface ItemSetComponentRepositoryContract
 	):ItemSetComponent;
 
 	/**
-	 * Update item set components
+	 * Updates the item set components of a set item.
 	 */
 	public function updateComponents(
 		int $setId, 
@@ -54,7 +54,7 @@ interface ItemSetComponentRepositoryContract
 	):ItemSetComponent;
 
 	/**
-	 * Update one item set component by given setId and id
+	 * Updates an item set component. The item ID of the set and the ID of the set component must be specified.
 	 */
 	public function update(
 		int $setId, 
@@ -63,7 +63,7 @@ interface ItemSetComponentRepositoryContract
 	):ItemSetComponent;
 
 	/**
-	 * Delete item set components
+	 * Removes all item set components from an item set.
 	 */
 	public function deleteComponents(
 		int $setId, 
@@ -71,7 +71,7 @@ interface ItemSetComponentRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Delete item set component by given setId and id
+	 * Deletes the link between an item set component and an item set. The item ID of the set and the ID of the set component must be specified.
 	 */
 	public function delete(
 		int $setId, 
@@ -79,16 +79,22 @@ interface ItemSetComponentRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Return all item set components
+	 * Lists all item set components.
 	 */
 	public function all(
 	):array;
 
+	/**
+	 * Lists the item set components of a set. The item ID of the item set must be specified.
+	 */
 	public function findBySetId(
 		int $setId, 
 		array $with
 	):array;
 
+	/**
+	 * Lists the item set components of a set. The item ID of the item set component must be specified.
+	 */
 	public function findByItemId(
 		int $itemId
 	):array;

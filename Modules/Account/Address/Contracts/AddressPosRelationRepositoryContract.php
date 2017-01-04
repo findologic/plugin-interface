@@ -2,22 +2,24 @@
 namespace Plenty\Modules\Account\Address\Contracts;
 
 use Plenty\Modules\Account\Address\Models\AddressPosRelation;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * The contract for the address pos relation repository
+ * The AddressPosRelationRepositoryContract is the interface for the address POS relation repository.
  */
 interface AddressPosRelationRepositoryContract 
 {
 
 	/**
-	 * Create an address pos relation.
+	 * Creates an address POS relation.
 	 */
 	public function createAddressPosRelation(
 		array $data
 	):AddressPosRelation;
 
 	/**
-	 * Update an address pos relation.
+	 * Updates an address POS relation.
 	 */
 	public function updateAddressPosRelation(
 		int $addressPosRelationId, 
@@ -25,17 +27,28 @@ interface AddressPosRelationRepositoryContract
 	):AddressPosRelation;
 
 	/**
-	 * Find an address pos relation.
+	 * Lists address POS relations.
 	 */
 	public function findAddressPosRelation(
 		int $addressPosRelationId
 	):AddressPosRelation;
 
 	/**
-	 * Delete an address pos relation.
+	 * Deletes an address POS relation.
 	 */
 	public function deleteAddressPosRelation(
 		int $addressPosRelationId
 	);
+
+	/**
+	 * List address pos relations.
+	 */
+	public function listAddressPosRelations(
+		array $filter = [], 
+		array $with = [], 
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
+	):PaginatedResult;
 
 }

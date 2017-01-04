@@ -9,7 +9,7 @@ use Plenty\Modules\Account\Address\Models\AddressOption;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 
 /**
- * The contract for the address repository
+ * The AddressRepositoryContract is the interface for the address repository contract. This interface allows to get, update, create and delete addresses and address options.
  */
 interface AddressRepositoryContract 
 {

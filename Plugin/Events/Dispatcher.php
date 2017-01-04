@@ -2,14 +2,13 @@
 namespace Plenty\Plugin\Events;
 
 use Plenty\Modules\Basket\Models\BasketItem;
+use Plenty\Plugin\PluginApiGate;
 
 /**
  * Dispatcher
  */
 abstract class Dispatcher 
 {
-
-	const PLUGIN_NAMESPACE_PREFIX = 'plenty';
 
 	/**
 	 * Register an event listener with the dispatcher.
@@ -41,5 +40,8 @@ abstract class Dispatcher
 	abstract public function forget(
 		 $event
 	);
+
+	abstract public static function getPrefix(
+	):string;
 
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\Processor;
+namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Processor;
 
 
 /**
@@ -10,6 +10,9 @@ interface ProcessorInterface
 
 	public function process(
 		array $data
+	):array;
+
+	public function getDependencies(
 	):array;
 
 }

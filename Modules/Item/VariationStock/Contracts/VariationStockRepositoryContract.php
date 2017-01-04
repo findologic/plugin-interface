@@ -8,7 +8,7 @@ use Plenty\Modules\Item\VariationStock\Models\VariationStockMovement;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * Get, list, book and correct stock or get stock movements.
+ * The contract of the variation stock repository
  */
 interface VariationStockRepositoryContract 
 {

@@ -12,4 +12,7 @@ interface MutatorInterface
 		array $data
 	):array;
 
+	public function getDependencies(
+	):array;
+
 }

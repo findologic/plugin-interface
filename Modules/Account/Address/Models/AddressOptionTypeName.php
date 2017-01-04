@@ -3,7 +3,7 @@ namespace Plenty\Modules\Account\Address\Models;
 
 
 /**
- * The address options type name model
+ * The AddressOptionTypeName model
  */
 abstract class AddressOptionTypeName 
 {

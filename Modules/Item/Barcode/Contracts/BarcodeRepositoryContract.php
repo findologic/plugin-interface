@@ -4,30 +4,31 @@ namespace Plenty\Modules\Item\Barcode\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Barcode\Models\Barcode;
 use Plenty\Modules\Item\Barcode\Models\BarcodeLinkReferrer;
+use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * Repository for Barcode
+ * The contract for the barcode repository
  */
 interface BarcodeRepositoryContract 
 {
 
 	/**
-	 * Show an barcode by given id.
+	 * Gets a barcode. The ID of the barcode must be specified.
 	 */
 	public function showBarcode(
 		int $barcodeId
-	):boolean;
+	):Barcode;
 
 	/**
-	 * Create new barcode
+	 * Creates a barcode.
 	 */
 	public function createBarcode(
 		array $data
 	):Barcode;
 
 	/**
-	 * Update an existing barcode
+	 * Updates a barcode. The ID of the barcode must be specified.
 	 */
 	public function updateBarcode(
 		array $data, 
@@ -35,21 +36,21 @@ interface BarcodeRepositoryContract
 	):Barcode;
 
 	/**
-	 * Delete an barcode by given id. If at least one relation exists, throws an exception.
+	 * Deletes a barcode. The ID of the barcode must be specified.
 	 */
 	public function deleteBarcode(
 		int $barcodeId
-	):boolean;
+	):DeleteResponse;
 
 	/**
-	 * Find an existing barcode by given id.
+	 * Gets a barcode. The ID of the barcode must be specified.
 	 */
 	public function findBarcodeById(
 		int $barcodeId
 	):Barcode;
 
 	/**
-	 * Get list of barcodes from type
+	 * Lists barcodes. The type of the barcode must be specified.
 	 */
 	public function findBarcodesByType(
 		string $barcodeType, 
@@ -57,7 +58,7 @@ interface BarcodeRepositoryContract
 	):array;
 
 	/**
-	 * Get list of barcodes
+	 * Lists all barcodes.
 	 */
 	public function allBarcodes(
 		array $columns = [], 
@@ -66,7 +67,7 @@ interface BarcodeRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Create new barcode referrer for given referrer.
+	 * Creates new barcode referrer for given referrer.
 	 */
 	public function createBarcodeReferrerRelation(
 		array $data, 
@@ -74,7 +75,7 @@ interface BarcodeRepositoryContract
 	):BarcodeLinkReferrer;
 
 	/**
-	 * Delete existing barcode referrer with given referrer.
+	 * Deletes existing barcode referrer with given referrer.
 	 */
 	public function deleteBarcodeReferrerRelation(
 		float $referrer, 
@@ -82,7 +83,7 @@ interface BarcodeRepositoryContract
 	):bool;
 
 	/**
-	 * Get barcode referrer with given referrer
+	 * Gets barcode referrer with given referrer
 	 */
 	public function findBarcodesByReferrerRelation(
 		float $referrer, 

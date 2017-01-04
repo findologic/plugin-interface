@@ -16,7 +16,7 @@ abstract class CronContainer
 
 	const HOURLY = 60;
 
-	const DAILY = 3600;
+	const DAILY = 1440;
 
 	/**
 	 * Use this method to add a handler class and a schedule time for your desired cron event. The action will then be triggered according to the given schedule.

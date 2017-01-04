@@ -8,8 +8,6 @@ namespace Plenty\Plugin;
 abstract class ConfigRepository 
 {
 
-	const PLUGIN_CONFIG_PREFIX = 'plugins';
-
 	/**
 	 * Determine if the given configuration value exists.
 	 */
@@ -48,5 +46,8 @@ abstract class ConfigRepository
 		string $key, 
 		 $value
 	);
+
+	abstract public static function getPrefix(
+	):string;
 
 }

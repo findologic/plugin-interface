@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\VariationSku\Models;
 
 
 /**
- * The variationSku model
+ * The variation SKU model
  */
 abstract class VariationSku 
 {
@@ -16,11 +16,12 @@ abstract class VariationSku
 	public		$marketId;
 	public		$accountId;
 	public		$initialSku;
-	public		$variationSku;
-	public		$active;
-	public		$createdTimestamp;
-	public		$lastExportTimestamp;
-	public		$deletedTimestamp;
+	public		$sku;
+	public		$isActive;
+	public		$createdAt;
+	public		$exportedAt;
+	public		$stockUpdatedAt;
+	public		$deletedAt;
 	public		$status;
 	public		$additionalInformation;
 	

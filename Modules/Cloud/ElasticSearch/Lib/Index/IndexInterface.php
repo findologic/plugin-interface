@@ -23,4 +23,10 @@ interface IndexInterface
 	public function isAvailable(
 	):bool;
 
+	public function getSettingsClassName(
+	):string;
+
+	public function getMappingClassName(
+	):string;
+
 }

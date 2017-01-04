@@ -13,7 +13,12 @@ abstract class PropertyGroupName
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-
+	public		$propertyGroupId;
+	public		$lang;
+	public		$name;
+	public		$description;
+	public		$propertyGroup;
+	
 	/**
 	 * Returns this model as an array.
 	 */

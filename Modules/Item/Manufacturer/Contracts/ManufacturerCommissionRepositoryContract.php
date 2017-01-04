@@ -5,27 +5,27 @@ use Plenty\Modules\Item\Manufacturer\Models\ManufacturerCommission;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * Repository for ManufacturerCommission
+ * The contract for the manufacturer commission repository
  */
 interface ManufacturerCommissionRepositoryContract 
 {
 
 	/**
-	 * Find one ManufacturerCommission by given Id
+	 * Gets a manufacturer commission. The ID of the manufacturer commission must be specified.
 	 */
 	public function find(
 		int $id
 	):ManufacturerCommission;
 
 	/**
-	 * Creates new ManufacturerCommission
+	 * Creates a manufacturer commission.
 	 */
 	public function create(
 		array $data
 	):ManufacturerCommission;
 
 	/**
-	 * Updates existing ManufacturerCommission
+	 * Updates a manufacturer commission. The ID of the manufacturer commission must be specified.
 	 */
 	public function update(
 		array $data, 
@@ -33,14 +33,14 @@ interface ManufacturerCommissionRepositoryContract
 	):ManufacturerCommission;
 
 	/**
-	 * Delete an ManufacturerCommission by givenId
+	 * Deletes a manufacturer commission. The ID of the manufacturer commission must be specified.
 	 */
 	public function delete(
 		int $id
 	):DeleteResponse;
 
 	/**
-	 * Find ManufacturerCommissions by given ManufacturerId
+	 * Lists manufacturer commissions. The ID of the manufacturer must be specified.
 	 */
 	public function findByManufacturerId(
 		int $manufacturerId

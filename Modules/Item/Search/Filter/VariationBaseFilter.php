@@ -52,17 +52,14 @@ abstract class VariationBaseFilter
 	abstract public function isSalable(
 	);
 
-	abstract public function hasDescriptionInLanguage(
+	abstract public function hasADescriptionInLanguage(
 		string $language
 	);
 
-	abstract public function hasImage(
+	abstract public function hasAnImageOrItemHasAnImage(
 	);
 
-	abstract public function hasVariationImage(
-	);
-
-	abstract public function hasItemImage(
+	abstract public function hasAnImage(
 	);
 
 	abstract public function toArray(

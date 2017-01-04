@@ -35,6 +35,9 @@ abstract class CategoryFilter
 		string $depth = self::DEPTH_ANY
 	);
 
+	abstract public function isInACategory(
+	);
+
 	abstract public static function getPathByDepth(
 		string $depth
 	):string;

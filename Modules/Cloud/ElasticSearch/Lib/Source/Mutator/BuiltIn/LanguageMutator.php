@@ -29,4 +29,7 @@ abstract class LanguageMutator
 		 $array
 	);
 
+	abstract public function getDependencies(
+	):array;
+
 }

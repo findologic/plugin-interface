@@ -3,7 +3,7 @@ namespace Plenty\Modules\Account\Address\Models;
 
 
 /**
- * The address relation type name model.
+ * The AddressRelationTypeName model
  */
 abstract class AddressRelationTypeName 
 {

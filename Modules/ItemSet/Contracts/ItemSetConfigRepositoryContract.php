@@ -7,27 +7,27 @@ use Plenty\Modules\RestDocumentation\Annotations\Rest;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * The contract for the item set config repository
+ * The contract for the item set configuration repository
  */
 interface ItemSetConfigRepositoryContract 
 {
 
 	/**
-	 * Return item set by given id
+	 * Gets an item set. The ID of the item set configuration must be specified.
 	 */
 	public function show(
 		int $id
 	):ItemSetConfig;
 
 	/**
-	 * Create new item set config
+	 * Creates an item set configuration.
 	 */
 	public function create(
 		array $data
 	):ItemSetConfig;
 
 	/**
-	 * Update item set config by given id
+	 * Updates an item set configuration. The ID of the item set configuration must be specified.
 	 */
 	public function update(
 		int $id, 
@@ -35,14 +35,14 @@ interface ItemSetConfigRepositoryContract
 	):ItemSetConfig;
 
 	/**
-	 * Delete item set config by given id
+	 * Deletes an item set configuration. The ID of the item set configuration must be specified.
 	 */
 	public function delete(
 		int $id
 	):DeleteResponse;
 
 	/**
-	 * Return item set config of item set
+	 * Gets the item set configuration of an item set.
 	 */
 	public function get(
 		int $setId, 
@@ -50,7 +50,7 @@ interface ItemSetConfigRepositoryContract
 	):ItemSetConfig;
 
 	/**
-	 * Return set config for item set
+	 * Gets the item set configuration of an item set. The item ID of the set item must be specified.
 	 */
 	public function findBySetId(
 		int $setId

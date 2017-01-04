@@ -11,7 +11,7 @@ interface ContactEventRepositoryContract
 {
 
 	/**
-	 * List contact events identified by the contact that is currently logged into the system.
+	 * Lists contact events identified by the contact that is currently logged into the system.
 	 */
 	public function listEvents(
 		array $columns = [], 

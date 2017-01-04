@@ -4,7 +4,7 @@ namespace Plenty\Modules\Account\Contact\Models;
 use Illuminate\Database\Eloquent\Collection;
 
 /**
- * contact type model
+ * The ContactType model
  */
 abstract class ContactType 
 {

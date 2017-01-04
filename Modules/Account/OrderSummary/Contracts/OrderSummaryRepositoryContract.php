@@ -7,7 +7,7 @@ use Plenty\Exceptions\ModelNotEditableException;
 use Plenty\Modules\Account\OrderSummary\Models\OrderSummary;
 
 /**
- * The contract for the order summary repository
+ * The OrderSummaryRepositoryContract is the interface for the order summary repository. This interface allows to list, get, update, create and delete order summaries.
  */
 interface OrderSummaryRepositoryContract 
 {

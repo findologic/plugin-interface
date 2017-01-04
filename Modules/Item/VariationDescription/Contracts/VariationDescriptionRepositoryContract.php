@@ -6,20 +6,20 @@ use Plenty\Modules\Item\VariationDescription\Models\VariationDescription;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * Repository for variation descriptions
+ * The contract of the variation description repository
  */
 interface VariationDescriptionRepositoryContract 
 {
 
 	/**
-	 * Create new description
+	 * Creates texts
 	 */
 	public function create(
 		array $data
 	):VariationDescription;
 
 	/**
-	 * Updates description
+	 * Updates texts
 	 */
 	public function update(
 		array $data, 
@@ -28,7 +28,7 @@ interface VariationDescriptionRepositoryContract
 	):VariationDescription;
 
 	/**
-	 * Delete description
+	 * Deletes texts
 	 */
 	public function delete(
 		int $variationId, 
@@ -36,7 +36,7 @@ interface VariationDescriptionRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Find description
+	 * Gets texts
 	 */
 	public function find(
 		int $variationId, 
@@ -44,14 +44,14 @@ interface VariationDescriptionRepositoryContract
 	):VariationDescription;
 
 	/**
-	 * Find description
+	 * Get texts
 	 */
 	public function findById(
 		int $id
 	):VariationDescription;
 
 	/**
-	 * Find descriptions
+	 * List texts
 	 */
 	public function findByVariationId(
 		int $variationId

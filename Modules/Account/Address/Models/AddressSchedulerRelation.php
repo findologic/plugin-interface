@@ -4,7 +4,7 @@ namespace Plenty\Modules\Account\Address\Models;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
 
 /**
- * address scheduler relation model
+ * The AddressSchedulerRelation model
  */
 abstract class AddressSchedulerRelation 
 {

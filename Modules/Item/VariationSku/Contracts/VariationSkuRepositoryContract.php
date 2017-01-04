@@ -5,13 +5,13 @@ use Plenty\Modules\Item\VariationSku\Models\VariationSku;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * Repository for VariationSku
+ * The contract of the variation sku repository
  */
 interface VariationSkuRepositoryContract 
 {
 
 	/**
-	 * Generate or update Sku
+	 * Generates or updates an SKU
 	 */
 	public function generateSku(
 		int $variationId, 
@@ -22,14 +22,14 @@ interface VariationSkuRepositoryContract
 	):string;
 
 	/**
-	 * Create sku
+	 * Creates an SKU
 	 */
 	public function create(
 		array $data
 	):VariationSku;
 
 	/**
-	 * Update sku
+	 * Updates an SKU
 	 */
 	public function update(
 		array $data, 
@@ -37,28 +37,28 @@ interface VariationSkuRepositoryContract
 	):VariationSku;
 
 	/**
-	 * Delete sku
+	 * Deletes an SKU
 	 */
 	public function delete(
 		int $skuId
 	):DeleteResponse;
 
 	/**
-	 * Show sku
+	 * Gets an SKU
 	 */
 	public function show(
 		int $skuId
 	):VariationSku;
 
 	/**
-	 * Search sku´s
+	 * Lists SKUs
 	 */
 	public function search(
 		array $filter
 	):array;
 
 	/**
-	 * Find sku´s by variationId
+	 * Lists SKUs
 	 */
 	public function findByVariationId(
 		int $variationId

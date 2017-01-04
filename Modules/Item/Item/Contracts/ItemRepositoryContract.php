@@ -7,15 +7,21 @@ use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 
 /**
- * Repository for item basket
+ * The contract for the attribute value repository
  */
 interface ItemRepositoryContract 
 {
 
+	/**
+	 * Creates an item.
+	 */
 	public function add(
 		array $data
 	);
 
+	/**
+	 * Get an item. The ID of the item must be specified.
+	 */
 	public function show(
 		int $itemId, 
 		array $columns = [], 

@@ -8,8 +8,6 @@ namespace Plenty\Plugin;
 abstract class SessionRepository 
 {
 
-	const PLUGIN_CONFIG_PREFIX = 'plugins';
-
 	/**
 	 * Determine if the given session value exists.
 	 */
@@ -48,5 +46,8 @@ abstract class SessionRepository
 		string $key, 
 		 $value
 	);
+
+	abstract public static function getPrefix(
+	):string;
 
 }

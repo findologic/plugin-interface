@@ -4,7 +4,7 @@ namespace Plenty\Modules\Account\Address\Models;
 use Illuminate\Database\Eloquent\Collection;
 
 /**
- * The address options type model
+ * The AddressOptionType model
  */
 abstract class AddressOptionType 
 {

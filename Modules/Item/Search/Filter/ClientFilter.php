@@ -16,7 +16,7 @@ abstract class ClientFilter
 		int $clientId
 	);
 
-	abstract public function isVisibleForAnyClient(
+	abstract public function isVisibleForAtLeastOneClient(
 		array $clientIds
 	);
 

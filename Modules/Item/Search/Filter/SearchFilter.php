@@ -19,9 +19,6 @@ abstract class SearchFilter
 		string $precision = "fuzzy"
 	);
 
-	abstract public function getPath(
-	):string;
-
 	abstract public function toArray(
 	):array;
 

@@ -13,35 +13,35 @@ interface ItemSetRepositoryContract
 {
 
 	/**
-	 * Return item set by given id
+	 * Gets an item set. The item ID of the set must be specified.
 	 */
 	public function show(
 		int $id
 	):ItemSet;
 
 	/**
-	 * Create new item set
+	 * Creates an item set.
 	 */
 	public function create(
 		array $data
 	):ItemSet;
 
 	/**
-	 * Create new item sets
+	 * Creates item sets.
 	 */
 	public function createSets(
 		array $data
 	):ItemSet;
 
 	/**
-	 * Update existing item sets
+	 * Updates item sets.
 	 */
 	public function updateSets(
 		array $data
 	):array;
 
 	/**
-	 * Update item set by given id
+	 * Updates an item set. The item ID of the set must be specified.
 	 */
 	public function update(
 		int $id, 
@@ -49,21 +49,21 @@ interface ItemSetRepositoryContract
 	):ItemSet;
 
 	/**
-	 * Delete item sets
+	 * Deletes item sets.
 	 */
 	public function deleteSets(
 		array $data
 	):DeleteResponse;
 
 	/**
-	 * Delete item set config by given id
+	 * Deletes an item set configuration. The ID must be specified.
 	 */
 	public function delete(
 		int $id
 	):DeleteResponse;
 
 	/**
-	 * Return all item set configs
+	 * Lists all item set configurations.
 	 */
 	public function all(
 	):array;

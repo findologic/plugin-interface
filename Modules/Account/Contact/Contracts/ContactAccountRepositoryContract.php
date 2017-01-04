@@ -12,7 +12,7 @@ interface ContactAccountRepositoryContract
 {
 
 	/**
-	 * Returns an account by an id only if it is associated with the given contact id.
+	 * Returns an account by an ID only if it is associated with the given contact ID.
 	 */
 	public function findAccount(
 		int $accountId, 

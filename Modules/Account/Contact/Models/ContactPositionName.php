@@ -3,7 +3,7 @@ namespace Plenty\Modules\Account\Contact\Models;
 
 
 /**
- * contact position name model
+ * The ContactPositionName model
  */
 abstract class ContactPositionName 
 {

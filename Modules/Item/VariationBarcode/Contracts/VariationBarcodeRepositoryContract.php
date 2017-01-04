@@ -6,13 +6,13 @@ use Plenty\Modules\Item\VariationBarcode\Models\VariationBarcode;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * repository for variation barcode
+ * The contract of the variation barcode repository
  */
 interface VariationBarcodeRepositoryContract 
 {
 
 	/**
-	 * Show an VariationBarcode by given id.
+	 * Gets a variation barcode. The ID of the variation and the ID of the barcode must be specified.
 	 */
 	public function show(
 		int $barcodeId, 
@@ -20,14 +20,14 @@ interface VariationBarcodeRepositoryContract
 	):VariationBarcode;
 
 	/**
-	 * Create new VariationBarcode
+	 * Creates a new variation barcode.
 	 */
 	public function create(
 		array $data
 	):VariationBarcode;
 
 	/**
-	 * Update an existing VariationBarcode
+	 * Updates a variation barcode. The ID of the variation and the ID of the barcode must be specified.
 	 */
 	public function update(
 		array $data, 
@@ -36,7 +36,7 @@ interface VariationBarcodeRepositoryContract
 	):VariationBarcode;
 
 	/**
-	 * Delete an VariationBarcode by given variation and barcode id
+	 * Deletes a variation barcode. The ID of the variation and the ID of the barcode must be specified.
 	 */
 	public function delete(
 		int $barcodeId, 
@@ -44,7 +44,7 @@ interface VariationBarcodeRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Get list of VariationBarcode by variationId
+	 * Lists variation barcodes. The ID of the variation must be specified.
 	 */
 	public function findByVariationId(
 		int $variationId

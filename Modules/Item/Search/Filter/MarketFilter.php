@@ -16,7 +16,7 @@ abstract class MarketFilter
 		int $marketId
 	);
 
-	abstract public function isVisibleForAnyMarket(
+	abstract public function isVisibleForAtLeastOneMarket(
 		array $marketIds
 	);
 

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\DefaultShippingCost\Contracts;
 
 
 /**
- * Repository for DefaultShippingCost
+ * The contract for the default shipping cost repository
  */
 interface DefaultShippingCostRepositoryContract 
 {
