@@ -57,7 +57,7 @@ interface OrderDateRepositoryContract
 	):OrderDate;
 
 	/**
-	 * Create or update order date
+	 * Create or update an order date
 	 */
 	public function save(
 		array $data = []
@@ -79,7 +79,7 @@ interface OrderDateRepositoryContract
 	):OrderDate;
 
 	/**
-	 * List order dates
+	 * List order dates of an order
 	 */
 	public function findByOrderId(
 		int $orderId

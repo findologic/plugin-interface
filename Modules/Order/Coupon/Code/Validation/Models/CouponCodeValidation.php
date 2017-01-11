@@ -12,8 +12,6 @@ abstract class CouponCodeValidation
 
 	const VALIDATION_TYPE_PLENTY = 'plenty';
 
-	const VALIDATION_TYPE_AFFILIPRINT = 'affiliprint';
-
 	const GUI_EXCEPTION_MIN_ORDER_VALUE_NOT_REACHED = 18;
 
 	const GUI_EXCEPTION_NOT_USABLE_FOR_SPECIAL_OFFER = 51;

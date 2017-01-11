@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Modules\Plugin\Storage\Contracts;
 
+use Plenty\Modules\Cloud\Storage\Models\StorageObject;
+use Plenty\Modules\Cloud\Storage\Models\StorageObjectList;
 use Plenty\Modules\Plugin\Storage\Exceptions\StorageException;
 
 /**
@@ -18,7 +20,7 @@ interface StorageRepositoryContract
 		string $pathToFile, 
 		boolean $publicVisible = false, 
 		array $metaData = []
-	):boolean;
+	):StorageObject;
 
 	/**
 	 * Create an object with content in $body
@@ -29,7 +31,7 @@ interface StorageRepositoryContract
 		string $body, 
 		boolean $publicVisible = false, 
 		array $metaData = []
-	):boolean;
+	):StorageObject;
 
 	/**
 	 * Get an object
@@ -38,7 +40,17 @@ interface StorageRepositoryContract
 		string $pluginName, 
 		string $key, 
 		boolean $publicVisible = false
-	):array;
+	):StorageObject;
+
+	/**
+	 * Returns the URL to an object identified by its bucket and key. The URL will be signed and set to expire at the provided time.
+	 */
+	public function getObjectUrl(
+		string $pluginName, 
+		string $key, 
+		bool $publicVisible = false, 
+		int $minutesToExpire = 5
+	):string;
 
 	/**
 	 * Get local file resource of an object. Use this if it is really necessary! Using getObject is the normal and effective way.
@@ -66,5 +78,18 @@ interface StorageRepositoryContract
 		string $key, 
 		bool $publicVisible = false
 	):boolean;
+
+	/**
+	 * Returns some or all (up to 1000) objects
+	 */
+	public function listObjects(
+		string $pluginName, 
+		string $prefix = "", 
+		int $limit = 0, 
+		string $startKey = "", 
+		string $continuationToken = "", 
+		bool $publicVisible = false, 
+		bool $resultKeyWithoutPrefix = true
+	):StorageObjectList;
 
 }

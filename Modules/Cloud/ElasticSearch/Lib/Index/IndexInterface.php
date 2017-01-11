@@ -23,6 +23,9 @@ interface IndexInterface
 	public function isAvailable(
 	):bool;
 
+	public function isReady(
+	):bool;
+
 	public function getSettingsClassName(
 	):string;
 

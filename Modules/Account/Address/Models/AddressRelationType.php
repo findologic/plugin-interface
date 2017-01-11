@@ -23,6 +23,8 @@ abstract class AddressRelationType
 
 	const WAREHOUSE_ADDRESS = 7;
 
+	const POS_ADDRESS = 8;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

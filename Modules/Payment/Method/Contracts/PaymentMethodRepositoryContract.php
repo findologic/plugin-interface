@@ -24,6 +24,12 @@ interface PaymentMethodRepositoryContract
 		string $pluginKey
 	):array;
 
+	public function allPluginPaymentMethods(
+	):array;
+
+	public function allOldPaymentMethods(
+	):array;
+
 	/**
 	 * Gets a payment method. The ID of the payment method must be specified.
 	 */

@@ -11,43 +11,41 @@ abstract class ShippingServiceProviderEntry
 	/**
 	 * Get the
 	 */
-	abstract public function getShippingProviderClass(
-	):string;
-
-	abstract public function getShippingProviderMethod(
-	);
-
-	/**
-	 * Set the
-	 */
-	abstract public function setShippingProviderClass(
-		string $shippingProviderClass
-	):\Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries\ShippingServiceProviderEntry;
+	abstract public function getShippingServiceProviderClasses(
+	):array;
 
 	/**
 	 * Get the
 	 */
-	abstract public function getShippingProviderNames(
+	abstract public function getShippingServiceProviderNames(
 	):array;
 
 	/**
 	 * Set the
 	 */
-	abstract public function setShippingProviderNames(
-		array $shippingProviderNames
+	abstract public function setShippingServiceProviderNames(
+		array $shippingServiceProviderNames
 	):\Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries\ShippingServiceProviderEntry;
 
 	/**
 	 * Get the
 	 */
-	abstract public function getShippingProviderPluginName(
+	abstract public function getShippingServiceProviderCode(
 	):string;
 
 	/**
 	 * Set the
 	 */
-	abstract public function setShippingProviderPluginName(
-		string $shippingProviderPluginName
+	abstract public function setShippingServiceProviderCode(
+		string $shippingServiceProviderCode
 	):\Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries\ShippingServiceProviderEntry;
+
+	abstract public function getShippingServiceProviderClass(
+		string $methodName
+	):string;
+
+	abstract public function methodExists(
+		string $methodName
+	):bool;
 
 }

@@ -11,8 +11,6 @@ abstract class CouponCampaign
 
 	const TYPE_PLENTY = 'plenty';
 
-	const TYPE_AFFILIPRINT = 'affiliprint';
-
 	const CODE_LENGTH_SMALL = 'small';
 
 	const CODE_LENGTH_MEDIUM = 'medium';

@@ -11,9 +11,14 @@ abstract class ShippingServiceProviderService
 {
 
 	abstract public function registerShippingProvider(
-		string $shippingProviderCode, 
-		array $shippingProviderNames, 
-		string $shippingProviderClass
+		string $shippingServiceProviderCode, 
+		array $shippingServiceProviderNames, 
+		array $shippingServiceProviderClasses
+	):bool;
+
+	abstract public function hasShippingServiceProviderMethod(
+		string $shippingServiceProviderCode, 
+		string $methodName
 	):bool;
 
 }

@@ -4,11 +4,10 @@ namespace Plenty\Modules\Order\Property\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Order\Property\Models\OrderProperty;
-use Plenty\Modules\Order\Property\Models\OrderPropertyTypeName;
 use Plenty\Modules\Order\Property\Models\OrderPropertyType;
 
 /**
- * The OrderPropertyRepositoryContract contains the functionality to list OrderPropertyTypes and OrderProperties as well as to create, update and delete OrderProperties. Order properties contain information that are additional to an order. An order can only have one property of each property type.
+ * The OrderPropertyRepositoryContract contains the functionality to get, list, create, update and delete  OrderPropertyTypes and OrderProperties as well as OrderProperties. Order properties contain information that are additional to an order. Each property has a type and each type can have several names, but only one name per language. An order can only have one property of each property type.
  */
 interface OrderPropertyRepositoryContract 
 {
@@ -44,10 +43,40 @@ interface OrderPropertyRepositoryContract
 	);
 
 	/**
+	 * Get a property type
+	 */
+	public function getType(
+		int $typeId, 
+		array $languages = []
+	):OrderPropertyType;
+
+	/**
 	 * List order property types
 	 */
 	public function getTypes(
-		array $lang = []
+		array $languages = []
 	);
+
+	/**
+	 * Create an order property type
+	 */
+	public function createType(
+		array $data = []
+	):OrderPropertyType;
+
+	/**
+	 * Update an order property type
+	 */
+	public function updateType(
+		array $data, 
+		int $id
+	):OrderPropertyType;
+
+	/**
+	 * Delete an order property type
+	 */
+	public function deleteType(
+		int $id
+	):boolean;
 
 }
