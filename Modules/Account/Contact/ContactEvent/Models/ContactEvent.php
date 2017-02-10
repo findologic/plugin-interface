@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Account\Contact\ContactEvent\Models;
 
-use Plenty\Modules\Authentication\Models\User;
 
 /**
  * The contact event model

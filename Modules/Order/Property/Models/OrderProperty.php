@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Property\Models;
 
-use Carbon\Carbon;
 use Plenty\Modules\Order\Models\Order;
+use Carbon\Carbon;
 
 /**
  * The order properties model. Each order property has a type.
