@@ -10,7 +10,7 @@ interface ContactClassRepositoryContract
 {
 
 	/**
-	 * Get a contact class
+	 * Gets a contact class. The ID of the contact class must be specified.
 	 */
 	public function findContactClassById(
 		int $contactClassId

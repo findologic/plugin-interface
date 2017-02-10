@@ -12,7 +12,7 @@ interface SalesPriceCurrencyRepositoryContract
 {
 
 	/**
-	 * Creates a sales price currency. The ID of the sales price must be specified.
+	 * Activates a currency for a sales price. The ID of the sales price must be specified.
 	 */
 	public function create(
 		array $data, 
@@ -20,7 +20,7 @@ interface SalesPriceCurrencyRepositoryContract
 	):SalesPriceCurrency;
 
 	/**
-	 * Deletes a sales price currency. The ID of the sales price and the currency must be specified.
+	 * Deactivates a currency for a sales price. The ID of the sales price and the ISO code of the currency must be specified.
 	 */
 	public function delete(
 		int $salesPriceId, 
@@ -28,7 +28,7 @@ interface SalesPriceCurrencyRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Gets a sales price currency. The ID of the sales price and the currency must be specified.
+	 * Gets a sales price currency. The ID of the sales price and the ISO code of the currency must be specified.
 	 */
 	public function findOne(
 		int $salesPriceId, 
@@ -36,14 +36,14 @@ interface SalesPriceCurrencyRepositoryContract
 	):SalesPriceCurrency;
 
 	/**
-	 * Lists sales price currencies. The ID of the sales price must be specified.
+	 * Lists the active currencies of a sales price. The ID of the sales price must be specified.
 	 */
 	public function findByPriceId(
 		int $salesPriceId
 	):array;
 
 	/**
-	 * Deletes sales price currencies. The ID of the sales price must be specified.
+	 * Deactivates the currencies of a sales price. The ID of the sales price must be specified.
 	 */
 	public function deleteByPriceId(
 		int $salesPriceId

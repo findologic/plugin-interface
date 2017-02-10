@@ -12,7 +12,7 @@ interface ShippingServiceProviderRepositoryContract
 {
 
 	/**
-	 * Lists ShippingServiceProvider.
+	 * Lists shipping service providers.
 	 */
 	public function all(
 		array $columns = [], 
@@ -21,7 +21,7 @@ interface ShippingServiceProviderRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Get ShippingServiceProvider by ID.
+	 * Gets a shipping service provider. The ID of the shipping service provider must be specified.
 	 */
 	public function find(
 		int $shippingServiceProviderId
