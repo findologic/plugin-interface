@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Payment\Method\Models;
 
-use Plenty\Modules\Order\Shipping\Countries\Models\Country;
+use Plenty\Modules\System\Models\Webstore;
 
 /**
  * The payment method model
