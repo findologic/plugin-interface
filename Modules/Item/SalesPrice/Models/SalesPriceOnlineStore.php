@@ -9,7 +9,7 @@ abstract class SalesPriceOnlineStore
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$salesPriceId;
+	public		$priceId;
 	public		$plentyId;
 	public		$createdAt;
 	public		$updatedAt;

@@ -20,7 +20,7 @@ interface VariationBarcodeRepositoryContract
 	):VariationBarcode;
 
 	/**
-	 * Creates a variation barcode.
+	 * Creates a new variation barcode.
 	 */
 	public function create(
 		array $data
@@ -44,7 +44,7 @@ interface VariationBarcodeRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Lists all barcodes of a variation. The ID of the variation must be specified.
+	 * Lists variation barcodes. The ID of the variation must be specified.
 	 */
 	public function findByVariationId(
 		int $variationId

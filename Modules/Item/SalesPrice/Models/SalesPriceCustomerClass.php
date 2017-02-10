@@ -9,7 +9,7 @@ abstract class SalesPriceCustomerClass
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$salesPriceId;
+	public		$priceId;
 	public		$customerClassId;
 	public		$createdAt;
 	public		$updatedAt;

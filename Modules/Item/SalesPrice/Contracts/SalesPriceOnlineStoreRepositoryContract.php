@@ -12,7 +12,7 @@ interface SalesPriceOnlineStoreRepositoryContract
 {
 
 	/**
-	 * Activates a client (store) for a sales price. The ID of the sales price must be specified.
+	 * Creates a sales price online store. The ID of the sales price must be specified.
 	 */
 	public function create(
 		array $data, 
@@ -20,7 +20,7 @@ interface SalesPriceOnlineStoreRepositoryContract
 	):SalesPriceOnlineStore;
 
 	/**
-	 * Deactivates a client (store) for a sales price. The ID of the sales price and the ID of the client (store) must be specified.
+	 * Deletes a sales price online store. The ID of the sales price and the ID of the online store must be specified.
 	 */
 	public function delete(
 		int $salesPriceId, 
@@ -28,14 +28,14 @@ interface SalesPriceOnlineStoreRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Deactivates all clients (stores) for a sales price. The ID of the sales price must be specified.
+	 * Deletes sales price online stores. The ID of the sales price must be specified.
 	 */
 	public function deleteByPriceId(
 		int $salesPriceId
 	):DeleteResponse;
 
 	/**
-	 * Gets client (store) information for a sales price. The ID of the sales price and the ID of the client (store) must be specified.
+	 * Gets a sales price online store. The ID of the sales price and the ID of the online store must be specified.
 	 */
 	public function findOne(
 		int $salesPriceId, 
@@ -43,7 +43,7 @@ interface SalesPriceOnlineStoreRepositoryContract
 	):SalesPriceOnlineStore;
 
 	/**
-	 * Lists the active clients (stores) for a sales price. The ID of the sales price must be specified.
+	 * Lists sales price online stores. The ID of the sales price must be specified.
 	 */
 	public function findByPriceId(
 		int $salesPriceId

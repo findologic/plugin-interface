@@ -67,7 +67,7 @@ interface BarcodeRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Creates new barcode referrer for specified referrer.
+	 * Creates new barcode referrer for given referrer.
 	 */
 	public function createBarcodeReferrerRelation(
 		array $data, 
@@ -75,7 +75,7 @@ interface BarcodeRepositoryContract
 	):BarcodeLinkReferrer;
 
 	/**
-	 * Deletes barcode referrer with specified referrer.
+	 * Deletes existing barcode referrer with given referrer.
 	 */
 	public function deleteBarcodeReferrerRelation(
 		float $referrer, 
@@ -83,7 +83,7 @@ interface BarcodeRepositoryContract
 	):bool;
 
 	/**
-	 * Gets barcode referrer by specified referrer.
+	 * Gets barcode referrer with given referrer
 	 */
 	public function findBarcodesByReferrerRelation(
 		float $referrer, 
