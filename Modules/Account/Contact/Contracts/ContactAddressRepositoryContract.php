@@ -17,7 +17,8 @@ interface ContactAddressRepositoryContract
 	 */
 	public function findContactAddressByTypeId(
 		int $contactId, 
-		int $typeId
+		int $typeId, 
+		bool $last = true
 	):Address;
 
 	/**

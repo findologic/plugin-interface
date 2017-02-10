@@ -31,6 +31,8 @@ abstract class OrderDateType
 
 	const ORDER_POSSIBLE_DELIVERY = 11;
 
+	const ORDER_MARKET_TRANSFER_DATE = 12;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

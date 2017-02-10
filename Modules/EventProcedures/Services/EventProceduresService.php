@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\EventProcedures\Services;
 
+use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\EventProcedures\Exceptions\EventProceduresRegisterException;
 use Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 

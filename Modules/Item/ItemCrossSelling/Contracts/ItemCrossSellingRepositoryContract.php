@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\ItemCrossSelling\Models\ItemCrossSelling;
 
 /**
- * Repository for ItemCrossSelling
+ * Repository for item cross-selling
  */
 interface ItemCrossSellingRepositoryContract 
 {

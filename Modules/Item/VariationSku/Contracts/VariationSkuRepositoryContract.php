@@ -18,8 +18,9 @@ interface VariationSkuRepositoryContract
 		int $marketId, 
 		int $accountId, 
 		 $sku = null, 
-		bool $setLastExportedTimestamp = true
-	):string;
+		bool $setLastExportedTimestamp = true, 
+		bool $returnObject = false
+	);
 
 	/**
 	 * Creates an SKU

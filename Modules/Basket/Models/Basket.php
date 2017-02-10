@@ -16,6 +16,7 @@ abstract class Basket
 	public		$sessionId;
 	public		$orderId;
 	public		$customerId;
+	public		$customerInvoiceAddressId;
 	public		$customerShippingAddressId;
 	public		$currency;
 	public		$referrerId;

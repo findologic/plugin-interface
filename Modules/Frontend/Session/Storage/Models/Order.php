@@ -8,6 +8,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
 abstract class Order 
 {
 	public		$deliveryAddressId;
+	public		$invoiceAddressId;
 	public		$parcelServiceId;
 	public		$parcelServicePresetId;
 	public		$methodOfPayment;

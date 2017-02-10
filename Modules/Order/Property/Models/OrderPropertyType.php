@@ -46,6 +46,30 @@ abstract class OrderPropertyType
 
 	const COUPON_TYPE = 19;
 
+	const ORIGINAL_WAREHOUSE = 20;
+
+	const ORIGINAL_QUANTITY = 21;
+
+	const CATEGORY_ID = 22;
+
+	const MARKET_FEE = 23;
+
+	const STOCK_REVERSING = 24;
+
+	const DISPUTE_STATUS = 25;
+
+	const NO_CHANGE_BY_CONTACT = 26;
+
+	const INTERVAL_TYP = 27;
+
+	const INTERVAL_VALUE = 28;
+
+	const SIZE = 29;
+
+	const LOCATION_RESERVED = 30;
+
+	const EXTERNAL_ITEM_SHIPMENT_ID = 31;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

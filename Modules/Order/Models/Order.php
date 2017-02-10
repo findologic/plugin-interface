@@ -4,6 +4,7 @@ namespace Plenty\Modules\Order\Models;
 use Plenty\Modules\Account\Address\Models\Address;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Account\Address\Models\AddressRelationType;
+use Plenty\Modules\Comment\Models\Comment;
 use Carbon\Carbon;
 use Plenty\Modules\Order\Date\Models\OrderDate;
 use Plenty\Modules\Authentication\Models\User;

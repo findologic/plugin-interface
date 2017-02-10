@@ -114,6 +114,12 @@ interface Attribute
 	):Attribute;
 
 	/**
+	 * The field under validation must be a valid plentyId.
+	 */
+	public function validPlentyId(
+	):Attribute;
+
+	/**
 	 * The field under validation must have a different value than field.
 	 */
 	public function different(

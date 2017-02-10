@@ -25,7 +25,8 @@ interface ItemRepositoryContract
 	public function show(
 		int $itemId, 
 		array $columns = [], 
-		string $lang = "de"
+		string $lang = "de", 
+		array $with = []
 	);
 
 	public function search(

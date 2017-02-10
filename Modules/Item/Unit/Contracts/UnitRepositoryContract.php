@@ -4,6 +4,7 @@ namespace Plenty\Modules\Item\Unit\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Unit\Models\Unit;
 use Plenty\Repositories\Models\DeleteResponse;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The contract for the unit repository
@@ -54,6 +55,6 @@ interface UnitRepositoryContract
 		array $columns = [], 
 		int $perPage = 50, 
 		int $page = 1
-	):array;
+	):PaginatedResult;
 
 }

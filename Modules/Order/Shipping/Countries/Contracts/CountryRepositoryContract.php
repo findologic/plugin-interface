@@ -28,4 +28,9 @@ interface CountryRepositoryContract
 		string $language
 	):array;
 
+	public function getCountryByIso(
+		string $isoCode, 
+		string $isoType
+	);
+
 }

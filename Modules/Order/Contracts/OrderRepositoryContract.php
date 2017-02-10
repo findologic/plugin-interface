@@ -27,7 +27,8 @@ interface OrderRepositoryContract
 	 * Create an order
 	 */
 	public function createOrder(
-		array $data
+		array $data, 
+		string $coupon = null
 	):Order;
 
 	/**

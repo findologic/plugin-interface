@@ -41,7 +41,7 @@ interface AddressPosRelationRepositoryContract
 	);
 
 	/**
-	 * List address pos relations.
+	 * Lists address POS relations.
 	 */
 	public function listAddressPosRelations(
 		array $filter = [], 

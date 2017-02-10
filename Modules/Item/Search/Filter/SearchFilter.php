@@ -14,8 +14,14 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 abstract class SearchFilter 
 {
 
+	abstract public function setNamesString(
+		string $string, 
+		string $lang
+	);
+
 	abstract public function setSearchString(
 		string $value, 
+		string $lang, 
 		string $precision = "fuzzy"
 	);
 

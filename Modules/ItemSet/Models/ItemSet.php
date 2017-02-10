@@ -2,7 +2,6 @@
 namespace Plenty\Modules\ItemSet\Models;
 
 use Illuminate\Database\Eloquent\Collection;
-use Carbon\Carbon;
 use Plenty\Modules\Item\Variation\Models\Variation;
 use Plenty\Modules\Item\VariationCategory\Models\VariationCategory;
 use Plenty\Modules\Item\VariationDescription\Models\VariationDescription;

@@ -19,7 +19,7 @@ abstract class Unit
 	public		$isDecimalPlacesAllowed;
 	public		$updatedAt;
 	public		$createdAt;
-	public		$langs;
+	public		$names;
 	
 	/**
 	 * Returns this model as an array.

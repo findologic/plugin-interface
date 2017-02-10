@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\DataExchange\Services;
 
+use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\DataExchange\Contracts\Filters;
 use Plenty\Modules\DataExchange\Contracts\Generator;
 use Plenty\Modules\DataExchange\Contracts\ResultFields;

@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Item\Item\Models\Item;
 
 /**
- * The item cross selling model including item
+ * The item cross-selling model including the item
  */
 abstract class ItemCrossSelling 
 {
@@ -18,7 +18,7 @@ abstract class ItemCrossSelling
 	public		$itemId;
 	public		$crossItemId;
 	public		$relationship;
-	public		$dynamic;
+	public		$isDynamic;
 	public		$item;
 	
 	/**

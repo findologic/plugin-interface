@@ -26,4 +26,8 @@ abstract class ElasticSearch
 
 	const RANGE_OPERATOR_GTE = 'gte';
 
+	const DOMAIN_DATA = 'data';
+
+	const DOMAIN_LOG = 'log';
+
 }

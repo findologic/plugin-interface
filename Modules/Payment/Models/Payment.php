@@ -16,6 +16,8 @@ abstract class Payment
 
 	const TRANSACTION_TYPE_SPLITTED_POSTING = 3;
 
+	const TRANSACTION_TYPE_VIRTUAL_POSTING = 4;
+
 	const STATUS_AWAITING_APPROVAL = 1;
 
 	const STATUS_APPROVED = 2;
@@ -67,10 +69,10 @@ abstract class Payment
 	public		$status;
 	public		$transactionType;
 	public		$mopId;
-	public		$parentId;
-	public		$paymentMethod;
-	public		$history;
-	public		$property;
+	public		$parent;
+	public		$method;
+	public		$histories;
+	public		$properties;
 	
 	/**
 	 * Returns this model as an array.

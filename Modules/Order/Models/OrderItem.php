@@ -4,6 +4,7 @@ namespace Plenty\Modules\Order\Models;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
 use Carbon\Carbon;
+use Plenty\Modules\Order\Date\Models\OrderItemDate;
 
 /**
  * The order item model. Items, shipping costs, coupons, surcharges etc. are all displayed as order items.
@@ -34,6 +35,7 @@ abstract class OrderItem
 	public		$amounts;
 	public		$properties;
 	public		$orderProperties;
+	public		$dates;
 	
 	/**
 	 * Returns this model as an array.

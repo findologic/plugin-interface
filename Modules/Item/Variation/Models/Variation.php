@@ -4,6 +4,7 @@ namespace Plenty\Modules\Item\Variation\Models;
 use Plenty\Modules\Item\Item\Models\Item;
 use Plenty\Modules\Item\ItemImage\Models\ItemImage;
 use Plenty\Modules\Item\VariationDefaultCategory\Models\VariationDefaultCategory;
+use Plenty\Modules\Item\UnitCombination\Models\UnitCombination;
 
 /**
  * Variation
@@ -81,6 +82,7 @@ abstract class Variation
 	public		$variationWarehouses;
 	public		$images;
 	public		$variationAttributeValues;
+	public		$unit;
 	public		$parent;
 	public		$item;
 	

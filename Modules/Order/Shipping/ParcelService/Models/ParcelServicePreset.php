@@ -33,6 +33,7 @@ abstract class ParcelServicePreset
 	public		$auctionType;
 	public		$supportedLoyaltyPrograms;
 	public		$updatedAt;
+	public		$parcelService;
 	
 	/**
 	 * Returns this model as an array.

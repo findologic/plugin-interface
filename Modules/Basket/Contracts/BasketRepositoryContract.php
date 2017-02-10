@@ -15,4 +15,8 @@ interface BasketRepositoryContract
 	public function load(
 	):Basket;
 
+	public function save(
+		array $data
+	);
+
 }

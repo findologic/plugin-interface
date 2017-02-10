@@ -35,6 +35,8 @@ abstract class OrderType
 
 	const TYPE_PARTIAL_DELIVERY = 13;
 
+	const TYPE_SUBSCRIPTION = 14;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

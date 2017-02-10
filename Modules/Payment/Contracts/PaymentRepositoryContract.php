@@ -83,6 +83,16 @@ interface PaymentRepositoryContract
 	):array;
 
 	/**
+	 * Lists payments by payment property type and value.
+	 */
+	public function getPaymentsByPropertyTypeAndValue(
+		int $propertyTypeId, 
+		 $propertyValue, 
+		int $itemsPerPage = 50, 
+		int $page = 0
+	):array;
+
+	/**
 	 * Creates a payment.
 	 */
 	public function createPayment(

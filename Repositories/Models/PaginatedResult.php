@@ -14,7 +14,17 @@ use Plenty\Repositories\Contracts\PaginationOptionsProvider;
 abstract class PaginatedResult 
 {
 
+	/**
+	 * Returns the page number as received
+	 */
 	abstract public function getPage(
+	):int;
+
+	/**
+	 * Returns the normalized page number - checked if out of logical bounds
+( not below 0, not greater than the last page ) and adjusted
+	 */
+	abstract public function getCurrentPage(
 	):int;
 
 	abstract public function getTotalCount(
@@ -22,6 +32,15 @@ abstract class PaginatedResult
 
 	abstract public function isLastPage(
 	):bool;
+
+	abstract public function getItemIndexFrom(
+	):int;
+
+	abstract public function getItemIndexTo(
+	):int;
+
+	abstract public function getLastPage(
+	):int;
 
 	abstract public function getResult(
 	):array;

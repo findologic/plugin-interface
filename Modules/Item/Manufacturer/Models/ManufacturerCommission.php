@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\Manufacturer\Models;
 
-use Plenty\Modules\Item\Manufacturer\Models\Manufacturer;
 
 /**
  * The item manufacturer commission model
@@ -14,7 +13,7 @@ abstract class ManufacturerCommission
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$manufacturerId;
-	public		$clientId;
+	public		$plentyId;
 	public		$referrerId;
 	public		$commission;
 	public		$manufacturer;

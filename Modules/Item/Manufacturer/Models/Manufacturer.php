@@ -13,27 +13,25 @@ abstract class Manufacturer
 	const ITEMS_PER_PAGE = 50;
 
 	const CREATED_AT = 'createdAt';
-	public		$name;
 	public		$id;
+	public		$name;
+	public		$externalName;
 	public		$logo;
 	public		$url;
-	public		$pixmaniaBrandId;
-	public		$neckermannBrandId;
-	public		$externalName;
-	public		$neckermannAtEpBrandId;
-	public		$neckermannAtCdBrandId;
 	public		$street;
 	public		$houseNo;
 	public		$postcode;
 	public		$town;
-	public		$countryId;
 	public		$phoneNumber;
 	public		$faxNumber;
 	public		$email;
+	public		$countryId;
+	public		$pixmaniaBrandId;
+	public		$neckermannAtEpBrandId;
 	public		$laRedouteBrandId;
-	public		$manufacturerComment;
-	public		$lastUpdateTimestamp;
 	public		$position;
+	public		$comment;
+	public		$updatedAt;
 	public		$commissions;
 	
 	/**
