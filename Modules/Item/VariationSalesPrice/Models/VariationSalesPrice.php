@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\VariationSalesPrice\Models;
 
-use Plenty\Modules\Item\SalesPrice\Models\SalesPrice;
 
 /**
  * VariationSalesPrice

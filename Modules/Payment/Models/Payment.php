@@ -2,7 +2,6 @@
 namespace Plenty\Modules\Payment\Models;
 
 use Plenty\Modules\Payment\Method\Models\PaymentMethod;
-use Plenty\Modules\Payment\History\Models\PaymentHistory;
 
 /**
  * The payment model

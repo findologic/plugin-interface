@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Item\VariationImage\Models;
 
-use Plenty\Modules\Item\ItemImage\Models\ItemImage;
 use Plenty\Modules\Item\Variation\Models\Variation;
+use Plenty\Modules\Item\ItemImage\Models\ItemImage;
 
 abstract class VariationImage 
 {

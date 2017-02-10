@@ -2,9 +2,8 @@
 namespace Plenty\Modules\Order\Models;
 
 use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Accounting\Vat\Models\Vat;
 use Carbon\Carbon;
-use Plenty\Modules\Order\Date\Models\OrderItemDate;
+use Plenty\Modules\Accounting\Vat\Models\Vat;
 
 /**
  * The order item model. Items, shipping costs, coupons, surcharges etc. are all displayed as order items.

@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Date\Models;
 
-use Plenty\Modules\Order\Models\Order;
 use Carbon\Carbon;
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * The OrderItemDate model.
