@@ -114,4 +114,17 @@ interface CategoryRepositoryContract
 		array $data
 	):DeleteResponse;
 
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
 }

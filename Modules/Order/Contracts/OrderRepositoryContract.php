@@ -102,4 +102,17 @@ interface OrderRepositoryContract
 		int $orderId
 	):array;
 
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
 }
