@@ -1,10 +1,11 @@
 <?php
 namespace Plenty\Modules\Order\Scheduler\Models;
 
-use Plenty\Modules\Account\Contact\Models\Contact;
-use Illuminate\Database\Eloquent\Collection;
-use Carbon\Carbon;
 use Plenty\Modules\Account\Address\Models\Address;
+use Illuminate\Database\Eloquent\Collection;
+use Plenty\Modules\Account\Contact\Models\Contact;
+use Plenty\Modules\Account\Address\Models\AddressRelationType;
+use Carbon\Carbon;
 
 /**
  * The legacy order model

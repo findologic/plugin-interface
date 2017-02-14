@@ -32,7 +32,7 @@ abstract class PaymentProperty
 
 	const TYPE_EMAIL_OF_SENDER = 12;
 
-	const TYPE_BANC_CODE_OF_SENDER = 13;
+	const TYPE_BANK_CODE_OF_SENDER = 13;
 
 	const TYPE_BANK_NAME_OF_SENDER = 14;
 
@@ -67,6 +67,14 @@ abstract class PaymentProperty
 	const TYPE_EXTERNAL_TRANSACTION_TYPE = 29;
 
 	const TYPE_EXTERNAL_TRANSACTION_STATUS = 30;
+
+	const TYPE_IBAN_OF_RECEIVER = 31;
+
+	const TYPE_BIC_OF_RECEIVER = 32;
+
+	const TYPE_TRANSACTION_FEE = 33;
+
+	const TYPE_TRANSACTION_ENDURANCE = 34;
 
 	const CREATED_AT = 'createdAt';
 

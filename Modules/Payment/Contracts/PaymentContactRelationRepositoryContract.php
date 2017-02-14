@@ -24,8 +24,7 @@ interface PaymentContactRelationRepositoryContract
 	 * Deletes a payment contact relation.
 	 */
 	public function deleteContactRelation(
-		Payment $payment, 
-		Contact $contact
+		Payment $payment
 	):bool;
 
 }
