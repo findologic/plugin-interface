@@ -8,9 +8,6 @@ namespace Plenty\Plugin;
 abstract class ServiceProvider 
 {
 
-	/**
-	 * Register the service provider.
-	 */
 	abstract public function register(
 	);
 

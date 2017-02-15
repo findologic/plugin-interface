@@ -2,6 +2,8 @@
 namespace Plenty\Modules\StockManagement\Stock\Contracts;
 
 use Plenty\Modules\StockManagement\Stock\Models\Stock;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -60,6 +62,19 @@ interface StockRepositoryContract
 	 */
 	public function redistributeStock(
 		array $data
+	);
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
 	);
 
 }

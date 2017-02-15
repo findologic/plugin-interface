@@ -11,7 +11,7 @@ abstract class BaseProcessor
 
 	abstract public function addMutator(
 		MutatorInterface $mutator
-	):BaseProcessor;
+	):self;
 
 	abstract public function process(
 		array $data

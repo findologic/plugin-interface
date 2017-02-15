@@ -9,8 +9,8 @@ abstract class SalesPriceAccount
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$priceId;
-	public		$accountType;
+	public		$salesPriceId;
+	public		$referrerId;
 	public		$accountId;
 	public		$createdAt;
 	public		$updatedAt;

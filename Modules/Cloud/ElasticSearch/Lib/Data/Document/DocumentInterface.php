@@ -13,10 +13,7 @@ interface DocumentInterface
 	public function getIndex(
 	):IndexInterface;
 
-	/**
-	 * Get the instance as an array.
-	 */
 	public function toArray(
-	):array;
+	);
 
 }

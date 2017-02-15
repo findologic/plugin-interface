@@ -5,7 +5,8 @@ namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Source;
 /**
  * foo
  */
-abstract class IncludeSource 
+abstract class IncludeSource implements \Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface
+
 {
 
 	abstract public function toArray(
@@ -17,7 +18,8 @@ abstract class IncludeSource
 	abstract public function activateAll(
 	):\Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
-	abstract public function activate(
-	):\Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
+	abstract public function activateList(
+		array $fields
+	):self;
 
 }

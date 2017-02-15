@@ -12,7 +12,7 @@ interface SalesPriceCustomerClassRepositoryContract
 {
 
 	/**
-	 * Creates a sales price customer class. The ID of the sales price must be specified.
+	 * Activates a customer class for a sales price. The ID of the sales price must be specified.
 	 */
 	public function create(
 		array $data, 
@@ -20,7 +20,7 @@ interface SalesPriceCustomerClassRepositoryContract
 	):SalesPriceCustomerClass;
 
 	/**
-	 * Deletes a sales price customer class. The ID of the sales price and the ID of the customer class must be specified.
+	 * Deactivates a customer class for a sales price. The ID of the sales price and the ID of the customer class must be specified.
 	 */
 	public function delete(
 		int $salesPriceId, 
@@ -28,7 +28,7 @@ interface SalesPriceCustomerClassRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Gets a sales price customer class. The ID of the sales price and the ID of the customer class must be specified.
+	 * Gets a customer class for a sales price. The ID of the sales price and the ID of the customer class must be specified.
 	 */
 	public function findOne(
 		int $salesPriceId, 
@@ -36,14 +36,14 @@ interface SalesPriceCustomerClassRepositoryContract
 	):SalesPriceCustomerClass;
 
 	/**
-	 * Lists sales price customer classes. The ID of the sales price must be specified.
+	 * Lists the active customer classes of a sales price. The ID of the sales price must be specified.
 	 */
 	public function findByPriceId(
 		int $salesPriceId
 	):array;
 
 	/**
-	 * Deletes sales price customer classes. The ID of the sales price must be specified.
+	 * Deactivates the customer classes of a sales price. The ID of the sales price must be specified.
 	 */
 	public function deleteByPriceId(
 		int $salesPriceId

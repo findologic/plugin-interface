@@ -1,15 +1,11 @@
 <?php
 namespace Illuminate\Support;
 
-use BadMethodCallException;
-use Illuminate\Console\Events\ArtisanStarting;
+use Closure;
 
 abstract class ServiceProvider 
 {
 
-	/**
-	 * Register the service provider.
-	 */
 	abstract public function register(
 	):void;
 

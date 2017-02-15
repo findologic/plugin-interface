@@ -9,7 +9,7 @@ abstract class SalesPriceReferrer
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$priceId;
+	public		$salesPriceId;
 	public		$referrerId;
 	public		$createdAt;
 	public		$updatedAt;

@@ -14,7 +14,7 @@ abstract class ExecutePayment
 	 */
 	abstract public function setOrderId(
 		int $orderId
-	):ExecutePayment;
+	):self;
 
 	/**
 	 * Gets the ID of the order.
@@ -27,7 +27,7 @@ abstract class ExecutePayment
 	 */
 	abstract public function setMop(
 		int $mop
-	):ExecutePayment;
+	):self;
 
 	/**
 	 * Gets the ID of the payment method.
@@ -40,7 +40,7 @@ abstract class ExecutePayment
 	 */
 	abstract public function setType(
 		string $type
-	):ExecutePayment;
+	):self;
 
 	/**
 	 * Gets the content type.
@@ -53,7 +53,7 @@ abstract class ExecutePayment
 	 */
 	abstract public function setValue(
 		string $value
-	):ExecutePayment;
+	):self;
 
 	/**
 	 * Gets the value of the content type.

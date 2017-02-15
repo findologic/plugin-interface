@@ -3,6 +3,7 @@ namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\BaseSearch;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\SearchInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
@@ -10,7 +11,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
 /**
  * foo
  */
-abstract class DocumentSearch 
+abstract class DocumentSearch implements SearchInterface
+
 {
 
 	abstract public function getType(
@@ -31,19 +33,19 @@ abstract class DocumentSearch
 
 	abstract public function addFilter(
 		TypeInterface $filter
-	):BaseSearch;
+	):self;
 
 	abstract public function addSource(
 		SourceInterface $source
-	):BaseSearch;
+	):self;
 
 	abstract public function setSorting(
 		SortingInterface $sorting
-	):BaseSearch;
+	):self;
 
 	abstract public function setPage(
 		int $page, 
 		int $rowsPerPage
-	):BaseSearch;
+	):self;
 
 }

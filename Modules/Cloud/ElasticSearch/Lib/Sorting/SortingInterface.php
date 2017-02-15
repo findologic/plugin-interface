@@ -9,10 +9,7 @@ use Illuminate\Contracts\Support\Arrayable;
 interface SortingInterface 
 {
 
-	/**
-	 * Get the instance as an array.
-	 */
 	public function toArray(
-	):array;
+	);
 
 }

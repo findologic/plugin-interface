@@ -12,7 +12,7 @@ interface SalesPriceReferrerRepositoryContract
 {
 
 	/**
-	 * Creates a sales price referrer. The ID of the sales price must be specified.
+	 * Activates a referrer for a sales price. The ID of the sales price must be specified.
 	 */
 	public function create(
 		array $data, 
@@ -20,7 +20,7 @@ interface SalesPriceReferrerRepositoryContract
 	):SalesPriceReferrer;
 
 	/**
-	 * Deletes a sales price referrer. The ID of the sales price and the ID of the referrer must be specified.
+	 * Deactivates a referrer for a sales price. The ID of the sales price and the ID of the referrer must be specified.
 	 */
 	public function delete(
 		int $salesPriceId, 
@@ -28,7 +28,7 @@ interface SalesPriceReferrerRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Gets a sales price referrer. The ID of the sales price and the ID of the referrer must be specified.
+	 * Gets a referrer. The ID of the sales price and the ID of the referrer must be specified.
 	 */
 	public function findOne(
 		int $salesPriceId, 
@@ -36,14 +36,14 @@ interface SalesPriceReferrerRepositoryContract
 	):SalesPriceReferrer;
 
 	/**
-	 * Lists sales price referrers. The ID of the sales price must be specified.
+	 * Lists all activated referrers of a sales. The ID of the sales price must be specified.
 	 */
 	public function findByPriceId(
 		int $salesPriceId
 	):array;
 
 	/**
-	 * Deletes sales price referrers. The ID of the sales price must be specified.
+	 * Deactivates all referrers for a sales price. The ID of the sales price must be specified.
 	 */
 	public function deleteByPriceId(
 		int $salesPriceId

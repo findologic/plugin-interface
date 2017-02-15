@@ -33,6 +33,8 @@ abstract class ParcelServicePreset
 	public		$auctionType;
 	public		$supportedLoyaltyPrograms;
 	public		$updatedAt;
+	public		$parcelServicePresetNames;
+	public		$parcelServiceNames;
 	public		$parcelService;
 	
 	/**

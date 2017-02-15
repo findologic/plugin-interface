@@ -79,6 +79,16 @@ interface OrderRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * List orders having at least one order item with a variation of a supplier
+	 */
+	public function allOrdersBySupplier(
+		int $contactId, 
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		array $with = []
+	):PaginatedResult;
+
+	/**
 	 * Get latest order of a contact
 	 */
 	public function getLatestOrderByContactId(

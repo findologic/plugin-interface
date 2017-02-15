@@ -20,7 +20,7 @@ interface SalesPriceNameRepositoryContract
 	):SalesPriceName;
 
 	/**
-	 * Updates a sales price name. The ID of the sales price and the language must be specified.
+	 * Updates a sales price name. The ID of the sales price and the language code must be specified.
 	 */
 	public function update(
 		array $data, 
@@ -29,7 +29,7 @@ interface SalesPriceNameRepositoryContract
 	):SalesPriceName;
 
 	/**
-	 * Deletes a sales price name. The ID of the sales price and the language must be specified.
+	 * Deletes a sales price name. The ID of the sales price and the language code must be specified.
 	 */
 	public function delete(
 		int $salesPriceId, 
@@ -37,7 +37,7 @@ interface SalesPriceNameRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Gets a sales price name. The ID of the sales price and the language must be specified.
+	 * Gets a sales price name. The ID of the sales price and the language code must be specified.
 	 */
 	public function findOne(
 		int $salesPriceId, 
@@ -45,7 +45,7 @@ interface SalesPriceNameRepositoryContract
 	):SalesPriceName;
 
 	/**
-	 * Lists sales price names. The ID of the sales price must be specified.
+	 * Lists all sales price names of a sales price. The ID of the sales price must be specified.
 	 */
 	public function findByPriceId(
 		int $salesPriceId

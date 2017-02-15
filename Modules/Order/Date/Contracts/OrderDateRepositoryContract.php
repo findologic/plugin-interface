@@ -71,6 +71,14 @@ interface OrderDateRepositoryContract
 	):boolean;
 
 	/**
+	 * Delete a order date specified by the id of the order and the type of the order date.
+	 */
+	public function deleteByOrderIdAndType(
+		int $orderId, 
+		int $typeId
+	);
+
+	/**
 	 * Get an order date
 	 */
 	public function findByOrderIdAndTypeId(

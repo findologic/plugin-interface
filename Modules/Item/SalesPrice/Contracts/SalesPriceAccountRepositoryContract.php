@@ -6,13 +6,13 @@ use Plenty\Modules\Item\SalesPrice\Models\SalesPriceAccount;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * The contract for the sales price account repository
+ * The contract for the sales price referrer account repository
  */
 interface SalesPriceAccountRepositoryContract 
 {
 
 	/**
-	 * Create a sales price account. The ID of the sales price must be specified.
+	 * Activates a referrer account for a sales price. The ID of the sales price must be specified.
 	 */
 	public function create(
 		array $data, 
@@ -20,7 +20,7 @@ interface SalesPriceAccountRepositoryContract
 	):SalesPriceAccount;
 
 	/**
-	 * Deletes a sales price account. The ID of the sales price, the type and the ID of the account must be specified.
+	 * Deactivates a referrer account for a sales price. The ID of the sales price, the type and the ID of the referrer account must be specified.
 	 */
 	public function delete(
 		int $salesPriceId, 
@@ -29,7 +29,7 @@ interface SalesPriceAccountRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Gets a sales price account. The ID of the sales price, the type and the ID of the account must be specified.
+	 * Gets a referrer account for a sales price. The ID of the sales price, the type and the ID of the referrer account must be specified.
 	 */
 	public function findOne(
 		int $salesPriceId, 
@@ -38,14 +38,14 @@ interface SalesPriceAccountRepositoryContract
 	):SalesPriceAccount;
 
 	/**
-	 * Lists sales price accounts. The ID of the sales price must be specified.
+	 * Lists the activated referrer accounts of a sales price. The ID of the sales price must be specified.
 	 */
 	public function findByPriceId(
 		int $salesPriceId
 	):array;
 
 	/**
-	 * Deletes sales price accounts. The ID of the sales price must be specified.
+	 * Deactivates the referrer accounts for a sales price. The ID of the sales price must be specified.
 	 */
 	public function deleteByPriceId(
 		int $salesPriceId

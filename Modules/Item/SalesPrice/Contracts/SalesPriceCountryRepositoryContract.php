@@ -12,7 +12,7 @@ interface SalesPriceCountryRepositoryContract
 {
 
 	/**
-	 * Creates a new sales price country. The ID of the sales price must be specified.
+	 * Activates a country for a sales price. The ID of the sales price must be specified.
 	 */
 	public function create(
 		array $data, 
@@ -20,7 +20,7 @@ interface SalesPriceCountryRepositoryContract
 	):SalesPriceCountry;
 
 	/**
-	 * Deletes a sales price country. The ID of the sales price and the ID of the country must be specified.
+	 * Deactivates a country for a sales price. The ID of the sales price and the ID of the country must be specified.
 	 */
 	public function delete(
 		int $salesPriceId, 
@@ -28,7 +28,7 @@ interface SalesPriceCountryRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Gets a sales price country. The ID of the sales price and the ID of the country must be specified.
+	 * Gets a country for a sales price. The ID of the sales price and the ID of the country must be specified.
 	 */
 	public function findOne(
 		int $salesPriceId, 
@@ -36,14 +36,14 @@ interface SalesPriceCountryRepositoryContract
 	):SalesPriceCountry;
 
 	/**
-	 * Lists sales price countries. The ID of the sales price must be specified.
+	 * Lists the countries for a sales price. The ID of the sales price must be specified.
 	 */
 	public function findByPriceId(
 		int $salesPriceId
 	):array;
 
 	/**
-	 * Deletes sales price countries. The ID of the sales price must be specified.
+	 * Deletes countries from a sales price. The ID of the sales price must be specified.
 	 */
 	public function deleteByPriceId(
 		int $salesPriceId

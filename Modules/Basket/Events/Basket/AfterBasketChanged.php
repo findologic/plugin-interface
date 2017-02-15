@@ -30,27 +30,27 @@ abstract class AfterBasketChanged
 
 	abstract public function setLocationId(
 		int $locationId
-	):AfterBasketChanged;
+	):self;
 
 	abstract public function getInvoiceAddress(
 	):Address;
 
 	abstract public function setInvoiceAddress(
 		Address $invoiceAddress
-	):AfterBasketChanged;
+	):self;
 
 	abstract public function getMaxFsk(
 	):int;
 
 	abstract public function setMaxFsk(
 		int $maxFsk
-	):AfterBasketChanged;
+	):self;
 
 	abstract public function getShippingCosts(
 	):float;
 
 	abstract public function setShippingCosts(
 		float $shippingCosts
-	):AfterBasketChanged;
+	):self;
 
 }

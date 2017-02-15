@@ -9,7 +9,7 @@ abstract class SalesPriceCountry
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$priceId;
+	public		$salesPriceId;
 	public		$countryId;
 	public		$createdAt;
 	public		$updatedAt;

@@ -14,13 +14,13 @@ abstract class Query
 		string $fieldName, 
 		string $operator = null, 
 		 $value = null
-	):Query;
+	):self;
 
 	abstract public function orWhere(
 		string $fieldName, 
 		string $operator = null, 
 		 $value = null
-	):Query;
+	):self;
 
 	abstract public function get(
 	):array;

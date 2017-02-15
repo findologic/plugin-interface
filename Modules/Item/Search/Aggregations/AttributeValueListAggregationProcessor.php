@@ -2,12 +2,14 @@
 namespace Plenty\Modules\Item\Search\Aggregations;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\AggregationProcessor;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 
 /**
  * To be written
  */
-abstract class AttributeValueListAggregationProcessor 
+abstract class AttributeValueListAggregationProcessor implements ProcessorInterface
+
 {
 
 	abstract public function process(
@@ -22,6 +24,6 @@ abstract class AttributeValueListAggregationProcessor
 
 	abstract public function addMutator(
 		MutatorInterface $mutator
-	):BaseProcessor;
+	):self;
 
 }

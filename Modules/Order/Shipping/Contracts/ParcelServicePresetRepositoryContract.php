@@ -6,20 +6,20 @@ use Plenty\Modules\Basket\Models\Basket;
 use Plenty\Modules\Order\Shipping\ParcelService\Models\ParcelServicePreset;
 
 /**
- * The ParcelServicePresetRepositoryContract is the interface for the shipping profile repository. This interface allows to get a shipping profile by the id or list all shipping profiles.
+ * The ParcelServicePresetRepositoryContract is the interface for the shipping profile repository. This interface allows to get a shipping profile by the ID or list all shipping profiles.
  */
 interface ParcelServicePresetRepositoryContract 
 {
 
 	/**
-	 * List all available parcel service presets
+	 * Lists shipping profiles.
 	 */
 	public function getPresetList(
 		array $columns = []
 	):array;
 
 	/**
-	 * Get specific parcel service preset determined by preset id
+	 * Gets a shipping profile. The ID of the shipping profile must be specified.
 	 */
 	public function getPresetById(
 		int $presetId, 

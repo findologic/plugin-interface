@@ -3,6 +3,7 @@ namespace Plenty\Modules\Item\Search\Aggregations;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Nested\NestedTopHitsAggregation;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\SearchInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\IndependentSource;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
@@ -11,7 +12,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
 /**
  * To be written
  */
-abstract class AttributeValueListAggregation 
+abstract class AttributeValueListAggregation implements SearchInterface
+
 {
 
 	const NAME = 'attributes';
@@ -43,20 +45,20 @@ abstract class AttributeValueListAggregation
 
 	abstract public function addFilter(
 		TypeInterface $filter
-	):BaseSearch;
+	):self;
 
 	abstract public function addSource(
 		SourceInterface $source
-	):BaseSearch;
+	):self;
 
 	abstract public function setSorting(
 		SortingInterface $sorting
-	):BaseSearch;
+	):self;
 
 	abstract public function setPage(
 		int $page, 
 		int $rowsPerPage
-	):BaseSearch;
+	):self;
 
 	abstract public function getSources(
 	);

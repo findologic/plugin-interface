@@ -18,7 +18,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 
 	public function setAttributeName(
 		string $attributeName
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -27,7 +27,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 * The field under validation must be yes, on, 1, or true. This is useful for validating "Terms of Service" acceptance.
 	 */
 	public function accepted(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -36,7 +36,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 * The field under validation must be a valid URL according to the checkdnsrr PHP function.
 	 */
 	public function activeUrl(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -46,7 +46,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 */
 	public function dateAfter(
 		string $fieldNameOrTimeStr
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -55,7 +55,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 * The field under validation must be entirely alphabetic characters.
 	 */
 	public function alphabetic(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -64,7 +64,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 * The field under validation may have alpha-numeric characters, as well as dashes and underscores.
 	 */
 	public function alphaDash(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -73,7 +73,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 * The field under validation must be entirely alpha-numeric characters.
 	 */
 	public function alphaNum(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -82,7 +82,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 * The field under validation must be a PHP array.
 	 */
 	public function isArray(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -92,7 +92,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 */
 	public function dateBefore(
 		string $fieldNameOrTimeStr
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -103,7 +103,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	public function between(
 		int $min, 
 		int $max
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -112,7 +112,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 	 * The field under validation must be able to be cast as a boolean. Accepted input are true, false, 1, 0, "1", and "0".
 	 */
 	public function boolean(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -122,7 +122,7 @@ class DummyAttribute implements \Plenty\Validation\Contracts\Attribute
 a matching password_confirmation field must be present in the input.
 	 */
 	public function confirmed(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -131,7 +131,7 @@ a matching password_confirmation field must be present in the input.
 	 * The field under validation must be a valid date according to the strtotime PHP function.
 	 */
 	public function date(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -141,7 +141,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function dateFormat(
 		string $format
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -151,7 +151,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function different(
 		string $fieldName
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -161,7 +161,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function digits(
 		int $count
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -172,7 +172,7 @@ a matching password_confirmation field must be present in the input.
 	public function digitsBetween(
 		int $min, 
 		int $max
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -181,7 +181,7 @@ a matching password_confirmation field must be present in the input.
 	 * The field under validation must be formatted as an e-mail address.
 	 */
 	public function email(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -192,7 +192,7 @@ a matching password_confirmation field must be present in the input.
 	public function exists(
 		string $table, 
 		array $columns = []
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -201,7 +201,7 @@ a matching password_confirmation field must be present in the input.
 	 * The file under validation must be an image (jpeg, png, bmp, gif, or svg)
 	 */
 	public function image(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -211,7 +211,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function in(
 		array $values
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -220,7 +220,7 @@ a matching password_confirmation field must be present in the input.
 	 * The field under validation must be an integer.
 	 */
 	public function integer(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -229,7 +229,7 @@ a matching password_confirmation field must be present in the input.
 	 * The field under validation must be an IP address.
 	 */
 	public function ip(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -238,7 +238,7 @@ a matching password_confirmation field must be present in the input.
 	 * The field under validation must a valid JSON string.
 	 */
 	public function json(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -248,7 +248,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function max(
 		int $value
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -258,7 +258,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function mimeTypes(
 		array $types
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -268,7 +268,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function min(
 		int $value
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -278,7 +278,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function notIn(
 		 $values
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -287,7 +287,7 @@ a matching password_confirmation field must be present in the input.
 	 * The field under validation must be numeric.
 	 */
 	public function numeric(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -297,7 +297,7 @@ a matching password_confirmation field must be present in the input.
 	 */
 	public function regex(
 		string $pattern
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -307,7 +307,7 @@ a matching password_confirmation field must be present in the input.
 The value is null.
 	 */
 	public function required(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -318,7 +318,7 @@ The value is null.
 	public function requiredIf(
 		string $fieldName, 
 		 $value
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -329,7 +329,7 @@ The value is null.
 	public function requiredUnless(
 		string $fieldName, 
 		string $value
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -339,7 +339,7 @@ The value is null.
 	 */
 	public function requiredWith(
 		array $fieldNames
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -349,7 +349,7 @@ The value is null.
 	 */
 	public function requiredWithAll(
 		array $fieldNames
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -359,7 +359,7 @@ The value is null.
 	 */
 	public function requiredWithout(
 		array $fieldNames
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -369,7 +369,7 @@ The value is null.
 	 */
 	public function requiredWithoutAll(
 		array $fieldNames
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -379,7 +379,7 @@ The value is null.
 	 */
 	public function same(
 		string $fieldName
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -389,7 +389,7 @@ The value is null.
 	 */
 	public function size(
 		int $value
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -398,7 +398,7 @@ The value is null.
 	 * The field under validation must be a string.
 	 */
 	public function string(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -407,7 +407,7 @@ The value is null.
 	 * The field under validation must be a valid timezone identifier according to the timezone_identifiers_list PHP function.
 	 */
 	public function timezone(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -420,7 +420,7 @@ The value is null.
 		string $column, 
 		string $except = null, 
 		string $idColumn = null
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -429,7 +429,7 @@ The value is null.
 	 * The field under validation must be a valid URL according to PHP's filter_var function.
 	 */
 	public function url(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -438,7 +438,7 @@ The value is null.
 	 * In some situations, you may wish to run validation checks against a field only if that field is present in the input array. To quickly accomplish this, add the sometimes rule.
 	 */
 	public function sometimes(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -454,7 +454,7 @@ The value is null.
 	 */
 	public function dateW3C(
 		bool $allowTimestamps = false
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -465,7 +465,7 @@ The value is null.
 	public function customRule(
 		string $rule, 
 		array $params
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}
@@ -474,7 +474,7 @@ The value is null.
 	 * The field under validation must be a valid plentyId.
 	 */
 	public function validPlentyId(
-	):DummyAttribute
+	):self
 	{
 		return $this;
 	}

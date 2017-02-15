@@ -28,10 +28,7 @@ interface SearchInterface
 		array $data
 	);
 
-	/**
-	 * Get the instance as an array.
-	 */
 	public function toArray(
-	):array;
+	);
 
 }

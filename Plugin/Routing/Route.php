@@ -13,7 +13,7 @@ abstract class Route
 	 */
 	abstract public function addMiddleware(
 		array $middleware
-	):Route;
+	):self;
 
 	abstract public function getMiddleware(
 	):array;
@@ -21,6 +21,6 @@ abstract class Route
 	abstract public function where(
 		string $name, 
 		 $expression = null
-	):Route;
+	):self;
 
 }

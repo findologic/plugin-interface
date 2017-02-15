@@ -24,7 +24,7 @@ abstract class GetPaymentMethodContent
 	 */
 	abstract public function setMop(
 		int $mop
-	):GetPaymentMethodContent;
+	):self;
 
 	/**
 	 * Gets the ID of the payment method.
@@ -37,7 +37,7 @@ abstract class GetPaymentMethodContent
 	 */
 	abstract public function setType(
 		string $type
-	):GetPaymentMethodContent;
+	):self;
 
 	/**
 	 * Gets the content type.
@@ -50,7 +50,7 @@ abstract class GetPaymentMethodContent
 	 */
 	abstract public function setValue(
 		string $value
-	):GetPaymentMethodContent;
+	):self;
 
 	/**
 	 * Gets the value of the content type.
@@ -63,7 +63,7 @@ abstract class GetPaymentMethodContent
 	 */
 	abstract public function setParams(
 		 $params
-	):GetPaymentMethodContent;
+	):self;
 
 	/**
 	 * Gets the parameters.

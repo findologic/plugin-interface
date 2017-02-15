@@ -6,7 +6,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 /**
  * to be written
  */
-abstract class DocumentProcessor 
+abstract class DocumentProcessor implements \Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface
+
 {
 
 	abstract public function process(
@@ -18,6 +19,6 @@ abstract class DocumentProcessor
 
 	abstract public function addMutator(
 		MutatorInterface $mutator
-	):BaseProcessor;
+	):self;
 
 }
