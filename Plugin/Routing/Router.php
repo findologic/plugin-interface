@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Plugin\Routing;
 
+use Plenty\Plugin\Http\Request;
+use Plenty\Plugin\Http\Response;
 
 /**
  * Router service
@@ -72,5 +74,21 @@ abstract class Router
 		string $uri, 
 		 $action
 	):\Plenty\Plugin\Routing\Route;
+
+	/**
+	 * Register a short-hand name for a middleware.
+	 */
+	abstract public function middleware(
+		string $name, 
+		string $class
+	):self;
+
+	/**
+	 * Create a response instance from the given value.
+	 */
+	abstract public function prepareResponse(
+		Request $request, 
+		Response $response
+	):Response;
 
 }

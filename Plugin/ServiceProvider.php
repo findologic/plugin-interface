@@ -9,6 +9,16 @@ abstract class ServiceProvider
 {
 
 	/**
+	 * Add a new middleware to end of the stack if it does not already exist.
+	 */
+	public function addGlobalMiddleware(
+		string $middleware
+	)
+	{
+		return null;
+	}
+
+	/**
 	 * Register the service provider.
 	 */
 	abstract public function register(
