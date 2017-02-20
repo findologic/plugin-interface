@@ -9,6 +9,9 @@ use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 abstract class DataExchangeServiceProvider 
 {
 
+	/**
+	 * Register the service provider.
+	 */
 	abstract public function register(
 	);
 

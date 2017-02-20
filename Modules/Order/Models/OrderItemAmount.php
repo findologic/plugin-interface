@@ -17,6 +17,7 @@ abstract class OrderItemAmount
 	public		$isSystemCurrency;
 	public		$currency;
 	public		$exchangeRate;
+	public		$purchasePrice;
 	public		$priceOriginalGross;
 	public		$priceOriginalNet;
 	public		$priceGross;

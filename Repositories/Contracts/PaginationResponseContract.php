@@ -38,11 +38,17 @@ interface PaginationResponseContract
 		 $entries
 	);
 
+	/**
+	 * Convert the object to its JSON representation.
+	 */
 	public function toJson(
-		 $options = 0
-	);
+		int $options = 0
+	):string;
 
+	/**
+	 * Get the instance as an array.
+	 */
 	public function toArray(
-	);
+	):array;
 
 }

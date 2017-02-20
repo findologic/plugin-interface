@@ -9,7 +9,10 @@ use Illuminate\Contracts\Support\Arrayable;
 interface SettingsInterface 
 {
 
+	/**
+	 * Get the instance as an array.
+	 */
 	public function toArray(
-	);
+	):array;
 
 }
