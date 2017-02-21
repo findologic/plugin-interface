@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\VariationCategory\Models;
 
-use Plenty\Modules\Category\Models\Category;
 
 /**
  * Variation Category

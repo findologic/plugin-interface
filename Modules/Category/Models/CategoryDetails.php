@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Category\Models;
 
-use Plenty\Modules\Document\Models\Document;
+use Carbon\Carbon;
 
 /**
  * CategoryDetails
@@ -30,12 +30,10 @@ abstract class CategoryDetails
 	public		$singleItemView;
 	public		$pageView;
 	public		$fulltext;
-	public		$placeholderTranslation;
-	public		$webTemplateExists;
 	public		$metaRobots;
 	public		$canonicalLink;
-	public		$imageDocument;
-	public		$image2Document;
+	public		$updatedAt;
+	public		$updatedBy;
 	public		$category;
 	
 	/**
