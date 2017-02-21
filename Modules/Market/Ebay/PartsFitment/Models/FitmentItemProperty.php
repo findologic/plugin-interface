@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Market\Ebay\PartsFitment\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The fitment item property model. This bleongs to an FitmentItem model.

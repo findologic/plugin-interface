@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Category\Models;
 
+use Carbon\Carbon;
 use Plenty\Modules\Document\Models\Document;
 
 /**
