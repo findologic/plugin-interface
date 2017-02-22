@@ -76,6 +76,7 @@ abstract class OrderPropertyType
 	public		$id;
 	public		$isErasable;
 	public		$position;
+	public		$cast;
 	public		$names;
 	
 	/**

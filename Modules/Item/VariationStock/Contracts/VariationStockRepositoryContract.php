@@ -2,9 +2,9 @@
 namespace Plenty\Modules\Item\VariationStock\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Plenty\Modules\StockManagement\Stock\Models\StockStorageLocation;
 use Plenty\Modules\Item\VariationStock\Models\VariationStock;
 use Plenty\Modules\Item\VariationStock\Models\VariationStockMovement;
+use Plenty\Modules\StockManagement\Stock\Models\StockStorageLocation;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**

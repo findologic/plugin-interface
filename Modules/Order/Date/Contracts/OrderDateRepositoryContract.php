@@ -1,11 +1,11 @@
 <?php
 namespace Plenty\Modules\Order\Date\Contracts;
 
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Order\Date\Models\OrderDate;
-use Plenty\Modules\Order\Date\Models\OrderDateTypeName;
 use Plenty\Modules\Order\Date\Models\OrderDateType;
+use Plenty\Modules\Order\Date\Models\OrderDateTypeName;
 
 /**
  * The OrderDateRepositoryContract contains the functionality to find available OrderDateTypes with their names in a specific language. Furthermore it is possible to create new OrderDateTypes, to update or delete existing date types and to create date type names for a language.

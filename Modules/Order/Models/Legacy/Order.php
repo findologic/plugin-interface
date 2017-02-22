@@ -1,9 +1,9 @@
 <?php
 namespace Plenty\Modules\Order\Models\Legacy;
 
-use Plenty\Modules\Account\Contact\Models\Contact;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Account\Address\Models\Address;
+use Plenty\Modules\Account\Contact\Models\Contact;
 
 /**
  * The legacy order model

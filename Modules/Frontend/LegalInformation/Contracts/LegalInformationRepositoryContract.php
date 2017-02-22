@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Frontend\LegalInformation\Contracts;
 
-use Plenty\Modules\Frontend\LegalInformation\Models\LegalInformation;
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Frontend\LegalInformation\Models\LegalInformation;
 
 /**
  * Repository contract for LegalInformation model.

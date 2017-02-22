@@ -2,10 +2,10 @@
 namespace Plenty\Modules\DataExchange\Contracts;
 
 use Plenty\Modules\DataExchange\Models\FormatSetting;
+use \DOMAttr;
+use \DOMCdataSection;
 use \DOMElement;
 use \DOMText;
-use \DOMCdataSection;
-use \DOMAttr;
 
 /**
  * generator for xml content

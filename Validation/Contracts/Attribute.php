@@ -120,6 +120,22 @@ interface Attribute
 	):self;
 
 	/**
+	 * The field under validation must have the type specified in the database.
+	 */
+	public function typeFromDb(
+		string $table, 
+		string $column, 
+		string $attribute, 
+		string $comparisonKey = "id"
+	):self;
+
+	/**
+	 * The field under validation must be a valid data type used by the validation rule 'typeFromDb'.
+	 */
+	public function validDbType(
+	):self;
+
+	/**
 	 * The field under validation must have a different value than field.
 	 */
 	public function different(

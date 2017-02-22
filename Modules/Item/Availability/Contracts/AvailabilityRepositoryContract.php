@@ -10,10 +10,30 @@ interface AvailabilityRepositoryContract
 {
 
 	/**
-	 * Find an availability configuration by a given id.
+	 * Gets an item availability. The ID of the availability must be specified.
 	 */
 	public function findAvailability(
 		int $id
 	):Availability;
+
+	/**
+	 * Gets an item availability. The ID of the availability must be specified.
+	 */
+	public function find(
+		int $id
+	):Availability;
+
+	/**
+	 * Updates an item availability.
+	 */
+	public function update(
+		array $data
+	):Availability;
+
+	/**
+	 * Lists all item availabilities.
+	 */
+	public function all(
+	):array;
 
 }

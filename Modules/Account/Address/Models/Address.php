@@ -1,12 +1,12 @@
 <?php
 namespace Plenty\Modules\Account\Address\Models;
 
-use Plenty\Modules\Account\Contact\Models\Contact;
-use Illuminate\Database\Eloquent\Collection;
 use Carbon\Carbon;
-use Plenty\Modules\Order\Shipping\Countries\Models\Country;
+use Illuminate\Database\Eloquent\Collection;
+use Plenty\Modules\Account\Contact\Models\Contact;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
+use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
  * The address model

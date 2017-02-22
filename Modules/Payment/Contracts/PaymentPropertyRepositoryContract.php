@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Payment\Contracts;
 
-use Plenty\Modules\Payment\Models\PaymentProperty;
 use League\Flysystem\Exception;
+use Plenty\Modules\Payment\Models\PaymentProperty;
 
 /**
  * The PaymentPropertyRepositoryContract is the interface for the payment property repository. List, get, create and update payment properties.

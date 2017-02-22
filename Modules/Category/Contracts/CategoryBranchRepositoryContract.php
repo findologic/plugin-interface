@@ -3,9 +3,9 @@ namespace Plenty\Modules\Category\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Category\Models\CategoryBranch;
-use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Contracts\PaginationResponseContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 
 /**
  * Repository Contract for CategoryBranch

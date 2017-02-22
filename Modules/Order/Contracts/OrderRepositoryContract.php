@@ -1,10 +1,10 @@
 <?php
 namespace Plenty\Modules\Order\Contracts;
 
-use Plenty\Modules\Order\Date\Models\OrderDate;
-use Plenty\Modules\Order\Models\Order;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Order\Date\Models\OrderDate;
+use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Models\PaginatedResult;

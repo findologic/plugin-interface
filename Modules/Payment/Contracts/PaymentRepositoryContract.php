@@ -3,8 +3,8 @@ namespace Plenty\Modules\Payment\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Validation\ValidationException;
-use Plenty\Modules\Payment\Models\Payment;
 use Plenty\Modules\Order\Models\Order;
+use Plenty\Modules\Payment\Models\Payment;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 
 /**

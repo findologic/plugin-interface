@@ -2,10 +2,10 @@
 namespace Plenty\Modules\Accounting\Vat\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Modules\Accounting\Vat\Models\Vat;
+use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Contracts\SortableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
-use Plenty\Repositories\Contracts\FilterableContract;
-use Plenty\Modules\Accounting\Vat\Models\Vat;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**

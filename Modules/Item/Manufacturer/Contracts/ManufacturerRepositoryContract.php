@@ -2,6 +2,8 @@
 namespace Plenty\Modules\Item\Manufacturer\Contracts;
 
 use Plenty\Modules\Item\Manufacturer\Models\Manufacturer;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -56,5 +58,18 @@ interface ManufacturerRepositoryContract
 		array $params = [], 
 		array $columns = []
 	):PaginatedResult;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
 
 }

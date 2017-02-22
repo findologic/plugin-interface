@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Authentication\Models\User;
 
@@ -36,6 +36,8 @@ abstract class Order
 	public		$amounts;
 	public		$comments;
 	public		$dates;
+	public		$originOrder;
+	public		$parentOrder;
 	
 	/**
 	 * Returns this model as an array.

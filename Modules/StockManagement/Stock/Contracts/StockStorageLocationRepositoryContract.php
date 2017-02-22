@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\StockManagement\Stock\Contracts;
 
-use Plenty\Repositories\Models\PaginatedResult;
 use Plenty\Modules\StockManagement\Stock\Models\StockStorageLocation;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The StockStorageLocationRepositoryContract is the interface for the stock storage location repository. This interface allows you to list the stock of all storage locations of a warehouse or to list all storage locations of a variation and the stock stored at these locations.

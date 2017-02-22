@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Helper\Services;
 
-use Plenty\Modules\System\Models\WebstoreConfiguration;
 use Plenty\Modules\System\Contracts\WebstoreConfigurationRepositoryContract;
+use Plenty\Modules\System\Models\WebstoreConfiguration;
 
 /**
  * Webstore Helper Service

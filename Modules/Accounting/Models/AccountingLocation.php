@@ -2,8 +2,8 @@
 namespace Plenty\Modules\Accounting\Models;
 
 use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
+use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
  * The Accounting Location model it is always associated with a client and country and contains the vat configuration, which is displayed in the Vat model.

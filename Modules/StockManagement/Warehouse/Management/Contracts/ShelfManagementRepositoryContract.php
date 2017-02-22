@@ -1,13 +1,13 @@
 <?php
 namespace Plenty\Modules\StockManagement\Warehouse\Management\Contracts;
 
-use\Management\Contracts;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\StockManagement\Warehouse\Management\Models\Shelf;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Repositories\Models\PaginatedResult;
-use Plenty\Modules\StockManagement\Warehouse\Management\Models\Shelf;
-use Plenty\Exceptions\ValidationException;
+use\Management\Contracts;
 
 /**
  * The ShelfManagementRepositoryContract is the interface for the shelf management repository. This interface provides the functionality to manage the warehouse configuration for shelves. Shelves can be retrieved, created or updated here.

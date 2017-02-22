@@ -44,13 +44,6 @@ interface VariationPropertyValueRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Gets the data of a property value linked to a variation. The ID of the variation property value must be specified.
-	 */
-	public function findById(
-		int $id
-	):VariationPropertyValue;
-
-	/**
 	 * Lists the property values linked to a variation. The ID of the variation must be specified.
 	 */
 	public function findByVariationId(

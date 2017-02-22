@@ -1,21 +1,19 @@
 <?php
 namespace Plenty\Modules\Item\Availability\Models;
 
-use Illuminate\Support\Collection;
 
 /**
- * The item availability model
+ * The item availability name model
  */
-abstract class Availability 
+abstract class AvailabilityName 
 {
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$icon;
-	public		$averageDays;
-	public		$names;
+	public		$availabilityId;
+	public		$lang;
+	public		$name;
 	
 	/**
 	 * Returns this model as an array.

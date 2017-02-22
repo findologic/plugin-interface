@@ -1,10 +1,10 @@
 <?php
 namespace Plenty\Modules\Item\VariationWarehouse\Contracts;
 
-use\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\VariationWarehouse\Models\VariationWarehouse;
 use Plenty\Repositories\Models\DeleteResponse;
+use\Contracts;
 
 /**
  * The contract for the variation warehouse repository

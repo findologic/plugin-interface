@@ -1,13 +1,13 @@
 <?php
 namespace Plenty\Modules\Category\Contracts;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Category\Models\Category;
-use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
-use Plenty\Exceptions\ValidationException;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 /**
  * Repository for categories

@@ -5,8 +5,8 @@ use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Basket\Contracts\BasketRepositoryContract;
 use Plenty\Modules\Basket\Models\Basket;
-use Plenty\Modules\Order\Coupon\Code\Validation\Models\CouponCodeValidation;
 use Plenty\Modules\Order\Contracts\PriceCalculatorContract;
+use Plenty\Modules\Order\Coupon\Code\Validation\Models\CouponCodeValidation;
 use Plenty\Modules\Order\Models\PriceCalculationResult;
 
 /**

@@ -1,13 +1,13 @@
 <?php
 namespace Plenty\Modules\StockManagement\Warehouse\Management\Contracts;
 
-use\Management\Contracts;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\StockManagement\Warehouse\Management\Models\StorageLocation;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
-use Plenty\Modules\StockManagement\Warehouse\Management\Models\StorageLocation;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Repositories\Models\PaginatedResult;
-use Plenty\Exceptions\ValidationException;
+use\Management\Contracts;
 
 /**
  * The StorageLocationManagementRepositoryContract is the interface for the storage location management repository. This interface provides the functionality to manage the warehouse configuration for storage locations. Storage locations can be retrieved, created or updated here.

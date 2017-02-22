@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Plugin\Templates\Extensions;
 
-use \Twig_Extension as TwigExtension;
 use TwigBridge\Twig\Globals;
+use \Twig_Extension as TwigExtension;
 
 /**
  * Twig extension

@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The order amount model.

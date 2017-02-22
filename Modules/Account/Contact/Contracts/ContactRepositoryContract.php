@@ -2,11 +2,11 @@
 namespace Plenty\Modules\Account\Contact\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Account\Contact\Models\Contact;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Contracts\SortableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**

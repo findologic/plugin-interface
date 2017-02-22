@@ -479,4 +479,26 @@ The value is null.
 		return $this;
 	}
 
+	/**
+	 * The field under validation must have the type specified in the database.
+	 */
+	public function typeFromDb(
+		string $table, 
+		string $column, 
+		string $attribute, 
+		string $comparisonKey = "id"
+	):self
+	{
+		return $this;
+	}
+
+	/**
+	 * The field under validation must be a valid data type used by the validation rule 'typeFromDb'.
+	 */
+	public function validDbType(
+	):self
+	{
+		return $this;
+	}
+
 }

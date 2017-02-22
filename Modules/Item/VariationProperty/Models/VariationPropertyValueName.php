@@ -6,27 +6,17 @@ use Plenty\Modules\Item\Property\Models\PropertySelection;
 use Plenty\Modules\Item\Variation\Models\Variation;
 
 /**
- * The VariationPropertyValue
+ * The VariationPropertyName
  */
-abstract class VariationPropertyValue 
+abstract class VariationPropertyValueName 
 {
-
-	const ITEMS_PER_PAGE = 50;
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$variationId;
-	public		$propertyId;
-	public		$propertySelectionId;
-	public		$valueInt;
-	public		$valueFloat;
-	public		$valueFile;
-	public		$surcharge;
-	public		$names;
-	public		$property;
-	public		$propertySelection;
+	public		$propertyValueId;
+	public		$lang;
+	public		$value;
 	
 	/**
 	 * Returns this model as an array.

@@ -2,11 +2,11 @@
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\BaseSearch;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\SearchInterface;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
 /**
  * foo

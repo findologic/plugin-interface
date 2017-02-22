@@ -2,8 +2,8 @@
 namespace Plenty\Modules\Payment\Method\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Plenty\Modules\Payment\Method\Models\PaymentMethod;
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Payment\Method\Models\PaymentMethod;
 
 /**
  * The PaymentMethodRepositoryContract is the interface for the payment method repository. List, get, create and update payment methods.

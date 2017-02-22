@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Index;
 
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Info\InfoInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Meta\MetaInterface;
 
 /**
@@ -39,17 +40,8 @@ interface IndexInterface
 	public function getMeta(
 	):array;
 
-	public function preCreate(
-	);
-
-	public function postCreate(
-	);
-
-	public function preDelete(
-	);
-
-	public function postDelete(
-	);
+	public function getInfo(
+	):InfoInterface;
 
 	public function resetAvailibilityStatus(
 	);

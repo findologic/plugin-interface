@@ -3,9 +3,9 @@ namespace Plenty\Modules\Item\Search\Filter;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 
 /**
  * to bew written

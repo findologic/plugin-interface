@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Payment\History\Contracts;
 
-use Plenty\Modules\Payment\History\Models\PaymentHistory;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Modules\Payment\History\Models\PaymentHistory;
 
 /**
  * The PaymentHistoryRepositoryContract is the interface for the payment history repository. Get and create the payment history.
