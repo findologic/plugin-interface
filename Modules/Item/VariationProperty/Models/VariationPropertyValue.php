@@ -27,6 +27,7 @@ abstract class VariationPropertyValue
 	public		$names;
 	public		$property;
 	public		$propertySelection;
+	public		$;
 	
 	/**
 	 * Returns this model as an array.

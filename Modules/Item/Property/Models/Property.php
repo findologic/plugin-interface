@@ -31,6 +31,7 @@ abstract class Property
 	public		$updatedAt;
 	public		$names;
 	public		$marketComponents;
+	public		$group;
 	
 	/**
 	 * Returns this model as an array.
