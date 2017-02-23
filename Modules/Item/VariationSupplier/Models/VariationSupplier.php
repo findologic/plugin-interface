@@ -17,12 +17,12 @@ abstract class VariationSupplier
 	public		$variationId;
 	public		$supplierId;
 	public		$purchasePrice;
-	public		$minimumOrderValue;
+	public		$minimumPurchase;
 	public		$itemNumber;
 	public		$lastPriceQuery;
 	public		$deliveryTimeInDays;
 	public		$discount;
-	public		$discountable;
+	public		$isDiscountable;
 	public		$packagingUnit;
 	public		$lastUpdateTimestamp;
 	public		$createdAt;

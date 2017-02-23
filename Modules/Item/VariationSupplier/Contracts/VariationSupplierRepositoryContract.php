@@ -15,7 +15,7 @@ interface VariationSupplierRepositoryContract
 	 * Gets the data of a supplier linked to a variation. The variation supplier ID must be specified.
 	 */
 	public function show(
-		int $variationSupplierId
+		int $id
 	):VariationSupplier;
 
 	/**
@@ -30,14 +30,14 @@ interface VariationSupplierRepositoryContract
 	 */
 	public function update(
 		array $data, 
-		int $variationSupplierId
+		int $id
 	):VariationSupplier;
 
 	/**
 	 * Deletes a link between a supplier and a variation. The variation supplier ID must be specified.
 	 */
 	public function delete(
-		int $variationSupplierId
+		int $id
 	):DeleteResponse;
 
 	/**
