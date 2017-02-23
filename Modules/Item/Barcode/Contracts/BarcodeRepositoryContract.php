@@ -80,7 +80,7 @@ interface BarcodeRepositoryContract
 	public function deleteBarcodeReferrerRelation(
 		float $referrer, 
 		int $barcodeId
-	):bool;
+	):DeleteResponse;
 
 	/**
 	 * Gets barcode referrer by specified referrer.
