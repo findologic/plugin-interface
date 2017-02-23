@@ -2,8 +2,8 @@
 namespace Plenty\Modules\DataExchange\Services;
 
 use Plenty\Log\Traits\Loggable;
-use Plenty\Modules\DataExchange\Contracts\Filters;
 use Plenty\Modules\DataExchange\Contracts\Generator;
+use Plenty\Modules\DataExchange\Contracts\PluginGenerator;
 use Plenty\Modules\DataExchange\Contracts\ResultFields;
 use Plenty\Modules\DataExchange\Models\ExportPreset;
 
@@ -17,7 +17,8 @@ abstract class ExportPresetContainer
 		string $exportKey, 
 		string $resultFieldsClass, 
 		string $generatorClass, 
-		string $filtersClass = ""
+		string $filterClass = "", 
+		bool $isPlugin = false
 	);
 
 }
