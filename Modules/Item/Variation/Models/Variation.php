@@ -64,6 +64,7 @@ abstract class Variation
 	public		$bundleType;
 	public		$automaticClientVisibility;
 	public		$isHiddenInCategoryList;
+	public		$defaultShippingCosts;
 	public		$categoryVariationId;
 	public		$marketVariationId;
 	public		$clientVariationId;

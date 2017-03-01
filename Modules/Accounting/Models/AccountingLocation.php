@@ -18,6 +18,7 @@ abstract class AccountingLocation
 	public		$countryId;
 	public		$name;
 	public		$clientId;
+	public		$plentyId;
 	public		$vats;
 	public		$country;
 	

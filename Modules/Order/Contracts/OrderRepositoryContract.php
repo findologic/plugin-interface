@@ -89,6 +89,16 @@ interface OrderRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * List orders of a sender contact
+	 */
+	public function allOrdersByContactSender(
+		int $contactId, 
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		array $with = []
+	):PaginatedResult;
+
+	/**
 	 * Get latest order of a contact
 	 */
 	public function getLatestOrderByContactId(

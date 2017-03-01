@@ -7,6 +7,7 @@ use Plenty\Modules\Account\Contact\Models\Contact;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
+use Plenty\Modules\Order\Shipping\Countries\Models\CountryState;
 
 /**
  * The address model
@@ -62,6 +63,7 @@ abstract class Address
 	public		$contacts;
 	public		$orders;
 	public		$country;
+	public		$state;
 	public		$contactRelations;
 	public		$orderRelations;
 	public		$warehouseRelations;

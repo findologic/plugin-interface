@@ -47,4 +47,12 @@ interface VariationRepositoryContract
 		int $variationId
 	):Variation;
 
+	/**
+	 * Update a variation. The ID of the variation must be specified.
+	 */
+	public function update(
+		array $data, 
+		int $variationId
+	):Variation;
+
 }

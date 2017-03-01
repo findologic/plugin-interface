@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Category\Models;
 
 use Carbon\Carbon;
+use Plenty\Modules\System\Models\Webstore;
 
 /**
  * CategoryDetails

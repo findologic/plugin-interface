@@ -18,7 +18,7 @@ interface ShippingServiceProviderRepositoryContract
 		array $columns = [], 
 		int $page = 1, 
 		int $itemsPerPage = 50
-	):PaginatedResult;
+	);
 
 	/**
 	 * Gets a shipping service provider. The ID of the shipping service provider must be specified.
