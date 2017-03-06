@@ -25,8 +25,7 @@ interface PaymentOrderRelationRepositoryContract
 	 * Deletes a payment order relation.
 	 */
 	public function deleteOrderRelation(
-		Payment $payment, 
-		Order $order
+		Payment $payment
 	):bool;
 
 }
