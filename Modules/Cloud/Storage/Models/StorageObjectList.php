@@ -10,6 +10,7 @@ abstract class StorageObjectList
 	public		$isTruncated;
 	public		$nextContinuationToken;
 	public		$objects;
+	public		$commonPrefixes;
 	
 	/**
 	 * Returns this model as an array.
