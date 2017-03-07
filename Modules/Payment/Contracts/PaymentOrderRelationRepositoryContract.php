@@ -19,13 +19,13 @@ interface PaymentOrderRelationRepositoryContract
 	public function createOrderRelation(
 		Payment $payment, 
 		Order $order
-	):bool;
+	):PaymentOrderRelation;
 
 	/**
 	 * Deletes a payment order relation.
 	 */
 	public function deleteOrderRelation(
 		Payment $payment
-	):bool;
+	);
 
 }
