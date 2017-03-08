@@ -36,6 +36,7 @@ abstract class ParcelServicePreset
 	public		$parcelServicePresetNames;
 	public		$parcelServiceNames;
 	public		$parcelService;
+	public		$parcelService;
 	
 	/**
 	 * Returns this model as an array.

@@ -13,13 +13,13 @@ use Plenty\Modules\Order\Events\OrderCreated;
 use Plenty\Modules\Order\Models\OrderType;
 
 /**
- * (Un)Register event classes extending OrderCreated for custom order types.
+ * This class is used as an event listener as well as a service for registering events. The class allows to register event classes to extend the OrderCreated event for custom order types.
  */
 class OrderCreatedTypeService 
 {
 
 	/**
-	 * Handle the OrderCreated event by detecting the subevent to fire according the order type id of the order.
+	 * Reacts upon the OrderCreated event
 	 */
 	public function handle(
 		OrderCreated $created
@@ -29,7 +29,7 @@ class OrderCreatedTypeService
 	}
 
 	/**
-	 * Add an event class extending OrderCreated for the given custom order type id.
+	 * Create event class for a custom order type
 	 */
 	public static function addEventForType(
 		int $typeId, 
@@ -40,7 +40,7 @@ class OrderCreatedTypeService
 	}
 
 	/**
-	 * Removes an event class for the given custom order type id.
+	 * Delete event class from a custom order type
 	 */
 	public static function removeEventForType(
 		int $typeId, 

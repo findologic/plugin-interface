@@ -20,6 +20,7 @@ abstract class Model
 	protected		$primaryKeyFieldName = "id";
 	protected		$primaryKeyFieldType = "int";
 	protected		$autoIncrementPrimaryKey = true;
+	protected		$textFields;
 	
 	abstract public function getTableName(
 	):string;

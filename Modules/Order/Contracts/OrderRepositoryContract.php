@@ -123,6 +123,14 @@ interface OrderRepositoryContract
 	):array;
 
 	/**
+	 * Cancel an order
+	 */
+	public function cancelOrder(
+		int $orderId, 
+		array $data
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
