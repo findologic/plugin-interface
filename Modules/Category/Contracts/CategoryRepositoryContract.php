@@ -51,6 +51,14 @@ interface CategoryRepositoryContract
 	):bool;
 
 	/**
+	 * Returns children of the category.
+	 */
+	public function getChildren(
+		int $categoryId, 
+		string $lang = "de"
+	):array;
+
+	/**
 	 * Retrieves the url for a category.
 	 */
 	public function getUrl(
