@@ -9,6 +9,8 @@ use Plenty\Modules\DataExchange\Models\FormatSetting;
 abstract class CSVGenerator 
 {
 
+	const RESOURCE_PATH = 'data_exchange/exports';
+
 	protected function setDelimiter(
 		string $delimiter
 	)

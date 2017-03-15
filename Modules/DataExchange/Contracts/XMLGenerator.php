@@ -12,6 +12,8 @@ use \DOMText;
  */
 abstract class XMLGenerator 
 {
+
+	const RESOURCE_PATH = 'data_exchange/exports';
 	protected		$version = "1.0";
 	protected		$encoding = "UTF-8";
 	protected		$formatOutput = true;

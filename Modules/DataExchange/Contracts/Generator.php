@@ -9,6 +9,8 @@ use Plenty\Modules\DataExchange\Models\FormatSetting;
 abstract class Generator 
 {
 
+	const RESOURCE_PATH = 'data_exchange/exports';
+
 	protected function addContent(
 		string $content
 	)
