@@ -28,6 +28,10 @@ interface VariationLookupRepositoryContract
 		string $number
 	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
+	public function hasAttributeValueMap(
+		array $attributeValueMap
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
+
 	public function limit(
 		int $limit
 	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;

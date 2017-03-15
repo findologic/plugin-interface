@@ -48,6 +48,13 @@ interface AttributeRepositoryContract
 	):Attribute;
 
 	/**
+	 * Gets an attribute. The backend name of the attribute must be specified.
+	 */
+	public function findByBackendName(
+		string $backendName
+	):Attribute;
+
+	/**
 	 * Lists all attributes.
 	 */
 	public function all(
