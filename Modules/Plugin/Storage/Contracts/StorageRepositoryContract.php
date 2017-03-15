@@ -80,14 +80,6 @@ interface StorageRepositoryContract
 	):boolean;
 
 	/**
-	 * Deletes the Plugin from Inbox
-	 */
-	public function deletePlugin(
-		string $pluginName, 
-		boolean $isClosedSource = false
-	):boolean;
-
-	/**
 	 * Returns some or all (up to 1000) objects
 	 */
 	public function listObjects(
