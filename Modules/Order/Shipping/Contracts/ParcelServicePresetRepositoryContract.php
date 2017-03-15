@@ -15,7 +15,8 @@ interface ParcelServicePresetRepositoryContract
 	 * Lists shipping profiles.
 	 */
 	public function getPresetList(
-		array $columns = []
+		array $columns, 
+		string $with
 	):array;
 
 	/**

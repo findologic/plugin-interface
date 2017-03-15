@@ -6,6 +6,7 @@ use Plenty\Exceptions\ModelWithUniqueFieldException;
 use Plenty\Modules\Market\Ebay\PartsFitment\Models\Fitment;
 use Plenty\Repositories\Contracts\SortableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Models\DeleteResponse;
 
 /**
  * The contract for the fitment repository.
@@ -40,6 +41,6 @@ interface FitmentRepositoryContract
 	 */
 	public function delete(
 		int $id
-	):bool;
+	):DeleteResponse;
 
 }
