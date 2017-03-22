@@ -14,14 +14,14 @@ interface OrderDateRepositoryContract
 {
 
 	/**
-	 * Get date type names
+	 * List names of a date type
 	 */
 	public function findNamesByTypeId(
 		int $typeId
 	):array;
 
 	/**
-	 * Get a date type name
+	 * Get a name of a date type
 	 */
 	public function findNameByTypeIdAndLang(
 		int $typeId, 
@@ -29,7 +29,7 @@ interface OrderDateRepositoryContract
 	):OrderDateTypeName;
 
 	/**
-	 * Get the date types
+	 * List date types
 	 */
 	public function findTypes(
 	);
@@ -71,7 +71,7 @@ interface OrderDateRepositoryContract
 	):boolean;
 
 	/**
-	 * Delete a order date specified by the id of the order and the type of the order date.
+	 * Delete an order date from an order by the type of the order date
 	 */
 	public function deleteByOrderIdAndType(
 		int $orderId, 
@@ -79,7 +79,7 @@ interface OrderDateRepositoryContract
 	);
 
 	/**
-	 * Get an order date
+	 * Get an order date from an order by the type of the order date
 	 */
 	public function findByOrderIdAndTypeId(
 		int $orderId, 

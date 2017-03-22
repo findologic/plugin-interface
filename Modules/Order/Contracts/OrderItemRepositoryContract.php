@@ -11,7 +11,7 @@ interface OrderItemRepositoryContract
 {
 
 	/**
-	 * Deletes an order item. The order ID and the order item ID have to be provided.
+	 * Delete an order item
 	 */
 	public function deleteOrderItem(
 		int $orderId, 

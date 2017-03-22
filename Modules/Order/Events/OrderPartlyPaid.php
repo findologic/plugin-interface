@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Events;
 
 
 /**
- * An Event class fired after a payment assignment when the order is partly paid.
+ * An Event class fired after a payment is assigned and if the order is only partly paid.
  */
 abstract class OrderPartlyPaid 
 {

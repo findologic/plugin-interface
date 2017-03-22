@@ -8,13 +8,13 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Order\Date\Models\OrderItemDate;
 
 /**
- * The OrderItemDateRepositoryContract contains the functionality to find, create, update and delete OrderItemDate instances.
+ * The OrderItemDateRepositoryContract contains the functionality to get, create, update and delete OrderItemDate instances.
  */
 interface OrderItemDateRepositoryContract 
 {
 
 	/**
-	 * Find an order item date by its ID.
+	 * Get an order item date
 	 */
 	public function find(
 		int $id
@@ -50,7 +50,7 @@ interface OrderItemDateRepositoryContract
 	):bool;
 
 	/**
-	 * Get an order item date by an order item ID and an order date type ID.
+	 * Get an order item date by an order item and an order date type.
 	 */
 	public function findByOrderItemIdAndTypeId(
 		int $orderItemId, 
@@ -58,7 +58,7 @@ interface OrderItemDateRepositoryContract
 	):OrderItemDate;
 
 	/**
-	 * Create an order item date by an order item ID and an order date type ID.
+	 * Create an order item date by an order item and an order date type.
 	 */
 	public function createByOrderItemIdAndTypeId(
 		array $data, 
@@ -67,7 +67,7 @@ interface OrderItemDateRepositoryContract
 	):OrderItemDate;
 
 	/**
-	 * Update an order item date by an order item ID and an order date type ID.
+	 * Update an order item date by an order item and an order date type.
 	 */
 	public function updateByOrderItemIdAndTypeId(
 		array $data, 
@@ -76,7 +76,7 @@ interface OrderItemDateRepositoryContract
 	):OrderItemDate;
 
 	/**
-	 * Delete an order item date by an order item ID and an order date type ID.
+	 * Delete an order item date by an order item and an order date type.
 	 */
 	public function deleteByOrderItemIdAndTypeId(
 		int $orderItemId, 

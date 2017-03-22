@@ -29,6 +29,13 @@ interface ShippingServiceProviderRepositoryContract
 	):ShippingServiceProvider;
 
 	/**
+	 * Gets a shipping service provider. The name of the shipping service provider must be specified.
+	 */
+	public function findByName(
+		string $shippingServiceProviderName
+	):ShippingServiceProvider;
+
+	/**
 	 * Creates a shipping service provider or updates it if already existing
 	 */
 	public function saveShippingServiceProvider(

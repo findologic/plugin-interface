@@ -4,7 +4,7 @@ namespace Plenty\Modules\Order\ContactWish\Contracts;
 use Plenty\Modules\Order\ContactWish\Models\ContactWish;
 
 /**
- * Get and create contact wishes.
+ * This interface allows you to get and create contact wishes.
  */
 interface ContactWishRepositoryContract 
 {

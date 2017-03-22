@@ -32,6 +32,7 @@ abstract class Property
 	public		$names;
 	public		$marketComponents;
 	public		$group;
+	public		$selections;
 	
 	/**
 	 * Returns this model as an array.

@@ -79,7 +79,7 @@ interface OrderRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * List orders having at least one order item with a variation of a supplier
+	 * List orders that include one or more variations from a supplier
 	 */
 	public function allOrdersBySupplier(
 		int $contactId, 
@@ -89,7 +89,7 @@ interface OrderRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * List orders of a sender contact
+	 * List orders sent by a contact
 	 */
 	public function allOrdersByContactSender(
 		int $contactId, 
@@ -107,7 +107,7 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
-	 * List orders by filter options
+	 * List orders
 	 */
 	public function searchOrders(
 		int $page = 1, 

@@ -3,6 +3,7 @@ namespace Plenty\Modules\Item\Property\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Property\Models\PropertySelection;
+use Plenty\Repositories\Models\DeleteResponse;
 
 /**
  * The contract for the property selection repository
@@ -19,35 +20,57 @@ interface PropertySelectionRepositoryContract
 	):PropertySelection;
 
 	/**
-	 * Deletes a property selection. The ID of the property and the language must be specified.
+	 * List of property selections. The ID of the property must be specified.
 	 */
-	public function delete(
+	public function findByProperty(
 		int $propertyId, 
-		string $lang
-	):boolean;
-
-	/**
-	 * Updates a property selection. The ID of the property and the language must be specified.
-	 */
-	public function update(
-		array $data, 
-		int $propertyId, 
-		string $lang
-	):PropertySelection;
-
-	/**
-	 * Get a property selection. The ID of the property and the language must be specified.
-	 */
-	public function findOne(
-		int $propertyId, 
-		string $lang
-	):PropertySelection;
+		string $lang = null
+	):array;
 
 	/**
 	 * List of property selections. The ID of the property must be specified.
 	 */
 	public function findByPropertyId(
 		int $propertyId
+	):PropertySelection;
+
+	/**
+	 * Deletes a property selection. The ID of the property selection must be specified.
+	 */
+	public function deleteSelection(
+		int $id
+	):DeleteResponse;
+
+	/**
+	 * Deletes a property selection in a specified language. The ID of the property selection and the language must be specified.
+	 */
+	public function delete(
+		int $id, 
+		string $lang
+	):boolean;
+
+	/**
+	 * Get a property selection in the specified language. The ID of the property selection and the language must be specified.
+	 */
+	public function findOne(
+		int $id, 
+		string $lang
+	):PropertySelection;
+
+	/**
+	 * Get a property selection. The ID of the property selection must be specified.
+	 */
+	public function findSelection(
+		int $id
+	):array;
+
+	/**
+	 * Updates a property selection. The ID of the property selection and the language must be specified.
+	 */
+	public function update(
+		array $data, 
+		int $id, 
+		string $lang
 	):PropertySelection;
 
 }
