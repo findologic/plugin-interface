@@ -2,6 +2,8 @@
 namespace Plenty\Modules\Item\ItemImage\Contracts;
 
 use Plenty\Modules\Item\ItemImage\Models\ItemImage;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
@@ -52,5 +54,18 @@ interface ItemImageRepositoryContract
 	public function upload(
 		array $data
 	):ItemImage;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
 
 }

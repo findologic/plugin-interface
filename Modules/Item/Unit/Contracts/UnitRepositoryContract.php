@@ -3,6 +3,8 @@ namespace Plenty\Modules\Item\Unit\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Unit\Models\Unit;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -56,5 +58,18 @@ interface UnitRepositoryContract
 		int $perPage = 50, 
 		int $page = 1
 	):PaginatedResult;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
 
 }

@@ -3,6 +3,8 @@ namespace Plenty\Modules\Item\Attribute\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Attribute\Models\Attribute;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
@@ -62,5 +64,18 @@ interface AttributeRepositoryContract
 		int $perPage = 50, 
 		int $page = 1
 	):array;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
 
 }
