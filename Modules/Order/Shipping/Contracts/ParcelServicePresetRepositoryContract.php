@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Order\Shipping\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Basket\Models\Basket;
 use Plenty\Modules\Order\Shipping\ParcelService\Models\ParcelServicePreset;
 
