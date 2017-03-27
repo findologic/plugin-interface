@@ -18,7 +18,8 @@ abstract class ExportPresetContainer
 		string $resultFieldsClass, 
 		string $generatorClass, 
 		string $filterClass = "", 
-		bool $isPlugin = false
+		bool $isPlugin = false, 
+		bool $generatorExecute = false
 	);
 
 }
