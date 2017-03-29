@@ -12,7 +12,7 @@ interface VariationCategoryRepositoryContract
 {
 
 	/**
-	 * Gets a variation category. The ID of the variation and the ID of the category must be specified.
+	 * Gets the link between a category and a variation. The ID of the variation and the ID of the category must be specified.
 	 */
 	public function show(
 		int $categoryId, 
@@ -20,14 +20,14 @@ interface VariationCategoryRepositoryContract
 	):VariationCategory;
 
 	/**
-	 * Creates a variation category.
+	 * Creates a link between a category and a variation.
 	 */
 	public function create(
 		array $data
 	):VariationCategory;
 
 	/**
-	 * Updates a variation category.  The ID of the variation and the ID of the category must be specified.
+	 * Updates a link between a category and a variation. The ID of the variation and the ID of the category must be specified.
 	 */
 	public function update(
 		array $data, 
@@ -36,7 +36,7 @@ interface VariationCategoryRepositoryContract
 	):VariationCategory;
 
 	/**
-	 * Delete an VariationCategory by given variation and barcode id
+	 * Deletes the link between a category and a variation. The ID of the variation and the ID of the category must be specified.
 	 */
 	public function delete(
 		int $categoryId, 
@@ -44,14 +44,14 @@ interface VariationCategoryRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Lists variation categories. The ID of the variation must be specified.
+	 * Lists the categories linked to a variation. The ID of the variation must be specified.
 	 */
 	public function findByVariationId(
 		int $variationId
 	):VariationCategory;
 
 	/**
-	 * Lists variation categories with inheritance. The ID of the variation must be specified.
+	 * Lists the categories linked to a variation including inheritance information. The ID of the variation must be specified.
 	 */
 	public function findByVariationIdWithInheritance(
 		int $variationId

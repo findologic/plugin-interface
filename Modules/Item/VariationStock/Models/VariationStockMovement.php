@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\VariationStock\Models;
 
 
 /**
- * The variation stock movement model.
+ * The variation stock movement model
  */
 abstract class VariationStockMovement 
 {

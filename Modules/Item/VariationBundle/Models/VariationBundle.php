@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\VariationBundle\Models;
 
 
 /**
- * The VariationBundle
+ * The variation bundle
  */
 abstract class VariationBundle 
 {

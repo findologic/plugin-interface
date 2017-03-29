@@ -70,6 +70,8 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_ITEM_SHIPMENT_ID = 31;
 
+	const PARTIAL_SHIPPING_COSTS = 32;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

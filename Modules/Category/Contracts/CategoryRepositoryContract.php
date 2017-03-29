@@ -100,14 +100,14 @@ interface CategoryRepositoryContract
 	):Category;
 
 	/**
-	 * Deletes a category by given id
+	 * Deletes a category. The ID of the category must be specified.
 	 */
 	public function delete(
 		int $categoryId
 	):DeleteResponse;
 
 	/**
-	 * Delete category details for the specified languages
+	 * Delete the category details for the languages specified.
 	 */
 	public function deleteCategoryDetails(
 		int $categoryId, 
