@@ -12,17 +12,6 @@ interface StorageRepositoryContract
 {
 
 	/**
-	 * Upload an object by streaming the contents of a file $pathToFile should be absolute path to a file on disk
-	 */
-	public function uploadFile(
-		string $pluginName, 
-		string $key, 
-		string $pathToFile, 
-		boolean $publicVisible = false, 
-		array $metaData = []
-	):StorageObject;
-
-	/**
 	 * Create an object with content in $body
 	 */
 	public function uploadObject(
