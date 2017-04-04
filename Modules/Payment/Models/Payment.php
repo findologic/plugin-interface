@@ -37,6 +37,8 @@ abstract class Payment
 
 	const STATUS_PARTIALLY_REFUNDED = 10;
 
+	const STATUS_DUPLICATED = 11;
+
 	const ORIGIN_UNDEF = 0;
 
 	const ORIGIN_SYSTEM = 1;
@@ -51,12 +53,17 @@ abstract class Payment
 
 	const ORIGIN_PLUGIN = 6;
 
+	const PAYMENT_TYPE_DEBIT = 'debit';
+
+	const PAYMENT_TYPE_CREDIT = 'credit';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$amount;
 	public		$exchangeRatio;
+	public		$parentId;
 	public		$deleted;
 	public		$unaccountable;
 	public		$currency;
