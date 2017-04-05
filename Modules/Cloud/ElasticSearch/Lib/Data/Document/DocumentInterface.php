@@ -13,6 +13,9 @@ interface DocumentInterface
 	public function getIndex(
 	):IndexInterface;
 
+	public function getSize(
+	):int;
+
 	/**
 	 * Get the instance as an array.
 	 */

@@ -16,7 +16,7 @@ abstract class CronContainer
 
 	const HOURLY = 60;
 
-	const ELASTIC_SEARCH = 61;
+	const ELASTIC_SEARCH = 30;
 
 	const DAILY = 1440;
 

@@ -25,6 +25,7 @@ abstract class ItemProperty
 	public		$surcharge;
 	public		$property;
 	public		$propertySelection;
+	public		$valueTexts;
 	
 	/**
 	 * Returns this model as an array.
