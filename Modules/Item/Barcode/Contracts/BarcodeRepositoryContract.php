@@ -4,6 +4,8 @@ namespace Plenty\Modules\Item\Barcode\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Barcode\Models\Barcode;
 use Plenty\Modules\Item\Barcode\Models\BarcodeLinkReferrer;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -89,5 +91,18 @@ interface BarcodeRepositoryContract
 		float $referrer, 
 		int $perPage = 50
 	):array;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
 
 }

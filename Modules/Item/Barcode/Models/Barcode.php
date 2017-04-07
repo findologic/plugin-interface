@@ -9,14 +9,15 @@ use Illuminate\Database\Eloquent\Collection;
 abstract class Barcode 
 {
 
+	const UPDATED_AT = 'plenty_item_barcode_last_update_timestamp';
+
+	const CREATED_AT = 'plenty_item_barcode_created_timestamp';
+
 	const ITEMS_PER_PAGE = 50;
-
-	const CREATED_AT = 'createdAt';
-
-	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$name;
 	public		$type;
+	public		$createdAt;
 	public		$referrers;
 	
 	/**
