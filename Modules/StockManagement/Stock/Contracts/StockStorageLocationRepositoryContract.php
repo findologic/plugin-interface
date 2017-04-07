@@ -2,6 +2,8 @@
 namespace Plenty\Modules\StockManagement\Stock\Contracts;
 
 use Plenty\Modules\StockManagement\Stock\Models\StockStorageLocation;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -29,5 +31,18 @@ interface StockStorageLocationRepositoryContract
 		int $page, 
 		int $itemsPerPage
 	):array;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
 
 }
