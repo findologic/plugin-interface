@@ -26,6 +26,9 @@ abstract class CategoryDetails
 	public		$metaTitle;
 	public		$image;
 	public		$image2;
+	public		$imagePath;
+	public		$image2Path;
+	public		$previewUrl;
 	public		$position;
 	public		$itemListView;
 	public		$singleItemView;
