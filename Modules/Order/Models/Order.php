@@ -5,6 +5,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Authentication\Models\User;
+use Plenty\Modules\Order\RelationReference\Models\OrderRelationReference;
 
 /**
  * The order model.
@@ -35,9 +36,12 @@ abstract class Order
 	public		$relations;
 	public		$amounts;
 	public		$comments;
+	public		$orderReferences;
 	public		$dates;
 	public		$originOrder;
 	public		$parentOrder;
+	public		$originOrders;
+	public		$parentOrders;
 	
 	/**
 	 * Returns this model as an array.
