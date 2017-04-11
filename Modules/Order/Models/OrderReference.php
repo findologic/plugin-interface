@@ -14,9 +14,11 @@ abstract class OrderReference
 
 	const UPDATED_AT = 'updatedAt';
 	public		$orderId;
+	public		$originOrderId;
+	public		$referenceOrderId;
+	public		$referenceType;
 	public		$originOrder;
 	public		$referenceOrder;
-	public		$referenceType;
 	
 	/**
 	 * Returns this model as an array.
