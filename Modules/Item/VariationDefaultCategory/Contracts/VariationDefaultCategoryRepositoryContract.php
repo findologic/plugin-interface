@@ -12,7 +12,7 @@ interface VariationDefaultCategoryRepositoryContract
 {
 
 	/**
-	 * Gets the default category of a variation for the client (store) specified. The ID of the variation and the client ID must be specified.
+	 * Gets the default category of a variation for the client (store) specified. The ID of the variation and the plenty ID of the client (store) must be specified.
 	 */
 	public function show(
 		int $plentyId, 
@@ -27,7 +27,7 @@ interface VariationDefaultCategoryRepositoryContract
 	):VariationDefaultCategory;
 
 	/**
-	 * Updates the default category linked to a variation. The ID of the variation and the client ID must be specified.
+	 * Updates the default category linked to a variation. The ID of the variation and the plenty ID of the client (store) must be specified.
 	 */
 	public function update(
 		array $data, 
@@ -36,7 +36,7 @@ interface VariationDefaultCategoryRepositoryContract
 	):VariationDefaultCategory;
 
 	/**
-	 * Deletes the link between a variation and a default category. The ID of the variation and the client ID must be specified.
+	 * Deletes the link between a variation and a default category. The ID of the variation and the plenty ID of the client (store) must be specified.
 	 */
 	public function delete(
 		int $plentyId, 
