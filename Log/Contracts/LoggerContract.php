@@ -94,4 +94,12 @@ be logged and monitored.
 		 $referenceValue
 	):\Plenty\Log\Contracts\LoggerContract;
 
+	/**
+	 * Add reference.
+	 */
+	public function addReference(
+		string $referenceType, 
+		int $referenceValue
+	):\Plenty\Log\Contracts\LoggerContract;
+
 }

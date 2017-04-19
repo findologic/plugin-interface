@@ -11,6 +11,13 @@ interface OrderItemRepositoryContract
 {
 
 	/**
+	 * Get an order item
+	 */
+	public function getOrderItem(
+		int $orderItemId
+	):OrderItem;
+
+	/**
 	 * Delete an order item
 	 */
 	public function deleteOrderItem(

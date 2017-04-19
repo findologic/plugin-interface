@@ -17,6 +17,7 @@ abstract class VariationSku
 	public		$accountId;
 	public		$initialSku;
 	public		$sku;
+	public		$parentSku;
 	public		$isActive;
 	public		$createdAt;
 	public		$exportedAt;

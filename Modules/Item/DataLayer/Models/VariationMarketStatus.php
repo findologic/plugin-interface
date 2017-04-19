@@ -12,6 +12,7 @@ abstract class VariationMarketStatus
 	public		$marketAccountId;
 	public		$initialSku;
 	public		$sku;
+	public		$parentSku;
 	public		$active;
 	public		$createdTimestamp;
 	public		$lastExportTimestamp;

@@ -25,6 +25,7 @@ abstract class OrderAmount
 	public		$invoiceTotal;
 	public		$paidAmount;
 	public		$prepaidAmount;
+	public		$giftCardAmount;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$order;

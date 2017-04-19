@@ -6,7 +6,7 @@ use Plenty\Modules\Item\Property\Models\PropertySelection;
 use Plenty\Modules\Item\Variation\Models\Variation;
 
 /**
- * The VariationPropertyName
+ * The property name of the variation
  */
 abstract class VariationPropertyValueName 
 {

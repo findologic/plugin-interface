@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Models;
 
 
 /**
- * This model holds the order properties that are assigned to order items.
+ * This model contains the order properties that are assigned to order items.
  */
 abstract class OrderItemOrderProperty 
 {

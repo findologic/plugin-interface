@@ -37,6 +37,7 @@ abstract class OrderItem
 	public		$properties;
 	public		$orderProperties;
 	public		$dates;
+	public		$references;
 	
 	/**
 	 * Returns this model as an array.

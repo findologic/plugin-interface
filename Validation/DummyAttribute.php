@@ -501,4 +501,13 @@ The value is null.
 		return $this;
 	}
 
+	/**
+	 * The field under validation must be a valid currency string (e.g. 'EUR').
+	 */
+	public function validCurrency(
+	):self
+	{
+		return $this;
+	}
+
 }

@@ -55,4 +55,11 @@ abstract class Application
 	abstract public function getPlentyId(
 	):int;
 
+	/**
+	 * Returns the URL to the plugin resources
+	 */
+	abstract public function getUrlPath(
+		string $pluginName = ""
+	):string;
+
 }

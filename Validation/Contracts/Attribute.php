@@ -136,6 +136,12 @@ interface Attribute
 	):self;
 
 	/**
+	 * The field under validation must be a valid currency string (e.g. 'EUR').
+	 */
+	public function validCurrency(
+	):self;
+
+	/**
 	 * The field under validation must have a different value than field.
 	 */
 	public function different(

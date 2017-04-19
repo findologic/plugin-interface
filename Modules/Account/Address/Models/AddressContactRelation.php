@@ -16,6 +16,7 @@ abstract class AddressContactRelation
 	public		$contactId;
 	public		$typeId;
 	public		$addressId;
+	public		$isPrimary;
 	public		$address;
 	public		$contact;
 	
