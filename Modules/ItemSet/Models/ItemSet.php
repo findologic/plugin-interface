@@ -1,6 +1,10 @@
 <?php
 namespace Plenty\Modules\ItemSet\Models;
 
+use Illuminate\Database\Eloquent\Collection;
+use Plenty\Modules\Item\VariationCategory\Models\VariationCategory;
+use Plenty\Modules\Item\VariationDescription\Models\VariationDescription;
+use Plenty\Modules\Item\Variation\Models\Variation;
 
 /**
  * The ItemSet model.

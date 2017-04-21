@@ -2,7 +2,6 @@
 namespace Plenty\Modules\Accounting\Models;
 
 use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Accounting\Vat\Models\Vat;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**

@@ -1,6 +1,9 @@
 <?php
 namespace Plenty\Modules\Market\Settings\Models;
 
+use Plenty\Modules\Category\Models\Category;
+use Plenty\Modules\Item\Attribute\Models\Attribute;
+use Plenty\Modules\Item\Property\Models\Property;
 
 /**
  * The market settings model.

@@ -5,6 +5,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
 use Plenty\Modules\Item\Variation\Models\Variation;
+use Plenty\Modules\Order\Date\Models\OrderItemDate;
 
 /**
  * The order item model. Items, shipping costs, coupons, surcharges etc. are all displayed as order items.

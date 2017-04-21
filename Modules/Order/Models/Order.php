@@ -4,8 +4,10 @@ namespace Plenty\Modules\Order\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Account\Address\Models\Address;
+use Plenty\Modules\Account\Address\Models\AddressRelationType;
 use Plenty\Modules\Authentication\Models\User;
-use Plenty\Modules\Order\RelationReference\Models\OrderRelationReference;
+use Plenty\Modules\Comment\Models\Comment;
+use Plenty\Modules\Order\Date\Models\OrderDate;
 
 /**
  * The order model.

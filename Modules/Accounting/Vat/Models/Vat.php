@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Accounting\Vat\Models;
 
-use Carbon\Carbon;
 use Plenty\Modules\Accounting\Models\AccountingLocation;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
