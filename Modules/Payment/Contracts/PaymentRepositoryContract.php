@@ -18,7 +18,7 @@ interface PaymentRepositoryContract
 	 */
 	public function getAll(
 		int $itemsPerPage = 50, 
-		int $page = 0
+		int $page = 1
 	):array;
 
 	/**
@@ -34,7 +34,7 @@ interface PaymentRepositoryContract
 	public function getPaymentsByMethodId(
 		int $methodId, 
 		int $itemsPerPage = 50, 
-		int $page = 0
+		int $page = 1
 	):array;
 
 	/**
@@ -43,7 +43,7 @@ interface PaymentRepositoryContract
 	public function getPaymentsByStatusId(
 		int $statusId, 
 		int $itemsPerPage = 50, 
-		int $page = 0
+		int $page = 1
 	):array;
 
 	/**
@@ -52,7 +52,7 @@ interface PaymentRepositoryContract
 	public function getPaymentsByTransactionType(
 		int $transactionType, 
 		int $itemsPerPage = 50, 
-		int $page = 0
+		int $page = 1
 	):array;
 
 	/**
@@ -69,7 +69,7 @@ interface PaymentRepositoryContract
 		string $startDate, 
 		string $endDate, 
 		int $itemsPerPage = 50, 
-		int $page = 0
+		int $page = 1
 	):array;
 
 	/**
@@ -79,7 +79,7 @@ interface PaymentRepositoryContract
 		string $startDate, 
 		string $endDate, 
 		int $itemsPerPage = 50, 
-		int $page = 0
+		int $page = 1
 	):array;
 
 	/**
@@ -89,7 +89,7 @@ interface PaymentRepositoryContract
 		int $propertyTypeId, 
 		 $propertyValue, 
 		int $itemsPerPage = 50, 
-		int $page = 0
+		int $page = 1
 	):array;
 
 	/**
