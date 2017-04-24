@@ -79,6 +79,8 @@ abstract class Payment
 	public		$method;
 	public		$histories;
 	public		$properties;
+	public		$regenerateHash;
+	public		$updateOrderPaymentStatus;
 	
 	/**
 	 * Returns this model as an array.
