@@ -2,11 +2,13 @@
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\BuiltIn;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\BaseMutator;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 
 /**
  * foo
  */
-abstract class LanguageMutator 
+abstract class LanguageMutator implements MutatorInterface
+
 {
 
 	abstract public function mutate(
