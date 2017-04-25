@@ -37,6 +37,10 @@ abstract class ItemFilter implements TypeInterface
 		int $manufacturerId
 	);
 
+	abstract public function hasManufacturers(
+		array $manufacturerIds
+	);
+
 	abstract public function hasAManufacturer(
 	);
 
