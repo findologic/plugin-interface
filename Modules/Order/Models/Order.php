@@ -22,6 +22,7 @@ abstract class Order
 	public		$shippingProfileId;
 	public		$paymentStatus;
 	public		$statusId;
+	public		$statusName;
 	public		$ownerId;
 	public		$createdAt;
 	public		$updatedAt;
