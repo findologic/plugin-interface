@@ -31,6 +31,7 @@ abstract class Export
 	public		$updatedAt;
 	public		$formatKey;
 	public		$outputType;
+	public		$generateCache;
 	public		$filters;
 	public		$outputParams;
 	public		$formatSettings;
