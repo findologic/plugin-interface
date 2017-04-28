@@ -12,7 +12,7 @@ abstract class TicketStatusName
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
-	public		$typeId;
+	public		$statusId;
 	public		$lang;
 	public		$name;
 	
