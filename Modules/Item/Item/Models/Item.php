@@ -11,12 +11,12 @@ abstract class Item
 
 	const UPDATED_AT = 'timestamp';
 
-	const MAX_ITEMS_PER_PAGE = 50;
+	const CREATED_AT = 'inserted';
 
-	const CREATED_AT = 'createdAt';
+	const MAX_ITEMS_PER_PAGE = 50;
 	public		$id;
 	public		$position;
-	public		$type;
+	public		$itemType;
 	public		$stockType;
 	public		$storeSpecial;
 	public		$ownerId;
