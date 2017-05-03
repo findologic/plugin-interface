@@ -13,6 +13,7 @@ abstract class TicketRole
 	const UPDATED_AT = 'updated_at';
 	public		$id;
 	public		$position;
+	public		$names;
 	
 	/**
 	 * Returns this model as an array.

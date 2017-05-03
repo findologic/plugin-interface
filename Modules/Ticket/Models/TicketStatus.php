@@ -15,6 +15,7 @@ abstract class TicketStatus
 	public		$typeId;
 	public		$position;
 	public		$statusGroupId;
+	public		$names;
 	
 	/**
 	 * Returns this model as an array.

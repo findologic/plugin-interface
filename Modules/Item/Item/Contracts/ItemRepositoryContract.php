@@ -38,6 +38,14 @@ interface ItemRepositoryContract
 	);
 
 	/**
+	 * Update a item. The ID of the item must be specified.
+	 */
+	public function update(
+		array $data, 
+		int $itemId
+	):Item;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(

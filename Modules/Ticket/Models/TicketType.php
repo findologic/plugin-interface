@@ -13,6 +13,7 @@ abstract class TicketType
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$position;
+	public		$names;
 	
 	/**
 	 * Returns this model as an array.

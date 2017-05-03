@@ -49,4 +49,7 @@ interface IndexInterface
 	public function hasUpdatedAt(
 	):bool;
 
+	public function getNext(
+	):\Plenty\Modules\Cloud\ElasticSearch\Lib\Index\NextIndex;
+
 }
