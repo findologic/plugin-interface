@@ -32,6 +32,9 @@ abstract class NextIndex implements \Plenty\Modules\Cloud\ElasticSearch\Lib\Inde
 	abstract public function getNext(
 	);
 
+	abstract public function getScrollRepositoryClassName(
+	);
+
 	abstract public function hasUpdatedAt(
 	):bool;
 

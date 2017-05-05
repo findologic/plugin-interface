@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Index;
 
+use Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchScrollRepositoryContract;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Info\InfoInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Meta\MetaInterface;
 
@@ -51,5 +52,8 @@ interface IndexInterface
 
 	public function getNext(
 	):\Plenty\Modules\Cloud\ElasticSearch\Lib\Index\NextIndex;
+
+	public function getScrollRepositoryClassName(
+	):string;
 
 }
