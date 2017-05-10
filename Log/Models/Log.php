@@ -11,6 +11,7 @@ abstract class Log
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
+	public		$id;
 	public		$createdAt;
 	public		$integration;
 	public		$identifier;
