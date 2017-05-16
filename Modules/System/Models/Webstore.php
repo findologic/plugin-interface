@@ -16,6 +16,7 @@ abstract class Webstore
 	public		$type;
 	public		$storeIdentifier;
 	public		$configuration;
+	public		$locations;
 	
 	/**
 	 * Returns this model as an array.
