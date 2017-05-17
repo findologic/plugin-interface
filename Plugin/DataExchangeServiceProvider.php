@@ -9,14 +9,20 @@ use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 abstract class DataExchangeServiceProvider 
 {
 
+	/**
+	 * Register the service provider.
+	 */
+	abstract public function register(
+	);
+
 	public function getApplication(
-	):Application
+	):\Plenty\Plugin\Application
 	{
 		return null;
 	}
 
 	public function getEventDispatcher(
-	):Events\Dispatcher
+	):\Plenty\Plugin\Events\Dispatcher
 	{
 		return null;
 	}

@@ -5,7 +5,7 @@ namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Source;
 /**
  * foo
  */
-abstract class IndependentSource implements SourceInterface
+abstract class IndependentSource implements \Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface
 
 {
 
@@ -16,7 +16,7 @@ abstract class IndependentSource implements SourceInterface
 	):string;
 
 	abstract public function activateAll(
-	):SourceInterface;
+	):\Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
 	abstract public function activateList(
 		array $fields

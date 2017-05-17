@@ -1,6 +1,9 @@
 <?php
 namespace Plenty\Modules\Item\VariationProperty\Models;
 
+use Plenty\Modules\Item\Property\Models\Property;
+use Plenty\Modules\Item\Property\Models\PropertySelection;
+use Plenty\Modules\Item\Variation\Models\Variation;
 
 /**
  * The VariationPropertyValue

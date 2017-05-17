@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\StockManagement\Warehouse\Management\Models;
 
+use Plenty\Modules\StockManagement\Warehouse\Models\Warehouse;
 
 /**
  * The storage location model

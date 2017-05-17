@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Events\Changed;
 
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * An event class fired after the status of an order has changed.

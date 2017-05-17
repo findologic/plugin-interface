@@ -16,11 +16,11 @@ interface VariationElasticSearchScrollRepositoryContract
 
 	public function setIndex(
 		IndexInterface $index
-	):ElasticSearchSearchRepositoryContract;
+	):\Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchSearchRepositoryContract;
 
 	public function addSearch(
 		SearchInterface $search
-	):ElasticSearchSearchRepositoryContract;
+	):\Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchSearchRepositoryContract;
 
 	public function execute(
 	):array;

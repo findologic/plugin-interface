@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Comment\Models;
 
+use Carbon\Carbon;
 
 /**
  * The comment model.

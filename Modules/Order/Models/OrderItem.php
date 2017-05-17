@@ -1,6 +1,10 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
+use Plenty\Modules\Accounting\Vat\Models\Vat;
+use Plenty\Modules\Item\Variation\Models\Variation;
 
 /**
  * The order item model. Items, shipping costs, coupons, surcharges etc. are all displayed as order items.

@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
+use Carbon\Carbon;
 
 /**
  * The order item amount model. Order item amount refers to amounts of money.

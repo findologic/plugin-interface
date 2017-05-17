@@ -85,14 +85,14 @@ be logged and monitored.
 	 */
 	public function setReferenceType(
 		string $referenceType
-	):LoggerContract;
+	):\Plenty\Log\Contracts\LoggerContract;
 
 	/**
 	 * The reference value.
 	 */
 	public function setReferenceValue(
 		 $referenceValue
-	):LoggerContract;
+	):\Plenty\Log\Contracts\LoggerContract;
 
 	/**
 	 * Add reference.
@@ -100,6 +100,6 @@ be logged and monitored.
 	public function addReference(
 		string $referenceType, 
 		int $referenceValue
-	):LoggerContract;
+	):\Plenty\Log\Contracts\LoggerContract;
 
 }

@@ -13,48 +13,48 @@ abstract class FrontendUpdateCustomerSettings
 
 	abstract public function setDeliveryCountryId(
 		int $deliveryCountryId
-	):FrontendUpdateCustomerSettings;
+	):\Plenty\Modules\Account\Events\FrontendUpdateCustomerSettings;
 
 	abstract public function getShowNetPrice(
-	):bool;
+	):boolean;
 
 	abstract public function setShowNetPrice(
-		bool $showNetPrice
-	):FrontendUpdateCustomerSettings;
+		boolean $showNetPrice
+	):\Plenty\Modules\Account\Events\FrontendUpdateCustomerSettings;
 
 	abstract public function getEbaySellerAccount(
 	):string;
 
 	abstract public function setEbaySellerAccount(
 		string $ebaySellerAccount
-	):FrontendUpdateCustomerSettings;
+	):\Plenty\Modules\Account\Events\FrontendUpdateCustomerSettings;
 
 	abstract public function getAccountContactSign(
 	):string;
 
 	abstract public function setAccountContactSign(
 		string $accountContactSign
-	):FrontendUpdateCustomerSettings;
+	):\Plenty\Modules\Account\Events\FrontendUpdateCustomerSettings;
 
 	abstract public function getAccountContactClassId(
 	):int;
 
 	abstract public function setAccountContactClassId(
 		int $accountContactClassId
-	):FrontendUpdateCustomerSettings;
+	):\Plenty\Modules\Account\Events\FrontendUpdateCustomerSettings;
 
 	abstract public function getSalesAgent(
 	):string;
 
 	abstract public function setSalesAgent(
 		string $salesAgent
-	):FrontendUpdateCustomerSettings;
+	):\Plenty\Modules\Account\Events\FrontendUpdateCustomerSettings;
 
 	abstract public function getAccountContractClassId(
 	):int;
 
 	abstract public function setAccountContractClassId(
 		int $accountContractClassId
-	):FrontendUpdateCustomerSettings;
+	):\Plenty\Modules\Account\Events\FrontendUpdateCustomerSettings;
 
 }

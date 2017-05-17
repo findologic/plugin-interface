@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Item\Models;
 
+use Plenty\Modules\Item\Variation\Models\Variation;
 
 /**
  * The item model

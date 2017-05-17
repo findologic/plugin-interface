@@ -41,7 +41,7 @@ abstract class ProcedureEntry
 	 */
 	abstract public function setModuleName(
 		string $moduleName
-	):ProcedureEntry;
+	):\Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 
 	/**
 	 * Get the
@@ -54,7 +54,7 @@ abstract class ProcedureEntry
 	 */
 	abstract public function setEventType(
 		string $eventType
-	):ProcedureEntry;
+	):\Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 
 	/**
 	 * Get the
@@ -67,7 +67,7 @@ abstract class ProcedureEntry
 	 */
 	abstract public function setProcedureNames(
 		array $procedureNames
-	):ProcedureEntry;
+	):\Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 
 	/**
 	 * Get the
@@ -80,7 +80,7 @@ abstract class ProcedureEntry
 	 */
 	abstract public function setProcedureGroup(
 		string $procedureGroup
-	):ProcedureEntry;
+	):\Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 
 	/**
 	 * Get the
@@ -93,6 +93,6 @@ abstract class ProcedureEntry
 	 */
 	abstract public function setProcedureClass(
 		string $procedureClass
-	):ProcedureEntry;
+	):\Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 
 }

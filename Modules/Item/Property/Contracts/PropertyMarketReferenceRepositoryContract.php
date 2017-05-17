@@ -24,7 +24,7 @@ interface PropertyMarketReferenceRepositoryContract
 	public function delete(
 		int $propertyId, 
 		float $marketReference
-	):bool;
+	):boolean;
 
 	/**
 	 * Updates a property market reference. The ID of the property and the language must be specified.

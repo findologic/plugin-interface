@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Property\Models;
 
+use Carbon\Carbon;
+use Plenty\Modules\Order\Models\OrderItem;
 
 /**
  * The order item property model.

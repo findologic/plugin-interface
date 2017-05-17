@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Date\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The OrderDateType model.

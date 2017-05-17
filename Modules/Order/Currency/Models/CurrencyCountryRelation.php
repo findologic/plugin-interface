@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Currency\Models;
 
+use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
  * The CurrencyCountryRelation model indicates which currency is related to which country.

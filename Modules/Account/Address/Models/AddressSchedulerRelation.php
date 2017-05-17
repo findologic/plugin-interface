@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Address\Models;
 
+use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
 
 /**
  * The AddressSchedulerRelation model

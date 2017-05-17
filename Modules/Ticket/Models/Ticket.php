@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Ticket\Models;
 
+use Plenty\Modules\Account\Contact\Models\Contact;
 
 /**
  * The ticket model.

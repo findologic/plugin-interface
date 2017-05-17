@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Coupon\Campaign\Code\Models;
 
+use Carbon\Carbon;
+use Plenty\Modules\Order\Coupon\Campaign\Models\CouponCampaign;
 
 /**
  * The CouponCampaignCode model contains information about coupon codes. Each code belongs to one campaign only.

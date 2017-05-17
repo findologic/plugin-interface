@@ -51,7 +51,7 @@ interface IndexInterface
 	):bool;
 
 	public function getNext(
-	):NextIndex;
+	):\Plenty\Modules\Cloud\ElasticSearch\Lib\Index\NextIndex;
 
 	public function getScrollRepositoryClassName(
 	):string;

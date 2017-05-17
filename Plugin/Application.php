@@ -1,8 +1,7 @@
 <?php
 namespace Plenty\Plugin;
 
-use Illuminate\Container\Container;
-use Illuminate\Contracts\Container\Container as ContainerContract;
+use Plenty\Modules\Plugin\Contracts\PluginRepositoryContract;
 
 /**
  * The main application
@@ -15,15 +14,14 @@ abstract class Application
 	 */
 	abstract public function register(
 		string $providerClassName
-	):ServiceProvider;
+	):\Plenty\Plugin\ServiceProvider;
 
 	/**
 	 * Register a binding with the container.
 	 */
 	abstract public function bind(
 		string $abstract, 
-		string $concrete = null, 
-		bool $shared = false
+		string $concrete = null
 	);
 
 	/**

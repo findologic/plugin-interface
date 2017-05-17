@@ -3,73 +3,73 @@ namespace Plenty\Modules\Accounting\Contracts;
 
 
 /**
- * This interface provides methods to initialise the country of location or the country of an order as well as to get the ID of client, the plenty ID of a client, the country or the ID of country.
+ * Provides methods for system country initialization depending the client id.
  */
 interface DetermineShopCountryContract 
 {
 
 	/**
-	 * Initialise the country of the standard location of a client. The ID of the client must be specified.
+	 * Init the system country by the client ID.
 	 */
 	public function initByClientId(
 		int $clientId = 0
 	);
 
 	/**
-	 * Initialise the country of the standard location of a client. The plenty ID of the client can be specified.
+	 * Init the system country by the plenty ID.
 	 */
 	public function initByPlentyId(
 		int $plentyId = 0
 	);
 
 	/**
-	 * Initialise the country of a location. The ID of the location must be specified.
+	 * Init the system country by the location ID.
 	 */
 	public function initByLocationId(
 		int $locationId
 	);
 
 	/**
-	 * Initialise the country for an order. The ID of the order must be specified.
+	 * Init the system country by an order ID.
 	 */
 	public function initByOrderId(
 		int $orderId
 	);
 
 	/**
-	 * Get the ID of the country of the current standard location. One of the initialise methods must be called first. The client that was initialised with the initialise method is your current client.
+	 * Get the current system country ID (headquarters). One of the init-Methods should be called first!
 	 */
 	public function getCountryId(
 	):int;
 
 	/**
-	 * Get the ID of the current client. One of the initialise methods must be called first. The client that was initialised with the initialise method is your current client.
+	 * Get the current client ID. One of the init-Methods should be called first!
 	 */
 	public function getClientId(
 	):int;
 
 	/**
-	 * Get the plenty ID of the current client. One of the initialise methods must be called first. The client that was initialised with the initialise method is your current client.
+	 * Get the current plenty ID. One of the init-Methods should be called first!
 	 */
 	public function getPlentyId(
 	):int;
 
 	/**
-	 * Get the ID of the country of a client's standard location. The ID of the client must be specified.
+	 * Get the shop country (headquarters) for the given client ID.
 	 */
 	public function getCountryIdByClientId(
 		int $clientId = 0
 	):int;
 
 	/**
-	 * Get the ID of the country of a client's standard location. The plenty ID of the client must be specified.
+	 * Get the shop country (headquarters) for the given plenty ID.
 	 */
 	public function getCountryIdByPlentyId(
 		int $plentyId
 	):int;
 
 	/**
-	 * Get the country of a client's standard location. The ID of the client and the ID of the country must be specified.
+	 * Get the shop country (headquarters) for the given client ID and country ID.
 	 */
 	public function getCountryIdByClientIdAndCountryId(
 		int $clientId, 
@@ -77,7 +77,7 @@ interface DetermineShopCountryContract
 	):int;
 
 	/**
-	 * Get the country of a location. The ID of the location must be specified.
+	 * Get the shop country (headquarters) for the given location ID.
 	 */
 	public function getCountryIdByLocationId(
 		int $locationId

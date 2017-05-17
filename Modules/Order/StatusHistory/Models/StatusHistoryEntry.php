@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\StatusHistory\Models;
 
+use Carbon\Carbon;
 
 /**
  * The status history entry model

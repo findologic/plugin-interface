@@ -32,7 +32,7 @@ interface ContactTypeRepositoryContract
 	 */
 	public function deleteContactType(
 		int $contactTypeId
-	):bool;
+	):boolean;
 
 	/**
 	 * Gets a contact type. The ID of the contact type must be specified.

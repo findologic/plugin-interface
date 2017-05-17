@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The order item type model.

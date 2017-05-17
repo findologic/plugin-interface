@@ -18,7 +18,7 @@ interface StorageRepositoryContract
 		string $pluginName, 
 		string $key, 
 		string $body, 
-		bool $publicVisible = false, 
+		boolean $publicVisible = false, 
 		array $metaData = []
 	):StorageObject;
 
@@ -28,7 +28,7 @@ interface StorageRepositoryContract
 	public function getObject(
 		string $pluginName, 
 		string $key, 
-		bool $publicVisible = false
+		boolean $publicVisible = false
 	):StorageObject;
 
 	/**
@@ -47,7 +47,7 @@ interface StorageRepositoryContract
 	public function getObjectAsTemporaryFileResource(
 		string $pluginName, 
 		string $key, 
-		bool $publicVisible = false
+		boolean $publicVisible = false
 	):string;
 
 	/**
@@ -66,7 +66,7 @@ interface StorageRepositoryContract
 		string $pluginName, 
 		string $key, 
 		bool $publicVisible = false
-	):bool;
+	):boolean;
 
 	/**
 	 * Returns some or all (up to 1000) objects

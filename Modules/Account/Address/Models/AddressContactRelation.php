@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Address\Models;
 
+use Plenty\Modules\Account\Contact\Models\Contact;
 
 /**
  * address contact relation model

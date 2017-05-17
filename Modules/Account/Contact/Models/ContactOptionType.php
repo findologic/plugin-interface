@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Contact\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * contact options type model

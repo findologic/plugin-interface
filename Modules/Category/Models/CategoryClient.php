@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Category\Models;
 
+use Plenty\Modules\System\Models\Webstore;
 
 /**
  * The Category Client

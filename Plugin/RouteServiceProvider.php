@@ -10,13 +10,13 @@ abstract class RouteServiceProvider
 {
 
 	public function getApplication(
-	):Application
+	):\Plenty\Plugin\Application
 	{
 		return null;
 	}
 
 	public function getEventDispatcher(
-	):Events\Dispatcher
+	):\Plenty\Plugin\Events\Dispatcher
 	{
 		return null;
 	}

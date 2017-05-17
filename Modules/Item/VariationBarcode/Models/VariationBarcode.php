@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\VariationBarcode\Models;
 
+use Plenty\Modules\Item\Barcode\Models\Barcode;
 
 /**
  * Variation Barcode

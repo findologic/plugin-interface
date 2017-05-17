@@ -10,9 +10,9 @@ interface VariationElasticSearchAvailibilityRepositoryContract
 {
 
 	public function isReady(
-	):bool;
+	):boolean;
 
 	public function isAvailable(
-	):bool;
+	):boolean;
 
 }

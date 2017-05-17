@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Shipping\Package\Models;
 
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * The order shipping package model

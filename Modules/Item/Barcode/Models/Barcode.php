@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Barcode\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The barcode model including barcode referrer

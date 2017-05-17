@@ -25,7 +25,7 @@ abstract class ShippingServiceProviderEntry
 	 */
 	abstract public function setShippingServiceProviderNames(
 		array $shippingServiceProviderNames
-	):ShippingServiceProviderEntry;
+	):\Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries\ShippingServiceProviderEntry;
 
 	/**
 	 * Get the
@@ -38,7 +38,7 @@ abstract class ShippingServiceProviderEntry
 	 */
 	abstract public function setShippingServiceProviderCode(
 		string $shippingServiceProviderCode
-	):ShippingServiceProviderEntry;
+	):\Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries\ShippingServiceProviderEntry;
 
 	abstract public function getShippingServiceProviderClass(
 		string $methodName

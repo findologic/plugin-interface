@@ -35,8 +35,8 @@ interface ContactRepositoryContract
 	 */
 	public function deleteContact(
 		int $contactId, 
-		bool $checkExistingOrders = null
-	):bool;
+		boolean $checkExistingOrders = null
+	):boolean;
 
 	/**
 	 * Gets a contact. The ID of the contact must be specified.

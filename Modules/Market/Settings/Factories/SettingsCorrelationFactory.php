@@ -23,7 +23,7 @@ abstract class SettingsCorrelationFactory
 	 */
 	abstract public function type(
 		string $type
-	):SettingsCorrelationFactory;
+	):\Plenty\Modules\Market\Settings\Factories\SettingsCorrelationFactory;
 
 	/**
 	 * Use this method to create a relation of the chosen type.

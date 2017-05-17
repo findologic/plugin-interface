@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Address\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The AddressOptionType model

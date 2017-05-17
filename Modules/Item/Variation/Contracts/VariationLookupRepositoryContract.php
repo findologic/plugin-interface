@@ -10,31 +10,31 @@ interface VariationLookupRepositoryContract
 
 	public function hasBarcode(
 		string $code
-	):VariationLookupRepositoryContract;
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
 	public function hasId(
 		int $id
-	):VariationLookupRepositoryContract;
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
 	public function hasItemId(
 		int $itemId
-	):VariationLookupRepositoryContract;
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
 	public function hasExternalId(
 		string $externalId
-	):VariationLookupRepositoryContract;
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
 	public function hasNumber(
 		string $number
-	):VariationLookupRepositoryContract;
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
 	public function hasAttributeValueMap(
 		array $attributeValueMap
-	):VariationLookupRepositoryContract;
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
 	public function limit(
 		int $limit
-	):VariationLookupRepositoryContract;
+	):\Plenty\Modules\Item\Variation\Contracts\VariationLookupRepositoryContract;
 
 	public function lookup(
 	):array;

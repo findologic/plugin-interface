@@ -32,7 +32,7 @@ interface OrderPropertyRepositoryContract
 	 */
 	public function delete(
 		 $data = []
-	):bool;
+	):boolean;
 
 	/**
 	 * List order properties of an order
@@ -77,6 +77,6 @@ interface OrderPropertyRepositoryContract
 	 */
 	public function deleteType(
 		int $id
-	):bool;
+	):boolean;
 
 }
