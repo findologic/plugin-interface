@@ -10,7 +10,7 @@ abstract class AccountingException extends \Exception
 {
 
 	/**
-	 * No location ID could be detected!
+	 * The ID of the location could not be detected!
 	 */
 	const ERR_NO_LOCATION_ID_DETECTED = 1;
 

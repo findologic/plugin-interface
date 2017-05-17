@@ -18,20 +18,14 @@ abstract class ServiceProvider
 		return null;
 	}
 
-	/**
-	 * Register the service provider.
-	 */
-	abstract public function register(
-	);
-
 	public function getApplication(
-	):\Plenty\Plugin\Application
+	):Application
 	{
 		return null;
 	}
 
 	public function getEventDispatcher(
-	):\Plenty\Plugin\Events\Dispatcher
+	):Events\Dispatcher
 	{
 		return null;
 	}

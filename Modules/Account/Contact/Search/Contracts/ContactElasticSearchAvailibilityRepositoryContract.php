@@ -10,9 +10,9 @@ interface ContactElasticSearchAvailibilityRepositoryContract
 {
 
 	public function isReady(
-	):boolean;
+	):bool;
 
 	public function isAvailable(
-	):boolean;
+	):bool;
 
 }

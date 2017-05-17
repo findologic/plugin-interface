@@ -31,7 +31,7 @@ interface AccountRepositoryContract
 	 */
 	public function deleteAccount(
 		int $accountId
-	):boolean;
+	):bool;
 
 	/**
 	 * Gets an account. The ID of the account must be specified.

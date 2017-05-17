@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\Availability\Models;
 
-use Illuminate\Support\Collection;
 
 /**
  * The item availability model

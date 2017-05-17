@@ -47,7 +47,7 @@ interface PropertySelectionRepositoryContract
 	public function delete(
 		int $id, 
 		string $lang
-	):boolean;
+	):bool;
 
 	/**
 	 * Get a property selection in the specified language. The ID of the property selection and the language must be specified.

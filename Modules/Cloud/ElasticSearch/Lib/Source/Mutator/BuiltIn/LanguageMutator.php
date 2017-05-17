@@ -24,7 +24,7 @@ abstract class LanguageMutator implements MutatorInterface
 	);
 
 	abstract public function setSetLanguageAsIndex(
-		boolean $setLanguageAsIndex
+		bool $setLanguageAsIndex
 	);
 
 	abstract public static function isSeqArray(

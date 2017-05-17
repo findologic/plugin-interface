@@ -1,8 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Export\Pos\Idea\Models;
 
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The export model for IDEA exports.

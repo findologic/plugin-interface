@@ -48,7 +48,7 @@ interface InternalContactPaymentRepositoryContract
 	 */
 	public function deleteContactBank(
 		int $contactBankId
-	):boolean;
+	):bool;
 
 	/**
 	 * Gets a bank account. The ID of the bank account must be specified.

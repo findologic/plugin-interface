@@ -73,7 +73,7 @@ interface OrderRelationReferenceRepositoryContract
 	 */
 	public function delete(
 		int $id
-	):boolean;
+	):bool;
 
 	/**
 	 * Delete a relation reference by composite key
@@ -82,6 +82,6 @@ interface OrderRelationReferenceRepositoryContract
 		int $orderId, 
 		string $referenceType, 
 		string $relation
-	):boolean;
+	):bool;
 
 }

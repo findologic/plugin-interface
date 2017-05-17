@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Basket\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The basket model

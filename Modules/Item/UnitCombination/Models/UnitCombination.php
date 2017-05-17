@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\UnitCombination\Models;
 
-use Plenty\Modules\Item\Unit\Models\Unit;
 
 /**
  * The unitCombination model

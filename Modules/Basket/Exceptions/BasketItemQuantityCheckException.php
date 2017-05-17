@@ -6,7 +6,7 @@ namespace Plenty\Modules\Basket\Exceptions;
  * Created by ptopczewski, 17.05.16 09:37
 Class BasketItemQuantityCheckException
  */
-abstract class BasketItemQuantityCheckException extends \Plenty\Modules\Basket\Exceptions\BasketItemCheckException 
+abstract class BasketItemQuantityCheckException extends BasketItemCheckException 
 
 {
 

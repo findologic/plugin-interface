@@ -6,13 +6,13 @@ use Plenty\Modules\Accounting\Vat\Exceptions\VatException;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
 
 /**
- * This interface provides methods to initialize the detection of a VAT configuration and to actually detect VAT rates or VAT fields.
+ * This interface provides methods to initialise the detection of a VAT configuration and to actually detect VAT rates or VAT fields.
  */
 interface VatInitContract 
 {
 
 	/**
-	 * Initialize the VAT system data
+	 * Initialise the VAT system data
 	 */
 	public function init(
 		int $billingCountryId, 
@@ -23,7 +23,7 @@ interface VatInitContract
 	);
 
 	/**
-	 * Get whether the VAT system is already initialized or not
+	 * Get whether the VAT system is already initialised or not
 	 */
 	public function isInitialized(
 	):bool;

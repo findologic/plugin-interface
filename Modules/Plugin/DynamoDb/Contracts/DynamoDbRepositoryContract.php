@@ -28,7 +28,7 @@ interface DynamoDbRepositoryContract
 		array $keySchema, 
 		int $readCapacityUnits = 3, 
 		int $writeCapacityUnits = 2
-	):boolean;
+	):bool;
 
 	/**
 	 * Update a table
@@ -38,7 +38,7 @@ interface DynamoDbRepositoryContract
 		string $tableName, 
 		int $readCapacityUnits = 3, 
 		int $writeCapacityUnits = 2
-	):boolean;
+	):bool;
 
 	/**
 	 * Add item to table
@@ -47,7 +47,7 @@ interface DynamoDbRepositoryContract
 		string $pluginName, 
 		string $tableName, 
 		array $item
-	):boolean;
+	):bool;
 
 	/**
 	 * Retrieving items
@@ -55,7 +55,7 @@ interface DynamoDbRepositoryContract
 	public function getItem(
 		string $pluginName, 
 		string $tableName, 
-		boolean $consistentRead, 
+		bool $consistentRead, 
 		array $key
 	):array;
 
@@ -74,7 +74,7 @@ interface DynamoDbRepositoryContract
 	public function deleteTable(
 		string $pluginName, 
 		string $tableName
-	):boolean;
+	):bool;
 
 	/**
 	 * A scan operation scans the entire table. You can specify filters to apply to the results to refine the values returned to you, after the complete scan. Amazon DynamoDB puts a 1MB limit on the scan (the limit applies before the results are filtered).

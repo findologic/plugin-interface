@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\SalesPrice\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 abstract class SalesPriceCustomerClass 
 {

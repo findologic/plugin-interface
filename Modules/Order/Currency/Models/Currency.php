@@ -1,8 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Currency\Models;
 
-use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
  * The currency model. The model includes information like the ISO 4217 code and the related currency symbols as well as the countries that a currency is used in.

@@ -24,7 +24,7 @@ interface PropertyGroupNameRepositoryContract
 	public function delete(
 		int $propertyGroupId, 
 		string $lang
-	):boolean;
+	):bool;
 
 	/**
 	 * Updates a property group name. The ID of the property group and the language must be specified.

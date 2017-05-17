@@ -11,6 +11,7 @@ use Illuminate\Support\Traits\Macroable;
 use InvalidArgumentException;
 use IteratorAggregate;
 use JsonSerializable;
+use Traversable;
 
 class Collection 
 {

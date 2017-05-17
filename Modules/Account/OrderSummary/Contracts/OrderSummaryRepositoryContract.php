@@ -39,7 +39,7 @@ interface OrderSummaryRepositoryContract
 	 */
 	public function deleteOrderSummary(
 		int $orderSummaryId
-	):boolean;
+	):bool;
 
 	/**
 	 * Returns a collection of all order summaries.

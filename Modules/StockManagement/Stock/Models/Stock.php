@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\StockManagement\Stock\Models;
 
-use Carbon\Carbon;
 
 /**
  * The stock model. There are 4 different stock terms used in plentymarkets. The physical stock, the net stock, the reserved stock and the stock reserved for listings.

@@ -22,7 +22,7 @@ interface MarketItemHelperRepositoryContract
 		int $variationId, 
 		float $marketId, 
 		int $accountId, 
-		boolean $setLastExportedTimestamp
+		bool $setLastExportedTimestamp
 	):string;
 
 	/**
@@ -31,7 +31,7 @@ interface MarketItemHelperRepositoryContract
 	public function getAvailability(
 		int $availabilityId, 
 		string $lang, 
-		boolean $returnAvailabilityName
+		bool $returnAvailabilityName
 	):string;
 
 }

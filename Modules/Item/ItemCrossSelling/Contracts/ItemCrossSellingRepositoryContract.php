@@ -21,7 +21,7 @@ interface ItemCrossSellingRepositoryContract
 	public function delete(
 		int $itemId, 
 		int $crossItemId
-	):boolean;
+	):bool;
 
 	public function findByItemId(
 		int $itemId

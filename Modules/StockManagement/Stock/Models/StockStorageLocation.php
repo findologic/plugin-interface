@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\StockManagement\Stock\Models;
 
-use Carbon\Carbon;
 
 /**
  * The stock storage location model contains all information about the stock that is stored at one storage location.

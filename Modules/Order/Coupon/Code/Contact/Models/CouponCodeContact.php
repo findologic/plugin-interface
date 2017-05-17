@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Coupon\Code\Contact\Models;
 
-use Carbon\Carbon;
 
 /**
  * The CouponCodeContact model.

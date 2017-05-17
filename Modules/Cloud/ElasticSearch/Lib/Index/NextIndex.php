@@ -6,7 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Info\BaseInfo;
 /**
  * to bew written
  */
-abstract class NextIndex implements \Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface
+abstract class NextIndex implements IndexInterface
 
 {
 

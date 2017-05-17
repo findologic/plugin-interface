@@ -39,7 +39,7 @@ interface PropertyRepositoryContract
 	 */
 	public function delete(
 		int $id
-	):boolean;
+	):bool;
 
 	/**
 	 * Gets a property. The ID of the property must be specified.

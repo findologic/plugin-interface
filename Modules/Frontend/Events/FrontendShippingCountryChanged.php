@@ -19,6 +19,6 @@ abstract class FrontendShippingCountryChanged
 	 */
 	abstract public function setShippingCountryId(
 		int $shippingCountryId
-	):\Plenty\Modules\Frontend\Events\FrontendShippingCountryChanged;
+	):FrontendShippingCountryChanged;
 
 }

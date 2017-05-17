@@ -1,8 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\ItemCrossSelling\Models;
 
-use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Item\Item\Models\Item;
 
 /**
  * The item cross-selling model including the item

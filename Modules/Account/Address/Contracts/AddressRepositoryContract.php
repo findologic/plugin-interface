@@ -42,7 +42,7 @@ interface AddressRepositoryContract
 	 */
 	public function deleteAddress(
 		int $addressId
-	):boolean;
+	):bool;
 
 	/**
 	 * Returns a collection of addresses linked with a warehouse.
@@ -112,7 +112,7 @@ interface AddressRepositoryContract
 	 */
 	public function deleteAddressOption(
 		int $optionId
-	):boolean;
+	):bool;
 
 	/**
 	 * Returns a collection of address relation types by a specific application and language. The collection may be empty.
