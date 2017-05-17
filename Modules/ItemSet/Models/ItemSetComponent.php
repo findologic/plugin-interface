@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\ItemSet\Models;
 
-use Plenty\Modules\ItemSet\Models\ItemSet;
 
 /**
  * The ItemSetComponent model.

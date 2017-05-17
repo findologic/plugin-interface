@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\StockManagement\Warehouse\Management\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The storage shelf model

@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Category\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 /**
  * Category

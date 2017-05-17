@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Ticket\Models;
 
-use Plenty\Modules\Authentication\Models\User;
 
 /**
  * The ticket owner model.

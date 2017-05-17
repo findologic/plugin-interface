@@ -16,6 +16,6 @@ interface Resources
 
 	public function exists(
 		string $resourceName
-	):boolean;
+	):bool;
 
 }

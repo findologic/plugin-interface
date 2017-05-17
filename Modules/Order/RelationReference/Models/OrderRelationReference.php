@@ -1,9 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\RelationReference\Models;
 
-use Plenty\Modules\Account\Contact\Models\Contact;
-use Plenty\Modules\Account\Models\Account;
-use Plenty\Modules\Order\Models\Order;
 
 /**
  * The order relation reference model specifies how references and orders are related to one another.

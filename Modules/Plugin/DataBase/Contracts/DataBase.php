@@ -9,20 +9,20 @@ interface DataBase
 {
 
 	public function save(
-		\Plenty\Modules\Plugin\DataBase\Contracts\Model $model
-	):\Plenty\Modules\Plugin\DataBase\Contracts\Model;
+		Model $model
+	):Model;
 
 	public function find(
 		string $modelClassName, 
 		 $primaryKeyFieldValue
-	):\Plenty\Modules\Plugin\DataBase\Contracts\Model;
+	):Model;
 
 	public function query(
 		string $modelClassName
-	):\Plenty\Modules\Plugin\DataBase\Contracts\Query;
+	):Query;
 
 	public function delete(
-		\Plenty\Modules\Plugin\DataBase\Contracts\Model $model
+		Model $model
 	):bool;
 
 }

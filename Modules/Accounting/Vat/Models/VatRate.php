@@ -3,7 +3,7 @@ namespace Plenty\Modules\Accounting\Vat\Models;
 
 
 /**
- * The VAT rate model is always associated with a VAT configuration and contains the id, name and percentage of a VAT rate. Each VAT configuration can have 4 rates.
+ * The VAT rate model is always associated with a VAT configuration and contains the ID, name and percentage of a VAT rate. Each VAT configuration can have 4 rates.
  */
 abstract class VatRate 
 {

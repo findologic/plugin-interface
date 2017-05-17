@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Account\Newsletter\Models;
 
-use Plenty\Modules\System\Models\Webstore;
 
 /**
  * The newsletter folder model.

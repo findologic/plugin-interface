@@ -1,8 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Coupon\Code\Validation\Models;
 
-use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Order\Coupon\Campaign\Models\CouponCampaign;
 
 /**
  * The CouponCodeValidation data model contains all data necessary for validating a coupon.

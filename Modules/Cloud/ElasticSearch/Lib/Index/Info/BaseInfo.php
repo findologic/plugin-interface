@@ -7,7 +7,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Services\ClientFactory;
 /**
  * to bew written
  */
-abstract class BaseInfo implements \Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Info\InfoInterface
+abstract class BaseInfo implements InfoInterface
 
 {
 

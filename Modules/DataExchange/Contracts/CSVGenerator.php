@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\DataExchange\Contracts;
 
-use Plenty\Modules\DataExchange\Models\FormatSetting;
 
 /**
  * generator for csv content

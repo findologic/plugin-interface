@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Events;
 
-use Plenty\Modules\Order\Models\Order;
 
 /**
  * An Event class fired after a payment was assigned to an order.

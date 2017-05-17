@@ -24,7 +24,7 @@ interface PropertyNameRepositoryContract
 	public function delete(
 		int $propertyId, 
 		string $lang
-	):boolean;
+	):bool;
 
 	/**
 	 * Updates a property name. The ID of the property and the language must be specified.

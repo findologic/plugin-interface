@@ -1,11 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Collection;
-use Plenty\Modules\Account\Address\Models\Address;
-use Plenty\Modules\Authentication\Models\User;
-use Plenty\Modules\Order\RelationReference\Models\OrderRelationReference;
 
 /**
  * The order model.

@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Payment\Models;
 
-use Plenty\Modules\Payment\Method\Models\PaymentMethod;
 
 /**
  * The payment model

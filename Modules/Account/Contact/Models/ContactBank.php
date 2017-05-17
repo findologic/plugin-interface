@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Account\Contact\Models;
 
-use Plenty\Modules\Order\Models\Legacy\Order;
 
 /**
  * The contact bank model.

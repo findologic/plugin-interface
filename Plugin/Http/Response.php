@@ -153,7 +153,7 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 		string $content = "", 
 		int $status = 200, 
 		array $headers = []
-	):\Plenty\Plugin\Http\Response;
+	):Response;
 
 	/**
 	 * Return a new view response from the application.
@@ -163,7 +163,7 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 		array $data = [], 
 		int $status = 200, 
 		array $headers = []
-	):\Plenty\Plugin\Http\Response;
+	):Response;
 
 	/**
 	 * Return a new JSON response from the application.

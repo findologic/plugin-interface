@@ -1,8 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\ItemProperty\Models;
 
-use Plenty\Modules\Item\Property\Models\Property;
-use Plenty\Modules\Item\Property\Models\PropertySelection;
 
 /**
  * ItemPropertyValue

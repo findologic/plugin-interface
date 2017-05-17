@@ -37,7 +37,7 @@ interface PropertyGroupRepositoryContract
 	 */
 	public function delete(
 		int $id
-	):boolean;
+	):bool;
 
 	/**
 	 * Gets a property group. The ID of the property group must be specified.

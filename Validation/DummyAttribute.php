@@ -443,6 +443,16 @@ The value is null.
 		return $this;
 	}
 
+	/**
+	 * The field under validation may be null. This is particularly useful when validating primitive such as strings
+and integers that can contain null values.
+	 */
+	public function nullable(
+	):self
+	{
+		return $this;
+	}
+
 	public function generateRulesContent(
 	)
 	{

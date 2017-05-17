@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
-use Carbon\Carbon;
 
 /**
  * The order amount vat model.

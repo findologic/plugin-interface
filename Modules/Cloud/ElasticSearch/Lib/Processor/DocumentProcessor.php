@@ -6,7 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 /**
  * to be written
  */
-abstract class DocumentProcessor implements \Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface
+abstract class DocumentProcessor implements ProcessorInterface
 
 {
 

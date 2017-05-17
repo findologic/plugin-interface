@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Coupon\Campaign\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The CouponCampaign model contains all information of a campaign.

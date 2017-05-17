@@ -16,7 +16,7 @@ abstract class DefaultCategoryMutator
 
 	abstract public function setPlentyId(
 		int $plentyId
-	):\Plenty\Modules\Item\Search\Mutators\DefaultCategoryMutator;
+	):DefaultCategoryMutator;
 
 	abstract public function getDependencies(
 	):array;

@@ -36,6 +36,6 @@ interface OrderDocumentStorageContract
 	 */
 	public function delete(
 		string $path
-	):boolean;
+	):bool;
 
 }

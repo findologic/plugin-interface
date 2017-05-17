@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Order\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 /**
  * The order type model.
@@ -36,6 +35,8 @@ abstract class OrderType
 	const TYPE_PARTIAL_DELIVERY = 13;
 
 	const TYPE_SUBSCRIPTION = 14;
+
+	const TYPE_REDISTRIBUTION = 15;
 
 	const CREATED_AT = 'createdAt';
 
