@@ -3,7 +3,7 @@ namespace Plenty\Modules\Account\Contact\Models;
 
 
 /**
- * contact allowed method of payment model
+ * The model of the allowed payment method for the contact
  */
 abstract class ContactAllowedMethodOfPayment 
 {

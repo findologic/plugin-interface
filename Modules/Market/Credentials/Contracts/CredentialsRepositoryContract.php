@@ -71,4 +71,10 @@ interface CredentialsRepositoryContract
 	public function getFilters(
 	);
 
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
+	);
+
 }

@@ -7,7 +7,7 @@ use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * The ShippingServiceProviderRepositoryContract is the interface for the shipping provider repository. This interface allows to list shipping providers.
+ * The ShippingServiceProviderRepositoryContract is the interface for the shipping service provider repository. This interface allows to list shipping service providers.
  */
 interface ShippingServiceProviderRepositoryContract 
 {
