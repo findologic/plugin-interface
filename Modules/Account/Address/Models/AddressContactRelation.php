@@ -3,7 +3,7 @@ namespace Plenty\Modules\Account\Address\Models;
 
 
 /**
- * address contact relation model
+ * The address contact relation model
  */
 abstract class AddressContactRelation 
 {
