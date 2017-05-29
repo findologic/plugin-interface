@@ -17,6 +17,14 @@ abstract class ImageMutator
 		int $marketId
 	):self;
 
+	abstract public function addClient(
+		int $plentyId
+	):self;
+
+	abstract public function addListing(
+		int $listingId
+	):self;
+
 	abstract public function getDependencies(
 	):array;
 
