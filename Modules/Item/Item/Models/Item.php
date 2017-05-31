@@ -30,6 +30,8 @@ abstract class Item
 	public		$createdAt;
 	public		$updatedAt;
 	public		$isSubscribable;
+	public		$isSerialNumber;
+	public		$isShippingPackage;
 	public		$amazonFbaPlatform;
 	public		$isShippableByAmazon;
 	public		$amazonProductType;
