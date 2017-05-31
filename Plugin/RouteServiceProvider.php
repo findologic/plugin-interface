@@ -2,6 +2,7 @@
 namespace Plenty\Plugin;
 
 use Illuminate\Routing\Router;
+use Plenty\Providers\RouteServiceProvider as PlentyRouteServiceProvider;
 
 /**
  * Route service provider
