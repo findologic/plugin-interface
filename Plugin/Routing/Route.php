@@ -15,6 +15,13 @@ abstract class Route
 		array $middleware
 	):self;
 
+	/**
+	 * Get or set the middlewares attached to the route.
+	 */
+	abstract public function middleware(
+		array $middleware = []
+	):self;
+
 	abstract public function getMiddleware(
 	):array;
 

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Shipping\PackageType\Models;
 
 
 /**
- * ShippingPackageTypeModel
+ * The shipping package type model.
  */
 abstract class ShippingPackageType 
 {
