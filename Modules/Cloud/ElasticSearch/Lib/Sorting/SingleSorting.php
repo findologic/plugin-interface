@@ -6,7 +6,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
 /**
  * To be written
  */
-abstract class SingleSorting 
+abstract class SingleSorting implements SortingInterface
+
 {
 
 	abstract public function toArray(

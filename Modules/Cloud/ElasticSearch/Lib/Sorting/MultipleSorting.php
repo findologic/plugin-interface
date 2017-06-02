@@ -6,8 +6,13 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
 /**
  * To be written
  */
-abstract class MultipleSorting 
+abstract class MultipleSorting implements SortingInterface
+
 {
+
+	abstract public function addSorting(
+		SortingInterface $sorting
+	);
 
 	abstract public function add(
 		string $path, 
