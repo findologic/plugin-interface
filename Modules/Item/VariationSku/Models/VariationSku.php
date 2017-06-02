@@ -20,6 +20,7 @@ abstract class VariationSku
 	public		$parentSku;
 	public		$isActive;
 	public		$createdAt;
+	public		$updatedAt;
 	public		$exportedAt;
 	public		$stockUpdatedAt;
 	public		$deletedAt;
