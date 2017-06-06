@@ -17,6 +17,7 @@ abstract class OrderShippingPackage
 	public		$weight;
 	public		$packageNumber;
 	public		$labelPath;
+	public		$labelBase64;
 	public		$packageType;
 	public		$volume;
 	public		$order;
