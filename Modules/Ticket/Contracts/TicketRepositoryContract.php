@@ -30,6 +30,13 @@ interface TicketRepositoryContract
 	):array;
 
 	/**
+	 * Deletes a ticket by given ticketId
+	 */
+	public function deleteTicket(
+		int $ticketId
+	);
+
+	/**
 	 * Creates a message for a ticket.
 	 */
 	public function createMessage(
