@@ -24,6 +24,9 @@ interface CountryRepositoryContract
 		array $with
 	):array;
 
+	public function getActiveCountriesList(
+	):Collection;
+
 	public function getActiveCountryNameMap(
 		string $language
 	):array;
