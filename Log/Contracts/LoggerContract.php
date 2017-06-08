@@ -77,7 +77,8 @@ be logged and monitored.
 	 * Log exceptions.
 	 */
 	public function logException(
-		\Exception $exception
+		\Exception $exception, 
+		int $traceDepth = 3
 	);
 
 	/**
