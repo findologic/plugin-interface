@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Events;
 
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * A base event class for all order events. Each order event expects an order instance.
@@ -9,12 +10,16 @@ abstract class OrderEvent
 {
 
 	/**
-	 * Returns this model as an array.
+	 * OrderEvent constructor.
 	 */
-	public function toArray(
-	):array
-	{
-		return [];
-	}
+	abstract public function __construct(
+		Order $order
+	);
+
+	/**
+	 * Get the order instance.
+	 */
+	abstract public function getOrder(
+	):Order;
 
 }

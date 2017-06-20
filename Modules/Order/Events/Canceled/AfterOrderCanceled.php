@@ -1,20 +1,27 @@
 <?php
 namespace Plenty\Modules\Order\Events\Canceled;
 
+use Plenty\Modules\Order\Events\OrderEvent;
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * An event class fired after an order is canceled.
  */
-abstract class AfterOrderCanceled 
+abstract class AfterOrderCanceled extends \Plenty\Modules\Order\Events\OrderEvent 
+
 {
 
 	/**
-	 * Returns this model as an array.
+	 * OrderEvent constructor.
 	 */
-	public function toArray(
-	):array
-	{
-		return [];
-	}
+	abstract public function __construct(
+		Order $order
+	);
+
+	/**
+	 * Get the order instance.
+	 */
+	abstract public function getOrder(
+	):Order;
 
 }

@@ -1,20 +1,26 @@
 <?php
 namespace Plenty\Modules\Order\Events;
 
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * An Event class fired after a payment is assigned and if the order is only partly paid.
  */
-abstract class OrderPartlyPaid 
+abstract class OrderPartlyPaid extends \Plenty\Modules\Order\Events\OrderPaidEvent 
+
 {
 
 	/**
-	 * Returns this model as an array.
+	 * OrderEvent constructor.
 	 */
-	public function toArray(
-	):array
-	{
-		return [];
-	}
+	abstract public function __construct(
+		Order $order
+	);
+
+	/**
+	 * Get the order instance.
+	 */
+	abstract public function getOrder(
+	):Order;
 
 }

@@ -1,20 +1,27 @@
 <?php
 namespace Plenty\Modules\Order\Events\Created;
 
+use Plenty\Modules\Order\Events\OrderCreated;
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * An event class fired after a new delivery order is created.
  */
-abstract class DeliveryOrderCreated 
+abstract class DeliveryOrderCreated extends \Plenty\Modules\Order\Events\OrderCreated 
+
 {
 
 	/**
-	 * Returns this model as an array.
+	 * OrderEvent constructor.
 	 */
-	public function toArray(
-	):array
-	{
-		return [];
-	}
+	abstract public function __construct(
+		Order $order
+	);
+
+	/**
+	 * Get the order instance.
+	 */
+	abstract public function getOrder(
+	):Order;
 
 }
