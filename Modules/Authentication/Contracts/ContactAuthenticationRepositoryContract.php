@@ -18,6 +18,11 @@ interface ContactAuthenticationRepositoryContract
 		string $password
 	);
 
+	public function authenticateWithPlentyId(
+		int $plentyId, 
+		string $password
+	);
+
 	public function logout(
 	);
 
