@@ -34,6 +34,15 @@ interface CategoryRepositoryContract
 	):array;
 
 	/**
+	 * Rebuild the category tree cache
+	 */
+	public function buildCache(
+		string $type = "all", 
+		string $lang = "de", 
+		int $clientId = 0
+	);
+
+	/**
 	 * Returns all linklist categories as list.
 	 */
 	public function getLinklistList(
