@@ -3,25 +3,21 @@ namespace Plenty\Modules\Listing\Models;
 
 
 /**
- * The listing model.
+ * The listing properties model. Each listing property has a type.
  */
-abstract class Listing 
+abstract class ListingProperty 
 {
-
-	const MAX_ITEMS_PER_PAGE = 50;
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
-	public		$itemId;
+	public		$listingId;
 	public		$typeId;
-	public		$stockDependenceTypeId;
-	public		$unitCombinationId;
-	public		$properties;
-	public		$type;
-	public		$stockDependenceType;
-	public		$markets;
+	public		$value;
+	public		$createdAt;
+	public		$updatedAt;
+	public		$listing;
 	
 	/**
 	 * Returns this model as an array.

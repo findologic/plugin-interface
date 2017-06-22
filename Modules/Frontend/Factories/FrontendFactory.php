@@ -4,6 +4,7 @@ namespace Plenty\Modules\Frontend\Factories;
 use Plenty\Modules\Frontend\Services\AccountService;
 use Plenty\Modules\Frontend\Services\AgentService;
 use Plenty\Modules\Frontend\Services\FileService;
+use Plenty\Modules\Frontend\Services\LocaleService;
 use Plenty\Modules\Frontend\Services\SystemService;
 
 /**
@@ -11,6 +12,9 @@ use Plenty\Modules\Frontend\Services\SystemService;
  */
 abstract class FrontendFactory 
 {
+
+	abstract public function getLocale(
+	):LocaleService;
 
 	abstract public function getAgent(
 	):AgentService;
