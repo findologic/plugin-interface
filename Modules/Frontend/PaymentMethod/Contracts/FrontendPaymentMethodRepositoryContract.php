@@ -17,6 +17,14 @@ interface FrontendPaymentMethodRepositoryContract
 	):array;
 
 	/**
+	 * Lists all payment methods for switch.
+	 */
+	public function getCurrentPaymentMethodsListForSwitch(
+		int $currentPaymentMethodId = 0, 
+		int $orderId = null
+	):array;
+
+	/**
 	 * Gets the name of the payment method in the specified language.
 	 */
 	public function getPaymentMethodName(
@@ -77,5 +85,15 @@ interface FrontendPaymentMethodRepositoryContract
 		int $paymentMethodId, 
 		string $lang
 	):string;
+
+	public function getPaymentMethodSwitchToById(
+		int $paymentMethodId, 
+		int $orderId = null
+	):bool;
+
+	public function getPaymentMethodSwitchFromById(
+		int $paymentMethodId, 
+		int $orderId = null
+	):bool;
 
 }
