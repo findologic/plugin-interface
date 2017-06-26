@@ -9,6 +9,7 @@ abstract class StorageObject
 {
 	public		$key;
 	public		$lastModified;
+	public		$metaData;
 	public		$eTag;
 	public		$size;
 	public		$storageClass;
