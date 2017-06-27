@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Date\Contracts;
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Date\Models\OrderDate;
 use Plenty\Modules\Order\Date\Models\OrderDateType;
 use Plenty\Modules\Order\Date\Models\OrderDateTypeName;
@@ -18,7 +18,7 @@ interface OrderDateRepositoryContract
 	 */
 	public function findNamesByTypeId(
 		int $typeId
-	):array;
+	);
 
 	/**
 	 * Get a name of a date type
@@ -91,6 +91,6 @@ interface OrderDateRepositoryContract
 	 */
 	public function findByOrderId(
 		int $orderId
-	):array;
+	);
 
 }

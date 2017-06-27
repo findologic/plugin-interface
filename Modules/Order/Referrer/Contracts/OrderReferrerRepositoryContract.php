@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Referrer\Contracts;
 
-use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Referrer\Exceptions\ReferrerNotEditableException;
 use Plenty\Modules\Order\Referrer\Models\OrderReferrer;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -17,7 +17,7 @@ interface OrderReferrerRepositoryContract
 	 */
 	public function getList(
 		array $columns = []
-	):array;
+	);
 
 	/**
 	 * Create an order referrer

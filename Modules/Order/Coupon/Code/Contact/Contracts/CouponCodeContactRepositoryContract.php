@@ -45,7 +45,7 @@ interface CouponCodeContactRepositoryContract
 		int $contactId, 
 		int $page = 1, 
 		int $itemsPerPage = 50
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * List redeemed coupons of a campaign.
@@ -54,7 +54,7 @@ interface CouponCodeContactRepositoryContract
 		int $campaignId, 
 		int $page = 1, 
 		int $itemsPerPage = 50
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * List redeemed coupons of a coupon code
@@ -63,6 +63,6 @@ interface CouponCodeContactRepositoryContract
 		string $coupon, 
 		int $page = 1, 
 		int $itemsPerPage = 50
-	):array;
+	):PaginatedResult;
 
 }

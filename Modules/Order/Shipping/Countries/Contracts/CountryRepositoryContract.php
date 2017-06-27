@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Shipping\Countries\Contracts;
 
-use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
@@ -22,7 +22,7 @@ interface CountryRepositoryContract
 	public function getCountriesList(
 		int $active, 
 		array $with
-	):array;
+	):Collection;
 
 	public function getActiveCountriesList(
 	):Collection;

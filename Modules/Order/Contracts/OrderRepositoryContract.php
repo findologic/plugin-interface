@@ -3,7 +3,6 @@ namespace Plenty\Modules\Order\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
-use Plenty\Modules\Order\Date\Models\OrderDate;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
 use Plenty\Repositories\Contracts\FilterableContract;
@@ -113,7 +112,7 @@ interface OrderRepositoryContract
 		int $page = 1, 
 		int $itemsPerPage = 50, 
 		array $with = []
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * List package numbers of an order

@@ -19,7 +19,7 @@ interface ParcelServicePresetRepositoryContract
 		array $columns = [], 
 		string $parcelServiceName = null, 
 		string $with = null
-	):array;
+	);
 
 	/**
 	 * Gets a shipping profile. The ID of the shipping profile must be specified.

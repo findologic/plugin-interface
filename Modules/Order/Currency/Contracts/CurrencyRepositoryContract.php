@@ -1,8 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Currency\Contracts;
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Currency\Models\Currency;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
@@ -27,7 +27,7 @@ interface CurrencyRepositoryContract
 	public function getCurrencyList(
 		array $columns = [], 
 		array $with = []
-	):array;
+	);
 
 	/**
 	 * List countries for a currency
@@ -35,7 +35,7 @@ interface CurrencyRepositoryContract
 	public function getCurrencyCountries(
 		string $currencyIso, 
 		array $columns = []
-	):array;
+	);
 
 	/**
 	 * Get a currency for a country
