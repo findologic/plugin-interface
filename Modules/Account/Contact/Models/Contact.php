@@ -21,6 +21,7 @@ abstract class Contact
 	public		$email;
 	public		$secondaryEmail;
 	public		$gender;
+	public		$title;
 	public		$formOfAddress;
 	public		$newsletterAllowanceAt;
 	public		$classId;

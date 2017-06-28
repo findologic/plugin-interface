@@ -18,7 +18,8 @@ interface ShippingServiceProviderRepositoryContract
 	public function all(
 		array $columns = [], 
 		int $page = 1, 
-		int $itemsPerPage = 50
+		int $itemsPerPage = 50, 
+		array $filters = []
 	);
 
 	/**

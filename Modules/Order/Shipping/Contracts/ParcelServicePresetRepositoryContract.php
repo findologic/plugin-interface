@@ -5,6 +5,8 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Basket\Models\Basket;
 use Plenty\Modules\Order\Shipping\ParcelService\Models\ParcelServicePreset;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 
 /**
  * The ParcelServicePresetRepositoryContract is the interface for the shipping profile repository. This interface allows to get a shipping profile by the ID or list all shipping profiles.
@@ -17,8 +19,9 @@ interface ParcelServicePresetRepositoryContract
 	 */
 	public function getPresetList(
 		array $columns = [], 
+		string $with = null, 
 		string $parcelServiceName = null, 
-		string $with = null
+		array $filters = []
 	);
 
 	/**
@@ -37,5 +40,24 @@ interface ParcelServicePresetRepositoryContract
 		int $contactClass, 
 		array $customParams = []
 	):array;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
+	);
 
 }
