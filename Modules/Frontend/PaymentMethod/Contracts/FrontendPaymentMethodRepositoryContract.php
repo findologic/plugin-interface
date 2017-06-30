@@ -21,7 +21,8 @@ interface FrontendPaymentMethodRepositoryContract
 	 */
 	public function getCurrentPaymentMethodsListForSwitch(
 		int $currentPaymentMethodId = 0, 
-		int $orderId = null
+		int $orderId = null, 
+		string $lang = "de"
 	):array;
 
 	/**
