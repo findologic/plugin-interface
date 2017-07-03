@@ -24,6 +24,10 @@ abstract class ElasticSearch
 
 	const RANGE_OPERATOR_GT = 'gt';
 
+	const OR_OPERATOR = 'or';
+
+	const AND_OPERATOR = 'and';
+
 	const RANGE_OPERATOR_GTE = 'gte';
 
 	const DOMAIN_VARIATION = 'variation';
