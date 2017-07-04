@@ -3,7 +3,7 @@ namespace Plenty\Modules\Plugin\DynamoDb\Contracts;
 
 
 /**
- * AWS DynamoDb Repository
+ * AWS DynamoDb Repository (Deprecated)
  */
 interface DynamoDbRepositoryContract 
 {
