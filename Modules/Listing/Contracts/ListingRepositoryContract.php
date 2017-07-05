@@ -30,7 +30,7 @@ interface ListingRepositoryContract
 		int $itemsPerPage = 50, 
 		array $with = [], 
 		array $filters = []
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * Create new listing

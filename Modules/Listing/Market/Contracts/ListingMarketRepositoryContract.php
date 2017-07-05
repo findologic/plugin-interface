@@ -30,7 +30,7 @@ interface ListingMarketRepositoryContract
 		int $itemsPerPage = 50, 
 		array $with = [], 
 		array $filters = []
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * Create an listing market.

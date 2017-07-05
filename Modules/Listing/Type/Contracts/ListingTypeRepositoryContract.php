@@ -26,6 +26,6 @@ interface ListingTypeRepositoryContract
 		int $page = 1, 
 		int $itemsPerPage = 50, 
 		array $with = []
-	):array;
+	):PaginatedResult;
 
 }

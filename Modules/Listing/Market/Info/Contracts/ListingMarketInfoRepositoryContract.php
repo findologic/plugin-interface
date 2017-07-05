@@ -20,7 +20,7 @@ interface ListingMarketInfoRepositoryContract
 		int $itemsPerPage = 50, 
 		array $with = [], 
 		array $filters = []
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * Sets the filter array.
