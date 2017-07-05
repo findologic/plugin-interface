@@ -57,6 +57,13 @@ interface FrontendPaymentMethodRepositoryContract
 	):string;
 
 	/**
+	 * Gets the detail link of the payment method. The detail link can be entered in the config.json.
+	 */
+	public function getPaymentMethodSourceUrl(
+		PaymentMethod $paymentMethod
+	):string;
+
+	/**
 	 * Gets the name of the payment method by ID and language. The ID of the payment method and the language must be specified.
 	 */
 	public function getPaymentMethodNameById(

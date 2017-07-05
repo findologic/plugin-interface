@@ -28,6 +28,8 @@ abstract class AddressOption
 
 	const TYPE_SESSION_ID = 10;
 
+	const TYPE_TITLE = 11;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

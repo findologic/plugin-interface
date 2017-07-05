@@ -27,6 +27,7 @@ abstract class AttributeValue
 	public		$percentageDistribution;
 	public		$attribute;
 	public		$valueNames;
+	public		$valueMarketNames;
 	
 	/**
 	 * Returns this model as an array.
