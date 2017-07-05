@@ -66,6 +66,18 @@ abstract class Document
 
 	const REVERSAL_DOCUMENT = 'reversal_document';
 
+	const SOURCE_KLARNA = 'klarna';
+
+	const SOURCE_SOAP = 'soap';
+
+	const SOURCE_ADMIN = 'admin';
+
+	const SOURCE_HITMEISTER = 'hitmeister';
+
+	const SOURCE_PAYPAL = 'paypal';
+
+	const SOURCE_REST = 'rest';
+
 	const UPDATED_AT = 'plenty_document_updated';
 
 	const CREATED_AT = 'plenty_document_created';
