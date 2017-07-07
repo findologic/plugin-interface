@@ -1,9 +1,14 @@
 <?php
 namespace Plenty\Modules\Item\Search\Mutators;
 
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\ObjectMutator;
 
-abstract class ImageMutator 
+/**
+ * foo
+ */
+abstract class ImageMutator implements MutatorInterface
+
 {
 
 	abstract public function getPath(
