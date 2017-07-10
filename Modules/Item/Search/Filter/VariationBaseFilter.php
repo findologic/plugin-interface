@@ -52,6 +52,11 @@ abstract class VariationBaseFilter implements TypeInterface
 	);
 
 	abstract public function isSalable(
+		bool $bool = true
+	);
+
+	abstract public function isSalableAndActive(
+		bool $bool = true
 	);
 
 	abstract public function hasADescriptionInLanguage(
