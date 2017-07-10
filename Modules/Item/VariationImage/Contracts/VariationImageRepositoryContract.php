@@ -2,6 +2,8 @@
 namespace Plenty\Modules\Item\VariationImage\Contracts;
 
 use Plenty\Modules\Item\VariationImage\Models\VariationImage;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
@@ -52,5 +54,24 @@ interface VariationImageRepositoryContract
 	public function findById(
 		int $id
 	):VariationImage;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
+	);
 
 }
