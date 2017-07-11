@@ -32,7 +32,7 @@ interface StorageLocationManagementRepositoryContract
 		int $itemsPerPage = 50, 
 		array $columns = [], 
 		array $with = []
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * Create a new storage location.
