@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Property\Models\Property;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The contract for the property repository
@@ -56,6 +57,17 @@ interface PropertyRepositoryContract
 		int $perPage = 50, 
 		int $page = 1
 	):array;
+
+	/**
+	 * Search properties.
+	 */
+	public function search(
+		array $columns = [], 
+		int $perPage = 50, 
+		int $page = 1, 
+		array $with = [], 
+		array $filter = []
+	):PaginatedResult;
 
 	/**
 	 * Sets the filter array.
