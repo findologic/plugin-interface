@@ -15,7 +15,7 @@ interface ListingRepositoryContract
 {
 
 	/**
-	 * Get a listing by a given id.
+	 * Get a listing by a given ID.
 	 */
 	public function get(
 		int $id, 
@@ -23,7 +23,7 @@ interface ListingRepositoryContract
 	):Listing;
 
 	/**
-	 * Search listing
+	 * List listing
 	 */
 	public function search(
 		int $page = 1, 

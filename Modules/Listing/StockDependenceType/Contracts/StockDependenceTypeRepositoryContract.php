@@ -20,7 +20,7 @@ interface StockDependenceTypeRepositoryContract
 	):StockDependenceType;
 
 	/**
-	 * List listing stock dependence type
+	 * List listing stock dependence types
 	 */
 	public function all(
 		int $page = 1, 

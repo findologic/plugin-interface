@@ -20,7 +20,7 @@ interface ListingTypeRepositoryContract
 	):ListingType;
 
 	/**
-	 * List listing type
+	 * List listing types
 	 */
 	public function all(
 		int $page = 1, 

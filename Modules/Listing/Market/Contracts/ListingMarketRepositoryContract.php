@@ -15,7 +15,7 @@ interface ListingMarketRepositoryContract
 {
 
 	/**
-	 * Get an listing market.
+	 * Get a listing market
 	 */
 	public function get(
 		int $id, 
@@ -23,7 +23,7 @@ interface ListingMarketRepositoryContract
 	):ListingMarket;
 
 	/**
-	 * List listing markets by filter options
+	 * List listing markets
 	 */
 	public function search(
 		int $page = 1, 
@@ -33,7 +33,7 @@ interface ListingMarketRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Create an listing market.
+	 * Create a listing
 	 */
 	public function create(
 		array $data
