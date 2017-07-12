@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Accounting\Vat\Contracts;
 
+use Plenty\Legacy\Services\Order\Tax\TaxInformation;
 use Plenty\Modules\Accounting\Exceptions\AccountingException;
 use Plenty\Modules\Accounting\Vat\Exceptions\VatException;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
