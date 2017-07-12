@@ -11,6 +11,19 @@ interface VariationSkuRepositoryContract
 {
 
 	/**
+	 * Generates or updates an SKU and parent SKU
+	 */
+	public function generateSkuWithParent(
+		array $variation, 
+		float $marketId, 
+		int $accountId, 
+		string $sku = null, 
+		string $parentSku = null, 
+		bool $setLastExportedTimestamp = true, 
+		bool $returnObject = false
+	);
+
+	/**
 	 * Generates or updates an SKU
 	 */
 	public function generateSku(
