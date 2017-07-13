@@ -1,13 +1,14 @@
 <?php
-namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Processor;
+namespace Plenty\Modules\Item\Search\Suggestions;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\SuggestionProcessor;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 
 /**
  * to be written
  */
-abstract class DocumentProcessor implements ProcessorInterface
+abstract class SearchSuggestionProcessor implements ProcessorInterface
 
 {
 

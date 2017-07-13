@@ -7,16 +7,16 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\SearchInterface;
 /**
  * foo
  */
-interface ElasticSearchSearchRepositoryContract 
+interface ElasticSearchMultiSearchRepositoryContract 
 {
 
 	public function setIndex(
 		IndexInterface $index
-	):ElasticSearchSearchRepositoryContract;
+	):ElasticSearchMultiSearchRepositoryContract;
 
 	public function addSearch(
 		 $search
-	):ElasticSearchSearchRepositoryContract;
+	):ElasticSearchMultiSearchRepositoryContract;
 
 	public function execute(
 	):array;

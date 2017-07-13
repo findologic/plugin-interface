@@ -1,25 +1,22 @@
 <?php
 namespace Plenty\Modules\Item\Search\Contracts;
 
-use Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchScrollRepositoryContract;
+use Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchMultiSearchRepositoryContract;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 
 /**
  * kommt noch
  */
-interface VariationElasticSearchScrollRepositoryContract 
+interface VariationElasticSearchMultiSearchRepositoryContract 
 {
-
-	public function hasNext(
-	):bool;
 
 	public function setIndex(
 		IndexInterface $index
-	):ElasticSearchSearchRepositoryContract;
+	):ElasticSearchMultiSearchRepositoryContract;
 
 	public function addSearch(
 		 $search
-	):ElasticSearchSearchRepositoryContract;
+	):ElasticSearchMultiSearchRepositoryContract;
 
 	public function execute(
 	):array;

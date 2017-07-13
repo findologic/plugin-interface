@@ -7,13 +7,9 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 /**
  * to be written
  */
-abstract class DocumentProcessor implements ProcessorInterface
+abstract class SuggestionProcessor implements ProcessorInterface
 
 {
-
-	abstract public function process(
-		array $data
-	):array;
 
 	abstract public function getDependencies(
 	):array;
@@ -21,5 +17,9 @@ abstract class DocumentProcessor implements ProcessorInterface
 	abstract public function addMutator(
 		MutatorInterface $mutator
 	):self;
+
+	abstract public function process(
+		array $data
+	):array;
 
 }

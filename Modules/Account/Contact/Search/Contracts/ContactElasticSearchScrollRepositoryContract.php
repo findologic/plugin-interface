@@ -3,7 +3,6 @@ namespace Plenty\Modules\Account\Contact\Search\Contracts;
 
 use Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchScrollRepositoryContract;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\SearchInterface;
 
 /**
  * kommt noch
@@ -19,7 +18,7 @@ interface ContactElasticSearchScrollRepositoryContract
 	):ElasticSearchSearchRepositoryContract;
 
 	public function addSearch(
-		SearchInterface $search
+		 $search
 	):ElasticSearchSearchRepositoryContract;
 
 	public function execute(
