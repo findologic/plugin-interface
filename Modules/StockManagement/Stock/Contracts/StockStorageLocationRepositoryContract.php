@@ -20,7 +20,7 @@ interface StockStorageLocationRepositoryContract
 		array $columns, 
 		int $page, 
 		int $itemsPerPage
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * List stock of a variation per storage location
@@ -30,7 +30,7 @@ interface StockStorageLocationRepositoryContract
 		array $columns, 
 		int $page, 
 		int $itemsPerPage
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * Sets the filter array.

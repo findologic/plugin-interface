@@ -20,7 +20,7 @@ interface StockRepositoryContract
 		array $columns, 
 		int $page, 
 		int $itemsPerPage
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * List stock
@@ -29,7 +29,7 @@ interface StockRepositoryContract
 		array $columns, 
 		int $page, 
 		int $itemsPerPage
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * List stock by warehouse type
@@ -39,7 +39,7 @@ interface StockRepositoryContract
 		array $columns, 
 		int $page, 
 		int $itemsPerPage
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * Corrects stock. The ID of the warehouse has to be provided.
