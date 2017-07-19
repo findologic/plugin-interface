@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\VariationStock\Models\VariationStock;
 use Plenty\Modules\Item\VariationStock\Models\VariationStockMovement;
 use Plenty\Modules\StockManagement\Stock\Models\StockStorageLocation;
+use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -54,5 +55,24 @@ interface VariationStockRepositoryContract
 		int $variationId, 
 		array $data
 	):PaginatedResult;
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
+	);
 
 }

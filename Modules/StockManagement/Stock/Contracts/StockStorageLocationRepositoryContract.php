@@ -17,9 +17,9 @@ interface StockStorageLocationRepositoryContract
 	 */
 	public function listStockStorageLocationsByWarehouseId(
 		int $warehouseId, 
-		array $columns, 
-		int $page, 
-		int $itemsPerPage
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
 	):PaginatedResult;
 
 	/**
@@ -27,9 +27,9 @@ interface StockStorageLocationRepositoryContract
 	 */
 	public function listStockStorageLocationsByVariationId(
 		int $variationId, 
-		array $columns, 
-		int $page, 
-		int $itemsPerPage
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
 	):PaginatedResult;
 
 	/**

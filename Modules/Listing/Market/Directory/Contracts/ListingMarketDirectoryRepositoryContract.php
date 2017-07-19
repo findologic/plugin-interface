@@ -19,7 +19,7 @@ interface ListingMarketDirectoryRepositoryContract
 	):ListingMarketDirectory;
 
 	/**
-	 * Create an listing market directory.
+	 * Create a listing market directory.
 	 */
 	public function create(
 		array $data

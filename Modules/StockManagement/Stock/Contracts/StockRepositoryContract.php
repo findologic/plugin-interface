@@ -17,18 +17,18 @@ interface StockRepositoryContract
 	 */
 	public function listStockByWarehouseId(
 		int $warehouseId, 
-		array $columns, 
-		int $page, 
-		int $itemsPerPage
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
 	):PaginatedResult;
 
 	/**
 	 * List stock
 	 */
 	public function listStock(
-		array $columns, 
-		int $page, 
-		int $itemsPerPage
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
 	):PaginatedResult;
 
 	/**
@@ -36,9 +36,9 @@ interface StockRepositoryContract
 	 */
 	public function listStockByWarehouseType(
 		string $type, 
-		array $columns, 
-		int $page, 
-		int $itemsPerPage
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
 	):PaginatedResult;
 
 	/**
@@ -63,6 +63,16 @@ interface StockRepositoryContract
 	public function redistributeStock(
 		array $data
 	);
+
+	/**
+	 * List stock movements
+	 */
+	public function listStockMovements(
+		int $warehouseId, 
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
+	):PaginatedResult;
 
 	/**
 	 * Sets the filter array.

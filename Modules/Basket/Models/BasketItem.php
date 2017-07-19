@@ -44,6 +44,8 @@ abstract class BasketItem
 	public		$bundleVariationId;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$attributeTotalMarkup;
+	public		$basketItemOrderParams;
 	
 	/**
 	 * Returns this model as an array.

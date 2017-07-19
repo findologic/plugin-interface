@@ -14,7 +14,7 @@ interface LayoutTemplateRepositoryContract
 {
 
 	/**
-	 * Get an layout template.
+	 * Get a layout template.
 	 */
 	public function get(
 		int $id, 
@@ -22,7 +22,7 @@ interface LayoutTemplateRepositoryContract
 	):LayoutTemplate;
 
 	/**
-	 * Create an layout template.
+	 * Create a layout template.
 	 */
 	public function create(
 		array $data

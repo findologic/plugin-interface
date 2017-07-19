@@ -7,7 +7,7 @@ use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * The ListingMarketInfoRepositoryContract is the interface for the listing market info repository. This interface allows you to get a information about one or many listing markets.
+ * The ListingMarketInfoRepositoryContract is the interface for the listing market info repository. This interface allows you to get information about one or many listing markets.
  */
 interface ListingMarketInfoRepositoryContract 
 {
