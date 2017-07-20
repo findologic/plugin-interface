@@ -3,6 +3,7 @@ namespace Plenty\Plugin;
 
 use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Http\Response;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 /**
  * Middleware
