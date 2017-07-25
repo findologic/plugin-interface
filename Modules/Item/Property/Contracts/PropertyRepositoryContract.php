@@ -70,6 +70,13 @@ interface PropertyRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Gets an property. The backend name of the property must be specified.
+	 */
+	public function findByBackendName(
+		string $backendName
+	):Property;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
