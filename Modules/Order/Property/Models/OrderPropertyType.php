@@ -72,6 +72,8 @@ abstract class OrderPropertyType
 
 	const PARTIAL_SHIPPING_COSTS = 32;
 
+	const MAIN_DOCUMENT_NUMBER = 33;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
