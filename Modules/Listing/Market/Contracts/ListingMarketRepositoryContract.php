@@ -6,6 +6,7 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Listing\Market\Models\ListingMarket;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -70,6 +71,12 @@ interface ListingMarketRepositoryContract
 	);
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -80,6 +87,12 @@ interface ListingMarketRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

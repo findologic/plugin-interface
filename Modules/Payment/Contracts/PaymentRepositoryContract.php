@@ -6,6 +6,7 @@ use Illuminate\Validation\ValidationException;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Payment\Models\Payment;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 
 /**
  * The PaymentRepositoryContract is the interface for the payment repository. List, get, create and update payments. Payments can come into plentymarkets automatically or can be booked manually. Existing payments can be filtered by payment method, by ID, by payment status, by transaction type, by order or by date. Existing payments can also be updated.
@@ -111,5 +112,11 @@ interface PaymentRepositoryContract
 
 	public function getOriginConstants(
 	):array;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }

@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Listing\ShippingProfile\Models\ShippingProfile;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -32,6 +33,12 @@ interface ShippingProfileRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -42,6 +49,12 @@ interface ShippingProfileRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

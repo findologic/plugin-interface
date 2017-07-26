@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Unit\Models\Unit;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -60,6 +61,12 @@ interface UnitRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -70,6 +77,12 @@ interface UnitRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

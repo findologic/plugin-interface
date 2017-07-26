@@ -8,6 +8,7 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Account\Address\Models\AddressOption;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 
 /**
  * The AddressRepositoryContract is the interface for the address repository contract. This interface allows to get, update, create and delete addresses and address options.
@@ -121,5 +122,11 @@ interface AddressRepositoryContract
 		string $application, 
 		string $lang
 	):Collection;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }

@@ -3,6 +3,7 @@ namespace Plenty\Modules\Account\Address\Contracts;
 
 use Plenty\Modules\Account\Address\Models\AddressPosRelation;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -50,5 +51,11 @@ interface AddressPosRelationRepositoryContract
 		int $page = 1, 
 		int $itemsPerPage = 50
 	):PaginatedResult;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }

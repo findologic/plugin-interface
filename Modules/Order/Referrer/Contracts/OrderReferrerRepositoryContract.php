@@ -5,6 +5,7 @@ use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Referrer\Exceptions\ReferrerNotEditableException;
 use Plenty\Modules\Order\Referrer\Models\OrderReferrer;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 
 /**
  * Provides methods for processing order referrers. An order referrer indicates where a purchase was made originally.
@@ -49,5 +50,11 @@ interface OrderReferrerRepositoryContract
 	public function delete(
 		float $referrerId
 	):bool;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }

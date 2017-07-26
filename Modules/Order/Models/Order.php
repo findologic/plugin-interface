@@ -33,6 +33,8 @@ abstract class Order
 	public		$relations;
 	public		$amounts;
 	public		$comments;
+	public		$location;
+	public		$payments;
 	public		$orderReferences;
 	public		$dates;
 	public		$originOrder;

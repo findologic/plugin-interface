@@ -4,6 +4,7 @@ namespace Plenty\Modules\Listing\Market\Info\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -23,6 +24,12 @@ interface ListingMarketInfoRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -33,6 +40,12 @@ interface ListingMarketInfoRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

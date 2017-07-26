@@ -4,6 +4,7 @@ namespace Plenty\Modules\Item\VariationImage\Contracts;
 use Plenty\Modules\Item\VariationImage\Models\VariationImage;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
@@ -56,6 +57,12 @@ interface VariationImageRepositoryContract
 	):VariationImage;
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -66,6 +73,12 @@ interface VariationImageRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

@@ -6,6 +6,7 @@ use Plenty\Exceptions\ModelWithUniqueFieldException;
 use Plenty\Modules\Listing\Market\Text\Models\ListingMarketText;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -64,6 +65,12 @@ interface ListingMarketTextRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -74,6 +81,12 @@ interface ListingMarketTextRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

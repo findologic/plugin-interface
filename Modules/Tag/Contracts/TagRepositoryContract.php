@@ -4,6 +4,7 @@ namespace Plenty\Modules\Tag\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Tag\Models\Tag;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 
 /**
  * The TagRepositoryContract is the interface for the tag repository.
@@ -44,5 +45,11 @@ interface TagRepositoryContract
 	public function getTagsByAvailability(
 		string $availabilityType
 	):array;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }

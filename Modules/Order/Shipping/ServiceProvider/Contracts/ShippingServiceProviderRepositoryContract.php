@@ -4,6 +4,7 @@ namespace Plenty\Modules\Order\Shipping\ServiceProvider\Contracts;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Order\Shipping\ServiceProvider\Models\ShippingServiceProvider;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -43,5 +44,11 @@ interface ShippingServiceProviderRepositoryContract
 		string $pluginName, 
 		string $shippingServiceProviderName
 	):ShippingServiceProvider;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }

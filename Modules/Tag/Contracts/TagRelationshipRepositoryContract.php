@@ -3,6 +3,7 @@ namespace Plenty\Modules\Tag\Contracts;
 
 use Plenty\Modules\Tag\Models\TagRelationship;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 
 /**
  * Repository for TagRelationship
@@ -33,5 +34,11 @@ interface TagRelationshipRepositoryContract
 	public function findByTagId(
 		int $tagId
 	):array;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }

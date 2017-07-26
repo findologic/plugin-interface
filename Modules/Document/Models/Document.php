@@ -66,6 +66,8 @@ abstract class Document
 
 	const REVERSAL_DOCUMENT = 'reversal_document';
 
+	const REFUND_REVERSAL_DOCUMENT = 'reversal_refund';
+
 	const SOURCE_KLARNA = 'klarna';
 
 	const SOURCE_SOAP = 'soap';

@@ -4,6 +4,7 @@ namespace Plenty\Modules\Market\Credentials\Contracts;
 use Plenty\Modules\Market\Credentials\Models\Credentials;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -59,6 +60,12 @@ interface CredentialsRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -69,6 +76,12 @@ interface CredentialsRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

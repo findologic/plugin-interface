@@ -4,6 +4,7 @@ namespace Plenty\Modules\Item\Manufacturer\Contracts;
 use Plenty\Modules\Item\Manufacturer\Models\Manufacturer;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -39,7 +40,8 @@ interface ManufacturerRepositoryContract
 	 * Gets a manufacturer. The ID of the manufacturer must be specified.
 	 */
 	public function findById(
-		int $manufacturerId
+		int $manufacturerId, 
+		array $with = []
 	):Manufacturer;
 
 	/**
@@ -48,7 +50,8 @@ interface ManufacturerRepositoryContract
 	public function all(
 		array $columns = [], 
 		int $perPage = 50, 
-		int $page = 1
+		int $page = 1, 
+		array $with = []
 	):PaginatedResult;
 
 	/**
@@ -58,6 +61,12 @@ interface ManufacturerRepositoryContract
 		array $params = [], 
 		array $columns = []
 	):PaginatedResult;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 	/**
 	 * Sets the filter array.
@@ -70,6 +79,12 @@ interface ManufacturerRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

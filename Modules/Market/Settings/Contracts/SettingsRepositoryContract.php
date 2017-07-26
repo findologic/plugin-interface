@@ -3,6 +3,7 @@ namespace Plenty\Modules\Market\Settings\Contracts;
 
 use Plenty\Modules\Market\Settings\Models\Settings;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 
 /**
  * Use this interface to store and retrieve market specific settings.
@@ -55,6 +56,12 @@ interface SettingsRepositoryContract
 	public function deleteAll(
 		string $marketplaceId, 
 		string $type
+	);
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
 	);
 
 }

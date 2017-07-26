@@ -3,6 +3,7 @@ namespace Plenty\Modules\DeleteLog\Contracts;
 
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -33,9 +34,21 @@ interface DeleteLogRepositoryContract
 	);
 
 	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
+	);
+
+	/**
 	 * Clears the filter array.
 	 */
 	public function clearFilters(
+	);
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
 	);
 
 }

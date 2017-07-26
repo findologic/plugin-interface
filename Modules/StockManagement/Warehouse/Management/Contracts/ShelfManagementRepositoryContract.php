@@ -6,6 +6,7 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\StockManagement\Warehouse\Management\Models\Shelf;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 use\Management\Contracts;
 
@@ -44,6 +45,12 @@ interface ShelfManagementRepositoryContract
 	):Shelf;
 
 	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
@@ -54,6 +61,12 @@ interface ShelfManagementRepositoryContract
 	 * Returns the filter array.
 	 */
 	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
 	);
 
 	/**

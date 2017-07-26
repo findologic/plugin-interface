@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Ticket\Models\Ticket;
 use Plenty\Modules\Ticket\Models\TicketMessage;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -51,5 +52,11 @@ interface TicketRepositoryContract
 		array $data, 
 		int $ticketId
 	):Ticket;
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
 
 }
