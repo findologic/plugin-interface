@@ -56,6 +56,12 @@ interface ListingRepositoryContract
 	):bool;
 
 	/**
+	 * Resets all Criteria filters by creating a new instance of the builder object.
+	 */
+	public function clearCriteria(
+	);
+
+	/**
 	 * Applies criteria classes to the current repository.
 	 */
 	public function applyCriteriaFromFilters(
