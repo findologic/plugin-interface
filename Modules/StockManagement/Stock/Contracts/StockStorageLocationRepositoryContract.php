@@ -20,7 +20,8 @@ interface StockStorageLocationRepositoryContract
 		int $warehouseId, 
 		array $columns = [], 
 		int $page = 1, 
-		int $itemsPerPage = 50
+		int $itemsPerPage = 50, 
+		array $with = []
 	):PaginatedResult;
 
 	/**
@@ -30,7 +31,8 @@ interface StockStorageLocationRepositoryContract
 		int $variationId, 
 		array $columns = [], 
 		int $page = 1, 
-		int $itemsPerPage = 50
+		int $itemsPerPage = 50, 
+		array $with = []
 	):PaginatedResult;
 
 	/**

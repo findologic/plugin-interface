@@ -34,6 +34,7 @@ abstract class OrderItem
 	public		$orderProperties;
 	public		$dates;
 	public		$references;
+	public		$giftCardCodes;
 	
 	/**
 	 * Returns this model as an array.

@@ -19,6 +19,7 @@ abstract class StockStorageLocation
 	public		$warehouseId;
 	public		$quantity;
 	public		$updatedAt;
+	public		$storageLocation;
 	
 	/**
 	 * Returns this model as an array.

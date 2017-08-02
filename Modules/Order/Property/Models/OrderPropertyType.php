@@ -74,6 +74,8 @@ abstract class OrderPropertyType
 
 	const MAIN_DOCUMENT_NUMBER = 33;
 
+	const SALES_TAX_ID_NUMBER = 34;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
