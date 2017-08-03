@@ -59,6 +59,10 @@ abstract class VariationBaseFilter implements TypeInterface
 		bool $bool = true
 	);
 
+	abstract public function isHiddenInCategoryList(
+		 $bool = true
+	);
+
 	abstract public function hasADescriptionInLanguage(
 		string $language
 	);
