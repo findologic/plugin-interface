@@ -37,7 +37,8 @@ interface DocumentRepositoryContract
 	public function find(
 		int $page = 1, 
 		int $itemsPerPage = 50, 
-		array $columns = []
+		array $columns = [], 
+		array $with = []
 	):PaginatedResult;
 
 	/**

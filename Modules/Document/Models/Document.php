@@ -93,6 +93,7 @@ abstract class Document
 	public		$displayDate;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$references;
 	public		$contacts;
 	public		$orders;
 	public		$webstores;
