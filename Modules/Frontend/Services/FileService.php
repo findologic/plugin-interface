@@ -17,6 +17,13 @@ abstract class FileService
 		string $key
 	);
 
+	/**
+	 * Determine if a get mutator exists for an attribute.
+	 */
+	abstract public function hasGetMutator(
+		string $key
+	):bool;
+
 	abstract public function setAttributes(
 		 $attributes
 	);
