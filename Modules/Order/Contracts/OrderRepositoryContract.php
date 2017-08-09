@@ -131,6 +131,14 @@ interface OrderRepositoryContract
 	);
 
 	/**
+	 * Find the order for the given order ID and access key.
+	 */
+	public function findOrderByAccessKey(
+		int $orderId, 
+		string $accessKey
+	):Order;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
