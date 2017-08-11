@@ -55,4 +55,11 @@ interface PropertyGroupRepositoryContract
 		int $page = 1
 	):array;
 
+	/**
+	 * Gets a property group. The backend name of the property group must be specified.
+	 */
+	public function findByBackendName(
+		string $backendName
+	):PropertyGroup;
+
 }
