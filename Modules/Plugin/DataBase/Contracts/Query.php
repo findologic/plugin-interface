@@ -104,6 +104,13 @@ abstract class Query
 		string $columns = "*"
 	):int;
 
+	/**
+	 * Get the count of the total records for the paginator.
+	 */
+	abstract public function getCountForPagination(
+		array $columns = []
+	):int;
+
 	abstract public function get(
 	):array;
 
