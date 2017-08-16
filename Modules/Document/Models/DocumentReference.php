@@ -3,7 +3,7 @@ namespace Plenty\Modules\Document\Models;
 
 
 /**
- * The document reference model
+ * The document reference model. A document reference allows you to assign a document to other models.
  */
 abstract class DocumentReference 
 {

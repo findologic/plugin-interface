@@ -3,7 +3,7 @@ namespace Plenty\Modules\Document\Models;
 
 
 /**
- * Document
+ * The document model contains information about actual documents.
  */
 abstract class Document 
 {

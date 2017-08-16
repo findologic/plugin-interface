@@ -9,6 +9,14 @@ interface LoggerContract
 {
 
 	/**
+	 * Report information.
+	 */
+	public function report(
+		string $code, 
+		 $additionalInfo = null
+	);
+
+	/**
 	 * Detailed debug information.
 	 */
 	public function debug(

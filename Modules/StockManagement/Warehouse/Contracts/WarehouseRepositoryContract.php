@@ -23,7 +23,8 @@ interface WarehouseRepositoryContract
 	 * List warehouses
 	 */
 	public function all(
-		array $with = []
+		array $with = [], 
+		array $columns = []
 	):array;
 
 	/**

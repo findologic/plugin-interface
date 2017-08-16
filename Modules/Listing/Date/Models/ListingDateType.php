@@ -18,6 +18,8 @@ abstract class ListingDateType
 
 	const LAST_MARKET_UPDATE = 5;
 
+	const LAST_SALE = 6;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
