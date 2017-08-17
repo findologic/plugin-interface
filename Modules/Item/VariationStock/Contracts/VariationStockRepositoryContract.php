@@ -45,7 +45,9 @@ interface VariationStockRepositoryContract
 	 */
 	public function correctStock(
 		int $variationId, 
-		array $data
+		array $data, 
+		bool $calcStockLater = false, 
+		bool $finishReceiptLater = false
 	):array;
 
 	/**
@@ -55,6 +57,12 @@ interface VariationStockRepositoryContract
 		int $variationId, 
 		array $data
 	):PaginatedResult;
+
+	/**
+	 * Finish receipt
+	 */
+	public function finishReceipt(
+	);
 
 	/**
 	 * Sets the filter array.
