@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Frontend\Contracts;
 
+use Plenty\Modules\Frontend\Events\ValidateCheckoutEvent;
 
 /**
  * The CheckoutContract is the interface for the checkout repository. This interface allows to set the shipping country ID, the payment method ID, the shipping profile ID and the currency in the checkout.
@@ -86,5 +87,8 @@ interface Checkout
 	public function setCustomerShippingAddressId(
 		int $shippingAddressId
 	);
+
+	public function validateCheckout(
+	):ValidateCheckoutEvent;
 
 }
