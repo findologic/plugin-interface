@@ -13,7 +13,7 @@ interface Output
 	 * process export output
 	 */
 	public function out(
-		string $ressource, 
+		string $resource, 
 		array $outputParams = []
 	);
 
