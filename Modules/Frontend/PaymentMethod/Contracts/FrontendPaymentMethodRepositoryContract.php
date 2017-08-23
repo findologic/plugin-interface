@@ -64,6 +64,20 @@ interface FrontendPaymentMethodRepositoryContract
 	):string;
 
 	/**
+	 * Gets the detail link of the payment method. The detail link can be entered in the config.json.
+	 */
+	public function getIsSwitchableTo(
+		PaymentMethod $paymentMethod
+	):bool;
+
+	/**
+	 * Gets the detail link of the payment method. The detail link can be entered in the config.json.
+	 */
+	public function getIsSwitchableFrom(
+		PaymentMethod $paymentMethod
+	):bool;
+
+	/**
 	 * Gets the name of the payment method by ID and language. The ID of the payment method and the language must be specified.
 	 */
 	public function getPaymentMethodNameById(
@@ -100,6 +114,16 @@ interface FrontendPaymentMethodRepositoryContract
 	):bool;
 
 	public function getPaymentMethodSwitchFromById(
+		int $paymentMethodId, 
+		int $orderId = null
+	):bool;
+
+	public function getPaymentMethodSwitchableToById(
+		int $paymentMethodId, 
+		int $orderId = null
+	):bool;
+
+	public function getPaymentMethodSwitchableFromById(
 		int $paymentMethodId, 
 		int $orderId = null
 	):bool;

@@ -52,6 +52,7 @@ abstract class Contact
 	public		$contactPerson;
 	public		$marketplacePartner;
 	public		$addresses;
+	public		$primaryBillingAddress;
 	public		$accounts;
 	public		$orders;
 	public		$banks;

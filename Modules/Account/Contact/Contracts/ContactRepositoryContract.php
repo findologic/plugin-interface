@@ -68,6 +68,13 @@ interface ContactRepositoryContract
 	):Contact;
 
 	/**
+	 * Returns a contact id by email. The email must be specified.
+	 */
+	public function getContactIdByEmail(
+		string $email
+	):int;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
