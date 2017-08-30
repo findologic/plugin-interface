@@ -13,14 +13,14 @@ interface AccountingLocationRepositoryContract
 {
 
 	/**
-	 * Get an accounting location. The ID of ID of the location must be specified.
+	 * Get an accounting location. The ID of the location must be specified.
 	 */
 	public function get(
 		int $id
 	):AccountingLocation;
 
 	/**
-	 * List accounting locations for a plenty ID. The plenty ID must be specified.
+	 * List accounting locations for a client. The plenty ID of the client must be specified.
 	 */
 	public function listByPlentyId(
 		int $plentyId

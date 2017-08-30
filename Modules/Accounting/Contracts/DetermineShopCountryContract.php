@@ -3,7 +3,7 @@ namespace Plenty\Modules\Accounting\Contracts;
 
 
 /**
- * This interface provides methods to initialise the country of location or the country of an order as well as to get the ID of client, the plenty ID of a client, the country or the ID of country.
+ * This interface provides methods to initialise the country of a location or the country of an order as well as methods to get the ID of a client, the plenty ID of a client, the country or the ID of country.
  */
 interface DetermineShopCountryContract 
 {
@@ -16,7 +16,7 @@ interface DetermineShopCountryContract
 	);
 
 	/**
-	 * Initialise the country of the standard location of a client. The plenty ID of the client can be specified.
+	 * Initialise the country of the standard location of a client. The plenty ID of the client can be specified. If no plenty ID is specified, the standard client will be used.
 	 */
 	public function initByPlentyId(
 		int $plentyId = 0

@@ -11,7 +11,7 @@ interface AccountingServiceContract
 {
 
 	/**
-	 * Get a location ID for a country of delivery. The plenty ID must be specifiend and the ID of the country of delivery can be specified. If the ID of a country is not specified, the ID of the standard location of the specified client will be returned.
+	 * Get a location ID for a country of delivery. The plenty ID must be specified and the ID of the country of delivery can be specified. If the ID of a country is not specified, the ID of the standard location of the specified client will be returned.
 	 */
 	public function detectLocationId(
 		int $plentyId, 
