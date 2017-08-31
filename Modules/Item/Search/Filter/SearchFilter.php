@@ -7,6 +7,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchExactFilt
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchFuzzyFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Item\Search\Index\Settings;
 
@@ -27,6 +28,10 @@ abstract class SearchFilter implements TypeInterface
 		string $lang, 
 		string $precision = "fuzzy", 
 		string $operator = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::OR_OPERATOR
+	);
+
+	abstract public function setVariationNumber(
+		string $value
 	);
 
 	abstract public function toArray(
