@@ -8,7 +8,7 @@ use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * Get, create and delete comments.
+ * Get, create, update and delete comments.
  */
 interface CommentRepositoryContract 
 {
@@ -39,6 +39,14 @@ interface CommentRepositoryContract
 	public function deleteComment(
 		int $commentId
 	);
+
+	/**
+	 * Update a comment
+	 */
+	public function updateComment(
+		array $data, 
+		int $commentId
+	):Comment;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.

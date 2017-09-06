@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\DataExchange\Contracts;
 
+use Plenty\Modules\DataExchange\Models\Export;
 use Plenty\Modules\DataExchange\Models\OutputParam;
 
 /**
@@ -14,7 +15,8 @@ interface Output
 	 */
 	public function out(
 		string $resource, 
-		array $outputParams = []
+		array $outputParams = [], 
+		Export $export = null
 	);
 
 }
