@@ -22,6 +22,7 @@ abstract class Log
 	public		$additionalInfo;
 	public		$callerFunction;
 	public		$callerLine;
+	public		$references;
 	
 	/**
 	 * Returns this model as an array.
