@@ -105,6 +105,20 @@ abstract class Query
 	):int;
 
 	/**
+	 * Set the "limit" value of the query.
+	 */
+	abstract public function limit(
+		int $value
+	):self;
+
+	/**
+	 * Set the "offset" value of the query.
+	 */
+	abstract public function offset(
+		int $value
+	):self;
+
+	/**
 	 * Get the count of the total records for the paginator.
 	 */
 	abstract public function getCountForPagination(

@@ -91,6 +91,7 @@ abstract class Document
 	public		$userId;
 	public		$source;
 	public		$displayDate;
+	public		$content;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$references;

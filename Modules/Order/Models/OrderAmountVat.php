@@ -17,6 +17,8 @@ abstract class OrderAmountVat
 	public		$vatField;
 	public		$vatRate;
 	public		$value;
+	public		$netTotal;
+	public		$grossTotal;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$orderAmount;

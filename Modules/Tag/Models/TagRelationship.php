@@ -14,7 +14,6 @@ abstract class TagRelationship
 	public		$tagId;
 	public		$tagType;
 	public		$relationshipValue;
-	public		$relationshipValue;
 	
 	/**
 	 * Returns this model as an array.

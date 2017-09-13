@@ -76,6 +76,14 @@ abstract class OrderPropertyType
 
 	const SALES_TAX_ID_NUMBER = 34;
 
+	const RETURNS_REASON = 35;
+
+	const RETURNS_ITEM_STATUS = 36;
+
+	const FULFILLMENT_CENTER_ID = 37;
+
+	const FULFILLMENT_CENTER_COUNTRY_ISO = 38;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
