@@ -36,6 +36,8 @@ abstract class ElasticSearch
 
 	const DOMAIN_LOG = 'log';
 
+	const DOMAIN_LOG_CRON = 'logCron';
+
 	abstract public static function getKeyByLanguage(
 		string $language
 	):string;
