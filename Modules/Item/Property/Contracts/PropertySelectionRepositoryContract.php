@@ -20,6 +20,15 @@ interface PropertySelectionRepositoryContract
 	):PropertySelection;
 
 	/**
+	 * Creates a property selection lang. The ID of the property selection must be specified.
+	 */
+	public function createLang(
+		array $data, 
+		int $propertyId, 
+		int $id
+	):PropertySelection;
+
+	/**
 	 * List of property selections. The ID of the property must be specified.
 	 */
 	public function findByProperty(
