@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Order\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Order\Models\OrderAmount;
 
 /**
