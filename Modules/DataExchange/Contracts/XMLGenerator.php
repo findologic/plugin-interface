@@ -12,10 +12,6 @@ use \DOMText;
  */
 abstract class XMLGenerator 
 {
-
-	const RESOURCE_PATH = 'data_exchange/exports';
-
-	const RESOURCE_CACHE_EXTENSION = '_build_cache';
 	protected		$version = "1.0";
 	protected		$encoding = "UTF-8";
 	protected		$formatOutput = true;

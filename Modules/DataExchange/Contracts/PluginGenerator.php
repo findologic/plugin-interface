@@ -3,16 +3,13 @@ namespace Plenty\Modules\DataExchange\Contracts;
 
 use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\DataExchange\Models\FormatSetting;
+use Plenty\Modules\DataExchange\Services\FileService;
 
 /**
  * PluginGenerator
  */
 abstract class PluginGenerator 
 {
-
-	const RESOURCE_PATH = 'data_exchange/exports';
-
-	const RESOURCE_CACHE_EXTENSION = '_build_cache';
 
 	protected function addContent(
 		string $content

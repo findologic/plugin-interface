@@ -8,10 +8,6 @@ namespace Plenty\Modules\DataExchange\Contracts;
 abstract class CSVGenerator 
 {
 
-	const RESOURCE_PATH = 'data_exchange/exports';
-
-	const RESOURCE_CACHE_EXTENSION = '_build_cache';
-
 	protected function setDelimiter(
 		string $delimiter
 	)
