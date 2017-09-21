@@ -26,6 +26,13 @@ abstract class ClientFilter implements TypeInterface
 		array $clientIds
 	);
 
+	/**
+	 * -1, 0, 1, 2
+	 */
+	abstract public function hasAutomaticClientVisibility(
+		array $values
+	);
+
 	abstract public function toArray(
 	):array;
 
