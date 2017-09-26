@@ -58,6 +58,13 @@ interface AttributeValueRepositoryContract
 	):AttributeValue;
 
 	/**
+	 * Gets a attribute value. The ID of the value must be specified.
+	 */
+	public function findOne(
+		int $valueId
+	):AttributeValue;
+
+	/**
 	 * Lists all attribute values.
 	 */
 	public function all(
