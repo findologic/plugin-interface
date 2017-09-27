@@ -67,9 +67,11 @@ abstract class Item
 	public		$free19;
 	public		$free20;
 	public		$texts;
+	public		$itemShippingProfiles;
 	public		$itemProperties;
 	public		$itemCrossSelling;
 	public		$variations;
+	public		$itemImages;
 	
 	/**
 	 * Returns this model as an array.

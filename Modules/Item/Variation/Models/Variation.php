@@ -70,6 +70,7 @@ abstract class Variation
 	public		$supplierVariationId;
 	public		$warehouseVariationId;
 	public		$variationBarcodes;
+	public		$variationProperties;
 	public		$variationSalesPrices;
 	public		$marketItemNumbers;
 	public		$variationCategories;
