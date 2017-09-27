@@ -84,6 +84,10 @@ abstract class OrderPropertyType
 
 	const FULFILLMENT_CENTER_COUNTRY_ISO = 38;
 
+	const REORDER_ITEM_ID = 39;
+
+	const LISTING_TYPE = 40;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

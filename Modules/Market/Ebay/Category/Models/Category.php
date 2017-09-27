@@ -1,20 +1,21 @@
 <?php
-namespace Plenty\Modules\Tag\Models;
+namespace Plenty\Modules\Market\Ebay\Category\Models;
 
 
 /**
- * The tag name model.
+ * The category model
  */
-abstract class TagName 
+abstract class Category 
 {
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
-	public		$tagId;
-	public		$tagLang;
-	public		$tagName;
+	public		$parentId;
+	public		$name;
+	public		$isLeaf;
+	public		$children;
 	
 	/**
 	 * Returns this model as an array.

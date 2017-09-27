@@ -36,6 +36,7 @@ abstract class Order
 	public		$location;
 	public		$payments;
 	public		$orderReferences;
+	public		$documents;
 	public		$dates;
 	public		$originOrder;
 	public		$parentOrder;

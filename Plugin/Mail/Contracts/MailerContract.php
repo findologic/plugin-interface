@@ -32,4 +32,15 @@ interface MailerContract
 		array $bcc = []
 	);
 
+	/**
+	 * Send given message as email
+	 */
+	public function sendFromMime(
+		string $mimeMessage, 
+		 $recipients, 
+		array $altConfig = [], 
+		array $cc = [], 
+		array $bcc = []
+	);
+
 }
