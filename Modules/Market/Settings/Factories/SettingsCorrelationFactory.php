@@ -18,6 +18,8 @@ abstract class SettingsCorrelationFactory
 
 	const TYPE_PROPERTY = 'property';
 
+	const TYPE_ATTRIBUTE_VALUE = 'attributeValue';
+
 	/**
 	 * Set here the type of relation that should be created.
 	 */
@@ -31,6 +33,15 @@ abstract class SettingsCorrelationFactory
 	abstract public function createRelation(
 		int $settingsId, 
 		int $correlationId
+	);
+
+	/**
+	 * Use this method to create a relation of the chosen type.
+	 */
+	abstract public function createRelationWithParent(
+		int $settingsId, 
+		int $correlationId, 
+		int $parentSettingsId
 	);
 
 	/**
@@ -53,6 +64,32 @@ abstract class SettingsCorrelationFactory
 	abstract public function getSettingsByCorrelation(
 		 $marketplaceId, 
 		int $correlationId
+	);
+
+	/**
+	 * Get a specific settings by marketplace id and correlation id.
+	 */
+	abstract public function getAllSettingsByCorrelation(
+		 $marketplaceId, 
+		int $correlationId
+	);
+
+	/**
+	 * Get a specific settings by marketplace id and correlation id.
+	 */
+	abstract public function getSettingsByCorrelationAndParent(
+		 $marketplaceId, 
+		int $correlationId, 
+		int $parentSettingsId
+	);
+
+	/**
+	 * Get a specific settings by marketplace id and correlation id.
+	 */
+	abstract public function getAllSettingsByCorrelationAndParent(
+		 $marketplaceId, 
+		int $correlationId, 
+		int $parentSettingsId
 	);
 
 }

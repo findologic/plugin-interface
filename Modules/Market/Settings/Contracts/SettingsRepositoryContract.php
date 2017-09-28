@@ -4,12 +4,22 @@ namespace Plenty\Modules\Market\Settings\Contracts;
 use Plenty\Modules\Market\Settings\Models\Settings;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * Use this interface to store and retrieve market specific settings.
  */
 interface SettingsRepositoryContract 
 {
+
+	/**
+	 * List settings.
+	 */
+	public function search(
+		array $filters = [], 
+		int $page = 0, 
+		int $itemsPerPage = \Plenty\Modules\Market\Settings\Models\Settings::MAX_ITEMS_PER_PAGE
+	):PaginatedResult;
 
 	/**
 	 * Create market settings.

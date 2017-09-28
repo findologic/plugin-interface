@@ -8,6 +8,8 @@ namespace Plenty\Modules\Market\Settings\Models;
 abstract class Settings 
 {
 
+	const MAX_ITEMS_PER_PAGE = 50;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -19,6 +21,7 @@ abstract class Settings
 	public		$parcelServicePreset;
 	public		$attribute;
 	public		$property;
+	public		$attributeValue;
 	
 	/**
 	 * Returns this model as an array.
