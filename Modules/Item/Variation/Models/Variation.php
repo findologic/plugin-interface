@@ -42,6 +42,7 @@ abstract class Variation
 	public		$availableUntil;
 	public		$releasedAt;
 	public		$name;
+	public		$unitCombinationId;
 	public		$weightG;
 	public		$weightNetG;
 	public		$widthMM;
