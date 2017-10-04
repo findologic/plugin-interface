@@ -14,6 +14,10 @@ abstract class Export
 
 	const DATA_TYPE_ITEM = 'item';
 
+	const DATA_TYPE_ORDER = 'order';
+
+	const DATA_TYPE_ORDER_ITEM = 'order_item';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';

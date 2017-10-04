@@ -23,6 +23,7 @@ abstract class Order
 	public		$updatedAt;
 	public		$plentyId;
 	public		$locationId;
+	public		$lockStatus;
 	public		$billingAddress;
 	public		$deliveryAddress;
 	public		$owner;

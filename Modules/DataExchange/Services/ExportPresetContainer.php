@@ -19,7 +19,8 @@ abstract class ExportPresetContainer
 		string $generatorClass, 
 		string $filterClass = "", 
 		bool $isPlugin = false, 
-		bool $generatorExecute = false
+		bool $generatorExecute = false, 
+		string $exportType = "item"
 	);
 
 }
