@@ -15,4 +15,8 @@ abstract class SalesPriceSearchRepository
 		SalesPriceSearchRequest $request
 	):SalesPriceSearchResponse;
 
+	abstract public function searchAll(
+		SalesPriceSearchRequest $request
+	):array;
+
 }

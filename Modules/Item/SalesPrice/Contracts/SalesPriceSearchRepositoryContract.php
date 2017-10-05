@@ -14,4 +14,8 @@ interface SalesPriceSearchRepositoryContract
 		SalesPriceSearchRequest $request
 	):SalesPriceSearchResponse;
 
+	public function searchAll(
+		SalesPriceSearchRequest $request
+	):array;
+
 }
