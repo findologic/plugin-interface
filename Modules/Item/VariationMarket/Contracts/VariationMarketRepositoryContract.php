@@ -15,8 +15,8 @@ interface VariationMarketRepositoryContract
 	 * Gets the data of a market linked to a variation. The ID of the market and the ID of the variation must be specified.
 	 */
 	public function findOne(
-		float $marketplaceId, 
-		int $variationId
+		int $variationId, 
+		float $marketplaceId
 	):VariationMarket;
 
 	/**
