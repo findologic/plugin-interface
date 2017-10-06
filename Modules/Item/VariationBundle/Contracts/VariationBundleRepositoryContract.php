@@ -34,7 +34,7 @@ interface VariationBundleRepositoryContract
 	):VariationBundle;
 
 	/**
-	 * Deletes a variation bundle. The ID of the bundle must be specified.
+	 * Deletes a variation bundle component. The ID of the bundle must be specified.
 	 */
 	public function delete(
 		int $bundleId
@@ -46,5 +46,12 @@ interface VariationBundleRepositoryContract
 	public function findByVariationId(
 		int $variationId
 	):VariationBundle;
+
+	/**
+	 * Lists variation bundles. The ID of the component variation must be specified.
+	 */
+	public function findByComponentId(
+		int $componentId
+	):array;
 
 }
