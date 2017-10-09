@@ -26,6 +26,12 @@ interface FrontendPaymentMethodRepositoryContract
 	):array;
 
 	/**
+	 * Lists all payment methods if express checkout is available
+	 */
+	public function getCurrentPaymentMethodsForExpressCheckout(
+	):array;
+
+	/**
 	 * Gets the name of the payment method in the specified language.
 	 */
 	public function getPaymentMethodName(
