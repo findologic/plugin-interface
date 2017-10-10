@@ -68,6 +68,10 @@ abstract class Document
 
 	const REFUND_REVERSAL_DOCUMENT = 'reversal_refund';
 
+	const SHIPPING_LABEL = 'shipping_label';
+
+	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';
+
 	const SOURCE_KLARNA = 'klarna';
 
 	const SOURCE_SOAP = 'soap';

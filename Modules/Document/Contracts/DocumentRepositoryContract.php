@@ -66,6 +66,21 @@ interface DocumentRepositoryContract
 		int $documentId
 	):bool;
 
+	public function uploadOrderShippingPackageDocuments(
+		int $packageId, 
+		string $type, 
+		string $document
+	):array;
+
+	public function findOrderShippingPackageDocuments(
+		int $packageId, 
+		string $type
+	):array;
+
+	public function deleteOrderShippingPackageDocuments(
+		int $packageId
+	):bool;
+
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */

@@ -32,6 +32,8 @@ abstract class DocumentReference
 
 	const CASH_REGISTER = 'cash_register';
 
+	const ORDER_SHIPPING_PACKAGE = 'order_shipping_package';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
