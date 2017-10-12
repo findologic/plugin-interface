@@ -2,6 +2,8 @@
 namespace Plenty\Modules\Market\Ebay\Api\Services;
 
 use GuzzleHttp\Psr7\Request;
+use Plenty\Log\Factories\LoggerFactory;
+use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Market\Credentials\Models\Credentials;
 use Plenty\Modules\Market\Ebay\Api\Exceptions\InvalidEndPointException;
 use Plenty\Modules\Market\Ebay\Api\Handlers\HttpHandler;

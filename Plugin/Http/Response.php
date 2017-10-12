@@ -263,4 +263,10 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 		bool $secure = null
 	):BaseResponse;
 
+	/**
+	 * Send the HTTP headers without sending the whole response.
+	 */
+	abstract public function sendHeaders(
+	):self;
+
 }
