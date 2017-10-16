@@ -28,6 +28,10 @@ interface VariationLookupRepositoryContract
 		string $number
 	):VariationLookupRepositoryContract;
 
+	public function hasSupplierItemNumber(
+		string $supplierVariationNumber
+	):VariationLookupRepositoryContract;
+
 	public function hasAttributeValueMap(
 		array $attributeValueMap
 	):VariationLookupRepositoryContract;
