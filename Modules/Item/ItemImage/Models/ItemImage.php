@@ -19,6 +19,7 @@ abstract class ItemImage
 	public		$createdAt;
 	public		$updatedAt;
 	public		$md5Checksum;
+	public		$md5ChecksumOriginal;
 	public		$size;
 	public		$width;
 	public		$height;

@@ -50,6 +50,14 @@ interface ItemImageRepositoryContract
 	):array;
 
 	/**
+	 * Shows an image. The ID of the item and hash must be specified.
+	 */
+	public function findByItemIdAndOriginalChecksum(
+		int $itemId, 
+		string $checksum
+	):ItemImage;
+
+	/**
 	 * Uploads an item image
 	 */
 	public function upload(
