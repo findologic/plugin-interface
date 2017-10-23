@@ -9,7 +9,8 @@ interface VariationLookupRepositoryContract
 {
 
 	public function hasBarcode(
-		string $code
+		string $code, 
+		int $barcodeId = null
 	):VariationLookupRepositoryContract;
 
 	public function hasId(
