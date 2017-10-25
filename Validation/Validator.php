@@ -4,6 +4,7 @@ namespace Plenty\Validation;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Validation\Contracts\Attribute;
 use Plenty\Validation\Contracts\AttributeHelperContract;
+use Plenty\Validation\Contracts\ConditionalAttribute;
 use \Validator as BaseValidator;
 
 /**
@@ -18,6 +19,14 @@ abstract class Validator
 	{
 		//proxy method
 	}
+
+	/**
+	 * Add a rule for an attribute based on the result of the condition callback.
+	 */
+	abstract public function sometimes(
+		string $attributeName, 
+		callable $condition
+	):Attribute;
 
 	abstract protected function defineAttributes(
 	);

@@ -23,8 +23,12 @@ abstract class OrderItem
 	public		$countryVatId;
 	public		$vatField;
 	public		$vatRate;
+	public		$position;
+	public		$warehouseId;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$systemAmount;
+	public		$amount;
 	public		$order;
 	public		$type;
 	public		$countryVat;
@@ -32,6 +36,7 @@ abstract class OrderItem
 	public		$amounts;
 	public		$properties;
 	public		$orderProperties;
+	public		$orderDates;
 	public		$dates;
 	public		$references;
 	public		$giftCardCodes;

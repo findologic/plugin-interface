@@ -77,6 +77,15 @@ interface ContactAddressRepositoryContract
 	):AddressContactRelation;
 
 	/**
+	 * Resets a contact primary address.
+	 */
+	public function resetPrimaryAddress(
+		int $addressId, 
+		int $contactId, 
+		int $addressTypeId
+	):AddressContactRelation;
+
+	/**
 	 * Deletes an existing address of a given contact and type. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
 	 */
 	public function deleteAddress(

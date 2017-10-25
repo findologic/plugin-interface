@@ -20,7 +20,8 @@ interface ShippingServiceProviderRepositoryContract
 		array $columns = [], 
 		int $page = 1, 
 		int $itemsPerPage = 50, 
-		array $filters = []
+		array $filters = [], 
+		array $with = []
 	);
 
 	/**

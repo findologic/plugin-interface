@@ -3,25 +3,18 @@ namespace Plenty\Modules\Feedback\Models;
 
 
 /**
- * The feedback model.
+ * The feedback legacy model.
  */
-abstract class Feedback 
+abstract class FeedbackLegacy 
 {
-
-	const MAX_ITEMS_PER_PAGE = 100;
-
-	const RATEABLE_TARGET_TYPES = 'Array';
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
-	public		$title;
-	public		$authorName;
-	public		$isVisible;
+	public		$feedbackId;
+	public		$legacyFeedbackId;
 	public		$createdAt;
 	public		$updatedAt;
-	public		$sourceRelation;
 	
 	/**
 	 * Returns this model as an array.

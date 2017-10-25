@@ -76,6 +76,12 @@ interface FeedbackRepositoryContract
 	);
 
 	/**
+	 * Migrate legacy feedbacks
+	 */
+	public function migrateLegacyFeedbacks(
+	);
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

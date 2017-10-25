@@ -15,6 +15,7 @@ abstract class FeedbackTargetRelation
 	public		$feedbackRelationType;
 	public		$feedbackRelationSourceId;
 	public		$targetRelationLabel;
+	public		$targetRelationName;
 	
 	/**
 	 * Returns this model as an array.

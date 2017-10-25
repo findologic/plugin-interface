@@ -55,7 +55,9 @@ interface ContactRepositoryContract
 		array $with = [], 
 		array $columns = [], 
 		int $page = 1, 
-		int $itemsPerPage = 50
+		int $itemsPerPage = 50, 
+		string $sortBy = "id", 
+		string $sortOrder = "desc"
 	):PaginatedResult;
 
 	/**
