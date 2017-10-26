@@ -13,6 +13,10 @@ interface VariationElasticSearchScrollRepositoryContract
 	public function hasNext(
 	):bool;
 
+	public function setNumberOfDocumentsPerShard(
+		int $size
+	);
+
 	public function setIndex(
 		IndexInterface $index
 	):ElasticSearchSearchRepositoryContract;
