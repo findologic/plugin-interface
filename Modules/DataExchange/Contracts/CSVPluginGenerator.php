@@ -27,6 +27,12 @@ abstract class CSVPluginGenerator
 	{
 	}
 
+	protected function addBulkCSVContent(
+		string $data
+	)
+	{
+	}
+
 	protected function addContent(
 		string $content
 	)
