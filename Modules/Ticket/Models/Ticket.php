@@ -31,6 +31,7 @@ abstract class Ticket
 	public		$hasDocuments;
 	public		$childrenCount;
 	public		$resubmissionAt;
+	public		$parseData;
 	public		$owners;
 	public		$messages;
 	

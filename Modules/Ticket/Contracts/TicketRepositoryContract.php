@@ -54,6 +54,13 @@ interface TicketRepositoryContract
 	):Ticket;
 
 	/**
+	 * Get an ticket
+	 */
+	public function findById(
+		int $ticketId
+	):Ticket;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
