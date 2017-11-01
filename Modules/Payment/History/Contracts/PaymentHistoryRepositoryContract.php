@@ -15,7 +15,7 @@ interface PaymentHistoryRepositoryContract
 	 */
 	public function getByPaymentId(
 		int $paymentId, 
-		int $typeId
+		int $typeId = 0
 	):array;
 
 	/**

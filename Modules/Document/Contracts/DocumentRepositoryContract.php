@@ -81,6 +81,10 @@ interface DocumentRepositoryContract
 		int $packageId
 	):bool;
 
+	public function getDocumentStorageObject(
+		 $key
+	);
+
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */

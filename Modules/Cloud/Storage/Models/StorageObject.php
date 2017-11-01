@@ -14,6 +14,8 @@ abstract class StorageObject
 	public		$size;
 	public		$storageClass;
 	public		$body;
+	public		$contentType;
+	public		$contentLength;
 	
 	/**
 	 * Returns this model as an array.

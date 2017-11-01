@@ -27,6 +27,7 @@ abstract class PaymentHistory
 	public		$paymentId;
 	public		$typeId;
 	public		$value;
+	public		$user;
 	
 	/**
 	 * Returns this model as an array.
