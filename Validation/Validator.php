@@ -20,14 +20,6 @@ abstract class Validator
 		//proxy method
 	}
 
-	/**
-	 * Add a rule for an attribute based on the result of the condition callback.
-	 */
-	abstract public function sometimes(
-		string $attributeName, 
-		callable $condition
-	):Attribute;
-
 	abstract protected function defineAttributes(
 	);
 
@@ -81,6 +73,17 @@ abstract class Validator
 	public function addString(
 		string $attributeName, 
 		bool $required = false
+	):Attribute
+	{
+		return new DummyAttribute();
+	}
+
+	/**
+	 * Add a rule for an attribute based on the result of the condition callback.
+	 */
+	public function sometimes(
+		string $attributeName, 
+		callable $condition
 	):Attribute
 	{
 		return new DummyAttribute();

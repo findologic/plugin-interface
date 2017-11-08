@@ -65,4 +65,15 @@ abstract class RulesCollection
 		return new DummyAttribute();
 	}
 
+	/**
+	 * Add a rule for an attribute based on the result of the condition callback.
+	 */
+	public function sometimes(
+		string $attributeName, 
+		callable $condition
+	):Attribute
+	{
+		return new DummyAttribute();
+	}
+
 }
