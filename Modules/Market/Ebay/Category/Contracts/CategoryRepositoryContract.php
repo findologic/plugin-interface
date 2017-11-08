@@ -14,14 +14,16 @@ interface CategoryRepositoryContract
 	 */
 	public function get(
 		int $id, 
-		array $filters = []
+		array $filters = [], 
+		array $with = []
 	):Category;
 
 	/**
 	 * List all categories
 	 */
 	public function all(
-		array $filters = []
+		array $filters = [], 
+		array $with = []
 	):array;
 
 }

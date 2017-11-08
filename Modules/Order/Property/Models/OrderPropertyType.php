@@ -68,7 +68,7 @@ abstract class OrderPropertyType
 
 	const LOCATION_RESERVED = 30;
 
-	const EXTERNAL_ITEM_SHIPMENT_ID = 31;
+	const EXTERNAL_SHIPMENT_ITEM_ID = 31;
 
 	const PARTIAL_SHIPPING_COSTS = 32;
 

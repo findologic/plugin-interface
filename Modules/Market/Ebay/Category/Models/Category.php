@@ -16,6 +16,7 @@ abstract class Category
 	public		$name;
 	public		$isLeaf;
 	public		$children;
+	public		$path;
 	
 	/**
 	 * Returns this model as an array.

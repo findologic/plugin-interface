@@ -128,4 +128,7 @@ abstract class Query
 	abstract public function get(
 	):array;
 
+	abstract public function delete(
+	):bool;
+
 }

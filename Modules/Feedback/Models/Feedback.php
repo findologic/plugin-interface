@@ -10,8 +10,6 @@ abstract class Feedback
 
 	const MAX_ITEMS_PER_PAGE = 100;
 
-	const RATEABLE_TARGET_TYPES = 'Array';
-
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
