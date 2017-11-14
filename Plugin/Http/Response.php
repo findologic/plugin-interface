@@ -196,24 +196,6 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 	):BaseResponse;
 
 	/**
-	 * Create a new file download response.
-	 */
-	abstract public function download(
-		 $file, 
-		string $name = null, 
-		array $headers = [], 
-		string $disposition = "attachment"
-	):BaseResponse;
-
-	/**
-	 * Return the raw contents of a binary file.
-	 */
-	abstract public function file(
-		 $file, 
-		array $headers = []
-	):BaseResponse;
-
-	/**
 	 * Create a new redirect response to the given path.
 	 */
 	abstract public function redirectTo(
