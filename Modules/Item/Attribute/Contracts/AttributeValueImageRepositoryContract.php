@@ -1,58 +1,61 @@
 <?php
-namespace Plenty\Modules\Item\Item\Contracts;
+namespace Plenty\Modules\Item\Attribute\Contracts;
 
-use Illuminate\Http\Request;
-use Plenty\Modules\Item\Item\Models\Item;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
+use Plenty\Modules\Item\Attribute\Models\AttributeValueImage;
+use Plenty\Modules\Item\Attribute\Models\AttributeValueName;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * The contract for the attribute value repository
+ * The contract for the attribute value image repository
  */
-interface ItemRepositoryContract 
+interface AttributeValueImageRepositoryContract 
 {
 
 	/**
-	 * Creates an item.
+	 * Get an attribute value image link
 	 */
-	public function add(
-		array $data
-	);
-
-	/**
-	 * Get an item. The ID of the item must be specified.
-	 */
-	public function show(
+	public function getAttributeValueImage(
 		int $itemId, 
-		array $columns = [], 
-		string $lang = "de", 
-		array $with = []
-	);
-
-	public function search(
-		 $columns = [], 
-		 $lang = [], 
-		int $page = 1, 
-		int $itemsPerPage = 50, 
-		array $with = []
-	);
+		int $imageId, 
+		int $valueId
+	):AttributeValueImage;
 
 	/**
-	 * Update a item. The ID of the item must be specified.
+	 * Create an attribute value image link
+	 */
+	public function create(
+		array $data
+	):AttributeValueImage;
+
+	/**
+	 * Delete an attribute value image link
+	 */
+	public function delete(
+		int $itemId, 
+		int $imageId, 
+		int $valueId
+	):DeleteResponse;
+
+	/**
+	 * Updates an attribute value image link
 	 */
 	public function update(
 		array $data, 
-		int $itemId
-	):Item;
+		int $itemId, 
+		int $imageId, 
+		int $valueId
+	):AttributeValueImage;
 
 	/**
-	 * Delete a item. The ID of the item must be specified.
+	 * List attribute value image links
 	 */
-	public function delete(
-		int $itemId
-	):DeleteResponse;
+	public function search(
+	):Collection;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.

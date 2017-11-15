@@ -27,4 +27,11 @@ interface ItemCrossSellingRepositoryContract
 		int $itemId
 	):array;
 
+	/**
+	 * List all cross-selling links where the given item ID occurs
+	 */
+	public function findAllByItemId(
+		int $itemId
+	):array;
+
 }

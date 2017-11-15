@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\DeleteLog\Contracts;
 
+use Plenty\Modules\DeleteLog\Models\DeleteLog;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;

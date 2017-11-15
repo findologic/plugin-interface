@@ -8,8 +8,10 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchFuzzyFilt
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Query\MultiMatchQuery;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Item\Search\Index\Settings;
+use Plenty\Modules\Item\Search\Query\SearchQuery;
 
 /**
  * foo

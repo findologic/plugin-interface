@@ -25,6 +25,7 @@ abstract class CouponCampaignCode
 	public		$lastUsedAt;
 	public		$consumedAt;
 	public		$expiresAt;
+	public		$value;
 	public		$campaign;
 	
 	/**

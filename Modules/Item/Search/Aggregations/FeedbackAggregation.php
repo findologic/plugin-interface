@@ -33,6 +33,10 @@ abstract class FeedbackAggregation implements AggregationInterface
 		array $data
 	):array;
 
+	abstract public function addAggregation(
+		AggregationInterface $aggregation
+	);
+
 	abstract public function addSource(
 		SourceInterface $source
 	):AggregationInterface;

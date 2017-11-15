@@ -15,8 +15,8 @@ abstract class PriceFilter implements TypeInterface
 {
 
 	abstract public function between(
-		float $min, 
-		float $max
+		float $min = null, 
+		float $max = null
 	);
 
 	abstract public function getType(

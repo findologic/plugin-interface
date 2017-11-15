@@ -18,6 +18,10 @@ interface SearchInterface
 		TypeInterface $filter
 	);
 
+	public function addQuery(
+		TypeInterface $query
+	);
+
 	public function addSource(
 		SourceInterface $source
 	);

@@ -18,6 +18,10 @@ abstract class BaseSearch implements SearchInterface
 		TypeInterface $filter
 	):self;
 
+	abstract public function addQuery(
+		TypeInterface $query
+	):self;
+
 	abstract public function addSource(
 		SourceInterface $source
 	):self;

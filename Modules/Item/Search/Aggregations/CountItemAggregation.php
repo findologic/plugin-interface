@@ -1,27 +1,28 @@
 <?php
 namespace Plenty\Modules\Item\Search\Aggregations;
 
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectStatsAggregation;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectValueCountAggregation;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 
 /**
  * To be written
  */
-abstract class PriceRangeAggregation implements AggregationInterface
+abstract class CountItemAggregation implements AggregationInterface
 
 {
 
-	const NAME = 'priceRange';
+	const NAME = 'items';
+
+	abstract public function getName(
+	):string;
 
 	abstract public function getField(
 	);
 
-	abstract public function getName(
-	);
-
 	abstract public function getAggregation(
-	);
+	):array;
 
 	abstract public function toArray(
 	):array;

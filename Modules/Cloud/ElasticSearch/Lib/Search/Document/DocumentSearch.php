@@ -24,6 +24,9 @@ abstract class DocumentSearch implements SearchInterface
 		array $data
 	):array;
 
+	abstract public function getFilter(
+	):array;
+
 	abstract public function getQuery(
 	):array;
 
@@ -45,6 +48,10 @@ abstract class DocumentSearch implements SearchInterface
 
 	abstract public function addFilter(
 		TypeInterface $filter
+	):self;
+
+	abstract public function addQuery(
+		TypeInterface $query
 	):self;
 
 	abstract public function addSource(

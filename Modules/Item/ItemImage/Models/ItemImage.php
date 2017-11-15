@@ -29,6 +29,7 @@ abstract class ItemImage
 	public		$urlSecondPreview;
 	public		$names;
 	public		$availabilities;
+	public		$attributeValueImages;
 	
 	/**
 	 * Returns this model as an array.

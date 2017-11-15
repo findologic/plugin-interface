@@ -24,4 +24,11 @@ abstract class Plugin
 		string $key
 	);
 
+	/**
+	 * Unsets a key. The key must be specified.
+	 */
+	abstract public function unsetKey(
+		string $key
+	);
+
 }
