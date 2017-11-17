@@ -17,6 +17,13 @@ interface ContactClassRepositoryContract
 	):string;
 
 	/**
+	 * Gets the data of a contact class. The ID of the contact class must be specified.
+	 */
+	public function findContactClassDataById(
+		int $contactClassId
+	):array;
+
+	/**
 	 * Lists contact classes.
 	 */
 	public function allContactClasses(
