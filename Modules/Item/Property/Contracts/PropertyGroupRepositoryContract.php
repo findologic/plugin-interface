@@ -52,7 +52,8 @@ interface PropertyGroupRepositoryContract
 	public function all(
 		array $columns = [], 
 		int $perPage = 50, 
-		int $page = 1
+		int $page = 1, 
+		array $with = []
 	):array;
 
 	/**

@@ -139,6 +139,13 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
+	 * Generate an access key for the given order ID.
+	 */
+	public function generateAccessKey(
+		int $orderId
+	):string;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(

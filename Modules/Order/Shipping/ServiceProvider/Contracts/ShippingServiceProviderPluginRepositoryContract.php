@@ -11,4 +11,8 @@ interface ShippingServiceProviderPluginRepositoryContract
 	public function plugins(
 	);
 
+	public function filteredPluginList(
+		string $filter
+	);
+
 }

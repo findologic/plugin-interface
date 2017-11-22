@@ -88,6 +88,12 @@ abstract class OrderPropertyType
 
 	const LISTING_TYPE = 40;
 
+	const EXTERNAL_ORDER_ITEM_ID = 41;
+
+	const RETURN_KEY_ID = 42;
+
+	const COMMUNICATION_KEY_ID = 43;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

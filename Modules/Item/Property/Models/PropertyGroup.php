@@ -20,6 +20,7 @@ abstract class PropertyGroup
 	public		$ottoComponentId;
 	public		$updatedAt;
 	public		$names;
+	public		$properties;
 	
 	/**
 	 * Returns this model as an array.
