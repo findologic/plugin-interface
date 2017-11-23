@@ -24,6 +24,8 @@ abstract class Export
 
 	const OUTPUT_TYPE_FTP = 'ftp';
 
+	const OUTPUT_TYPE_SFTP = 'sftp';
+
 	const OUTPUT_TYPE_CACHE = 'cache';
 
 	const DEFAULT_ITEMS_PER_PAGE = 50;
