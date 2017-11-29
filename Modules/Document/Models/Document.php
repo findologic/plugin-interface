@@ -68,6 +68,8 @@ abstract class Document
 
 	const REFUND_REVERSAL_DOCUMENT = 'reversal_refund';
 
+	const PRO_FORMA_INVOICE = 'pro_forma_invoice';
+
 	const SHIPPING_LABEL = 'shipping_label';
 
 	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';

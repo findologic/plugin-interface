@@ -2,7 +2,9 @@
 namespace Plenty\Modules\EventProcedures\Services;
 
 use Plenty\Log\Traits\Loggable;
+use Plenty\Modules\EventProcedures\Exceptions\EventProcedureEntryNotFoundException;
 use Plenty\Modules\EventProcedures\Exceptions\EventProceduresRegisterException;
+use Plenty\Modules\EventProcedures\Services\Entries\FilterEntry;
 use Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 
 /**
@@ -20,6 +22,16 @@ abstract class EventProceduresService
 		array $procedureNames, 
 		string $procedureClass, 
 		string $procedureGroup = \Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry::PROCEDURE_GROUP_ORDER
+	):bool;
+
+	/**
+	 * Register a filter class
+	 */
+	abstract public function registerFilter(
+		string $moduleName, 
+		string $eventType, 
+		array $filterNames, 
+		string $filterClass
 	):bool;
 
 }
