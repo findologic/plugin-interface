@@ -25,6 +25,7 @@ abstract class Variation
 	public		$availability;
 	public		$estimatedAvailableAt;
 	public		$purchasePrice;
+	public		$movingAveragePrice;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$relatedUpdatedAt;

@@ -4,12 +4,10 @@ namespace Plenty\Modules\Item\Search\Filter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchAutoCompleteFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchExactFilter;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchFuzzyFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldFilter;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Query\MultiMatchQuery;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
+use Plenty\Modules\Facet\Facet\Contracts\FacetSearchDefinitionServiceContract;
 use Plenty\Modules\Item\Search\Index\Settings;
 use Plenty\Modules\Item\Search\Query\SearchQuery;
 

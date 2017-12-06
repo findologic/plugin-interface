@@ -34,6 +34,11 @@ abstract class FacetFilter implements TypeInterface
 		array $valueIds
 	);
 
+	abstract public function hasEachFacetValue(
+		int $facetId, 
+		array $valueIds
+	);
+
 	abstract public function toArray(
 	):array;
 

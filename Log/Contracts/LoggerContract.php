@@ -111,4 +111,12 @@ be logged and monitored.
 		int $referenceValue
 	):LoggerContract;
 
+	/**
+	 * Add code placeholder.
+	 */
+	public function addPlaceholder(
+		string $placeholderName, 
+		 $placeholderValue
+	):LoggerContract;
+
 }

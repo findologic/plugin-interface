@@ -13,6 +13,7 @@ interface WebstoreRepositoryContract
 	 * Shows all webstores
 	 */
 	public function loadAll(
+		array $columns = []
 	):array;
 
 	/**

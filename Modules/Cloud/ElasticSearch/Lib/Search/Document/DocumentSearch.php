@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document;
 
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Collapse\CollapseInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
@@ -27,6 +28,9 @@ abstract class DocumentSearch implements SearchInterface
 	abstract public function getFilter(
 	):array;
 
+	abstract public function getPostFilter(
+	):array;
+
 	abstract public function getQuery(
 	):array;
 
@@ -47,6 +51,10 @@ abstract class DocumentSearch implements SearchInterface
 	);
 
 	abstract public function addFilter(
+		TypeInterface $filter
+	):self;
+
+	abstract public function addPostFilter(
 		TypeInterface $filter
 	):self;
 
@@ -74,5 +82,9 @@ abstract class DocumentSearch implements SearchInterface
 		int $page, 
 		int $rowsPerPage
 	):self;
+
+	abstract public function setCollapse(
+		CollapseInterface $collapse
+	);
 
 }

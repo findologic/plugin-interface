@@ -8,6 +8,8 @@ namespace Plenty\Log\Models;
 abstract class Log 
 {
 
+	const REFERENCE_TYPE_CODE_PLACEHOLDER = 'cph_';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

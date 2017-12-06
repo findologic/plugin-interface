@@ -16,6 +16,7 @@ abstract class Address
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
+	public		$gender;
 	public		$name1;
 	public		$name2;
 	public		$name3;
