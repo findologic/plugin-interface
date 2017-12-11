@@ -18,7 +18,8 @@ interface FacetRepositoryContract
 	):Collection;
 
 	public function listByPlentyId(
-		int $plentyId
+		int $plentyId, 
+		string $lang = "de"
 	):array;
 
 	/**
