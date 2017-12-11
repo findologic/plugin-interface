@@ -2,6 +2,7 @@
 namespace Plenty\Plugin\Templates;
 
 use App;
+use Plenty\Log\Traits\Loggable;
 
 /**
  * Twig engine
