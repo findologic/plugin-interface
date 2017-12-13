@@ -23,6 +23,7 @@ abstract class ParcelServicePreset
 	public		$isPostident;
 	public		$isDefaultEnabled;
 	public		$islandFee;
+	public		$isCod;
 	public		$supportedMultishop;
 	public		$supportedReferrer;
 	public		$subreferrerSupport;

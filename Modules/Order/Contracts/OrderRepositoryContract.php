@@ -146,6 +146,13 @@ interface OrderRepositoryContract
 	):string;
 
 	/**
+	 * Creates a multi order for a specific contact
+	 */
+	public function createMultiOrderByContact(
+		int $contactId
+	):Order;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(

@@ -19,4 +19,11 @@ interface BasketRepositoryContract
 		array $data
 	);
 
+	public function setCouponCode(
+		string $couponCode
+	):Basket;
+
+	public function removeCouponCode(
+	):Basket;
+
 }

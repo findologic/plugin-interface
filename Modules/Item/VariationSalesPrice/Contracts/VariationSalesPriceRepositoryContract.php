@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Item\VariationSalesPrice\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Item\VariationSalesPrice\Models\VariationSalesPrice;
 use Plenty\Repositories\Models\DeleteResponse;
 
@@ -56,5 +57,12 @@ interface VariationSalesPriceRepositoryContract
 	public function findByVariationIdWithInheritance(
 		int $variationId
 	):VariationSalesPrice;
+
+	/**
+	 * Updates a list of variation prices. The variation ID, sales price ID and a new price must be specified.
+	 */
+	public function updateBulk(
+		array $data
+	):Collection;
 
 }

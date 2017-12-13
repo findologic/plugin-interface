@@ -94,6 +94,8 @@ abstract class OrderPropertyType
 
 	const COMMUNICATION_KEY_ID = 43;
 
+	const AMAZON_VCS = 44;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

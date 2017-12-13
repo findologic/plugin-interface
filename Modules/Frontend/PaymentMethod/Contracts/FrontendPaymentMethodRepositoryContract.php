@@ -84,6 +84,13 @@ interface FrontendPaymentMethodRepositoryContract
 	):bool;
 
 	/**
+	 * Get true if the payment method can be selected in the payment method list
+	 */
+	public function getPaymentMethodIsSelectable(
+		PaymentMethod $paymentMethod
+	):bool;
+
+	/**
 	 * Gets the name of the payment method by ID and language. The ID of the payment method and the language must be specified.
 	 */
 	public function getPaymentMethodNameById(
