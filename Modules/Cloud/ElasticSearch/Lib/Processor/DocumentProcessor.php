@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Processor;
 
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 
 /**
