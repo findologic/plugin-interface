@@ -37,12 +37,14 @@ abstract class Order
 	public		$location;
 	public		$payments;
 	public		$orderReferences;
+	public		$reverseOrderReferences;
 	public		$documents;
 	public		$dates;
 	public		$originOrder;
 	public		$parentOrder;
 	public		$originOrders;
 	public		$parentOrders;
+	public		$childOrders;
 	
 	/**
 	 * Returns this model as an array.
