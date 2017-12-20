@@ -19,4 +19,36 @@ interface ContactEventRepositoryContract
 		int $itemsPerPage = 50
 	):PaginatedResult;
 
+	/**
+	 * Lists contact events by contact id.
+	 */
+	public function listEventsByContactId(
+		int $contactId, 
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
+	):PaginatedResult;
+
+	/**
+	 * Adds an entry to the table customer events by contact id.
+	 */
+	public function createEvent(
+		array $data
+	):ContactEvent;
+
+	/**
+	 * Updates an entry of the table customer events by contact event id.
+	 */
+	public function updateEvent(
+		int $contactEventId, 
+		array $data
+	):ContactEvent;
+
+	/**
+	 * Deletes an entry of the table customer events by contact event id.
+	 */
+	public function deleteEvent(
+		int $contactEventId
+	);
+
 }
