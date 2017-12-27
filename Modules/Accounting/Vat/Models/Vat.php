@@ -17,10 +17,13 @@ abstract class Vat
 	public		$countryId;
 	public		$taxIdNumber;
 	public		$startedAt;
+	public		$invalidFrom;
 	public		$locationId;
 	public		$marginScheme;
 	public		$isRestrictedToDigitalItems;
 	public		$isStandard;
+	public		$createdAt;
+	public		$updatedAt;
 	public		$location;
 	public		$country;
 	public		$vatRates;

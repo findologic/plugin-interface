@@ -38,6 +38,12 @@ interface VatRepositoryContract
 		string $startedAt = null
 	):Vat;
 
+	public function getVat(
+		int $locationId, 
+		int $countryId, 
+		string $startedAt = null
+	):Vat;
+
 	/**
 	 * List VAT configurations
 	 */
