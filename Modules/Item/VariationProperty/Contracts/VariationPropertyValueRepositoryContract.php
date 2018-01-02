@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Item\VariationProperty\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Item\VariationProperty\Models\VariationPropertyValue;
 use Plenty\Repositories\Models\DeleteResponse;
 
@@ -44,10 +45,31 @@ interface VariationPropertyValueRepositoryContract
 	):DeleteResponse;
 
 	/**
+	 * Deletes all links between a variation and its property values. The ID of the variation must be specified.
+	 */
+	public function deleteAll(
+		int $variationId
+	):DeleteResponse;
+
+	/**
 	 * Lists the property values linked to a variation. The ID of the variation must be specified.
 	 */
 	public function findByVariationId(
 		int $variationId
 	):array;
+
+	/**
+	 * Creates a list of variation properties.
+	 */
+	public function createBulk(
+		array $data
+	):Collection;
+
+	/**
+	 * Updates a list of variation properties.
+	 */
+	public function updateBulk(
+		array $data
+	):Collection;
 
 }
