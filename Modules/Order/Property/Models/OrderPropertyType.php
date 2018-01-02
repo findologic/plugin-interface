@@ -96,6 +96,8 @@ abstract class OrderPropertyType
 
 	const AMAZON_VCS = 44;
 
+	const PAYMENT_TRANSACTION_ID = 45;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
