@@ -22,6 +22,10 @@ interface VariationSearchRepositoryContract
 		string $value
 	);
 
+	public function setSearchParams(
+		array $params
+	);
+
 	public function search(
 	):PaginatedResult;
 
