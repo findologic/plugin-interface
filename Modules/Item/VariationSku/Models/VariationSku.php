@@ -8,6 +8,14 @@ namespace Plenty\Modules\Item\VariationSku\Models;
 abstract class VariationSku 
 {
 
+	const MARKET_STATUS_ACTIVE = 'ACTIVE';
+
+	const MARKET_STATUS_INACTIVE = 'INACTIVE';
+
+	const MARKET_STATUS_ERROR = 'ERROR';
+
+	const MARKET_STATUS_SENT = 'SENT';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
