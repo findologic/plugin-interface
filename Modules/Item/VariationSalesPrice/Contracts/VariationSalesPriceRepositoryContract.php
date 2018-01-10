@@ -37,10 +37,17 @@ interface VariationSalesPriceRepositoryContract
 	):VariationSalesPrice;
 
 	/**
-	 * Deletes a link between a sales price and a variation. The ID of the sales price and the ID of the variation must be specified. An exception is thrown if at least one relation exists.
+	 * Deletes a link between a sales price and a variation and deletes the sales price data. The ID of the sales price and the ID of the variation must be specified. An exception is thrown if at least one relation exists.
 	 */
 	public function delete(
 		int $salesPriceId, 
+		int $variationId
+	):DeleteResponse;
+
+	/**
+	 * Deletes all links between a variation and its sales prices and deletes the sales price data. The ID of the variation must be specified.
+	 */
+	public function deleteAll(
 		int $variationId
 	):DeleteResponse;
 
@@ -62,6 +69,13 @@ interface VariationSalesPriceRepositoryContract
 	 * Updates a list of variation prices. The variation ID, sales price ID and a new price must be specified.
 	 */
 	public function updateBulk(
+		array $data
+	):Collection;
+
+	/**
+	 * Creates a list of variation prices. The variation ID, sales price ID and a new price must be specified.
+	 */
+	public function createBulk(
 		array $data
 	):Collection;
 
