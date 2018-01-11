@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Accounting\Vat\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Modules\Accounting\Vat\Exceptions\VatException;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Contracts\SortableContract;
@@ -35,6 +36,14 @@ interface VatRepositoryContract
 	 */
 	public function getStandardVat(
 		int $plentyId = null, 
+		string $startedAt = null
+	):Vat;
+
+	/**
+	 * Get the standard VAT configuration for a location ID
+	 */
+	public function getStandardVatByLocation(
+		int $locationId, 
 		string $startedAt = null
 	):Vat;
 
