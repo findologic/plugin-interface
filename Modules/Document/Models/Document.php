@@ -74,6 +74,8 @@ abstract class Document
 
 	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';
 
+	const RETURNS_LABEL = 'returns_label';
+
 	const SOURCE_KLARNA = 'klarna';
 
 	const SOURCE_SOAP = 'soap';

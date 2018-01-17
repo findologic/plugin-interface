@@ -85,6 +85,16 @@ interface DocumentRepositoryContract
 		 $key
 	);
 
+	public function uploadOrderReturnsDocuments(
+		int $returnsId, 
+		string $document
+	):Document;
+
+	public function getOrderReturnsDocumentById(
+		int $returnsId, 
+		bool $withLabel = false
+	):Document;
+
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */

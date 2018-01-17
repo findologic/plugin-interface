@@ -34,6 +34,8 @@ abstract class DocumentReference
 
 	const ORDER_SHIPPING_PACKAGE = 'order_shipping_package';
 
+	const ORDER_RETURNS = 'order_returns';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

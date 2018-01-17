@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries;
 
+use Illuminate\Translation\Translator;
 
 /**
  * The shipping provider entry contains all information needed to use module shipping in plentymarkets shipping .
@@ -18,7 +19,7 @@ abstract class ShippingServiceProviderEntry
 	 * Get the
 	 */
 	abstract public function getShippingServiceProviderNames(
-	):array;
+	);
 
 	/**
 	 * Set the

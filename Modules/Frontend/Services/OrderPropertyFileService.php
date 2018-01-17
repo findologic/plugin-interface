@@ -8,7 +8,10 @@ use Plenty\Modules\Basket\Models\Basket;
 use Plenty\Modules\Cloud\Storage\Contracts\StorageProviderRepositoryContract;
 use Plenty\Modules\Cloud\Storage\Exceptions\StorageException;
 use Plenty\Modules\Cloud\Storage\Factories\StorageFactory;
+use Plenty\Modules\Frontend\Session\Storage\Models\Order as SessionOrder;
 use Plenty\Modules\Frontend\Validators\OrderPropertyFileValidator;
+use Plenty\Modules\Order\Contracts\InternalOrderRepositoryContract;
+use Plenty\Modules\Order\Models\Order;
 
 /**
  * Frontend-service for customer information

@@ -5,7 +5,7 @@ use Plenty\Modules\Account\Address\Models\AddressOptionType;
 use Plenty\Modules\Account\Address\Models\AddressRelationType;
 
 /**
- * The AddressParamConfigurationRepositoryContract is the interface for the address relation types repository.
+ * The AddressParamConfigurationRepositoryContract is the interface for the address param configuration repository. This interface allows to create, update, delete, list and get address relation types and address option types.
  */
 interface AddressParamConfigurationRepositoryContract 
 {

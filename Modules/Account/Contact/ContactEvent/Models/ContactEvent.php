@@ -3,7 +3,7 @@ namespace Plenty\Modules\Account\Contact\ContactEvent\Models;
 
 
 /**
- * The contact event model
+ * The contact event model.
  */
 abstract class ContactEvent 
 {
