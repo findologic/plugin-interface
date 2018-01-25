@@ -81,6 +81,10 @@ abstract class VariationBaseFilter implements TypeInterface
 		int $supplierId
 	);
 
+	abstract public function hasAtLeastOneAvailability(
+		array $availabilities
+	);
+
 	abstract public function toArray(
 	):array;
 
