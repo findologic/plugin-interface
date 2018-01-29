@@ -8,7 +8,7 @@ namespace Plenty\Modules\Item\Variation\Models;
 abstract class Variation 
 {
 
-	const MAX_ITEMS_PER_PAGE = 50;
+	const MAX_ITEMS_PER_PAGE = 100;
 
 	const CREATED_AT = 'createdAt';
 
