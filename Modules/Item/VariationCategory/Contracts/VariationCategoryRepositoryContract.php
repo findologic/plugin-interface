@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Item\VariationCategory\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Item\VariationCategory\Models\VariationCategory;
 use Plenty\Repositories\Models\DeleteResponse;
 
@@ -56,5 +57,19 @@ interface VariationCategoryRepositoryContract
 	public function findByVariationIdWithInheritance(
 		int $variationId
 	):VariationCategory;
+
+	/**
+	 * Updates up to 50 links between variations and categories. The ID of the variations and the ID of the categories must be specified.
+	 */
+	public function updateBulk(
+		array $data
+	):Collection;
+
+	/**
+	 * Creates up to 50 links between variations and categories. The ID of the variations and the ID of the categories must be specified.
+	 */
+	public function createBulk(
+		array $data
+	):Collection;
 
 }
