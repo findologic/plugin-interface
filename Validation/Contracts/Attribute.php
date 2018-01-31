@@ -94,6 +94,12 @@ interface Attribute
 	):self;
 
 	/**
+	 * Validate that an attribute exists even if not filled.
+	 */
+	public function present(
+	):self;
+
+	/**
 	 * The field under validation must be a valid date according to the strtotime PHP function.
 	 */
 	public function date(

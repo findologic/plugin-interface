@@ -137,6 +137,15 @@ a matching password_confirmation field must be present in the input.
 	}
 
 	/**
+	 * Validate that an attribute exists even if not filled.
+	 */
+	public function present(
+	):self
+	{
+		return $this;
+	}
+
+	/**
 	 * The field under validation must match the given format. The format will be evaluated using the PHP date_parse_from_format function.
 	 */
 	public function dateFormat(
