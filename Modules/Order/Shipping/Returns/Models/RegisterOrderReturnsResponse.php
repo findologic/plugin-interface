@@ -32,6 +32,21 @@ abstract class RegisterOrderReturnsResponse
 		 $attributes
 	);
 
+	/**
+	 * Set a given attribute on the model.
+	 */
+	abstract public function setAttribute(
+		string $key, 
+		 $value
+	):self;
+
+	/**
+	 * Determine if a set mutator exists for an attribute.
+	 */
+	abstract public function hasSetMutator(
+		string $key
+	):bool;
+
 	abstract public function changeValue(
 		string $key, 
 		callable $callback

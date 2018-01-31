@@ -251,4 +251,17 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 	abstract public function sendHeaders(
 	):self;
 
+	/**
+	 * Force sending response with defined status instead of falling back to default handlers in case of 40* status codes.
+	 */
+	abstract public function forceStatus(
+		int $status = 200
+	):self;
+
+	/**
+	 * Check if response should be send instead of falling back to default handlers in case of 40* status codes.
+	 */
+	abstract public function isStatusForced(
+	):bool;
+
 }
