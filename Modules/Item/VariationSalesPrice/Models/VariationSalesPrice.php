@@ -8,7 +8,7 @@ namespace Plenty\Modules\Item\VariationSalesPrice\Models;
 abstract class VariationSalesPrice 
 {
 
-	const ITEMS_PER_PAGE = 50;
+	const ITEMS_PER_PAGE = 100;
 
 	const UPDATED_AT = 'plenty_item_variation_retail_price_last_update_timestamp';
 

@@ -55,7 +55,8 @@ interface PropertyMarketReferenceRepositoryContract
 	 */
 	public function getPropertyMarketReferences(
 		float $referrerId, 
-		int $componentId = null
+		int $componentId = null, 
+		array $filters = []
 	):array;
 
 }

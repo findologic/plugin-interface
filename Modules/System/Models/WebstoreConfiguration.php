@@ -173,6 +173,7 @@ abstract class WebstoreConfiguration
 	public		$browserLanguage;
 	public		$categoryRedirectActive;
 	public		$itemRedirectActive;
+	public		$googleRecaptchaApiWebsitekey;
 	public		$itemSearchEngine;
 	
 	/**
