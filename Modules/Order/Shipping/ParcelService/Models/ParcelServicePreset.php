@@ -8,6 +8,10 @@ namespace Plenty\Modules\Order\Shipping\ParcelService\Models;
 abstract class ParcelServicePreset 
 {
 
+	const ALL_REFERRER = -1;
+
+	const ALL_MULTISHOPS = -1;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
