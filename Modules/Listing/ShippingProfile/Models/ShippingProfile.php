@@ -17,6 +17,7 @@ abstract class ShippingProfile
 	public		$referrerId;
 	public		$createdBy;
 	public		$isDefault;
+	public		$extendedData;
 	
 	/**
 	 * Returns this model as an array.
