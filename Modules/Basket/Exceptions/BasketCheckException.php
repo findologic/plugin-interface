@@ -15,4 +15,13 @@ abstract class BasketCheckException extends HTTPException
 	 */
 	const SHIPPING_COSTS_CALCUALATION_FAILED = 53;
 
+	/**
+	 * BasketItemCheckException constructor.
+	 */
+	abstract public function __construct(
+		string $code, 
+		string $message = "", 
+		\Exception $previous = null
+	);
+
 }

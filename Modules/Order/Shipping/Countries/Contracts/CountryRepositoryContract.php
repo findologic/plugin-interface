@@ -3,6 +3,7 @@ namespace Plenty\Modules\Order\Shipping\Countries\Contracts;
 
 use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
+use Plenty\Modules\Order\Shipping\Countries\Models\CountryState;
 
 /**
  * Repository for Country
@@ -35,5 +36,10 @@ interface CountryRepositoryContract
 		string $isoCode, 
 		string $isoType
 	);
+
+	public function getCountryStateByIso(
+		int $countryId, 
+		string $isoCode
+	):CountryState;
 
 }

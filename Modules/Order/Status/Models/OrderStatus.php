@@ -1,19 +1,24 @@
 <?php
 namespace Plenty\Modules\Order\Status\Models;
 
-use Illuminate\Database\Eloquent\Collection;
 
 /**
- * The order status model contains the ID of an order status. The ID is always an integer with two decimal places. The highest number available is 99. Every status has names in different languages, which are accessible through the names attribute.
+ * The order status model
  */
 abstract class OrderStatus 
 {
 
+	const ORDER_STATUS_MIN_VALUE = 1;
+
+	const ORDER_STATUS_MAX_VALUE = 18.9999;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$id;
+	public		$statusId;
 	public		$isErasable;
+	public		$createdAt;
+	public		$updatedAt;
 	public		$names;
 	
 	/**

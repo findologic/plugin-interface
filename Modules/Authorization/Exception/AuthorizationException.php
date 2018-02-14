@@ -31,4 +31,9 @@ abstract class AuthorizationException extends \Exception
 
 	const ROLE_DOESNT_EXIST = 9;
 
+	abstract public function __construct(
+		string $message, 
+		int $code = 0
+	);
+
 }

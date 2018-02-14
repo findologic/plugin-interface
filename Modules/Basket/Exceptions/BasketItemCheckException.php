@@ -21,4 +21,13 @@ abstract class BasketItemCheckException extends HTTPException
 	 */
 	const NOT_ENOUGH_STOCK_FOR_ITEM = 2;
 
+	/**
+	 * BasketItemCheckException constructor.
+	 */
+	abstract public function __construct(
+		int $code = 404, 
+		string $message = "", 
+		\Exception $previous = null
+	);
+
 }

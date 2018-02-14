@@ -19,4 +19,9 @@ abstract class EncryptionException extends \Exception
 	 */
 	const INVALID_ENCODING_MODE = 2;
 
+	abstract public function __construct(
+		string $message, 
+		int $code = 0
+	);
+
 }

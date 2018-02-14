@@ -30,4 +30,21 @@ abstract class BasketItemQuantityCheckException extends BasketItemCheckException
 	 */
 	const NOT_ENOUGH_STOCK_FOR_ITEM = 2;
 
+	/**
+	 * BasketItemQuantityCheckException constructor.
+	 */
+	abstract public function __construct(
+		int $code, 
+		int $variationId, 
+		float $requestedQuantity, 
+		string $message = "", 
+		\Exception $previous = null
+	);
+
+	abstract public function getVariationId(
+	):int;
+
+	abstract public function getRequestedQuantity(
+	):float;
+
 }

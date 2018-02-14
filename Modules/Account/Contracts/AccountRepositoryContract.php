@@ -4,6 +4,7 @@ namespace Plenty\Modules\Account\Contracts;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Account\Models\Account;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The AccountRepositoryContract is the interface for the account repository. This interface allows to list, get, create, update and delete accounts. An account contains company-related data. It is also possible to list all contacts of an account.
@@ -47,6 +48,16 @@ interface AccountRepositoryContract
 		array $columns = [], 
 		int $perPage = 50
 	):Collection;
+
+	/**
+	 * Returns a collection of all accounts.
+	 */
+	public function allAccountsPaginated(
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		array $with = []
+	):PaginatedResult;
 
 	/**
 	 * Returns a collection of contacts that belong to the account.

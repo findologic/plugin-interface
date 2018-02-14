@@ -35,6 +35,10 @@ abstract class SuccessfullyRegisteredOrderReturns
 		string $labelBase64
 	);
 
+	abstract public function setReturnsOrderId(
+		int $returnsOrderId
+	);
+
 	abstract public function get(
 		string $key
 	);

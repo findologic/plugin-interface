@@ -10,4 +10,13 @@ abstract class HTTPException extends \Exception
 
 {
 
+	/**
+	 * HTTPException constructor.
+	 */
+	abstract public function __construct(
+		string $statusCode, 
+		string $message, 
+		\Exception $previous = null
+	);
+
 }
