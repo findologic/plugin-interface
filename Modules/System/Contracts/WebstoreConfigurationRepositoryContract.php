@@ -17,4 +17,9 @@ interface WebstoreConfigurationRepositoryContract
 		int $webstoreId
 	):WebstoreConfiguration;
 
+	public function updateByPlentyId(
+		array $data, 
+		int $plentyId
+	):WebstoreConfiguration;
+
 }

@@ -6,6 +6,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\FacetProcessor;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document\DocumentSearch;
 use Plenty\Modules\Facet\Facet\Contracts\FacetSearchDefinitionServiceContract;
 use Plenty\Modules\Facet\Facet\Contracts\InternalFacetRepositoryContract;
+use Plenty\Modules\Item\Search\Aggregations\FacetAggregation;
+use Plenty\Modules\Item\Search\Aggregations\FacetFacetTermsAggregation;
 use Plenty\Modules\Item\Search\Aggregations\FacetFilterAggregation;
 use Plenty\Modules\Item\Search\Aggregations\FacetTermsAggregation;
 use Plenty\Modules\Item\Search\Aggregations\ItemCardinalityAggregation;

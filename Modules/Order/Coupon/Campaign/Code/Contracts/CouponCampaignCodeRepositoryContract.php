@@ -13,7 +13,8 @@ interface CouponCampaignCodeRepositoryContract
 	 * Gets a coupon code. The code string must be specified.
 	 */
 	public function getByCode(
-		string $code
+		string $code, 
+		array $with = []
 	):CouponCampaignCode;
 
 	/**

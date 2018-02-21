@@ -14,7 +14,8 @@ abstract class Translator
 	 */
 	abstract public function trans(
 		string $id, 
-		array $parameters = []
+		array $parameters = [], 
+		string $locale = null
 	);
 
 }

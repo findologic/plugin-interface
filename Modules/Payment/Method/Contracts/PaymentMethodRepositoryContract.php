@@ -38,6 +38,13 @@ interface PaymentMethodRepositoryContract
 	):PaymentMethod;
 
 	/**
+	 * Get an array with all payment methods with the ID as key and the name as value.
+	 */
+	public function getPreviewList(
+		string $language = null
+	):array;
+
+	/**
 	 * Creates a payment method.
 	 */
 	public function createPaymentMethod(

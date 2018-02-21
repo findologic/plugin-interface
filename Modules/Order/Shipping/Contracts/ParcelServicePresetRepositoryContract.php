@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Basket\Models\Basket;
 use Plenty\Modules\Order\Shipping\ParcelService\Models\ParcelServicePreset;
+use Plenty\Modules\RestDocumentation\Annotations\CallParam;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
@@ -40,6 +41,13 @@ interface ParcelServicePresetRepositoryContract
 		Basket $basket, 
 		int $contactClass, 
 		array $customParams = []
+	):array;
+
+	/**
+	 * Get an array with all parcel service preset with the ID as key and the name as value.
+	 */
+	public function getPreviewList(
+		string $language = null
 	):array;
 
 	/**

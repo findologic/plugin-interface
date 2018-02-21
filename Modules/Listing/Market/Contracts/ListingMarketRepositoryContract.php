@@ -6,6 +6,7 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Listing\Market\Models\ListingMarket;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Contracts\ExtendsCriteriaContract;
 use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -27,6 +28,16 @@ interface ListingMarketRepositoryContract
 	 * List listing markets
 	 */
 	public function search(
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		array $with = [], 
+		array $filters = []
+	):PaginatedResult;
+
+	/**
+	 * Find listing markets
+	 */
+	public function find(
 		int $page = 1, 
 		int $itemsPerPage = 50, 
 		array $with = [], 

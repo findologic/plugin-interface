@@ -14,6 +14,10 @@ interface Migrate
 		int $writeCapacityUnits = 20
 	):bool;
 
+	public function updateTable(
+		string $modelClassName
+	):bool;
+
 	public function deleteTable(
 		string $modelClassName
 	):bool;

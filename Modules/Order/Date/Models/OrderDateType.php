@@ -32,6 +32,12 @@ abstract class OrderDateType
 
 	const ORDER_MARKET_TRANSFER_DATE = 12;
 
+	const SUBSCRIPTION_CANCELLED_ON = 13;
+
+	const SUBSCRIPTION_LAST_RUN = 14;
+
+	const SUBSCRIPTION_NEXT_RUN = 15;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

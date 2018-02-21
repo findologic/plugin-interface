@@ -60,7 +60,7 @@ abstract class OrderPropertyType
 
 	const NO_CHANGE_BY_CONTACT = 26;
 
-	const INTERVAL_TYP = 27;
+	const INTERVAL_TYPE = 27;
 
 	const INTERVAL_VALUE = 28;
 
@@ -97,6 +97,8 @@ abstract class OrderPropertyType
 	const AMAZON_VCS = 44;
 
 	const PAYMENT_TRANSACTION_ID = 45;
+
+	const INTERVAL_TYP = 27;
 
 	const CREATED_AT = 'createdAt';
 

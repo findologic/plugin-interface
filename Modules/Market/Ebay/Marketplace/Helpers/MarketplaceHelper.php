@@ -25,11 +25,23 @@ abstract class MarketplaceHelper
 	):string;
 
 	/**
+	 * Get all available marketplace IDs.
+	 */
+	abstract public function getMarketplaceIds(
+	):array;
+
+	/**
 	 * Get the referrer ID based on given filters. Possible filters: `marketplaceId`, `referrerId`, `marketId`, `siteId`.
 	 */
 	abstract public function getReferrerId(
 		array $filters
 	):string;
+
+	/**
+	 * Get all available referrer IDs.
+	 */
+	abstract public function getReferrerIds(
+	):array;
 
 	/**
 	 * Get the site ID based on given filters. Possible filters: `marketplaceId`, `referrerId`, `marketId`, `siteId`.
@@ -39,11 +51,23 @@ abstract class MarketplaceHelper
 	):string;
 
 	/**
+	 * Get all available site IDs.
+	 */
+	abstract public function getSiteIds(
+	):array;
+
+	/**
 	 * Get the market ID based on given filters. Possible filters: `marketplaceId`, `referrerId`, `marketId`, `siteId`.
 	 */
 	abstract public function getMarketId(
 		array $filters
 	):string;
+
+	/**
+	 * Get all available market IDs.
+	 */
+	abstract public function getMarketIds(
+	):array;
 
 	/**
 	 * Get the currency based on given filters. Possible filters: `marketplaceId`, `referrerId`, `marketId`, `siteId`.

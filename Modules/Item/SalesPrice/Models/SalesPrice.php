@@ -17,6 +17,7 @@ abstract class SalesPrice
 	public		$isCustomerPrice;
 	public		$isDisplayedByDefault;
 	public		$isLiveConversion;
+	public		$interval;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$names;
