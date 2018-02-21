@@ -306,6 +306,13 @@ interface Attribute
 	):self;
 
 	/**
+	 * The field under validation must be not like the specified name.
+	 */
+	public function notLike(
+		string $fieldName
+	):self;
+
+	/**
 	 * The given field must match the field under validation.
 	 */
 	public function same(
