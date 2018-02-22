@@ -26,6 +26,12 @@ abstract class CSVGenerator
 	{
 	}
 
+	protected function addBulkCSVContent(
+		string $data
+	)
+	{
+	}
+
 	protected function addContent(
 		string $content
 	)
