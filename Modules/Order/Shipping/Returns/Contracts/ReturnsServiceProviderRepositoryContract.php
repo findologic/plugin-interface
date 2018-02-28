@@ -34,4 +34,7 @@ interface ReturnsServiceProviderRepositoryContract
 		int $orderId
 	):ReturnsServiceProvider;
 
+	public function pluginList(
+	);
+
 }

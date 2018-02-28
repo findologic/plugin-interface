@@ -27,7 +27,8 @@ interface PropertyRepositoryContract
 		int $itemsPerPage = 50, 
 		array $with = [], 
 		array $filters = [], 
-		int $paginate = 1
+		int $paginate = 1, 
+		array $orderBy = []
 	):array;
 
 	/**
