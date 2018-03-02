@@ -146,6 +146,14 @@ interface OrderRepositoryContract
 	):string;
 
 	/**
+	 * Complete an incomplete order.
+	 */
+	public function completeOrder(
+		int $orderId, 
+		array $data = []
+	):Order;
+
+	/**
 	 * Creates a multi order for a specific contact
 	 */
 	public function createMultiOrderByContact(

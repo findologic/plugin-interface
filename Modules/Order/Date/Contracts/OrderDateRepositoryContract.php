@@ -32,6 +32,7 @@ interface OrderDateRepositoryContract
 	 * List date types
 	 */
 	public function findTypes(
+		array $languages = []
 	);
 
 	/**

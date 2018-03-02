@@ -3,6 +3,8 @@ namespace Plenty\Modules\Order\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Order\Exceptions\OrderItemDeleteException;
+use Plenty\Modules\Order\Exceptions\OrderItemRelationSaveException;
+use Plenty\Modules\Order\Exceptions\OrderItemSaveException;
 use Plenty\Modules\Order\Models\OrderItem;
 
 /**
