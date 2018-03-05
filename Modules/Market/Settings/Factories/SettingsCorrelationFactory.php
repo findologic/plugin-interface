@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Market\Settings\Factories;
 
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Market\Settings\Repositories\AttributeValueSettingsCorrelationRepository;
 use Validator;
 
 /**
@@ -80,6 +81,14 @@ abstract class SettingsCorrelationFactory
 	abstract public function getSettingsByCorrelationAndParent(
 		 $marketplaceId, 
 		int $correlationId, 
+		int $parentSettingsId
+	);
+
+	/**
+	 * List settings by marketplace id and parent settings id.
+	 */
+	abstract public function getSettingsByParent(
+		 $marketplaceId, 
 		int $parentSettingsId
 	);
 
