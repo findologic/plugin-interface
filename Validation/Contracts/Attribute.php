@@ -366,4 +366,10 @@ interface Attribute
 	public function nullable(
 	):self;
 
+	/**
+	 * The field under validation must be a valid board task reference type (e.g. {@link BoardTaskReferenceType::CONTACT}).
+	 */
+	public function validBoardTaskReferenceValue(
+	):self;
+
 }

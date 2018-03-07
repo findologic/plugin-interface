@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\System\Contracts;
 
+use Plenty\Modules\Plugin\PluginSet\Models\PluginSet;
 use Plenty\Modules\System\Models\Webstore;
 
 /**

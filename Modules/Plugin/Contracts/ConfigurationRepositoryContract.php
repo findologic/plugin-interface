@@ -11,7 +11,8 @@ interface ConfigurationRepositoryContract
 
 	public function saveConfiguration(
 		int $pluginId, 
-		array $configMap
+		array $configMap, 
+		int $setId = null
 	):array;
 
 }

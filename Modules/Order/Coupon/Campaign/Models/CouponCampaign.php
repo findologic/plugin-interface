@@ -88,6 +88,7 @@ abstract class CouponCampaign
 	public		$description;
 	public		$value;
 	public		$codes;
+	public		$references;
 	
 	/**
 	 * Returns this model as an array.

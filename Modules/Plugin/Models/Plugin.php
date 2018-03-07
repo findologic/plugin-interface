@@ -74,6 +74,8 @@ abstract class Plugin
 	public		$linkedContainers;
 	public		$repository;
 	public		$installedPlugins;
+	public		$pluginSetIds;
+	public		$pluginSetEntries;
 	
 	/**
 	 * Returns this model as an array.

@@ -539,4 +539,13 @@ and integers that can contain null values.
 		return $this;
 	}
 
+	/**
+	 * The field under validation must be a valid board task reference type (e.g. {@link BoardTaskReferenceType::CONTACT}).
+	 */
+	public function validBoardTaskReferenceValue(
+	):self
+	{
+		return $this;
+	}
+
 }
