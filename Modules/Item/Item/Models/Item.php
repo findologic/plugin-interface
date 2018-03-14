@@ -67,6 +67,7 @@ abstract class Item
 	public		$free19;
 	public		$free20;
 	public		$texts;
+	public		$ebayTitles;
 	public		$itemShippingProfiles;
 	public		$itemProperties;
 	public		$itemCrossSelling;

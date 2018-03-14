@@ -23,4 +23,8 @@ interface TicketStatusNameRepositoryContract
 		string $lang
 	):array;
 
+	public function statusNameList(
+		string $lang
+	):array;
+
 }

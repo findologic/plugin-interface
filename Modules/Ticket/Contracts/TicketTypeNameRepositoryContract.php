@@ -23,4 +23,8 @@ interface TicketTypeNameRepositoryContract
 		string $lang
 	):array;
 
+	public function typeNameList(
+		string $lang
+	):array;
+
 }
