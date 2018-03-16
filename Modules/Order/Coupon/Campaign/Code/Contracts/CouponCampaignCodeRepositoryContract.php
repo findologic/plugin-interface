@@ -21,7 +21,8 @@ interface CouponCampaignCodeRepositoryContract
 	 * Delete a coupon code.
 	 */
 	public function deleteCode(
-		string $code
+		string $code, 
+		bool $withoutUsed = false
 	):bool;
 
 	/**
@@ -30,5 +31,13 @@ interface CouponCampaignCodeRepositoryContract
 	public function create(
 		array $data
 	):CouponCampaignCode;
+
+	/**
+	 * Disable or enable coupon
+	 */
+	public function setDisabledByCode(
+		string $code, 
+		int $disabled
+	):int;
 
 }
