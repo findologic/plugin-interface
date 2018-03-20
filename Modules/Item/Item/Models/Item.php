@@ -12,7 +12,7 @@ abstract class Item
 
 	const CREATED_AT = 'inserted';
 
-	const MAX_ITEMS_PER_PAGE = 50;
+	const MAX_ITEMS_PER_PAGE = 100;
 	public		$id;
 	public		$position;
 	public		$itemType;
