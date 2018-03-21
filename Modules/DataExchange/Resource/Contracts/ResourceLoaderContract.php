@@ -21,6 +21,10 @@ interface ResourceLoaderContract
 		array $sourceOptions
 	);
 
+	public function archiveFile(
+		array $sourceOptions
+	);
+
 	public function getLoaderType(
 	):string;
 

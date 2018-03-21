@@ -8,6 +8,7 @@ use Plenty\Modules\Basket\Models\Basket;
 use Plenty\Modules\Cloud\Storage\Contracts\StorageProviderRepositoryContract;
 use Plenty\Modules\Cloud\Storage\Exceptions\StorageException;
 use Plenty\Modules\Cloud\Storage\Factories\StorageFactory;
+use Plenty\Modules\Cloud\Storage\Models\StorageObject;
 use Plenty\Modules\Frontend\Session\Storage\Models\Order as SessionOrder;
 use Plenty\Modules\Frontend\Validators\OrderPropertyFileValidator;
 use Plenty\Modules\Order\Contracts\InternalOrderRepositoryContract;
@@ -34,6 +35,10 @@ abstract class OrderPropertyFileService
 	abstract public function getFileURL(
 		string $key
 	):string;
+
+	abstract public function getFile(
+		string $key
+	):StorageObject;
 
 	abstract public function copyBasketFileToOrder(
 		string $filename
