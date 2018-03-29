@@ -12,13 +12,17 @@ use \Validator as BaseValidator;
  */
 abstract class Validator 
 {
-
+	protected		$customMessageKey = "";
+	
 	public static function validateOrFail(
 		array $data
 	)
 	{
 		//proxy method
 	}
+
+	abstract public function buildCustomMessages(
+	);
 
 	abstract protected function defineAttributes(
 	);
