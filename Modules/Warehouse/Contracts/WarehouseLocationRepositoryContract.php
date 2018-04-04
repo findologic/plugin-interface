@@ -33,6 +33,14 @@ interface WarehouseLocationRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Get first warehouse location matching the given label
+Gets the first warehouse location matching the given label. The label must be specified.
+	 */
+	public function getWarehouseLocationByLabel(
+		string $label
+	):WarehouseLocation;
+
+	/**
 	 * Create a warehouse location
 	 */
 	public function createWarehouseLocation(

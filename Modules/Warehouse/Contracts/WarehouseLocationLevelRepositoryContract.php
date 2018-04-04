@@ -30,6 +30,13 @@ interface WarehouseLocationLevelRepositoryContract
 	):WarehouseLocationLevel;
 
 	/**
+	 * Get a warehouse location level only by name.
+	 */
+	public function getWarehouseLocationLevelOnlyByName(
+		string $warehouseLocationLevelName
+	):WarehouseLocationLevel;
+
+	/**
 	 * Get a list of warehouse location levels
 	 */
 	public function listWarehouseLocationLevels(
