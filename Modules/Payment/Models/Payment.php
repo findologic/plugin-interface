@@ -80,6 +80,7 @@ abstract class Payment
 	public		$properties;
 	public		$regenerateHash;
 	public		$updateOrderPaymentStatus;
+	public		$isSystemCurrency;
 	
 	/**
 	 * Returns this model as an array.

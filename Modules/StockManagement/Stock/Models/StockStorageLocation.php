@@ -20,6 +20,7 @@ abstract class StockStorageLocation
 	public		$quantity;
 	public		$updatedAt;
 	public		$storageLocation;
+	public		$warehouseLocation;
 	public		$variation;
 	
 	/**

@@ -3,7 +3,6 @@ namespace Plenty\Modules\Plugin\Contracts;
 
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Item\DataLayer\Models\Record;
-use Plenty\Modules\Plugin\Marketplace\Contracts\MarketplaceRepositoryContract;
 use Plenty\Modules\Plugin\Models\Plugin;
 use Plenty\Repositories\Models\PaginatedResult;
 

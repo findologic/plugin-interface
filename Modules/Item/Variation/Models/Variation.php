@@ -83,6 +83,7 @@ abstract class Variation
 	public		$variationMarkets;
 	public		$variationDefaultCategory;
 	public		$variationSuppliers;
+	public		$variationTexts;
 	public		$variationWarehouses;
 	public		$images;
 	public		$itemImages;

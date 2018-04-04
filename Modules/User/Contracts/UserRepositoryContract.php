@@ -17,4 +17,8 @@ interface UserRepositoryContract
 		int $userId
 	):User;
 
+	public function findByName(
+		string $name
+	):Collection;
+
 }

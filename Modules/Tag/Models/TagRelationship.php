@@ -8,6 +8,16 @@ namespace Plenty\Modules\Tag\Models;
 abstract class TagRelationship 
 {
 
+	const TAG_TYPE_CATEGORY = 'category';
+
+	const TAG_TYPE_TICKET = 'contact';
+
+	const TAG_TYPE_ITEM = 'item';
+
+	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
+
+	const RELATIONSHIP_TAG_RELATION = 'tag';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

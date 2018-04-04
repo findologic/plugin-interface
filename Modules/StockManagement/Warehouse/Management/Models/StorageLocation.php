@@ -8,9 +8,9 @@ namespace Plenty\Modules\StockManagement\Warehouse\Management\Models;
 abstract class StorageLocation 
 {
 
-	const CREATED_AT = 'createdAt';
+	const CREATED_AT = 'created_at';
 
-	const UPDATED_AT = 'updatedAt';
+	const UPDATED_AT = 'updated_at';
 	public		$id;
 	public		$warehouseId;
 	public		$rackId;

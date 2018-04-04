@@ -100,6 +100,8 @@ abstract class OrderPropertyType
 
 	const SOLD_COUPON_CODE = 46;
 
+	const EXTERNAL_TAX_SERVICE = 47;
+
 	const INTERVAL_TYP = 27;
 
 	const CREATED_AT = 'createdAt';

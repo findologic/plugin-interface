@@ -8,6 +8,12 @@ namespace Plenty\Modules\Tag\Models;
 abstract class TagAvailability 
 {
 
+	const TAG_TYPE_CATEGORY = 'category';
+
+	const TAG_TYPE_TICKET = 'contact';
+
+	const TAG_TYPE_ITEM = 'item';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

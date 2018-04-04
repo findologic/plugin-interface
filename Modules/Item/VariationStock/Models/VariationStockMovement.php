@@ -27,6 +27,7 @@ abstract class VariationStockMovement
 	public		$storageLocationName;
 	public		$warehouseName;
 	public		$purchasePrice;
+	public		$userId;
 	
 	/**
 	 * Returns this model as an array.
