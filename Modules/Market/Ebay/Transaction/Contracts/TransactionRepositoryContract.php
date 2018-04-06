@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Market\Ebay\Transaction\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Modules\Market\Ebay\Transaction\Models\Transaction;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
@@ -12,6 +13,13 @@ use Plenty\Repositories\Models\PaginatedResult;
  */
 interface TransactionRepositoryContract 
 {
+
+	/**
+	 * Gets a transaction.
+	 */
+	public function get(
+		int $id
+	):Transaction;
 
 	/**
 	 * Search ebay transactions
