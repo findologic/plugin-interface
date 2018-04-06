@@ -15,6 +15,7 @@ abstract class User
 	public		$pwd;
 	public		$pwd_md5;
 	public		$timezone;
+	public		$ticket;
 	public		$password;
 	public		$user;
 	public		$roles;

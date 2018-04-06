@@ -23,4 +23,8 @@ interface TicketRoleNameRepositoryContract
 		string $lang
 	):array;
 
+	public function findByLang(
+		string $lang
+	):array;
+
 }
