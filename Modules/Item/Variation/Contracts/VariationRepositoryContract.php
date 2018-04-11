@@ -55,4 +55,11 @@ interface VariationRepositoryContract
 		int $variationId
 	):Variation;
 
+	/**
+	 * Change main variation. Changes the given variation id to the new main variation
+	 */
+	public function changePrimaryVariation(
+		int $variationId
+	):Variation;
+
 }
