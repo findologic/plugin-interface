@@ -65,6 +65,13 @@ interface ItemImageRepositoryContract
 	):ItemImage;
 
 	/**
+	 * Calls a stack of image urls to prepare cache
+	 */
+	public function warmup(
+		array $urls
+	);
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
