@@ -10,7 +10,7 @@ abstract class TagAvailability
 
 	const TAG_TYPE_CATEGORY = 'category';
 
-	const TAG_TYPE_TICKET = 'contact';
+	const TAG_TYPE_TICKET = 'ticket';
 
 	const TAG_TYPE_ITEM = 'item';
 
