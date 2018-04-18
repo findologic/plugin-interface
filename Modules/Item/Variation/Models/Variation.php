@@ -87,6 +87,8 @@ abstract class Variation
 	public		$variationWarehouses;
 	public		$images;
 	public		$itemImages;
+	public		$variationAdditionalSkus;
+	public		$variationSkus;
 	public		$variationAttributeValues;
 	public		$unit;
 	public		$parent;

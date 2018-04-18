@@ -38,8 +38,6 @@ abstract class OrderType
 
 	const TYPE_REDISTRIBUTION = 15;
 
-	const TYPE_PURCHASE_ORDER = 16;
-
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

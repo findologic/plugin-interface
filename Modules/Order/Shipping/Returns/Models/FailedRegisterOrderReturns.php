@@ -75,6 +75,7 @@ abstract class FailedRegisterOrderReturns
 	);
 
 	abstract public function toArray(
+		bool $translate = false
 	):array;
 
 	abstract public function toJson(

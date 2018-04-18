@@ -15,4 +15,9 @@ interface ConfigurationRepositoryContract
 		int $setId = null
 	):array;
 
+	public function getConfigurationFile(
+		int $pluginId, 
+		int $setId
+	):string;
+
 }

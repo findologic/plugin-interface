@@ -31,7 +31,8 @@ interface CategoryRepositoryContract
 		string $type = "all", 
 		string $lang = "de", 
 		int $clientId = null, 
-		int $maxLevel = 6
+		int $maxLevel = 6, 
+		int $customerClassId = 0
 	):array;
 
 	/**
@@ -40,7 +41,8 @@ interface CategoryRepositoryContract
 	public function buildCache(
 		string $type = "all", 
 		string $lang = "de", 
-		int $clientId = 0
+		int $clientId = 0, 
+		int $customerClassId = 0
 	);
 
 	/**

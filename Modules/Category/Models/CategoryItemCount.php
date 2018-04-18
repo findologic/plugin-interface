@@ -16,6 +16,8 @@ abstract class CategoryItemCount
 	public		$count;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$variationCount;
+	public		$customerClassId;
 	
 	/**
 	 * Returns this model as an array.

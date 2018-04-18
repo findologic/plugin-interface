@@ -79,6 +79,7 @@ abstract class SuccessfullyRegisteredShipment
 	);
 
 	abstract public function toArray(
+		bool $translate = false
 	):array;
 
 	abstract public function toJson(
