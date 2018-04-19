@@ -56,6 +56,8 @@ abstract class ContactOption
 
 	const SUBTYPE_MARKETPLACE_PARTNER = 13;
 
+	const SUBTYPE_DEFAULT_PAYMENT = 14;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
