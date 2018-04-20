@@ -68,7 +68,6 @@ abstract class Plugin
 	public		$directDownloadLinks;
 	public		$forwardLink;
 	public		$configurations;
-	public		$permissions;
 	public		$webstores;
 	public		$linkedDataProviders;
 	public		$linkedContainers;
