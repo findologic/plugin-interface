@@ -68,7 +68,8 @@ interface ItemImageRepositoryContract
 	 * Calls a stack of image urls to prepare cache
 	 */
 	public function warmup(
-		array $urls
+		array $urls, 
+		string $queue = "plentymarkets-command"
 	);
 
 	/**
