@@ -72,6 +72,9 @@ interface ItemImageRepositoryContract
 		string $queue = "plentymarkets-command"
 	);
 
+	public function syncOldImagesToCDN(
+	);
+
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
