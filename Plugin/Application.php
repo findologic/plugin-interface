@@ -5,6 +5,7 @@ use Illuminate\Container\Container;
 use Illuminate\Contracts\Container\Container as ContainerContract;
 use Illuminate\Support\Arr;
 use Plenty\Modules\Plugin\Compiler\Services\AllowedPHPCalls;
+use ReflectionClass;
 
 /**
  * The main application
