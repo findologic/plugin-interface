@@ -3,6 +3,9 @@ namespace Plenty\Plugin\Routing;
 
 use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Http\Response;
+use Plenty\Plugin\Routing\Exceptions\RouteReservedException;
+use Plenty\Plugin\Routing\Route as PluginRoute;
+use Route as BaseRoute;
 
 /**
  * Router service
@@ -16,7 +19,7 @@ abstract class Router
 	abstract public function get(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new POST route with the router.
@@ -24,7 +27,7 @@ abstract class Router
 	abstract public function post(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new PUT route with the router.
@@ -32,7 +35,7 @@ abstract class Router
 	abstract public function put(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new PATCH route with the router.
@@ -40,7 +43,7 @@ abstract class Router
 	abstract public function patch(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new DELETE route with the router.
@@ -48,7 +51,7 @@ abstract class Router
 	abstract public function delete(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new OPTIONS route with the router.
@@ -56,7 +59,7 @@ abstract class Router
 	abstract public function options(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new route responding to all verbs.
@@ -64,7 +67,7 @@ abstract class Router
 	abstract public function any(
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a new route with the given verbs.
@@ -73,7 +76,7 @@ abstract class Router
 		array $methods, 
 		string $uri, 
 		 $action
-	):Route;
+	):PluginRoute;
 
 	/**
 	 * Register a short-hand name for a middleware.

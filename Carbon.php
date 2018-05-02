@@ -5,10 +5,10 @@ use Carbon\Exceptions\InvalidDateException;
 use Closure;
 use DatePeriod;
 use DateTime;
+use DateTimeInterface;
 use DateTimeZone;
 use InvalidArgumentException;
-use Symfony\Component\Translation\Loader\ArrayLoader;
-use Symfony\Component\Translation\Translator;
+use JsonSerializable;
 use Symfony\Component\Translation\TranslatorInterface;
 
 class Carbon extends \DateTime 

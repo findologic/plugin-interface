@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Plugin;
 
+use Illuminate\Support\Str;
 use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Http\Response;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;

@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Plugin\Events;
 
+use Event;
+use Illuminate\Support\Str;
 use Plenty\Modules\Basket\Events\Basket\AfterBasketChanged;
 use Plenty\Modules\Basket\Models\BasketItem;
 use Plenty\Modules\Frontend\Events\FrontendCustomerAddressChanged;

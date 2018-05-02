@@ -8,6 +8,8 @@ namespace Plenty\Modules\Item\ItemShippingProfiles\Models;
 abstract class ItemShippingProfiles 
 {
 
+	const ITEMS_PER_PAGE = 100;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

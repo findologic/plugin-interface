@@ -8,6 +8,10 @@ namespace Plenty\Modules\Order\Transaction\Models;
 abstract class OrderItemTransaction 
 {
 
+	const STATUS_IN = 'in';
+
+	const STATUS_OUT = 'out';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -22,6 +26,7 @@ abstract class OrderItemTransaction
 	public		$batchBestBeforeDateId;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$orderItem;
 	
 	/**
 	 * Returns this model as an array.

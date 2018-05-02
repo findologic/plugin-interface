@@ -10,7 +10,7 @@ abstract class CouponCampaignCode
 
 	const MIN_CODE_LENGTH = 6;
 
-	const MAX_CODE_LENGTH = 24;
+	const MAX_CODE_LENGTH = 32;
 
 	const CREATED_AT = 'createdAt';
 

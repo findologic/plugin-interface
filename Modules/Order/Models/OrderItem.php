@@ -40,6 +40,7 @@ abstract class OrderItem
 	public		$dates;
 	public		$references;
 	public		$giftCardCodes;
+	public		$transactions;
 	
 	/**
 	 * Returns this model as an array.

@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Plugin\Routing;
 
+use Illuminate\Routing\Route as IlluminateRoute;
 
 /**
  * Route

@@ -66,6 +66,7 @@ abstract class Item
 	public		$free18;
 	public		$free19;
 	public		$free20;
+	public		$maximumOrderQuantity;
 	public		$texts;
 	public		$ebayTitles;
 	public		$itemShippingProfiles;

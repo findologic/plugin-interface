@@ -8,9 +8,9 @@ namespace Plenty\Modules\Item\ItemSerialNumber\Models;
 abstract class ItemSerialNumber 
 {
 
-	const ITEMS_PER_PAGE = 100;
+	const CREATED_AT = 'inserted';
 
-	const CREATED_AT = 'createdAt';
+	const ITEMS_PER_PAGE = 100;
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
@@ -18,6 +18,7 @@ abstract class ItemSerialNumber
 	public		$orderItemId;
 	public		$itemId;
 	public		$serialNumber;
+	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.
