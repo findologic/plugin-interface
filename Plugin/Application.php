@@ -40,6 +40,11 @@ abstract class Application
 		array $parameters = []
 	);
 
+	abstract public function makeWith(
+		string $abstract, 
+		array $parameters = []
+	);
+
 	/**
 	 * Throw an HttpException with the given data.
 	 */
