@@ -3,6 +3,7 @@ namespace Plenty\Modules\Tag\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Tag\Models\Tag;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -45,7 +46,8 @@ interface TagRepositoryContract
 	):array;
 
 	public function getTagById(
-		int $id
+		int $id, 
+		array $with = []
 	):Tag;
 
 	public function getTagsByAvailability(
@@ -56,6 +58,7 @@ interface TagRepositoryContract
 	 * Returns all tags
 	 */
 	public function listTags(
+		array $with = []
 	):Collection;
 
 	/**

@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Tag\Contracts;
 
 use Illuminate\Support\Collection;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Tag\Models\TagRelationship;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -65,6 +66,7 @@ interface TagRelationshipRepositoryContract
 	 * Returns all tagRelationships
 	 */
 	public function listRelationships(
+		array $with = []
 	):Collection;
 
 	/**
