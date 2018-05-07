@@ -10,9 +10,9 @@ abstract class VariationPropertyValue
 
 	const ITEMS_PER_PAGE = 50;
 
-	const CREATED_AT = 'createdAt';
+	const UPDATED_AT = 'last_update_timestamp';
 
-	const UPDATED_AT = 'updatedAt';
+	const CREATED_AT = 'created_timestamp';
 	public		$id;
 	public		$variationId;
 	public		$propertyId;
