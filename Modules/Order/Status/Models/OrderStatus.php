@@ -19,6 +19,8 @@ abstract class OrderStatus
 	public		$isErasable;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$isFrontendVisible;
+	public		$color;
 	public		$names;
 	
 	/**

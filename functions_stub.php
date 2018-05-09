@@ -11,3 +11,7 @@
 	)
 	{ return null; }
 
+	 function pluginSetId(
+	):int
+	{ return null; }
+

@@ -22,6 +22,7 @@ abstract class Category
 	public		$sitemap;
 	public		$clients;
 	public		$details;
+	public		$elmarCategories;
 	
 	/**
 	 * Returns this model as an array.

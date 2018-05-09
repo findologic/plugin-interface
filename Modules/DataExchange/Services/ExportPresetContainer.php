@@ -20,7 +20,8 @@ abstract class ExportPresetContainer
 		string $filterClass = "", 
 		bool $isPlugin = false, 
 		bool $generatorExecute = false, 
-		string $exportType = "item"
+		string $exportType = "item", 
+		bool $restrictRows = true
 	);
 
 }
