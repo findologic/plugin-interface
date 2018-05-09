@@ -5,6 +5,7 @@ use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\DataExchange\Models\Export;
 use Plenty\Modules\DataExchange\Models\FormatSetting;
 use Plenty\Modules\DataExchange\Services\FileService;
+use Plenty\Modules\Market\MarketLogIdentifier;
 
 /**
  * PluginGenerator
