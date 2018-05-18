@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Search\Mutators;
 
+use Plenty\Legacy\Services\Item\Image\ImageService;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\ObjectMutator;
 use Plenty\Modules\System\Contracts\WebstoreConfigurationRepositoryContract;
