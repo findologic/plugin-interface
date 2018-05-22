@@ -21,6 +21,8 @@ interface VariationInheritanceServiceContract
 
 	const TYPE_WAREHOUSE = 'warehouse';
 
+	const TYPE_AVAILABILITY = 'availability';
+
 	public function activate(
 		Variation $variation, 
 		string $type
