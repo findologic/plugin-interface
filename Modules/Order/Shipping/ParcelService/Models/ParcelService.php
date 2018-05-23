@@ -15,6 +15,7 @@ abstract class ParcelService
 	public		$backendName;
 	public		$trackingUrl;
 	public		$shippingServiceProviderId;
+	public		$shippingServiceProviderAddress;
 	public		$shippingServiceProvider;
 	public		$parcelServiceNames;
 	

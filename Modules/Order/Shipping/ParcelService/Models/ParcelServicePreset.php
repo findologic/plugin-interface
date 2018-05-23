@@ -40,6 +40,7 @@ abstract class ParcelServicePreset
 	public		$updatedAt;
 	public		$parcelServicePresetNames;
 	public		$parcelServiceNames;
+	public		$showDataPrivacyAgreementHint;
 	public		$parcelService;
 	
 	/**

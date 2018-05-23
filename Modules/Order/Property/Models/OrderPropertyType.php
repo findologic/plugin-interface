@@ -102,6 +102,8 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_TAX_SERVICE = 47;
 
+	const SHIPPING_PRIVACY_HINT_ACCEPTED = 999;
+
 	const INTERVAL_TYP = 27;
 
 	const CREATED_AT = 'createdAt';

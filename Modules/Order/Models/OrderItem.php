@@ -41,6 +41,8 @@ abstract class OrderItem
 	public		$references;
 	public		$giftCardCodes;
 	public		$transactions;
+	public		$serialNumbers;
+	public		$variationBarcodes;
 	
 	/**
 	 * Returns this model as an array.
