@@ -188,4 +188,10 @@ abstract class Request
 	abstract public function getQueryString(
 	):string;
 
+	/**
+	 * Gets the request "intended" method.
+	 */
+	abstract public function getMethod(
+	):string;
+
 }
