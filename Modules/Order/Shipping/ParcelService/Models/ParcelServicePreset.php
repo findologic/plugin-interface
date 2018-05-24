@@ -41,6 +41,9 @@ abstract class ParcelServicePreset
 	public		$parcelServicePresetNames;
 	public		$parcelServiceNames;
 	public		$showDataPrivacyAgreementHint;
+	public		$transmitPrivacyRule;
+	public		$alternativeEmail;
+	public		$alternativePhone;
 	public		$parcelService;
 	
 	/**
