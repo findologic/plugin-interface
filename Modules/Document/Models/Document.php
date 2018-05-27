@@ -16,6 +16,10 @@ abstract class Document
 
 	const INVOICE = 'invoice';
 
+	const POS_INVOICE = 'pos_invoice';
+
+	const POS_INVOICE_CANCELLATION = 'pos_invoice_cancellation';
+
 	const DELIVERY_NOTE = 'delivery_note';
 
 	const CREDIT_NOTE = 'credit_note';
