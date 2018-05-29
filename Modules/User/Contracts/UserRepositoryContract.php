@@ -13,6 +13,9 @@ interface UserRepositoryContract
 	public function getAll(
 	):Collection;
 
+	public function getCurrentUser(
+	):User;
+
 	public function getUserById(
 		int $userId
 	):User;

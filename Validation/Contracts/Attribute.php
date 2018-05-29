@@ -136,6 +136,36 @@ interface Attribute
 	):self;
 
 	/**
+	 * The field under validation must be a valid HEX color (like "#a3d" or "#a0787c").
+	 */
+	public function hexColor(
+	):Attribute;
+
+	/**
+	 * The field under validation must be a valid RGB or RGBA color (like "rgb(0, 200, 150)" or "rgba(0, 200, 150, 0.52)").
+	 */
+	public function rgbColor(
+	):Attribute;
+
+	/**
+	 * The field under validation must be a valid predefined CSS color (like "aquamarine" or "skyblue").
+	 */
+	public function cssColor(
+	):Attribute;
+
+	/**
+	 * The field under validation must be a valid color (HEX like "#a0787c", RGB like "rgb(0, 200, 150)" or CSS like "aquamarine")
+	 */
+	public function color(
+	):Attribute;
+
+	/**
+	 * The field under validation must be a valid UUID version 5.
+	 */
+	public function uuid5(
+	):Attribute;
+
+	/**
 	 * The field under validation must be a valid data type used by the validation rule 'typeFromDb'.
 	 */
 	public function validDbType(

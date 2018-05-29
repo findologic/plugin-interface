@@ -28,6 +28,7 @@ abstract class AttributeValue
 	public		$attribute;
 	public		$valueNames;
 	public		$valueMarketNames;
+	public		$valueMaps;
 	
 	/**
 	 * Returns this model as an array.

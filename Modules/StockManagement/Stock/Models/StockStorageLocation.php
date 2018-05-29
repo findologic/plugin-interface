@@ -18,6 +18,8 @@ abstract class StockStorageLocation
 	public		$storageLocationId;
 	public		$warehouseId;
 	public		$quantity;
+	public		$bestBeforeDate;
+	public		$batch;
 	public		$updatedAt;
 	public		$storageLocation;
 	public		$warehouseLocation;

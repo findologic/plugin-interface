@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Board\Contracts;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
 use Plenty\Modules\Board\Models\BoardColumn;
 
@@ -32,6 +33,14 @@ interface BoardColumnRepositoryContract
 		string $boardId, 
 		string $columnId, 
 		array $data
+	):BoardColumn;
+
+	/**
+	 * Copy a column and all its tasks.
+	 */
+	public function copy(
+		string $boardId, 
+		string $columnId
 	):BoardColumn;
 
 	/**

@@ -14,6 +14,8 @@ abstract class TagRelationship
 
 	const TAG_TYPE_ITEM = 'item';
 
+	const TAG_TYPE_BOARD = 'board';
+
 	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
 
 	const RELATIONSHIP_TAG_RELATION = 'tag';
@@ -24,6 +26,7 @@ abstract class TagRelationship
 	public		$tagId;
 	public		$tagType;
 	public		$relationshipValue;
+	public		$relationshipUUID5;
 	
 	/**
 	 * Returns this model as an array.

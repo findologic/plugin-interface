@@ -43,6 +43,13 @@ interface BoardRepositoryContract
 	):Board;
 
 	/**
+	 * Copy a board and all its columns.
+	 */
+	public function copy(
+		string $boardId
+	):Board;
+
+	/**
 	 * Update tasks count value
 	 */
 	public function updateTasksCount(

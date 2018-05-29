@@ -24,6 +24,8 @@ abstract class VariationStockMovement
 	public		$reason;
 	public		$createdAt;
 	public		$processRowType;
+	public		$bestBeforeDate;
+	public		$batch;
 	public		$storageLocationName;
 	public		$warehouseName;
 	public		$purchasePrice;

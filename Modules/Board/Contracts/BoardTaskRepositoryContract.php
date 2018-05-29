@@ -35,6 +35,15 @@ interface BoardTaskRepositoryContract
 	):BoardTask;
 
 	/**
+	 * Copies the task with all references.
+	 */
+	public function copy(
+		string $boardId, 
+		string $columnId, 
+		string $taskId
+	):BoardTask;
+
+	/**
 	 * Returns a task for a given ID.
 	 */
 	public function get(

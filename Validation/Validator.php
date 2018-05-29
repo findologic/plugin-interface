@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Validation;
 
+use Illuminate\Support\Arr;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Validation\Contracts\Attribute;
 use Plenty\Validation\Contracts\AttributeHelperContract;
@@ -23,6 +24,15 @@ abstract class Validator
 
 	abstract public function buildCustomMessages(
 	);
+
+	/**
+	 * Get the value of the given attribute.
+	 */
+	protected function getAttributeValue(
+		string $attribute
+	)
+	{
+	}
 
 	abstract protected function defineAttributes(
 	);

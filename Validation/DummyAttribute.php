@@ -521,6 +521,36 @@ and integers that can contain null values.
 		return $this;
 	}
 
+	public function hexColor(
+	)
+	{
+		return $this;
+	}
+
+	public function rgbColor(
+	)
+	{
+		return $this;
+	}
+
+	public function cssColor(
+	)
+	{
+		return $this;
+	}
+
+	public function color(
+	)
+	{
+		return $this;
+	}
+
+	public function uuid5(
+	)
+	{
+		return $this;
+	}
+
 	/**
 	 * The field under validation must be a valid data type used by the validation rule 'typeFromDb'.
 	 */

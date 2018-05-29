@@ -29,6 +29,7 @@ abstract class Attribute
 	public		$isGroupable;
 	public		$attributeNames;
 	public		$values;
+	public		$maps;
 	
 	/**
 	 * Returns this model as an array.

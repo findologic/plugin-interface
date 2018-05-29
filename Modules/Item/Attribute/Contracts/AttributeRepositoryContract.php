@@ -25,7 +25,8 @@ interface AttributeRepositoryContract
 	 * Gets an attribute. The ID of the attribute must be specified.
 	 */
 	public function show(
-		int $id
+		int $id, 
+		array $with = []
 	):Attribute;
 
 	/**

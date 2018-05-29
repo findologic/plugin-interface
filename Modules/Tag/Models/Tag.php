@@ -19,6 +19,7 @@ abstract class Tag
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$tagName;
+	public		$color;
 	public		$availabilities;
 	public		$names;
 	public		$relationships;

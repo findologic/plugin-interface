@@ -54,7 +54,8 @@ interface AttributeValueRepositoryContract
 	 */
 	public function findById(
 		int $attributeId, 
-		int $id
+		int $id, 
+		array $with = []
 	):AttributeValue;
 
 	/**
