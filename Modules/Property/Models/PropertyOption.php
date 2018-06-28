@@ -16,6 +16,7 @@ abstract class PropertyOption
 	public		$typeOptionIdentifier;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$propertyOptionValues;
 	
 	/**
 	 * Returns this model as an array.

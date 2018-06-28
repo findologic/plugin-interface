@@ -1,24 +1,22 @@
 <?php
-namespace Plenty\Modules\Property\Models;
+namespace Plenty\Modules\ShopBuilder\Models;
 
 
 /**
- * The property selection model.
+ * Content created by the shop builder. May be linked to layout containers.
  */
-abstract class PropertySelection 
+abstract class Content 
 {
-
-	const MAX_ITEMS_PER_PAGE = 50;
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
-	public		$propertyId;
-	public		$position;
+	public		$dataProviderName;
 	public		$createdAt;
 	public		$updatedAt;
-	public		$relation;
+	public		$type;
+	public		$widgets;
 	
 	/**
 	 * Returns this model as an array.

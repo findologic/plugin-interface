@@ -41,6 +41,14 @@ interface VariationStockRepositoryContract
 	):array;
 
 	/**
+	 * Book outgoing stock
+	 */
+	public function bookOutgoingItems(
+		int $variationId, 
+		array $data
+	):array;
+
+	/**
 	 * Correct stock
 	 */
 	public function correctStock(

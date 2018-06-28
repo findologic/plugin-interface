@@ -18,7 +18,7 @@ abstract class Plugin
 
 	const TYPE_RETURNS = 'returns';
 
-	const DEFAULT_ITEMS_PER_PAGE = 10;
+	const DEFAULT_ITEMS_PER_PAGE = 100;
 
 	const CREATED_AT = 'created_at';
 
@@ -35,9 +35,11 @@ abstract class Plugin
 	public		$isConnectedWithGit;
 	public		$updateInformation;
 	public		$type;
+	public		$installed;
 	public		$version;
 	public		$versionStage;
 	public		$versionProductive;
+	public		$marketplaceVariations;
 	public		$description;
 	public		$namespace;
 	public		$dependencies;
@@ -75,6 +77,7 @@ abstract class Plugin
 	public		$installedPlugins;
 	public		$pluginSetIds;
 	public		$pluginSetEntries;
+	public		$pluginSetEntriesWithTrashed;
 	
 	/**
 	 * Returns this model as an array.

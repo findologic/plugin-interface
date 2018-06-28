@@ -17,8 +17,11 @@ abstract class CloudMetrics
 	public		$cloudSpacePrivateMB;
 	public		$cloudSpacePublicMB;
 	public		$dbSpaceMb;
+	public		$websiteTrafficMB;
 	public		$cdnTrafficMB;
 	public		$cdnTrafficCount;
+	public		$contentCachingPutRequests;
+	public		$contentCachingGetRequests;
 	public		$userAccounts;
 	public		$warehouses;
 	public		$facetSearchItems;

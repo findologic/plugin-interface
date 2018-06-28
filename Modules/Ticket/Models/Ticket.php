@@ -34,6 +34,7 @@ abstract class Ticket
 	public		$parseData;
 	public		$owners;
 	public		$messages;
+	public		$documents;
 	
 	/**
 	 * Returns this model as an array.

@@ -18,6 +18,9 @@ abstract class Property
 	public		$position;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$names;
+	public		$options;
+	public		$relation;
 	
 	/**
 	 * Returns this model as an array.

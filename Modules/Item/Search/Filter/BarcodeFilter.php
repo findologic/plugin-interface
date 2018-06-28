@@ -27,6 +27,10 @@ abstract class BarcodeFilter implements TypeInterface
 		string $type
 	);
 
+	abstract public function hasId(
+		int $id
+	);
+
 	abstract public function toArray(
 	):array;
 

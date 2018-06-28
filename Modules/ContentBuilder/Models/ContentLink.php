@@ -3,7 +3,7 @@ namespace Plenty\Modules\ContentBuilder\Models;
 
 
 /**
- * The content link model.
+ * This module is deprecated. Use module 'Shop Builder' instead.
  */
 abstract class ContentLink 
 {

@@ -18,6 +18,7 @@ abstract class PropertyName
 	public		$description;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$propertyRelation;
 	
 	/**
 	 * Returns this model as an array.

@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Plugin\Contracts;
 
+use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Item\DataLayer\Models\Record;
 use Plenty\Modules\Plugin\Models\Plugin;

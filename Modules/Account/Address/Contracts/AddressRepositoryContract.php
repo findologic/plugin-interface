@@ -124,6 +124,14 @@ interface AddressRepositoryContract
 	):Collection;
 
 	/**
+	 * Find address data by address id
+	 */
+	public function findAddressDataByAddressId(
+		int $addressId, 
+		string $orderIds
+	):Address;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

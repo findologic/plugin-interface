@@ -25,6 +25,8 @@ abstract class Recipient
 	public		$templateLang;
 	public		$confirmedTimestamp;
 	public		$confirmAuthString;
+	public		$ipAddress;
+	public		$confirmationURL;
 	
 	/**
 	 * Returns this model as an array.

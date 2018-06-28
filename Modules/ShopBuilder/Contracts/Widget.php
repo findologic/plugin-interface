@@ -1,10 +1,9 @@
 <?php
-namespace Plenty\Modules\ContentBuilder\Contracts;
+namespace Plenty\Modules\ShopBuilder\Contracts;
 
-use Plenty\Modules\ShopBuilder\Contracts\Widget as BaseWidget;
 
 /**
- * This module is deprecated. Use module 'Shop Builder' instead.
+ * Contract for content widgets
  */
 interface Widget 
 {

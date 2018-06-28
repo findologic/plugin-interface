@@ -7,14 +7,11 @@ use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * Get and create content links.
+ * This module is deprecated. Use module 'Shop Builder' instead.
  */
 interface ContentLinkRepositoryContract 
 {
 
-	/**
-	 * List contents links
-	 */
 	public function listContentsLinks(
 		int $page = 1, 
 		int $itemsPerPage = 50, 
@@ -22,23 +19,14 @@ interface ContentLinkRepositoryContract
 		array $filters = []
 	):PaginatedResult;
 
-	/**
-	 * Get a content link
-	 */
 	public function getContentLink(
 		int $contentLinkId
 	);
 
-	/**
-	 * Create a new content link
-	 */
 	public function createContentLink(
 		array $data
 	);
 
-	/**
-	 * Update a content link
-	 */
 	public function updateContentLink(
 		array $data, 
 		int $contentLinkId

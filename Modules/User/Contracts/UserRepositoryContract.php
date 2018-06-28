@@ -24,4 +24,12 @@ interface UserRepositoryContract
 		string $name
 	):Collection;
 
+	/**
+	 * Sets the selected PluginSet for a given user's backend
+	 */
+	public function setBackendPluginSet(
+		int $userId, 
+		int $setId
+	):bool;
+
 }

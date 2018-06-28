@@ -77,6 +77,7 @@ abstract class User
 	public		$scheduler;
 	public		$item;
 	public		$incomingItems;
+	public		$backendPluginSetId;
 	
 	/**
 	 * Returns this model as an array.

@@ -3,10 +3,12 @@ namespace Plenty\Modules\Plugin\PluginSet\Models;
 
 
 /**
- * Eloquent model representing a Plugin.
+ * Eloquent model representing a PluginSetEntry.
  */
 abstract class PluginSetEntry 
 {
+
+	const ITEMS_PER_PAGE = 50;
 
 	const CREATED_AT = 'createdAt';
 
@@ -15,6 +17,8 @@ abstract class PluginSetEntry
 	public		$pluginId;
 	public		$pluginSetId;
 	public		$plugin;
+	public		$branchName;
+	public		$position;
 	
 	/**
 	 * Returns this model as an array.

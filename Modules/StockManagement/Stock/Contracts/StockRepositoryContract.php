@@ -59,6 +59,14 @@ interface StockRepositoryContract
 	);
 
 	/**
+	 * Book outgoing stock
+	 */
+	public function bookOutgoingItems(
+		int $warehouseId, 
+		array $data
+	);
+
+	/**
 	 * Redistribute stock
 	 */
 	public function redistributeStock(

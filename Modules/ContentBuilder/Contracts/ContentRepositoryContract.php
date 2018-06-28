@@ -9,14 +9,11 @@ use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * Get and create contents.
+ * This module is deprecated. Use module 'Shop Builder' instead.
  */
 interface ContentRepositoryContract 
 {
 
-	/**
-	 * List contents with pagination
-	 */
 	public function listContents(
 		int $page = 1, 
 		int $itemsPerPage = 50, 
@@ -24,36 +21,21 @@ interface ContentRepositoryContract
 		array $filters = []
 	):PaginatedResult;
 
-	/**
-	 * List contents
-	 */
 	public function listAllContents(
 	):array;
 
-	/**
-	 * Get a content
-	 */
 	public function getContent(
 		int $contentId
 	);
 
-	/**
-	 * Get all contents for a content page references by its identifier
-	 */
 	public function getContentsByPage(
 		string $pageIdentifier
 	):Collection;
 
-	/**
-	 * Create a new content
-	 */
 	public function createContent(
 		string $dataProviderName
 	);
 
-	/**
-	 * Update a content
-	 */
 	public function updateContent(
 		array $data, 
 		int $contentId

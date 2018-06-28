@@ -18,6 +18,8 @@ abstract class PropertyRelation
 	public		$selectionRelationId;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$relationValues;
+	public		$propertyRelation;
 	
 	/**
 	 * Returns this model as an array.

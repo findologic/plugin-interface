@@ -66,4 +66,11 @@ interface ContactOptionRepositoryContract
 		int $optionId
 	):bool;
 
+	public function validateValue(
+		int $contactId, 
+		int $typeId, 
+		int $subTypeId, 
+		string $value
+	):bool;
+
 }
