@@ -20,6 +20,7 @@ abstract class DataHistory
 	public		$dataChangeList;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$ttl;
 	
 	/**
 	 * Returns this model as an array.
