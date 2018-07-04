@@ -10,6 +10,8 @@ use Plenty\Modules\Cron\Validators\CronValidator;
 abstract class CronContainer 
 {
 
+	const EVERY_FIVE_MINUTES = 5;
+
 	const EVERY_FIFTEEN_MINUTES = 15;
 
 	const EVERY_TWENTY_MINUTES = 20;
