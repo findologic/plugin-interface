@@ -3,6 +3,7 @@ namespace Plenty\Modules\Tag\Contracts;
 
 use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Tag\Exceptions\TagException;
 use Plenty\Modules\Tag\Models\TagRelationship;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -37,6 +38,15 @@ interface TagRelationshipRepositoryContract
 		int $tagId
 	);
 
+	/**
+	 * Delete a tag relationship by the uuid5 value.
+	 */
+	public function deleteOneRelationByUUID(
+		string $relationshipUUID, 
+		string $relationshipType, 
+		int $tagId
+	):int;
+
 	public function findByValueId(
 		int $valueId
 	):array;
@@ -59,6 +69,14 @@ interface TagRelationshipRepositoryContract
 	 */
 	public function delete(
 		int $relationshipValue, 
+		string $relationshipType
+	):DeleteResponse;
+
+	/**
+	 * Deletes tag links by uuid5 reference value and relationship type
+	 */
+	public function deleteByUUID(
+		string $relationshipValue, 
 		string $relationshipType
 	):DeleteResponse;
 

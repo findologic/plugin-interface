@@ -4,6 +4,7 @@ namespace Plenty\Modules\Tag\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Tag\Exceptions\TagException;
 use Plenty\Modules\Tag\Models\Tag;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -52,6 +53,12 @@ interface TagRepositoryContract
 
 	public function getTagsByAvailability(
 		string $availabilityType
+	):array;
+
+	public function getTagsByRelationship(
+		string $relationshipType, 
+		 $value, 
+		bool $isUUID = false
 	):array;
 
 	/**
