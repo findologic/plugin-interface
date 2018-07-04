@@ -20,6 +20,13 @@ interface AccountingLocationRepositoryContract
 	):AccountingLocation;
 
 	/**
+	 * List all accounting locations
+*
+	 */
+	public function getAll(
+	):AccountingLocation;
+
+	/**
 	 * List accounting locations for a client. The plenty ID of the client must be specified.
 	 */
 	public function listByPlentyId(
