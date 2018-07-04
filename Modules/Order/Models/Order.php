@@ -8,9 +8,9 @@ namespace Plenty\Modules\Order\Models;
 abstract class Order 
 {
 
-	const CREATED_AT = 'createdAt';
+	const CREATED_AT = 'order_main_entry_timestamp';
 
-	const UPDATED_AT = 'updatedAt';
+	const UPDATED_AT = 'last_update';
 	public		$id;
 	public		$typeId;
 	public		$methodOfPaymentId;

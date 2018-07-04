@@ -24,6 +24,8 @@ abstract class OrderAmount
 	public		$paidAmount;
 	public		$prepaidAmount;
 	public		$giftCardAmount;
+	public		$shippingCostsGross;
+	public		$shippingCostsNet;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$order;
