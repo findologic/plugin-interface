@@ -17,6 +17,7 @@ abstract class BoardTask
 	public		$position;
 	public		$columnId;
 	public		$boardId;
+	public		$tags;
 	public		$references;
 	
 	/**
