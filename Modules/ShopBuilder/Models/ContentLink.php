@@ -15,6 +15,7 @@ abstract class ContentLink
 	public		$contentId;
 	public		$containerName;
 	public		$pluginSetId;
+	public		$language;
 	public		$createdAt;
 	public		$updatedAt;
 	
