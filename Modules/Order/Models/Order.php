@@ -38,6 +38,7 @@ abstract class Order
 	public		$payments;
 	public		$orderReferences;
 	public		$reverseOrderReferences;
+	public		$originOrderReferences;
 	public		$documents;
 	public		$dates;
 	public		$originOrder;
