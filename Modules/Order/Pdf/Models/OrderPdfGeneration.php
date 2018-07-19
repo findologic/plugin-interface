@@ -14,6 +14,10 @@ abstract class OrderPdfGeneration
 	public		$language;
 	public		$advice;
 	public		$sums;
+	public		$link;
+	public		$image;
+	public		$imageHeight;
+	public		$imageWidth;
 	
 	/**
 	 * Returns this model as an array.

@@ -1,12 +1,13 @@
 <?php
 namespace Plenty\Modules\Authorization\Exception;
 
-use Exception;
+use Illuminate\Support\Collection;
+use Throwable;
 
 /**
  * Class AuthorizationException
  */
-abstract class AuthorizationException extends \Exception 
+abstract class AuthorizationException extends AuthorizationException 
 
 {
 
@@ -32,8 +33,16 @@ abstract class AuthorizationException extends \Exception
 	const ROLE_DOESNT_EXIST = 9;
 
 	abstract public function __construct(
-		string $message, 
-		int $code = 0
+		string $message = "", 
+		int $code = 0, 
+		\Exception $previous = null
+	);
+
+	abstract public function missingPermissions(
+	):Collection;
+
+	abstract public function addMissingPermission(
+		string $permissionKey
 	);
 
 }

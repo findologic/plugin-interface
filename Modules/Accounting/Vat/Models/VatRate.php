@@ -7,6 +7,10 @@ namespace Plenty\Modules\Accounting\Vat\Models;
  */
 abstract class VatRate 
 {
+
+	const CREATED_AT = 'createdAt';
+
+	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$vatRate;
 	public		$name;

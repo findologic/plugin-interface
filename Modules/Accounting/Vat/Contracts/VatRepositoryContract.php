@@ -83,6 +83,28 @@ interface VatRepositoryContract
 	):array;
 
 	/**
+	 * Get a VAT configuration by id
+	 */
+	public function getVatById(
+		int $id
+	):Vat;
+
+	/**
+	 * Create a VAT configuration
+	 */
+	public function createVat(
+		array $data
+	):Vat;
+
+	/**
+	 * Update a VAT configuration
+	 */
+	public function updateVat(
+		int $id, 
+		array $data
+	):Vat;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
