@@ -26,6 +26,7 @@ abstract class Account
 	public		$createdAt;
 	public		$updatedAt;
 	public		$contacts;
+	public		$contactRelations;
 	
 	/**
 	 * Returns this model as an array.
