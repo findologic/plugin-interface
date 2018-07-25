@@ -10,6 +10,7 @@ use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Accounting\Facades\AccountingService;
 use Plenty\Modules\Accounting\Vat\Contracts\VatInitContract;
 use Plenty\Modules\Accounting\Vat\Contracts\VatRepositoryContract;
+use Plenty\Modules\Accounting\Vat\Facades\VatInit;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
 use Plenty\Modules\Frontend\Models\TotalVat;
 use Plenty\Modules\Frontend\Session\Storage\Models\Order;
