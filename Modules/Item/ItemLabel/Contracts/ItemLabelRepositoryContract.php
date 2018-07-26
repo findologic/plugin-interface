@@ -12,14 +12,14 @@ interface ItemLabelRepositoryContract
 {
 
 	/**
-	 * Gets an base64 encoded label for an item id
+	 * Get a variation label
 	 */
 	public function generateLabel(
 		array $data
 	):string;
 
 	/**
-	 * Lists all item label templates
+	 * List item label templates
 	 */
 	public function listTemplates(
 	):array;
