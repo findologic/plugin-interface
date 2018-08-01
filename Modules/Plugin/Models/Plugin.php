@@ -69,6 +69,7 @@ abstract class Plugin
 	public		$isExternalTool;
 	public		$directDownloadLinks;
 	public		$forwardLink;
+	public		$branch;
 	public		$configurations;
 	public		$webstores;
 	public		$linkedDataProviders;
