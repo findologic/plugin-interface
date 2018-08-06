@@ -89,6 +89,10 @@ abstract class VariationBaseFilter implements TypeInterface
 		bool $bool = true
 	);
 
+	abstract public function hasChildren(
+		bool $bool = true
+	);
+
 	abstract public function toArray(
 	):array;
 
