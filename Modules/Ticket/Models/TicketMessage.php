@@ -19,6 +19,7 @@ abstract class TicketMessage
 	public		$type;
 	public		$source;
 	public		$topicId;
+	public		$ticket;
 	
 	/**
 	 * Returns this model as an array.

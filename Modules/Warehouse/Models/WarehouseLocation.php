@@ -10,6 +10,8 @@ abstract class WarehouseLocation
 
 	const MAX_ITEMS_PER_PAGE = 100;
 
+	const MAX_CHARACTERS_NOTES = 500;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -21,6 +23,7 @@ abstract class WarehouseLocation
 	public		$position;
 	public		$fullLabel;
 	public		$type;
+	public		$notes;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$warehouseLocationLevel;

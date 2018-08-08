@@ -62,6 +62,7 @@ abstract class Contact
 	public		$allowedMethodsOfPayment;
 	public		$type;
 	public		$orderSummary;
+	public		$tagRelationships;
 	
 	/**
 	 * Returns this model as an array.

@@ -16,6 +16,8 @@ abstract class TagRelationship
 
 	const TAG_TYPE_BOARD = 'board';
 
+	const TAG_TYPE_CONTACT = 'contact';
+
 	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
 
 	const RELATIONSHIP_TAG_RELATION = 'tag';

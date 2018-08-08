@@ -16,6 +16,8 @@ abstract class TagAvailability
 
 	const TAG_TYPE_BOARD = 'board';
 
+	const TAG_TYPE_CONTACT = 'contact';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

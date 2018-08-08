@@ -75,6 +75,7 @@ abstract class Variation
 	public		$propertyVariationId;
 	public		$variationBarcodes;
 	public		$variationBundleComponents;
+	public		$variationComponentBundles;
 	public		$variationProperties;
 	public		$properties;
 	public		$variationSalesPrices;

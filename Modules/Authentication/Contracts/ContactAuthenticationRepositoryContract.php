@@ -23,6 +23,10 @@ interface ContactAuthenticationRepositoryContract
 		string $password
 	);
 
+	public function authenticateWithToken(
+		string $token
+	);
+
 	public function logout(
 	);
 
