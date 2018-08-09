@@ -13,12 +13,19 @@ abstract class RandomScore implements TypeInterface
 	abstract public function getFunction(
 	):array;
 
+	abstract public function getBoostMode(
+	);
+
 	abstract public function getSeed(
 	):string;
 
 	abstract public function setSeed(
 		string $seed
 	):RandomScore;
+
+	abstract public function setQuery(
+		 $query
+	);
 
 	abstract public function toArray(
 	);

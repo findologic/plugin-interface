@@ -3,6 +3,7 @@ namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Document;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Collapse\CollapseInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\ScoreModifier\ScoreModifierInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\BaseSearch;
@@ -86,5 +87,9 @@ abstract class DocumentSearch implements SearchInterface
 	abstract public function setCollapse(
 		CollapseInterface $collapse
 	);
+
+	abstract public function setScoreModifier(
+		ScoreModifierInterface $scoreModifier
+	):self;
 
 }
