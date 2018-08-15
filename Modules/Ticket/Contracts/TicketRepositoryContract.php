@@ -54,10 +54,11 @@ interface TicketRepositoryContract
 	):Ticket;
 
 	/**
-	 * Get an ticket
+	 * Get a ticket
 	 */
 	public function findById(
-		int $ticketId
+		int $ticketId, 
+		array $with = []
 	):Ticket;
 
 	/**

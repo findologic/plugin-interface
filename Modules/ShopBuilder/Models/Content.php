@@ -17,6 +17,7 @@ abstract class Content
 	public		$updatedAt;
 	public		$type;
 	public		$widgets;
+	public		$link;
 	
 	/**
 	 * Returns this model as an array.

@@ -18,6 +18,7 @@ abstract class Ticket
 	public		$statusId;
 	public		$confidential;
 	public		$contactId;
+	public		$orderId;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$contactLastUpdateAt;
@@ -32,6 +33,8 @@ abstract class Ticket
 	public		$childrenCount;
 	public		$resubmissionAt;
 	public		$parseData;
+	public		$contact;
+	public		$order;
 	public		$owners;
 	public		$messages;
 	public		$documents;

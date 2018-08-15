@@ -16,8 +16,10 @@ abstract class ContentLink
 	public		$containerName;
 	public		$pluginSetId;
 	public		$language;
+	public		$active;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$content;
 	
 	/**
 	 * Returns this model as an array.

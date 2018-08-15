@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Accounting\Models\AccountingLocation;
+use Plenty\Modules\Accounting\Models\AccountingLocationSettings;
 
 /**
  * The repository to get, create, update and delete accounting locations.
@@ -54,5 +55,12 @@ interface AccountingLocationRepositoryContract
 	public function delete(
 		int $id
 	):bool;
+
+	/**
+	 * Get accounting location settings. The ID of the location must be specified.
+	 */
+	public function getSettings(
+		int $id
+	):AccountingLocationSettings;
 
 }
