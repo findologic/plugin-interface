@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Account\Contact\Models\Contact;
 use Plenty\Modules\Data\History\Contracts\DataHistoryProviderContract;
+use Plenty\Modules\RestDocumentation\Annotations\CallParam;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Contracts\SortableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
