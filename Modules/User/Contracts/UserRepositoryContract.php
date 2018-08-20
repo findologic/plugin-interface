@@ -2,6 +2,7 @@
 namespace Plenty\Modules\User\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\Request;
 use Plenty\Modules\User\Models\User;
 
 /**
@@ -19,6 +20,14 @@ interface UserRepositoryContract
 	public function getUserById(
 		int $userId
 	):User;
+
+	/**
+	 * Get all users with a pin
+	 */
+	public function getAllPinUsers(
+		string $clientName = null, 
+		string $clientSecret = null
+	):Collection;
 
 	public function findByName(
 		string $name

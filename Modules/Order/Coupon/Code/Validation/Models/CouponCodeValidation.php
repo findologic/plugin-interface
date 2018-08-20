@@ -48,6 +48,10 @@ abstract class CouponCodeValidation
 
 	const GUI_EXCEPTION_CAMPAIGN_NO_WEBSTORE_ID_GIVEN = 343;
 
+	const GUI_EXCEPTION_NO_REDEMTION_FOR_CODE = 344;
+
+	const GUT_EXCEPTION_TOO_MANY_PROMOTION_CODES = 345;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -68,6 +72,7 @@ abstract class CouponCodeValidation
 	public		$restCouponAmount;
 	public		$checkedItems;
 	public		$validateParams;
+	public		$couponCampaignType;
 	
 	/**
 	 * Returns this model as an array.
