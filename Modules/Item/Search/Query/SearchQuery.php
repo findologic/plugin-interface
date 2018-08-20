@@ -39,6 +39,14 @@ abstract class SearchQuery implements TypeInterface
 		string $type
 	);
 
+	abstract public function setOperator(
+		string $operator
+	):MultiMatchQuery;
+
+	abstract public function setFuzzy(
+		bool $fuzzy
+	):MultiMatchQuery;
+
 	abstract public static function isLanguageSupported(
 		string $lang
 	):bool;

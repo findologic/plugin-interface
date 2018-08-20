@@ -26,7 +26,7 @@ abstract class SearchFilter implements TypeInterface
 	abstract public function setSearchString(
 		string $value, 
 		string $lang, 
-		string $precision = "fuzzy", 
+		string $precision = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::SEARCH_TYPE_EXACT, 
 		string $operator = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::OR_OPERATOR
 	);
 
