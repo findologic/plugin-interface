@@ -44,6 +44,8 @@ abstract class ParcelServicePreset
 	public		$transmitPrivacyRule;
 	public		$alternativeEmail;
 	public		$alternativePhone;
+	public		$isParcelBox;
+	public		$isPostOffice;
 	public		$parcelService;
 	
 	/**
