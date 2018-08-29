@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Processor;
 
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Condition\ConditionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 
 /**
@@ -19,6 +20,10 @@ abstract class DocumentProcessor implements ProcessorInterface
 
 	abstract public function addMutator(
 		MutatorInterface $mutator
+	):self;
+
+	abstract public function addCondition(
+		ConditionInterface $conditions
 	):self;
 
 }

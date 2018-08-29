@@ -67,6 +67,9 @@ abstract class Application
 	abstract public function getPlentyId(
 	):int;
 
+	abstract public function isAdminPreview(
+	);
+
 	/**
 	 * Returns the URL to the plugin resources
 	 */

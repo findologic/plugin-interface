@@ -3,6 +3,7 @@ namespace Plenty\Modules\Item\Search\Suggestions;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\ProcessorInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Processor\SuggestionProcessor;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Condition\ConditionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator\MutatorInterface;
 
 /**
@@ -21,6 +22,10 @@ abstract class SearchSuggestionProcessor implements ProcessorInterface
 
 	abstract public function addMutator(
 		MutatorInterface $mutator
+	):self;
+
+	abstract public function addCondition(
+		ConditionInterface $conditions
 	):self;
 
 }

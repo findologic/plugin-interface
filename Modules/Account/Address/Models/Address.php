@@ -42,6 +42,7 @@ abstract class Address
 	public		$createdAt;
 	public		$updatedAt;
 	public		$taxIdNumber;
+	public		$title;
 	public		$externalId;
 	public		$entryCertificate;
 	public		$phone;

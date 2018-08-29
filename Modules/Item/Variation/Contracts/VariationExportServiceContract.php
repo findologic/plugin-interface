@@ -48,4 +48,8 @@ interface VariationExportServiceContract
 		int $variationId
 	);
 
+	public function getAll(
+		int $variationId
+	);
+
 }

@@ -22,6 +22,13 @@ interface PaymentOrderRelationRepositoryContract
 	):PaymentOrderRelation;
 
 	/**
+	 * Gets the payment order relation.
+	 */
+	public function findOrderRelation(
+		Payment $payment
+	):PaymentOrderRelation;
+
+	/**
 	 * Deletes a payment order relation.
 	 */
 	public function deleteOrderRelation(

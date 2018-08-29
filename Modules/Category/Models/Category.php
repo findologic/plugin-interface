@@ -20,6 +20,7 @@ abstract class Category
 	public		$linklist;
 	public		$right;
 	public		$sitemap;
+	public		$updatedAt;
 	public		$clients;
 	public		$details;
 	public		$elmarCategories;
