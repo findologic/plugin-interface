@@ -28,6 +28,10 @@ abstract class Export
 
 	const DATA_TYPE_PROPERTY = 'property';
 
+	const DATA_TYPE_ITEM_IMAGE = 'item_image';
+
+	const DATA_TYPE_MANUFACTURER = 'manufacturer';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';
