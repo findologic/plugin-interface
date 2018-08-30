@@ -35,6 +35,8 @@ interface VariationExportServiceContract
 
 	const SHIPPING_PROFILE = 'ItemShippingProfile';
 
+	const DEFAULT_CATEGORY = 'VariationDefaultCategory';
+
 	public function addPreloadTypes(
 		array $types
 	);
