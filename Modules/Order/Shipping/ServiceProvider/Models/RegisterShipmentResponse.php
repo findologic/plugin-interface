@@ -107,4 +107,20 @@ abstract class RegisterShipmentResponse
 		array $fillable
 	):self;
 
+	/**
+	 * Determine whether an attribute should be cast to a native type.
+	 */
+	abstract public function hasCast(
+		string $key, 
+		 $types = null
+	):bool;
+
+	/**
+	 * Decode the given JSON back into an array or object.
+	 */
+	abstract public function fromJson(
+		string $value, 
+		bool $asObject = false
+	);
+
 }

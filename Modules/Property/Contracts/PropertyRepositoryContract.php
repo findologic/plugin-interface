@@ -16,7 +16,8 @@ interface PropertyRepositoryContract
 	 * Gets a property. The ID of the property must be specified.
 	 */
 	public function getProperty(
-		int $propertyId
+		int $propertyId, 
+		array $with = []
 	):Property;
 
 	/**

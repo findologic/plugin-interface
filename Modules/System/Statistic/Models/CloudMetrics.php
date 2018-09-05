@@ -24,6 +24,7 @@ abstract class CloudMetrics
 	public		$contentCachingGetRequests;
 	public		$userAccounts;
 	public		$warehouses;
+	public		$warehousesSales;
 	public		$facetSearchItems;
 	public		$facetSearchCalls;
 	public		$items;
