@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\ShopBuilder\Contracts;
 
+use Illuminate\Support\Collection;
 use Plenty\Modules\ShopBuilder\Models\ContentLink;
 
 /**
@@ -52,6 +53,6 @@ interface ContentLinkRepositoryContract
 		string $containerName, 
 		int $pluginSetId = null, 
 		string $lang = null
-	):array;
+	);
 
 }
