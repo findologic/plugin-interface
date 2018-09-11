@@ -2,7 +2,6 @@
 namespace Plenty\Modules\ShopBuilder\Contracts;
 
 use Plenty\Modules\ShopBuilder\Models\Content;
-use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * Get, create, delete und update shop builder contents.
@@ -15,15 +14,6 @@ interface ContentRepositoryContract
 	 */
 	public function getContents(
 	):array;
-
-	/**
-	 * Search for contents
-	 */
-	public function searchContents(
-		int $itemsPerPage = 20, 
-		int $page = 1, 
-		array $params = []
-	):PaginatedResult;
 
 	/**
 	 * Get a single content.
