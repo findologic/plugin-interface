@@ -51,6 +51,10 @@ abstract class SearchQuery implements TypeInterface
 		string $lang
 	):bool;
 
+	abstract public static function isLanguageActivated(
+		string $lang
+	):bool;
+
 	abstract public static function getM10lByLanguage(
 		string $lang, 
 		string $fallback = "en"

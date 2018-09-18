@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Item\Item\Contracts;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Item\Item\Models\Item;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -48,7 +49,14 @@ interface ItemRepositoryContract
 	):Item;
 
 	/**
-	 * Delete a item. The ID of the item must be specified.
+	 * Update up to 50 items. The ID of the item must be specified.
+	 */
+	public function bulkUpdate(
+		array $data
+	):Collection;
+
+	/**
+	 * Delete an item. The ID of the item must be specified.
 	 */
 	public function delete(
 		int $itemId

@@ -85,6 +85,13 @@ Gets the first warehouse location matching the given label. The label must be sp
 	):array;
 
 	/**
+	 * Move a warehouse location position
+	 */
+	public function moveWarehouseLocationPosition(
+		array $data
+	);
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
