@@ -19,7 +19,7 @@ interface VariationStockRepositoryContract
 	 */
 	public function listStockByWarehouse(
 		int $variationId, 
-		array $columns
+		array $columns = []
 	):array;
 
 	/**
