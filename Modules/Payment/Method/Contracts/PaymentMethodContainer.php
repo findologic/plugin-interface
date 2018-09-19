@@ -14,4 +14,8 @@ interface PaymentMethodContainer
 		array $rebuildEventClassesList
 	);
 
+	public function isRegistered(
+		string $paymentKey
+	):bool;
+
 }

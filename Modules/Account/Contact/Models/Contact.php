@@ -63,6 +63,10 @@ abstract class Contact
 	public		$type;
 	public		$orderSummary;
 	public		$tagRelationships;
+	public		$valuta;
+	public		$discountDays;
+	public		$discountPercent;
+	public		$timeForPaymentAllowedDays;
 	
 	/**
 	 * Returns this model as an array.

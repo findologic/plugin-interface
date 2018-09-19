@@ -18,4 +18,8 @@ interface ContactGroupFunctionsRepositoryContract
 		int $newsletter = null
 	):array;
 
+	public function executeGroupFunctionV2(
+		array $data = []
+	):array;
+
 }

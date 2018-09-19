@@ -104,6 +104,20 @@ abstract class OrderPropertyType
 
 	const ORDER_ITEM_STATE = 48;
 
+	const TRADE_REPRESENTATIVE = 992;
+
+	const EBAY_CANCELLATION = 993;
+
+	const EBAY_PLUS = 994;
+
+	const FULFILLMENT_SERVICE = 995;
+
+	const CLICK_AND_COLLECT = 996;
+
+	const AMAZON_TCS = 997;
+
+	const EBAY_PAYMENT_ID = 998;
+
 	const SHIPPING_PRIVACY_HINT_ACCEPTED = 999;
 
 	const INTERVAL_TYP = 27;
