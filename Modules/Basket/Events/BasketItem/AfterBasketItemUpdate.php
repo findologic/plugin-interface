@@ -9,4 +9,7 @@ use Plenty\Modules\Basket\Models\BasketItem;
 abstract class AfterBasketItemUpdate 
 {
 
+	abstract public function getBasketItem(
+	):BasketItem;
+
 }
