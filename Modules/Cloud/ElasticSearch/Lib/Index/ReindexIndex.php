@@ -32,6 +32,9 @@ abstract class ReindexIndex implements IndexInterface
 	abstract public function getMappingClassName(
 	);
 
+	abstract public function getDynamicTemplateClassName(
+	);
+
 	abstract public function getNext(
 	);
 

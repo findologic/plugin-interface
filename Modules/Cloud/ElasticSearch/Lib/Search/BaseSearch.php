@@ -16,6 +16,10 @@ abstract class BaseSearch implements SearchInterface
 
 {
 
+	abstract public function setIsSourceDisabled(
+		bool $isSourceDisabled
+	);
+
 	abstract public function addFilter(
 		TypeInterface $filter
 	):self;

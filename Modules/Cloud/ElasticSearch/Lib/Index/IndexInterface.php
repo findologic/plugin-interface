@@ -37,6 +37,9 @@ interface IndexInterface
 	public function getMappingClassName(
 	):string;
 
+	public function getDynamicTemplateClassName(
+	):string;
+
 	public function getMeta(
 	):array;
 

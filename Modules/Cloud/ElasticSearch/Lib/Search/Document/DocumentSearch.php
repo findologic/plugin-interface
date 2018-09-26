@@ -51,6 +51,10 @@ abstract class DocumentSearch implements SearchInterface
 		 $name
 	);
 
+	abstract public function setIsSourceDisabled(
+		bool $isSourceDisabled
+	);
+
 	abstract public function addFilter(
 		TypeInterface $filter
 	):self;

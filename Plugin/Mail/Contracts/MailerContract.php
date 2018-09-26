@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Plugin\Mail\Contracts;
 
+use Plenty\Plugin\Mail\Models\ReplyTo;
 
 /**
  * Plugin Mailer Service
@@ -16,7 +17,8 @@ interface MailerContract
 		 $recipients, 
 		string $subject = "", 
 		array $cc = [], 
-		array $bcc = []
+		array $bcc = [], 
+		ReplyTo $replyTo = null
 	);
 
 	/**
@@ -29,7 +31,8 @@ interface MailerContract
 		string $subject = "", 
 		array $altConfig = [], 
 		array $cc = [], 
-		array $bcc = []
+		array $bcc = [], 
+		ReplyTo $replyTo = null
 	);
 
 	/**
@@ -40,7 +43,8 @@ interface MailerContract
 		 $recipients, 
 		array $altConfig = [], 
 		array $cc = [], 
-		array $bcc = []
+		array $bcc = [], 
+		ReplyTo $replyTo = null
 	);
 
 }
