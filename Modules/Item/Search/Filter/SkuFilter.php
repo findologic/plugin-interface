@@ -24,6 +24,10 @@ abstract class SkuFilter implements TypeInterface
 		int $accountId
 	);
 
+	abstract public function hasStatus(
+		string $status
+	);
+
 	abstract public function toArray(
 	):array;
 
