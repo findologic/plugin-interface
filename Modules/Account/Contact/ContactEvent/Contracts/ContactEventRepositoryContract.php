@@ -51,4 +51,10 @@ interface ContactEventRepositoryContract
 		int $contactEventId
 	);
 
+	/**
+	 * Get the contact event types as key/pair array
+	 */
+	public function getEventTypesPreview(
+	):array;
+
 }

@@ -25,6 +25,7 @@ abstract class NewsletterEmail
 	public		$templateLang;
 	public		$confirmedTimestamp;
 	public		$confirmAuthString;
+	public		$ipAddress;
 	
 	/**
 	 * Returns this model as an array.

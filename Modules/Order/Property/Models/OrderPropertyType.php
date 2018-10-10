@@ -104,6 +104,8 @@ abstract class OrderPropertyType
 
 	const ORDER_ITEM_STATE = 48;
 
+	const EXTERNAL_DELIVERY_NUMBER = 49;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

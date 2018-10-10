@@ -23,6 +23,7 @@ abstract class SalesPriceSearchResponse
 	public		$vatId;
 	public		$vatValue;
 	public		$currency;
+	public		$interval;
 	public		$conversionFactor;
 	public		$minimumOrderQuantity;
 	public		$updatedAt;

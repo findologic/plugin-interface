@@ -19,6 +19,12 @@ abstract class PriceFilter implements TypeInterface
 		float $max = null
 	);
 
+	abstract public function betweenByClient(
+		float $min = null, 
+		float $max = null, 
+		int $clientId = null
+	);
+
 	abstract public function getType(
 	):string;
 

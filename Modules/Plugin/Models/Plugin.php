@@ -70,6 +70,7 @@ abstract class Plugin
 	public		$directDownloadLinks;
 	public		$forwardLink;
 	public		$branch;
+	public		$subscriptionInformation;
 	public		$configurations;
 	public		$webstores;
 	public		$linkedDataProviders;
