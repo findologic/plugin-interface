@@ -37,7 +37,8 @@ interface ContentRepositoryContract
 	 */
 	public function createContent(
 		int $pluginSetId, 
-		 $data
+		 $data, 
+		string $frontendLanguage = null
 	):Content;
 
 	/**
@@ -46,7 +47,8 @@ interface ContentRepositoryContract
 	public function updateContent(
 		int $pluginSetId, 
 		int $contentId, 
-		 $data
+		 $data, 
+		string $frontendLanguage = null
 	):Content;
 
 	/**
