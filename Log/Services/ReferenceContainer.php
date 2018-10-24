@@ -2,6 +2,7 @@
 namespace Plenty\Log\Services;
 
 use Plenty\Log\Exceptions\ReferenceTypeException;
+use Plenty\Log\Traits\Loggable;
 
 /**
  * Register log reference types.
