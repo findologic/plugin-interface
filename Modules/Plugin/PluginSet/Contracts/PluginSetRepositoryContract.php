@@ -143,4 +143,12 @@ interface PluginSetRepositoryContract
 		int $pluginSetId
 	):bool;
 
+	public function getPluginSetHash(
+		 $pluginSetOrId
+	):string;
+
+	public function getPluginSetIdFromHash(
+		string $pluginSetHash
+	):int;
+
 }

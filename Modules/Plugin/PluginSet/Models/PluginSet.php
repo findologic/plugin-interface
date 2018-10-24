@@ -12,6 +12,7 @@ abstract class PluginSet
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
+	public		$hash;
 	public		$parentPluginSetId;
 	public		$parentPluginSet;
 	public		$name;

@@ -36,6 +36,8 @@ abstract class Variation
 	public		$isInvisibleIfNetStockIsNotPositive;
 	public		$isAvailableIfNetStockIsPositive;
 	public		$isUnavailableIfNetStockIsNotPositive;
+	public		$isVisibleInListIfNetStockIsPositive;
+	public		$isInvisibleInListIfNetStockIsNotPositive;
 	public		$mainWarehouseId;
 	public		$maximumOrderQuantity;
 	public		$minimumOrderQuantity;
@@ -62,6 +64,7 @@ abstract class Variation
 	public		$vatId;
 	public		$bundleType;
 	public		$automaticClientVisibility;
+	public		$automaticListVisibility;
 	public		$isHiddenInCategoryList;
 	public		$defaultShippingCosts;
 	public		$mayShowUnitPrice;
