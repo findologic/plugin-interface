@@ -5,6 +5,7 @@ use Plenty\Modules\Item\ItemShippingProfiles\Models\ItemShippingProfiles;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\DeleteResponse;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -62,6 +63,14 @@ interface ItemShippingProfilesRepositoryContract
 	public function deleteBulk(
 		int $itemId
 	);
+
+	/**
+	 * Delete the link between the specified shipping profile and item
+	 */
+	public function deleteOne(
+		int $shippingProfileId, 
+		int $itemId
+	):DeleteResponse;
 
 	/**
 	 * Sets the filter array.
