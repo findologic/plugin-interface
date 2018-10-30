@@ -106,6 +106,10 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_DELIVERY_NUMBER = 49;
 
+	const SAP_ORDER_NUMBER = 50;
+
+	const SETTLEMENT_ID = 51;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
