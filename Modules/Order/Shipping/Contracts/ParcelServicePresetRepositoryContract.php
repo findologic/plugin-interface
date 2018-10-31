@@ -47,7 +47,8 @@ interface ParcelServicePresetRepositoryContract
 	 * Get an array with all parcel service preset with the ID as key and the name as value.
 	 */
 	public function getPreviewList(
-		string $language = null
+		string $language = null, 
+		bool $useBackendName = false
 	):array;
 
 	/**
