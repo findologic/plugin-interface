@@ -24,6 +24,14 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
+	 * Get an order by external order ID
+	 */
+	public function findOrderByExternalOrderId(
+		string $externalOrderId, 
+		array $with = []
+	):Order;
+
+	/**
 	 * Create an order
 	 */
 	public function createOrder(

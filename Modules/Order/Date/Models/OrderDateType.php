@@ -38,6 +38,8 @@ abstract class OrderDateType
 
 	const SUBSCRIPTION_NEXT_RUN = 15;
 
+	const ORDER_PURCHASE_DATE = 16;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
