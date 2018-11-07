@@ -68,7 +68,10 @@ abstract class Application
 	):int;
 
 	abstract public function isAdminPreview(
-	);
+	):bool;
+
+	abstract public function isBackendRequest(
+	):bool;
 
 	/**
 	 * Returns the URL to the plugin resources
