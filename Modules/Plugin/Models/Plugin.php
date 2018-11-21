@@ -71,6 +71,7 @@ abstract class Plugin
 	public		$forwardLink;
 	public		$branch;
 	public		$subscriptionInformation;
+	public		$offerTrial;
 	public		$configurations;
 	public		$webstores;
 	public		$linkedDataProviders;

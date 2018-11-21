@@ -14,4 +14,7 @@ abstract class PluginSendMail
 	abstract public function getContactEmail(
 	);
 
+	abstract public function getCallFunction(
+	);
+
 }

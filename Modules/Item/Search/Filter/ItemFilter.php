@@ -44,6 +44,10 @@ abstract class ItemFilter implements TypeInterface
 	abstract public function hasAManufacturer(
 	);
 
+	abstract public function isItemType(
+		string $itemType
+	);
+
 	abstract public function toArray(
 	):array;
 

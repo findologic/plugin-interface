@@ -46,6 +46,8 @@ abstract class Order
 	public		$originOrders;
 	public		$parentOrders;
 	public		$childOrders;
+	public		$systemAmount;
+	public		$amount;
 	
 	/**
 	 * Returns this model as an array.

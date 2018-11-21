@@ -16,6 +16,7 @@ abstract class AccountContactRelation
 	public		$contactId;
 	public		$account;
 	public		$contact;
+	public		$accountContactSalesRepresentativeRelations;
 	
 	/**
 	 * Returns this model as an array.

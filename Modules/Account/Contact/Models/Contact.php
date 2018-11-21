@@ -59,6 +59,7 @@ abstract class Contact
 	public		$reorders;
 	public		$orderSchedulers;
 	public		$options;
+	public		$salesRepresentativeRegions;
 	public		$allowedMethodsOfPayment;
 	public		$type;
 	public		$orderSummary;
@@ -67,6 +68,7 @@ abstract class Contact
 	public		$discountDays;
 	public		$discountPercent;
 	public		$timeForPaymentAllowedDays;
+	public		$salesRepresentativeContactId;
 	
 	/**
 	 * Returns this model as an array.

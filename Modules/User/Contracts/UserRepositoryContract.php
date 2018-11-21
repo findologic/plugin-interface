@@ -3,6 +3,7 @@ namespace Plenty\Modules\User\Contracts;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
+use Plenty\Modules\Plugin\PluginSet\Models\PluginSet;
 use Plenty\Modules\User\Models\User;
 
 /**
@@ -40,5 +41,12 @@ interface UserRepositoryContract
 		int $userId, 
 		int $setId
 	):bool;
+
+	/**
+	 * Gets the selected PluginSet for a given user's backend
+	 */
+	public function getBackendPluginSet(
+		int $userId
+	):PluginSet;
 
 }

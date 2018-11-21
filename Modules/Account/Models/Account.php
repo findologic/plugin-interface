@@ -27,6 +27,7 @@ abstract class Account
 	public		$updatedAt;
 	public		$contacts;
 	public		$contactRelations;
+	public		$salesRepresentativeRegions;
 	
 	/**
 	 * Returns this model as an array.

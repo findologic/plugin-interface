@@ -29,7 +29,9 @@ interface ContentRepositoryContract
 	 * Get a single content.
 	 */
 	public function getContent(
-		int $contentId
+		int $contentId, 
+		int $pluginSetId = 0, 
+		string $frontendLanguage = null
 	):Content;
 
 	/**

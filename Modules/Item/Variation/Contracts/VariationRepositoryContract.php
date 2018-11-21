@@ -56,7 +56,14 @@ interface VariationRepositoryContract
 	):Variation;
 
 	/**
-	 * Change main variation. Changes the given variation id to the new main variation
+	 * Updates up to 50 variations.
+	 */
+	public function updateBulk(
+		array $data
+	):array;
+
+	/**
+	 * Change main variation. Changes the variation with the specified variation ID to the new main variation.
 	 */
 	public function changePrimaryVariation(
 		int $variationId

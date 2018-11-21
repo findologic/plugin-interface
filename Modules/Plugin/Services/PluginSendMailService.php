@@ -10,10 +10,13 @@ abstract class PluginSendMailService
 
 	const PASSWORD_RESET = 'pw_reset';
 
+	const FUNCTION_COLLECT_PLACEHOLDER = 'collect_placeholder';
+
 	abstract public function sendMail(
 		string $url, 
-		string $template, 
-		string $email = ""
+		string $template = "", 
+		string $email = "", 
+		string $callFunction = ""
 	):bool;
 
 	abstract public function getStatus(
@@ -22,5 +25,29 @@ abstract class PluginSendMailService
 	abstract public function setStatus(
 		bool $status
 	);
+
+	abstract public function isInitialized(
+	):bool;
+
+	abstract public function setInitialized(
+		bool $initialized
+	);
+
+	abstract public function getEmailPlaceholder(
+	):array;
+
+	abstract public function addEmailPlaceholder(
+		string $placeholder, 
+		string $value
+	);
+
+	abstract public function setEmailPlaceholder(
+		array $emailPlaceholder
+	);
+
+	abstract public function getEmailPlaceholderKey(
+		string $key, 
+		string $default = ""
+	):string;
 
 }

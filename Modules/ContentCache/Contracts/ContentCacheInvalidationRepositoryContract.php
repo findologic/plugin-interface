@@ -16,11 +16,16 @@ interface ContentCacheInvalidationRepositoryContract
 		int $plentyId = null
 	);
 
+	public function invalidateItemIds(
+		array $itemIds, 
+		int $plentyId = null
+	);
+
 	/**
 	 * Invalidate all cache entries related to given plenty id.
 	 */
 	public function invalidateAll(
-		int $plentyId
+		int $plentyId = null
 	);
 
 	/**
