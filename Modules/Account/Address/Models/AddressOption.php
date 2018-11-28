@@ -30,6 +30,8 @@ abstract class AddressOption
 
 	const TYPE_TITLE = 11;
 
+	const TYPE_CONTACT_PERSON = 12;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

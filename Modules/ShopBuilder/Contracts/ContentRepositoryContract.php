@@ -61,4 +61,12 @@ interface ContentRepositoryContract
 		int $contentId
 	);
 
+	public function duplicateContent(
+		int $contentId, 
+		int $targetPluginSetId, 
+		string $language, 
+		string $containerName, 
+		string $contentName
+	):Content;
+
 }
