@@ -42,7 +42,8 @@ interface VariationExportServiceContract
 	);
 
 	public function preload(
-		array $values
+		array $values, 
+		array $parameters = []
 	):array;
 
 	public function getData(
