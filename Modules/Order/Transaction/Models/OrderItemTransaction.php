@@ -8,9 +8,13 @@ namespace Plenty\Modules\Order\Transaction\Models;
 abstract class OrderItemTransaction 
 {
 
-	const STATUS_IN = 'in';
+	const DIRECTION_IN = 'in';
 
-	const STATUS_OUT = 'out';
+	const DIRECTION_OUT = 'out';
+
+	const STATUS_REGULAR = 'regular';
+
+	const STATUS_CANCELLED = 'cancelled';
 
 	const CREATED_AT = 'createdAt';
 
@@ -20,6 +24,7 @@ abstract class OrderItemTransaction
 	public		$quantity;
 	public		$userId;
 	public		$identification;
+	public		$direction;
 	public		$status;
 	public		$receiptId;
 	public		$warehouseLocationId;
