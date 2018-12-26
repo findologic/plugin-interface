@@ -30,6 +30,8 @@ abstract class ContactOption
 
 	const TYPE_ADDITIONAL = 11;
 
+	const TYPE_SALUTATION = 12;
+
 	const SUBTYPE_WORK = 1;
 
 	const SUBTYPE_MOBILE_PRIVATE = 2;
