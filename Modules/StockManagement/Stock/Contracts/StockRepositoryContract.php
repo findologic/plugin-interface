@@ -2,6 +2,8 @@
 namespace Plenty\Modules\StockManagement\Stock\Contracts;
 
 use Plenty\Modules\StockManagement\Stock\Models\Stock;
+use Plenty\Modules\StockManagement\Stock\Models\StockUnpackVariation;
+use Plenty\Modules\StockManagement\Warehouse\Models\Warehouse;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
@@ -82,6 +84,15 @@ interface StockRepositoryContract
 		int $page = 1, 
 		int $itemsPerPage = 50
 	):PaginatedResult;
+
+	/**
+	 * Unpack variation
+	 */
+	public function unpackVariation(
+		int $warehouseId, 
+		array $variationStockIntake, 
+		array $variationStockCorrection
+	):Warehouse;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.

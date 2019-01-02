@@ -69,6 +69,9 @@ abstract class Variation
 	public		$defaultShippingCosts;
 	public		$mayShowUnitPrice;
 	public		$salesRank;
+	public		$parentVariationId;
+	public		$parentVariationQuantity;
+	public		$singleItemCount;
 	public		$categoryVariationId;
 	public		$marketVariationId;
 	public		$clientVariationId;
