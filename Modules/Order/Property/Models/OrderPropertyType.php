@@ -120,6 +120,8 @@ abstract class OrderPropertyType
 
 	const REORDER_ITEM_DISCOUNTABLE = 56;
 
+	const RETURNS_REMAINING_PERCENTAGE = 57;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

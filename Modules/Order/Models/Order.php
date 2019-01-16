@@ -48,6 +48,10 @@ abstract class Order
 	public		$childOrders;
 	public		$systemAmount;
 	public		$amount;
+	public		$contactSender;
+	public		$contactReceiver;
+	public		$warehouseSender;
+	public		$warehouseReceiver;
 	
 	/**
 	 * Returns this model as an array.

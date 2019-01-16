@@ -49,6 +49,15 @@ interface PropertyRelationRepositoryContract
 	);
 
 	/**
+	 * Save property relation file to S3
+	 */
+	public function savePropertyRelationFile(
+		int $relationId, 
+		array $data, 
+		string $file
+	):string;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

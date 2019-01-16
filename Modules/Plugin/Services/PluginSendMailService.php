@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Plugin\Services;
 
+use Plenty\Modules\Plugin\PluginSet\Contracts\PluginSetRepositoryContract;
 
 /**
  * The PluginSendMailService send mails in plugins

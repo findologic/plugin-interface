@@ -40,6 +40,8 @@ abstract class AddressOption
 	public		$typeId;
 	public		$value;
 	public		$position;
+	public		$createdAt;
+	public		$updatedAt;
 	public		$address;
 	public		$type;
 	

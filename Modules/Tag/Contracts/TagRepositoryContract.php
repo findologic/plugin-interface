@@ -76,6 +76,20 @@ interface TagRepositoryContract
 	):Tag;
 
 	/**
+	 * Creates up to 50 new tags
+	 */
+	public function createBulk(
+		array $data
+	):array;
+
+	/**
+	 * Updates up to 50 tags
+	 */
+	public function updateBulk(
+		array $data
+	):array;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

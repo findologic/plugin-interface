@@ -61,6 +61,9 @@ interface ContentRepositoryContract
 		int $contentId
 	);
 
+	/**
+	 * Duplicate a content and its link
+	 */
 	public function duplicateContent(
 		int $contentId, 
 		int $targetPluginSetId, 
@@ -68,5 +71,12 @@ interface ContentRepositoryContract
 		string $containerName, 
 		string $contentName
 	):Content;
+
+	/**
+	 * Rebuild all contents linked to the current plugin set.
+	 */
+	public function rebuildContents(
+		string $containerName = null
+	):int;
 
 }
