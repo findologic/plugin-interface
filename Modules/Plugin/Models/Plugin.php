@@ -72,6 +72,7 @@ abstract class Plugin
 	public		$branch;
 	public		$subscriptionInformation;
 	public		$offerTrial;
+	public		$offerFreemium;
 	public		$configurations;
 	public		$webstores;
 	public		$linkedDataProviders;

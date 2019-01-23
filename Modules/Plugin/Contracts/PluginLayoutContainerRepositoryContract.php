@@ -37,4 +37,20 @@ interface PluginLayoutContainerRepositoryContract
 		int $pluginSetId
 	);
 
+	public function addOne(
+		int $pluginSetId, 
+		string $containerKey, 
+		string $dataProviderKey, 
+		int $containerPluginId = null, 
+		int $dataProviderPluginId = null
+	);
+
+	public function removeOne(
+		int $pluginSetId, 
+		string $containerKey, 
+		string $dataProviderKey, 
+		int $containerPluginId = null, 
+		int $dataProviderPluginId = null
+	);
+
 }
