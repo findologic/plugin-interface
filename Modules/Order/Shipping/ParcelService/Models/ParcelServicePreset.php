@@ -47,6 +47,7 @@ abstract class ParcelServicePreset
 	public		$isParcelBox;
 	public		$isPostOffice;
 	public		$parcelService;
+	public		$parcelServiceRegionConstraint;
 	
 	/**
 	 * Returns this model as an array.

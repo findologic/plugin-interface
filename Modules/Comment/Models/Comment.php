@@ -16,6 +16,8 @@ abstract class Comment
 
 	const REFERENCE_TYPE_ITEM_VARIATION = 'item_variation';
 
+	const REFERENCE_TYPE_ORDER_ITEM = 'order_item';
+
 	const CREATED_AT = 'plenty_comment_entry_datetime';
 
 	const UPDATED_AT = 'updatedAt';

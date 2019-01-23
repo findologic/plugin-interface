@@ -51,6 +51,14 @@ interface DocumentRepositoryContract
 	):array;
 
 	/**
+	 * Delete order document
+	 */
+	public function deleteOrderDocument(
+		int $orderId, 
+		int $documentId
+	):bool;
+
+	/**
 	 * Upload category documents
 	 */
 	public function uploadCategoryDocuments(

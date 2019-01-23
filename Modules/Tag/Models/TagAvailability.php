@@ -18,6 +18,8 @@ abstract class TagAvailability
 
 	const TAG_TYPE_CONTACT = 'contact';
 
+	const TAG_TYPE_ORDER = 'order';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

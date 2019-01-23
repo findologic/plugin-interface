@@ -18,6 +18,8 @@ abstract class TagRelationship
 
 	const TAG_TYPE_CONTACT = 'contact';
 
+	const TAG_TYPE_ORDER = 'order';
+
 	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
 
 	const RELATIONSHIP_TAG_RELATION = 'tag';

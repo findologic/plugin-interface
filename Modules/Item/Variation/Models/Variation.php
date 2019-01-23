@@ -102,6 +102,7 @@ abstract class Variation
 	public		$unit;
 	public		$parent;
 	public		$item;
+	public		$stockStorageLocations;
 	
 	/**
 	 * Returns this model as an array.
