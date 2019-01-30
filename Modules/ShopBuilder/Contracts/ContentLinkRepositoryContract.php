@@ -52,7 +52,8 @@ interface ContentLinkRepositoryContract
 	public function getContentLinksForContainer(
 		string $containerName, 
 		int $pluginSetId = null, 
-		string $lang = null
+		string $lang = null, 
+		string $contentType = null
 	);
 
 }

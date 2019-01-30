@@ -32,6 +32,8 @@ abstract class ContactOption
 
 	const TYPE_SALUTATION = 12;
 
+	const TYPE_CONVERTED_BY = 13;
+
 	const SUBTYPE_WORK = 1;
 
 	const SUBTYPE_MOBILE_PRIVATE = 2;
@@ -59,6 +61,8 @@ abstract class ContactOption
 	const SUBTYPE_MARKETPLACE_PARTNER = 13;
 
 	const SUBTYPE_DEFAULT_PAYMENT = 14;
+
+	const SUBTYPE_USER = 15;
 
 	const CREATED_AT = 'createdAt';
 

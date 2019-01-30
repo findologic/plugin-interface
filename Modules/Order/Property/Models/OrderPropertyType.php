@@ -122,6 +122,8 @@ abstract class OrderPropertyType
 
 	const RETURNS_REMAINING_PERCENTAGE = 57;
 
+	const NEW_RETURNS_MY_ACCOUNT = 58;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
