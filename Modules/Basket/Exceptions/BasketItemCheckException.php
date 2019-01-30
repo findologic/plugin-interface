@@ -22,12 +22,29 @@ abstract class BasketItemCheckException extends HTTPException
 	const NOT_ENOUGH_STOCK_FOR_ITEM = 2;
 
 	/**
+	 * not enough stock for variation
+	 */
+	const NOT_ENOUGH_STOCK_FOR_VARIATION = 3;
+
+	/**
 	 * BasketItemCheckException constructor.
 	 */
 	abstract public function __construct(
 		int $code = 404, 
 		string $message = "", 
-		\Exception $previous = null
+		\Exception $previous = null, 
+		int $itemId = 0, 
+		int $variationId = 0, 
+		float $stockNet = 0.0
 	);
+
+	abstract public function getItemId(
+	):int;
+
+	abstract public function getVariationId(
+	):int;
+
+	abstract public function getStockNet(
+	):float;
 
 }
