@@ -17,4 +17,7 @@ interface DesignRepositoryContract
 		bool $withConfig = true
 	):Design;
 
+	public function getCheckoutType(
+	):array;
+
 }
