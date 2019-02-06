@@ -13,6 +13,7 @@ abstract class ContentWidget
 	public		$tooltip;
 	public		$previewImageURL;
 	public		$type;
+	public		$maxPerPage;
 	public		$categories;
 	public		$allowedNestingTypes;
 	public		$settings;

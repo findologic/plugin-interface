@@ -28,6 +28,8 @@ abstract class OrderItemTransaction
 	public		$status;
 	public		$receiptId;
 	public		$warehouseLocationId;
+	public		$batch;
+	public		$bestBeforeDate;
 	public		$batchBestBeforeDateId;
 	public		$createdAt;
 	public		$updatedAt;

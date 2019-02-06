@@ -74,6 +74,8 @@ abstract class Document
 
 	const PRO_FORMA_INVOICE = 'pro_forma_invoice';
 
+	const PO_DELIVERY_NOTE = 'po_delivery_note';
+
 	const SHIPPING_LABEL = 'shipping_label';
 
 	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';

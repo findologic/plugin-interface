@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Plugin\Mail\Contracts;
 
+use Plenty\Modules\Cloud\Storage\Models\StorageObject;
 use Plenty\Plugin\Mail\Models\ReplyTo;
 
 /**
@@ -18,7 +19,8 @@ interface MailerContract
 		string $subject = "", 
 		array $cc = [], 
 		array $bcc = [], 
-		ReplyTo $replyTo = null
+		ReplyTo $replyTo = null, 
+		array $attachments = []
 	);
 
 	/**
@@ -32,7 +34,8 @@ interface MailerContract
 		array $altConfig = [], 
 		array $cc = [], 
 		array $bcc = [], 
-		ReplyTo $replyTo = null
+		ReplyTo $replyTo = null, 
+		array $attachments = []
 	);
 
 	/**
@@ -44,7 +47,8 @@ interface MailerContract
 		array $altConfig = [], 
 		array $cc = [], 
 		array $bcc = [], 
-		ReplyTo $replyTo = null
+		ReplyTo $replyTo = null, 
+		array $attachments = []
 	);
 
 }

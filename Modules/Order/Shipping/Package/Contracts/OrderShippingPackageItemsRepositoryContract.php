@@ -33,6 +33,21 @@ interface OrderShippingPackageItemsRepositoryContract
 	):array;
 
 	/**
+	 * Update package, variation or quantity for an order
+	 */
+	public function updateItemsInOrderShippingPackage(
+		int $id, 
+		array $data
+	):int;
+
+	/**
+	 * Delete a variation of an item from package in an order
+	 */
+	public function deleteItemsInOrderShippingPackage(
+		int $id
+	):int;
+
+	/**
 	 * Update items in a package
 	 */
 	public function updateItemsFromPackage(
