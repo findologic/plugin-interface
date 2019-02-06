@@ -29,6 +29,7 @@ abstract class Variation
 	public		$createdAt;
 	public		$updatedAt;
 	public		$relatedUpdatedAt;
+	public		$availabilityUpdatedAt;
 	public		$priceCalculationId;
 	public		$picking;
 	public		$stockLimitation;

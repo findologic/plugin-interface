@@ -15,6 +15,7 @@ abstract class OrderItemOrderProperty
 	public		$value;
 	public		$fileUrl;
 	public		$name;
+	public		$type;
 	
 	/**
 	 * Returns this model as an array.
