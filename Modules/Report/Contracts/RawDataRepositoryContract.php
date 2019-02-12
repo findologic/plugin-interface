@@ -3,7 +3,6 @@ namespace Plenty\Modules\Report\Contracts;
 
 use Plenty\Modules\Cloud\Storage\Models\StorageObject;
 use Plenty\Modules\Report\Models\RawData;
-use Plenty\Modules\Report\Models\RawDataConfig;
 use Plenty\Modules\Report\Models\RawDataConfigs;
 use Plenty\Modules\Report\Models\RawDataCreator;
 
@@ -14,13 +13,14 @@ interface RawDataRepositoryContract
 {
 
 	/**
-	 * Get list of raw data files
+	 * Get list of raw data files. Valid filter combinations: (dataName), (dataName & processStatus), (createdAtTimestamp)
 	 */
 	public function getRawData(
 		array $dataNames, 
-		int $createdAtTimestampFrom, 
-		int $createdAtTimestampTo, 
-		int $itemsPerPage = 50, 
+		int $createdAtTimestamp, 
+		string $processStatus, 
+		int $itemsPerPage = 20, 
+		string $sortOrder = "asc", 
 		string $afterId = ""
 	):array;
 
