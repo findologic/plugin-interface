@@ -124,6 +124,10 @@ abstract class OrderPropertyType
 
 	const NEW_RETURNS_MY_ACCOUNT = 58;
 
+	const MERCHANT_ID = 60;
+
+	const REPORT_ID = 61;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

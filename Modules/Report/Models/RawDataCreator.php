@@ -12,6 +12,7 @@ abstract class RawDataCreator
 
 	const UPDATED_AT = 'updatedAt';
 	public		$dataName;
+	public		$fileFormat;
 	public		$limitPage;
 	public		$limitDay;
 	public		$earliestPossibleDataDate;
@@ -20,6 +21,7 @@ abstract class RawDataCreator
 	public		$filterType;
 	public		$dataUpdatedAtColumnName;
 	public		$defaultActive;
+	public		$interval;
 	
 	/**
 	 * Returns this model as an array.
