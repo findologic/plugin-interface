@@ -16,7 +16,7 @@ interface RawDataRepositoryContract
 	 * Get list of raw data files. Valid filter combinations: (dataName), (dataName & processStatus), (createdAtTimestamp)
 	 */
 	public function getRawData(
-		array $dataNames, 
+		string $dataName, 
 		int $createdAtTimestamp, 
 		string $processStatus, 
 		int $itemsPerPage = 20, 
