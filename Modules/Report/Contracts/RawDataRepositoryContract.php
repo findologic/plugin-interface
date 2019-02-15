@@ -29,7 +29,7 @@ interface RawDataRepositoryContract
 	 */
 	public function getRawDataFile(
 		string $path
-	):StorageObject;
+	);
 
 	/**
 	 * Get list of all raw data creators
