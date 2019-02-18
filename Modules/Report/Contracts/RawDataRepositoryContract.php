@@ -13,9 +13,9 @@ interface RawDataRepositoryContract
 {
 
 	/**
-	 * Get list of raw data files. Valid filter combinations: (dataName), (dataName & processStatus), (createdAtTimestamp)
+	 * Get list of raw data. Valid filter combinations: (dataName), (dataName & processStatus), (createdAtTimestamp)
 	 */
-	public function getRawData(
+	public function searchRawData(
 		string $dataName, 
 		int $createdAtTimestamp, 
 		string $processStatus, 
