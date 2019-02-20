@@ -3,16 +3,16 @@ namespace Plenty\Modules\Report\Models;
 
 
 /**
- * List of all saved raw data configurations
+ * The report raw data search result model
  */
-abstract class RawDataConfigs 
+abstract class RawDataSearchResult 
 {
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$plentyIdHash;
-	public		$configs;
+	public		$lastEvaluatedKey;
+	public		$searchResult;
 	
 	/**
 	 * Returns this model as an array.

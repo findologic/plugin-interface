@@ -5,6 +5,7 @@ use Plenty\Modules\Cloud\Storage\Models\StorageObject;
 use Plenty\Modules\Report\Models\RawData;
 use Plenty\Modules\Report\Models\RawDataConfigs;
 use Plenty\Modules\Report\Models\RawDataCreator;
+use Plenty\Modules\Report\Models\RawDataSearchResult;
 
 /**
  * This interface allows you to get a list of generated raw data files
@@ -21,8 +22,8 @@ interface RawDataRepositoryContract
 		string $processStatus, 
 		int $itemsPerPage = 20, 
 		string $sortOrder = "asc", 
-		string $afterId = ""
-	):array;
+		array $lastEvaluatedKey = []
+	):RawDataSearchResult;
 
 	/**
 	 * Get a raw data file from the storage, the storage path of the file must be specified.

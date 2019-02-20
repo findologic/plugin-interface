@@ -3,16 +3,21 @@ namespace Plenty\Modules\Report\Models;
 
 
 /**
- * List of all saved raw data configurations
+ * The report raw model
  */
-abstract class RawDataConfigs 
+abstract class RawData 
 {
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
+	public		$id;
+	public		$createdAtTimestamp;
 	public		$plentyIdHash;
-	public		$configs;
+	public		$dataName;
+	public		$dataNameProcessStatus;
+	public		$processStatusPlentyIdHash;
+	public		$path;
 	
 	/**
 	 * Returns this model as an array.
