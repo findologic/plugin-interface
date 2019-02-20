@@ -80,6 +80,7 @@ abstract class Variation
 	public		$supplierVariationId;
 	public		$warehouseVariationId;
 	public		$propertyVariationId;
+	public		$tagVariationId;
 	public		$variationBarcodes;
 	public		$variationBundleComponents;
 	public		$variationComponentBundles;
@@ -95,6 +96,7 @@ abstract class Variation
 	public		$itemTexts;
 	public		$variationTexts;
 	public		$variationWarehouses;
+	public		$tags;
 	public		$images;
 	public		$itemImages;
 	public		$variationAdditionalSkus;

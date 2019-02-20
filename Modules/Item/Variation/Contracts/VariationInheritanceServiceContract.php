@@ -23,6 +23,8 @@ interface VariationInheritanceServiceContract
 
 	const TYPE_AVAILABILITY = 'availability';
 
+	const TYPE_TAG = 'tag';
+
 	public function activate(
 		Variation $variation, 
 		string $type

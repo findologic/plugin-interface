@@ -141,4 +141,7 @@ interface FrontendPaymentMethodRepositoryContract
 		int $orderId = null
 	):bool;
 
+	public function getAllowedPaymentMethodListForContact(
+	);
+
 }

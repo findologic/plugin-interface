@@ -19,7 +19,7 @@ interface VariationExportServiceContract
 
 	const STOCK_STORAGE_LOCATION = 'StockStorageLocation';
 
-	const TAG = 'ItemTag';
+	const TAG = 'VariationTag';
 
 	const MARKET_IDENT_NUMBER = 'VariationMarketIdentNumber';
 
