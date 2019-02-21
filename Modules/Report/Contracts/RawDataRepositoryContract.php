@@ -22,7 +22,7 @@ interface RawDataRepositoryContract
 		string $processStatus, 
 		int $itemsPerPage = 20, 
 		string $sortOrder = "asc", 
-		array $lastEvaluatedKey = []
+		string $after = ""
 	):RawDataSearchResult;
 
 	/**

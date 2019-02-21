@@ -11,7 +11,7 @@ abstract class RawDataSearchResult
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$lastEvaluatedKey;
+	public		$after;
 	public		$searchResult;
 	
 	/**
