@@ -78,7 +78,8 @@ interface CategoryRepositoryContract
 	public function getUrl(
 		int $categoryId, 
 		string $lang = "de", 
-		bool $onlySitemaps = false
+		bool $onlySitemaps = false, 
+		bool $webstoreId = null
 	):string;
 
 	/**
