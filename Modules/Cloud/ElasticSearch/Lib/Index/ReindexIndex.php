@@ -83,4 +83,7 @@ and whether the index has already been created.
 	abstract public function hasAllField(
 	):bool;
 
+	abstract public function refresh(
+	);
+
 }

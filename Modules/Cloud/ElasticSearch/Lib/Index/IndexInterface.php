@@ -61,4 +61,7 @@ interface IndexInterface
 	public function getScrollRepositoryClassName(
 	):string;
 
+	public function refresh(
+	):bool;
+
 }
