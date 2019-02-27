@@ -37,6 +37,8 @@ interface VariationExportServiceContract
 
 	const DEFAULT_CATEGORY = 'VariationDefaultCategory';
 
+	const SERIAL_NUMBER = 'ItemSerialNumber';
+
 	public function addPreloadTypes(
 		array $types
 	);

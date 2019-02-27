@@ -33,6 +33,7 @@ abstract class Manufacturer
 	public		$comment;
 	public		$updatedAt;
 	public		$commissions;
+	public		$externals;
 	
 	/**
 	 * Returns this model as an array.

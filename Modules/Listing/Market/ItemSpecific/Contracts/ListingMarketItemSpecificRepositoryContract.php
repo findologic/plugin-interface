@@ -47,6 +47,13 @@ interface ListingMarketItemSpecificRepositoryContract
 	):bool;
 
 	/**
+	 * Deletes all ListingMarketItemSpecific entries by listing market id.
+	 */
+	public function deleteByListingMarketId(
+		int $listingMarketId
+	):bool;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
