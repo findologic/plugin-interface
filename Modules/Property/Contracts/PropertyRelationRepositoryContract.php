@@ -23,7 +23,10 @@ interface PropertyRelationRepositoryContract
 	 * List property relations
 	 */
 	public function listRelations(
-		 $filters = []
+		array $filters = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		int $paginate = 0
 	):array;
 
 	/**

@@ -8,6 +8,8 @@ namespace Plenty\Modules\Property\Models;
 abstract class PropertyRelation 
 {
 
+	const MAX_ITEMS_PER_PAGE = 50;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
