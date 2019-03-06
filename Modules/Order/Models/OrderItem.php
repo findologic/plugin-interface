@@ -44,6 +44,7 @@ abstract class OrderItem
 	public		$serialNumbers;
 	public		$variationBarcodes;
 	public		$comments;
+	public		$warehouselocations;
 	
 	/**
 	 * Returns this model as an array.

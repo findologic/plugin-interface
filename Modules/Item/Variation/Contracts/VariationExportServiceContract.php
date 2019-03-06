@@ -9,6 +9,8 @@ use Plenty\Modules\Item\Variation\Services\ExportPreloadValue\ExportPreloadValue
 interface VariationExportServiceContract 
 {
 
+	const ITEM = 'Item';
+
 	const SUPPLIER = 'VariationSupplier';
 
 	const STOCK = 'VariationStock';

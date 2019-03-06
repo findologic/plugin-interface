@@ -25,6 +25,8 @@ abstract class Warehouse
 	public		$logisticsType;
 	public		$address;
 	public		$repairWarehouse;
+	public		$updatedAt;
+	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

@@ -19,6 +19,7 @@ abstract class Order
 	public		$statusId;
 	public		$statusName;
 	public		$ownerId;
+	public		$referrerId;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$plentyId;

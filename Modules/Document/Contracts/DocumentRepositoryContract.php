@@ -104,6 +104,15 @@ interface DocumentRepositoryContract
 	):Document;
 
 	/**
+	 * Generate order document
+	 */
+	public function generateOrderDocument(
+		int $orderId, 
+		int $type, 
+		array $data
+	):bool;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

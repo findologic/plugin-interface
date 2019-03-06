@@ -23,6 +23,8 @@ abstract class Tag
 	public		$availabilities;
 	public		$names;
 	public		$relationships;
+	public		$updatedAt;
+	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.
