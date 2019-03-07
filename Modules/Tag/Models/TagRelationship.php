@@ -31,8 +31,6 @@ abstract class TagRelationship
 	public		$tagType;
 	public		$relationshipValue;
 	public		$relationshipUUID5;
-	public		$updatedAt;
-	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.
