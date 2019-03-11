@@ -15,6 +15,7 @@ abstract class ListingMarketPrice
 	public		$listingMarketId;
 	public		$typeId;
 	public		$value;
+	public		$currency;
 	public		$listingMarket;
 	public		$type;
 	

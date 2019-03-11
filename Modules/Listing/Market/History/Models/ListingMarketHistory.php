@@ -21,6 +21,7 @@ abstract class ListingMarketHistory
 	public		$quantitySoldDelta;
 	public		$quantityRemain;
 	public		$price;
+	public		$currency;
 	public		$sku;
 	public		$createdAt;
 	public		$updatedAt;
