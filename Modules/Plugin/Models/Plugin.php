@@ -59,6 +59,7 @@ abstract class Plugin
 	public		$license;
 	public		$shortDescription;
 	public		$isClosedSource;
+	public		$inboxPath;
 	public		$marketplaceName;
 	public		$source;
 	public		$javaScriptFiles;

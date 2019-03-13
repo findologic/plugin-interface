@@ -10,7 +10,7 @@ abstract class OrderStatus
 
 	const ORDER_STATUS_MIN_VALUE = 1;
 
-	const ORDER_STATUS_MAX_VALUE = 18.9999;
+	const ORDER_STATUS_MAX_VALUE = 19.9999;
 
 	const CREATED_AT = 'createdAt';
 
