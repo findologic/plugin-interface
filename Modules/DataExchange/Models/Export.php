@@ -20,6 +20,8 @@ abstract class Export
 
 	const DATA_TYPE_CONTACT = 'contact';
 
+	const DATA_TYPE_CONTACT_NEWSLETTER = 'contactNewsletter';
+
 	const DATA_TYPE_WAREHOUSE = 'warehouse';
 
 	const DATA_TYPE_ATTRIBUTE = 'attribute';

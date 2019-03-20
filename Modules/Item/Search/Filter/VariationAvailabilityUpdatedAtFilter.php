@@ -6,7 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 /**
  * foo
  */
-abstract class VariationLastUpdatedFilter 
+abstract class VariationAvailabilityUpdatedAtFilter 
 {
 
 	abstract public function getTimestamp(

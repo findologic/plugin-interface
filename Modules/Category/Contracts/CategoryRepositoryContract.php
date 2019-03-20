@@ -35,6 +35,15 @@ interface CategoryRepositoryContract
 		int $customerClassId = 0
 	):array;
 
+	public function getArrayTree(
+		string $type = "all", 
+		string $lang = "de", 
+		int $clientId = null, 
+		int $maxLevel = 6, 
+		int $customerClassId = 0, 
+		callable $filter = null
+	):array;
+
 	/**
 	 * Rebuild the category tree cache
 	 */

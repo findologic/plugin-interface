@@ -128,6 +128,8 @@ abstract class OrderPropertyType
 
 	const REPORT_ID = 61;
 
+	const EXTERNAL_SOURCE_ORDER_ID = 62;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
