@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Order\Shipping\Package\Contracts;
 
 use Plenty\Modules\Order\Shipping\Package\Models\OrderShippingPackage;
+use Plenty\Repositories\Models\DeleteResponse;
 
 /**
  * Create, get, update and delete order shipping packages.
@@ -47,6 +48,23 @@ interface OrderShippingPackageRepositoryContract
 	 */
 	public function deleteOrderShippingPackage(
 		int $orderShippingPackageId
+	);
+
+	/**
+	 * Delete all order shipping packages in a pallet
+	 */
+	public function deleteAllPackagesInPallet(
+		int $orderId, 
+		int $palletId
+	);
+
+	/**
+	 * Update all the packages in a pallet.
+	 */
+	public function updateAllPackagesInPallet(
+		int $orderId, 
+		int $palletId, 
+		array $data
 	);
 
 }

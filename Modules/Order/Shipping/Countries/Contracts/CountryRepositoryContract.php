@@ -42,4 +42,18 @@ interface CountryRepositoryContract
 		string $isoCode
 	):CountryState;
 
+	/**
+	 * Activates a country by a given ID.
+	 */
+	public function activateCountry(
+		int $countryId
+	):Country;
+
+	/**
+	 * Deactivates a country by a given ID.
+	 */
+	public function deactivateCountry(
+		int $countryId
+	):Country;
+
 }

@@ -14,6 +14,10 @@ interface CatalogExportServiceContract
 		array $additionalFields
 	);
 
+	public function addMutator(
+		callable $mutator
+	);
+
 	public function setSettings(
 		array $settings
 	);

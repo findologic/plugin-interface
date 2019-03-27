@@ -21,6 +21,8 @@ abstract class OrderShippingPackage
 	public		$exportLabelBase64;
 	public		$packageType;
 	public		$volume;
+	public		$palletId;
+	public		$isClosed;
 	public		$order;
 	
 	/**

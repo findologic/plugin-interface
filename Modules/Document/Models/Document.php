@@ -76,6 +76,8 @@ abstract class Document
 
 	const PO_DELIVERY_NOTE = 'po_delivery_note';
 
+	const CREDIT_NOTE_EXTERNAL = 'credit_note_external';
+
 	const SHIPPING_LABEL = 'shipping_label';
 
 	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';

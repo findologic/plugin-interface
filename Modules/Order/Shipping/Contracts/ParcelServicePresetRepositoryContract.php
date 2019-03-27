@@ -52,6 +52,21 @@ interface ParcelServicePresetRepositoryContract
 	):array;
 
 	/**
+	 * Creates an parcel service preset
+	 */
+	public function create(
+		array $data
+	):ParcelServicePreset;
+
+	/**
+	 * Update an parcel service preset
+	 */
+	public function update(
+		array $data, 
+		int $id
+	):ParcelServicePreset;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Shipping\Package\Contracts;
 
+use Plenty\Data\SimpleRestResponse;
 use Plenty\Modules\Order\Shipping\Package\Models\OrderShippingPackageItems;
 use Plenty\Repositories\Models\DeleteResponse;
 
@@ -14,7 +15,22 @@ interface OrderShippingPackageItemsRepositoryContract
 	 * Get items for a package
 	 */
 	public function getItemsForPackage(
-		int $packageId
+		int $packageId, 
+		int $page = 1, 
+		int $perPage = 1000, 
+		string $sortBy = "id", 
+		string $sortOrder = "desc"
+	):OrderShippingPackageItems;
+
+	/**
+	 * Get all the packed items in the packages in the pallets in the order
+	 */
+	public function getItemsInPackagesPalletsPaginated(
+		int $orderId, 
+		int $page = 1, 
+		int $perPage = 1000, 
+		string $sortBy = "id", 
+		string $sortOrder = "asc"
 	):OrderShippingPackageItems;
 
 	/**
@@ -23,6 +39,20 @@ interface OrderShippingPackageItemsRepositoryContract
 	public function getItemsFromPackagesForOrder(
 		int $orderId
 	):OrderShippingPackageItems;
+
+	/**
+	 * Get packed items in an order
+	 */
+	public function getPackedItemsPerPackageForOrder(
+		int $orderId
+	):array;
+
+	/**
+	 * Get unpacked items for an order
+	 */
+	public function getUnpackedItemsFromPackagesForOrder(
+		int $orderId
+	):array;
 
 	/**
 	 * Create items for a package
