@@ -3,7 +3,8 @@ namespace Plenty\Modules\Order\Models;
 
 
 /**
- * <b>DEPRECATED</b> The order item warehouse location model. Order item warehouse locations refer to the location of an order item, in a specific warehouse.
+ * <b>DEPRECATED</b> The order item warehouse location model. Order item warehouse locations
+ *                                             refer to the location of an order item, in a specific warehouse.
  */
 abstract class OrderItemWarehouseLocation 
 {
@@ -13,6 +14,10 @@ abstract class OrderItemWarehouseLocation
 	const UPDATED_AT = 'updatedAt';
 	public		$orderItemId;
 	public		$warehouseLocationId;
+	public		$quantity;
+	public		$bestBeforeDate;
+	public		$batch;
+	public		$warehouseLocation;
 	
 	/**
 	 * Returns this model as an array.

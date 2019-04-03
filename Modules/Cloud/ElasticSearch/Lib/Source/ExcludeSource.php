@@ -18,6 +18,9 @@ abstract class ExcludeSource implements SourceInterface
 	abstract public function activateAll(
 	):SourceInterface;
 
+	abstract public function activate(
+	):SourceInterface;
+
 	abstract public function activateList(
 		array $fields
 	):self;

@@ -97,8 +97,11 @@ abstract class Variation
 	public		$variationTexts;
 	public		$variationWarehouses;
 	public		$tags;
+	public		$comments;
 	public		$images;
 	public		$itemImages;
+	public		$itemCrossSelling;
+	public		$itemShippingProfiles;
 	public		$variationAdditionalSkus;
 	public		$variationSkus;
 	public		$variationAttributeValues;

@@ -38,6 +38,13 @@ interface MessengerRepositoryContract
 	):array;
 
 	/**
+	 * Deletes a message stream by uuid
+	 */
+	public function delete(
+		string $uuid
+	);
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
