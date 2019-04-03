@@ -7,6 +7,7 @@ use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The contract for the attribute repository
@@ -65,7 +66,7 @@ interface AttributeRepositoryContract
 		array $columns = [], 
 		int $perPage = 50, 
 		int $page = 1
-	):array;
+	):PaginatedResult;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
