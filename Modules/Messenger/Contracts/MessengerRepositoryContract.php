@@ -38,11 +38,19 @@ interface MessengerRepositoryContract
 	):array;
 
 	/**
-	 * Deletes a message stream by uuid
+	 * Update ReadBy Array of message
+	 */
+	public function updateReadBy(
+		int $readBy, 
+		string $uuid
+	):array;
+
+	/**
+	 * Deletes a message stream by uuid.
 	 */
 	public function delete(
 		string $uuid
-	);
+	):int;
 
 	/**
 	 * Sets the filter array.
