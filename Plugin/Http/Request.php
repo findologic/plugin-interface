@@ -194,4 +194,10 @@ abstract class Request
 	abstract public function getMethod(
 	):string;
 
+	/**
+	 * Get the locale.
+	 */
+	abstract public function getLocale(
+	):string;
+
 }

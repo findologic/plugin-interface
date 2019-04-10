@@ -24,6 +24,8 @@ abstract class Order
 	public		$updatedAt;
 	public		$plentyId;
 	public		$locationId;
+	public		$roundTotalsOnly;
+	public		$numberOfDecimals;
 	public		$lockStatus;
 	public		$billingAddress;
 	public		$deliveryAddress;

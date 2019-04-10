@@ -39,6 +39,7 @@ abstract class OrderItem
 	public		$orderDates;
 	public		$dates;
 	public		$references;
+	public		$referencedBy;
 	public		$giftCardCodes;
 	public		$transactions;
 	public		$serialNumbers;
