@@ -2,9 +2,7 @@
 namespace Plenty\Modules\ItemSet\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Plenty\Modules\ItemSet\Models\ItemSet;
 use Plenty\Modules\ItemSet\Models\ItemSetComponent;
-use Plenty\Modules\RestDocumentation\Annotations\Rest;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
@@ -98,5 +96,13 @@ interface ItemSetComponentRepositoryContract
 	public function findByItemId(
 		int $itemId
 	):array;
+
+	/**
+	 * Delete an item set component. The item ID of the item set component and the set config ID must be specified.
+	 */
+	public function deleteOne(
+		int $setConfigId, 
+		int $itemId
+	):DeleteResponse;
 
 }

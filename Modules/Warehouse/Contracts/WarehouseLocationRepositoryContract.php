@@ -29,8 +29,17 @@ interface WarehouseLocationRepositoryContract
 		int $itemsPerPage = 50, 
 		int $paginate = 1, 
 		array $filters = [], 
-		int $warehouseId = null
+		int $warehouseId = null, 
+		array $with = []
 	):PaginatedResult;
+
+	/**
+	 * List warehouse locations by levelId
+	 */
+	public function listWarehouseLocationsByLevelId(
+		int $warehouseId, 
+		int $levelId
+	);
 
 	/**
 	 * Get first warehouse location matching the given label

@@ -71,13 +71,22 @@ interface WarehouseLocationLevelRepositoryContract
 	 * Get a warehouse structure.
 	 */
 	public function getWarehouseStructure(
-		int $warehouseId
+		int $warehouseId, 
+		array $data = []
 	);
 
 	/**
 	 * Move a warehouse location level position
 	 */
 	public function moveWarehouseLocationLevelPosition(
+		array $data
+	);
+
+	/**
+	 * Get a warehouse structure moving.
+	 */
+	public function getWarehouseStructureMoving(
+		int $warehouseId, 
 		array $data
 	);
 
