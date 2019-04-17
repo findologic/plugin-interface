@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Wizard\Contracts;
 
-use Plenty\Modules\Wizard\Models\WizardData;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
@@ -18,7 +17,7 @@ interface WizardDataRepositoryContract
 	public function create(
 		string $wizardKey, 
 		array $steps = []
-	):WizardData;
+	);
 
 	/**
 	 * Creates a new WizardData option
@@ -27,14 +26,14 @@ interface WizardDataRepositoryContract
 		string $uuid, 
 		array $data = [], 
 		string $optionId = "default"
-	):WizardData;
+	);
 
 	/**
 	 * Get a single WizardData by its ID
 	 */
 	public function get(
 		string $uuid
-	):WizardData;
+	);
 
 	/**
 	 * Get a single WizardData for an option ID
@@ -42,11 +41,11 @@ interface WizardDataRepositoryContract
 	public function getByOptionId(
 		string $uuid, 
 		string $optionId = "default"
-	):WizardData;
+	);
 
 	public function findByWizardKey(
 		string $wizardKey
-	):WizardData;
+	);
 
 	/**
 	 * List all WizardData for current plenty ID.
@@ -63,7 +62,7 @@ interface WizardDataRepositoryContract
 	public function update(
 		string $uuid, 
 		array $properties
-	):WizardData;
+	);
 
 	/**
 	 * Update data for a WizardData option
@@ -74,7 +73,7 @@ interface WizardDataRepositoryContract
 		array $data, 
 		string $stepKey, 
 		bool $skipValidation = false
-	):WizardData;
+	);
 
 	/**
 	 * Delete a single WizardData by its ID
@@ -96,7 +95,8 @@ interface WizardDataRepositoryContract
 	 */
 	public function finalize(
 		string $uuid, 
-		string $optionId = "default"
+		string $optionId = "default", 
+		array $data = []
 	);
 
 	/**
