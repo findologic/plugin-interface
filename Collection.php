@@ -15,7 +15,24 @@ use JsonSerializable;
 use Traversable;
 use stdClass;
 
-class Collection 
+abstract class Collection 
 {
+
+	/**
+	 * Filter items by the given key value pair.
+	 */
+	abstract public function where(
+		string $key, 
+		 $operator, 
+		 $value = null
+	):Collection;
+
+	/**
+	 * Get the first item from the collection.
+	 */
+	abstract public function first(
+		callable $callback = null, 
+		 $default = null
+	);
 
 }

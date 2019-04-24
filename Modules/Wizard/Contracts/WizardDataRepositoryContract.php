@@ -23,7 +23,7 @@ interface WizardDataRepositoryContract
 	 * Creates a new WizardData option
 	 */
 	public function createDataOption(
-		string $uuid, 
+		string $wizardKey, 
 		array $data = [], 
 		string $optionId = "default"
 	);
@@ -32,14 +32,14 @@ interface WizardDataRepositoryContract
 	 * Get a single WizardData by its ID
 	 */
 	public function get(
-		string $uuid
+		string $wizardKey
 	);
 
 	/**
 	 * Get a single WizardData for an option ID
 	 */
 	public function getByOptionId(
-		string $uuid, 
+		string $wizardKey, 
 		string $optionId = "default"
 	);
 
@@ -60,7 +60,7 @@ interface WizardDataRepositoryContract
 	 * Update data for a WizardData
 	 */
 	public function update(
-		string $uuid, 
+		string $wizardKey, 
 		array $properties
 	);
 
@@ -68,7 +68,7 @@ interface WizardDataRepositoryContract
 	 * Update data for a WizardData option
 	 */
 	public function updateDataOption(
-		string $uuid, 
+		string $wizardKey, 
 		string $optionId, 
 		array $data, 
 		string $stepKey, 
@@ -79,14 +79,14 @@ interface WizardDataRepositoryContract
 	 * Delete a single WizardData by its ID
 	 */
 	public function delete(
-		string $uuid
+		string $wizardKey
 	);
 
 	/**
 	 * Delete a single WizardData by its ID
 	 */
 	public function deleteDataOption(
-		string $uuid, 
+		string $wizardKey, 
 		string $optionId
 	);
 
@@ -94,7 +94,7 @@ interface WizardDataRepositoryContract
 	 * Finalize wizard
 	 */
 	public function finalize(
-		string $uuid, 
+		string $wizardKey, 
 		string $optionId = "default", 
 		array $data = []
 	);

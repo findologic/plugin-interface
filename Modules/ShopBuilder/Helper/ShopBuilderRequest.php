@@ -16,4 +16,22 @@ abstract class ShopBuilderRequest
 	abstract public function getPreviewContentType(
 	):string;
 
+	abstract public function getMainContentType(
+	):string;
+
+	abstract public function setMainContentType(
+		string $mainContentType
+	);
+
+	abstract public function getMainContainerName(
+	):string;
+
+	abstract public function setMainContainerName(
+		string $mainContainerName
+	);
+
+	abstract public function setMainCategory(
+		 $mainCategory
+	);
+
 }

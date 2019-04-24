@@ -63,4 +63,12 @@ interface AccountingLocationRepositoryContract
 		int $id
 	):AccountingLocationSettings;
 
+	/**
+	 * Update accounting location settings. The ID of the location must be specified.
+	 */
+	public function updateSettings(
+		int $id, 
+		array $data
+	):AccountingLocationSettings;
+
 }

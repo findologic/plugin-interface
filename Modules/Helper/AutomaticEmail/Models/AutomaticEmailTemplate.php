@@ -14,6 +14,8 @@ abstract class AutomaticEmailTemplate
 
 	const CONTACT_NEW_PASSWORD_CONFIRMATION = 'ChangePWD2User';
 
+	const CONTACT_NEW_EMAIL = 'ChangeCustomerEmail';
+
 	const CONTACT_REGISTRATION = 'CustomerRegistration';
 
 	const NEWSLETTER_OPTIN = 'NewsletterDoubleOptIn';

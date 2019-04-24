@@ -21,7 +21,8 @@ interface WizardContainerContract
 	 * Get a single wizard by its key
 	 */
 	public function get(
-		string $wizardKey
+		string $wizardKey, 
+		bool $skipTranslation = false
 	):Wizard;
 
 	/**

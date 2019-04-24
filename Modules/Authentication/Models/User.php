@@ -12,13 +12,26 @@ abstract class User
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
+	public		$userId;
 	public		$pwd;
 	public		$pwd_md5;
+	public		$email;
+	public		$emailHash;
 	public		$timezone;
 	public		$ticket;
 	public		$password;
 	public		$user;
+	public		$username;
+	public		$userClass;
+	public		$userRights;
+	public		$uiConfig;
+	public		$permissions;
+	public		$pluginPermissions;
 	public		$roles;
+	public		$accessControl;
+	public		$daysLeftToChangePassword;
+	public		$isSupportUser;
+	public		$oauthAccessTokensId;
 	
 	/**
 	 * Returns this model as an array.

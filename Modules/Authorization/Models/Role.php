@@ -19,6 +19,7 @@ abstract class Role
 	public		$hidden;
 	public		$users;
 	public		$permissions;
+	public		$accessControl;
 	
 	/**
 	 * Returns this model as an array.
