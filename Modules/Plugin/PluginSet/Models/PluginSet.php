@@ -17,6 +17,7 @@ abstract class PluginSet
 	public		$parentPluginSet;
 	public		$name;
 	public		$pluginSetEntries;
+	public		$pluginSetEntriesWithTrashed;
 	public		$layoutContainers;
 	public		$webstores;
 	
