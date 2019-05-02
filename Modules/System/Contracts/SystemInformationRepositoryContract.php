@@ -9,7 +9,7 @@ interface SystemInformationRepositoryContract
 {
 
 	public function loadValue(
-		 $key
+		string $key
 	);
 
 }
