@@ -4,6 +4,7 @@ namespace Plenty\Modules\Order\Currency\Contracts;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Currency\Models\Currency;
+use Plenty\Modules\Order\Currency\Models\CurrencyExchangeRate;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
@@ -45,5 +46,12 @@ interface CurrencyRepositoryContract
 		array $columns = [], 
 		array $with = []
 	):Currency;
+
+	/**
+	 * Get the exchange rate for a currency
+	 */
+	public function getExchangeRate(
+		string $currencyIso
+	):CurrencyExchangeRate;
 
 }
