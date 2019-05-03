@@ -48,7 +48,7 @@ interface RawDataRepositoryContract
 	 * Resets all saved raw data configurations with given data
 	 */
 	public function updateRawDataConfigs(
-		RawDataConfigs $data
+		array $data
 	):RawDataConfigs;
 
 }
