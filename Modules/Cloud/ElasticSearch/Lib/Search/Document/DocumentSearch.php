@@ -19,6 +19,8 @@ abstract class DocumentSearch implements SearchInterface
 
 {
 
+	const MAX_RESULT_WINDOW = 10000;
+
 	abstract public function toArray(
 	):array;
 
