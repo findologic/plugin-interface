@@ -130,6 +130,8 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_SOURCE_ORDER_ID = 62;
 
+	const PREFERRED_STORAGE_LOCATION_ID = 63;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

@@ -61,4 +61,11 @@ interface CouponCampaignRepositoryContract
 		int $couponCampaignId
 	):bool;
 
+	/**
+	 * update a coupon campaign
+	 */
+	public function update(
+		array $data
+	):CouponCampaign;
+
 }

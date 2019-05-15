@@ -34,6 +34,8 @@ abstract class Export
 
 	const DATA_TYPE_MANUFACTURER = 'manufacturer';
 
+	const DATA_TYPE_STOCK_MOVEMENT = 'stock_movement';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';
