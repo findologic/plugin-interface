@@ -2,6 +2,9 @@
 namespace Plenty\Modules\Item\VariationSku\Contracts;
 
 use Plenty\Modules\Item\VariationSku\Models\VariationSku;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
@@ -77,5 +80,42 @@ interface VariationSkuRepositoryContract
 	public function findByVariationId(
 		int $variationId
 	):array;
+
+	/**
+	 * Resets all Criteria filters by creating a new instance of the builder object.
+	 */
+	public function clearCriteria(
+	);
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
+	);
+
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
+	);
 
 }
