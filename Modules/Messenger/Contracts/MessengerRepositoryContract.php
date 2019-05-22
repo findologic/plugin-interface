@@ -46,6 +46,22 @@ interface MessengerRepositoryContract
 	):array;
 
 	/**
+	 * Update the visibility of the message.
+	 */
+	public function updateVisibility(
+		array $data, 
+		string $uuid
+	):array;
+
+	/**
+	 * Set the doneAt date in the message.
+	 */
+	public function setDone(
+		string $doneAt = null, 
+		string $uuid
+	):array;
+
+	/**
 	 * Deletes a message stream by uuid.
 	 */
 	public function delete(

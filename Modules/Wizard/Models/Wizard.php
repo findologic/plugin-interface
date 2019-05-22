@@ -14,6 +14,8 @@ abstract class Wizard
 	public		$translationKey;
 	public		$topics;
 	public		$steps;
+	public		$priority;
+	public		$relevance;
 	
 	/**
 	 * Returns this model as an array.

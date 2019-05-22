@@ -16,6 +16,7 @@ abstract class Message
 	public		$linkedTo;
 	public		$visibility;
 	public		$accessFor;
+	public		$whispered;
 	public		$tags;
 	public		$from;
 	public		$title;
