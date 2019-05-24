@@ -35,7 +35,7 @@ interface RawDataRepositoryContract
 	/**
 	 * Get list of all raw data creators
 	 */
-	public function getRawDataCreators(
+	public function getRawDataCreatorModels(
 	):array;
 
 	/**
