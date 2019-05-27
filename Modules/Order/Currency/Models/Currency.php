@@ -16,6 +16,7 @@ abstract class Currency
 	public		$unicodeSign;
 	public		$isActive;
 	public		$isErasable;
+	public		$exchangeRate;
 	public		$countries;
 	public		$names;
 	

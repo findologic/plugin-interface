@@ -45,6 +45,10 @@ interface SearchInterface
 	public function getName(
 	):string;
 
+	public function setMaxResultWindow(
+		int $maxResults = 10000
+	);
+
 	/**
 	 * Get the instance as an array.
 	 */

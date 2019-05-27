@@ -19,8 +19,6 @@ abstract class DocumentSearch implements SearchInterface
 
 {
 
-	const MAX_RESULT_WINDOW = 10000;
-
 	abstract public function toArray(
 	):array;
 
@@ -97,5 +95,9 @@ abstract class DocumentSearch implements SearchInterface
 	abstract public function setScoreModifier(
 		ScoreModifierInterface $scoreModifier
 	):self;
+
+	abstract public function setMaxResultWindow(
+		int $maxResults = 10000
+	);
 
 }

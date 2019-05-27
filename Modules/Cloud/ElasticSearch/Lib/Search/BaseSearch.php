@@ -64,6 +64,10 @@ abstract class BaseSearch implements SearchInterface
 		ScoreModifierInterface $scoreModifier
 	):self;
 
+	abstract public function setMaxResultWindow(
+		int $maxResults = 10000
+	);
+
 	abstract public function process(
 		array $data
 	);
