@@ -7,6 +7,7 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Scheduler\Models\OrderScheduler;
 use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Contracts\SortableContract;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**

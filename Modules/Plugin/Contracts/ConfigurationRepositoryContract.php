@@ -26,4 +26,16 @@ interface ConfigurationRepositoryContract
 		int $setId
 	):string;
 
+	public function export(
+		int $setId, 
+		int $pluginId = null, 
+		bool $active = null
+	):array;
+
+	public function import(
+		int $setId, 
+		array $data, 
+		int $pluginId = null
+	);
+
 }

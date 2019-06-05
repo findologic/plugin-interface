@@ -56,6 +56,14 @@ interface OrderItemTransactionRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * Create transactions for order
+	 */
+	public function createForOrder(
+		int $orderId, 
+		array $data
+	):Collection;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

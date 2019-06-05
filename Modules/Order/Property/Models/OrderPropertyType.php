@@ -132,6 +132,8 @@ abstract class OrderPropertyType
 
 	const PREFERRED_STORAGE_LOCATION_ID = 63;
 
+	const AMAZON_SHIPPING_LABEL = 64;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

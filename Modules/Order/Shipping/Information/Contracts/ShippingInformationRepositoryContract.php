@@ -17,6 +17,13 @@ interface ShippingInformationRepositoryContract
 	):ShippingInformation;
 
 	/**
+	 * Get all the orders with their shipping information
+	 */
+	public function getOrdersShippingInformation(
+		array $searchParams
+	):array;
+
+	/**
 	 * Delete Shipping Information by an order ID
 	 */
 	public function resetShippingInformation(
