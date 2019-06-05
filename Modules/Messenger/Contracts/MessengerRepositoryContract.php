@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Messenger\Contracts;
 
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Messenger\Models\Message;
 use Plenty\Repositories\Contracts\FilterableContract;
@@ -26,7 +27,7 @@ interface MessengerRepositoryContract
 	 */
 	public function show(
 		string $uuid
-	):array;
+	);
 
 	/**
 	 * List messages.
@@ -43,7 +44,7 @@ interface MessengerRepositoryContract
 	public function updateReadBy(
 		int $readBy, 
 		string $uuid
-	):array;
+	);
 
 	/**
 	 * Update the visibility of the message.
@@ -51,7 +52,7 @@ interface MessengerRepositoryContract
 	public function updateVisibility(
 		array $data, 
 		string $uuid
-	):array;
+	);
 
 	/**
 	 * Set the doneAt date in the message.
@@ -59,7 +60,7 @@ interface MessengerRepositoryContract
 	public function setDone(
 		string $doneAt = null, 
 		string $uuid
-	):array;
+	);
 
 	/**
 	 * Deletes a message stream by uuid.

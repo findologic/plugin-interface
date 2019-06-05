@@ -8,17 +8,15 @@ namespace Plenty\Modules\Messenger\Models;
 abstract class Message 
 {
 
-	const CREATED_AT = 'createdAt';
-
-	const UPDATED_AT = 'updatedAt';
+	const STORAGE = 'messages';
 	public		$uuid;
 	public		$plentyIdHash;
+	public		$parentUuid;
 	public		$linkedTo;
-	public		$visibility;
-	public		$accessFor;
+	public		$from;
+	public		$to;
 	public		$whispered;
 	public		$tags;
-	public		$from;
 	public		$title;
 	public		$preview;
 	public		$message;
@@ -28,6 +26,8 @@ abstract class Message
 	public		$doneAt;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$deletedAt;
+	public		$deletedBy;
 	
 	/**
 	 * Returns this model as an array.
