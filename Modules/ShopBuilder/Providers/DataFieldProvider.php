@@ -17,6 +17,7 @@ abstract class DataFieldProvider
 	 * Register a new data field.
 	 */
 	public function addField(
+		string $identifier, 
 		string $label, 
 		string $expression
 	)

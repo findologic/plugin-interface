@@ -81,4 +81,12 @@ interface StorageRepositoryContract
 		bool $resultKeyWithoutPrefix = true
 	):StorageObjectList;
 
+	/**
+	 * Get all objects of a plugin as zip file
+	 */
+	public function getPluginZip(
+		int $pluginSetId, 
+		string $pluginName
+	);
+
 }
