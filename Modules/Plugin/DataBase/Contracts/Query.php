@@ -60,7 +60,7 @@ abstract class Query
 	 */
 	abstract public function orWhereNull(
 		string $fieldName
-	);
+	):self;
 
 	/**
 	 * Add a "having" clause to the query.
@@ -79,7 +79,7 @@ abstract class Query
 		string $fieldName, 
 		string $operator = null, 
 		string $value = null
-	);
+	):self;
 
 	/**
 	 * Add an "order by" clause to the query.
@@ -95,7 +95,7 @@ abstract class Query
 	abstract public function forPage(
 		int $page, 
 		int $perPage = 15
-	);
+	):self;
 
 	/**
 	 * Retrieve the "count" result of the query.
