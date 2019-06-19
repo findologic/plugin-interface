@@ -52,6 +52,20 @@ interface BlogPostRepositoryContract
 	);
 
 	/**
+	 * Migrate old posts to new
+	 */
+	public function migratePosts(
+		array $data = []
+	);
+
+	/**
+	 * Get old blog post by its ID
+	 */
+	public function getOldPostById(
+		int $id
+	);
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

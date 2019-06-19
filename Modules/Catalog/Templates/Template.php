@@ -24,6 +24,17 @@ abstract class Template implements TemplateContract
 		callable $callback
 	);
 
+	abstract public function getMutators(
+	):array;
+
+	abstract public function addPreMutator(
+		callable $callback
+	);
+
+	abstract public function addPostMutator(
+		callable $callback
+	);
+
 	abstract public function getFilter(
 	):array;
 
@@ -31,7 +42,10 @@ abstract class Template implements TemplateContract
 		array $filter
 	);
 
-	abstract public function getMutators(
+	abstract public function getPreMutators(
+	):array;
+
+	abstract public function getPostMutators(
 	):array;
 
 	abstract public function setSkuCallback(

@@ -81,6 +81,10 @@ abstract class Variation
 	public		$warehouseVariationId;
 	public		$propertyVariationId;
 	public		$tagVariationId;
+	public		$hasCalculatedBundleWeight;
+	public		$hasCalculatedBundleNetWeight;
+	public		$hasCalculatedBundlePurchasePrice;
+	public		$hasCalculatedBundleMovingAveragePrice;
 	public		$variationBarcodes;
 	public		$variationBundleComponents;
 	public		$variationComponentBundles;

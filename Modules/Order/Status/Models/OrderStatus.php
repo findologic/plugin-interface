@@ -20,6 +20,8 @@ abstract class OrderStatus
 	public		$createdAt;
 	public		$updatedAt;
 	public		$isFrontendVisible;
+	public		$isReorderVisible;
+	public		$isRedistributionVisible;
 	public		$color;
 	public		$names;
 	

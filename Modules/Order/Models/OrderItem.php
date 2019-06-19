@@ -46,6 +46,7 @@ abstract class OrderItem
 	public		$variationBarcodes;
 	public		$comments;
 	public		$warehouselocations;
+	public		$transactionSums;
 	
 	/**
 	 * Returns this model as an array.

@@ -55,6 +55,7 @@ abstract class Order
 	public		$contactReceiver;
 	public		$warehouseSender;
 	public		$warehouseReceiver;
+	public		$transactionSums;
 	
 	/**
 	 * Returns this model as an array.

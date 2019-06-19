@@ -26,6 +26,14 @@ interface TemplateContract
 		callable $callback
 	);
 
+	public function addPreMutator(
+		callable $callback
+	);
+
+	public function addPostMutator(
+		callable $callback
+	);
+
 	public function getFilter(
 	):array;
 
@@ -37,6 +45,12 @@ interface TemplateContract
 	):string;
 
 	public function getMutators(
+	):array;
+
+	public function getPreMutators(
+	):array;
+
+	public function getPostMutators(
 	):array;
 
 	public function setSkuCallback(

@@ -101,6 +101,25 @@ Gets the first warehouse location matching the given label. The label must be sp
 	);
 
 	/**
+	 * Get all warehouse locations stock
+	 */
+	public function listWarehouseLocationStock(
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		int $paginate = 1, 
+		array $filters = [], 
+		int $warehouseLocationId = null, 
+		array $with = []
+	):PaginatedResult;
+
+	/**
+	 * Get availability for storage location
+	 */
+	public function getWarehouseLocationAvailability(
+		int $warehouseLocationId
+	):array;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
