@@ -2,9 +2,9 @@
 namespace Plenty\Modules\Item\Search\Filter;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\BoostedTermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchAutoCompleteFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchExactFilter;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
