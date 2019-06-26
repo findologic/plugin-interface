@@ -112,6 +112,7 @@ abstract class Variation
 	public		$unit;
 	public		$parent;
 	public		$item;
+	public		$children;
 	public		$stockStorageLocations;
 	
 	/**

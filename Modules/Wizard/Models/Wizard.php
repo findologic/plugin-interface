@@ -12,6 +12,7 @@ abstract class Wizard
 	public		$settingsHandlerClass;
 	public		$shortDescription;
 	public		$translationKey;
+	public		$deleteConfirmationText;
 	public		$topics;
 	public		$steps;
 	public		$priority;

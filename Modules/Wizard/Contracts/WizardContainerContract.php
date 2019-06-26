@@ -18,6 +18,13 @@ interface WizardContainerContract
 	);
 
 	/**
+	 * Register a wizard folder
+	 */
+	public function registerFolders(
+		string $folderClass
+	);
+
+	/**
 	 * Get a single wizard by its key
 	 */
 	public function get(
@@ -29,6 +36,13 @@ interface WizardContainerContract
 	 * List all wizards class names
 	 */
 	public function all(
+	):array;
+
+	/**
+	 * List all wizard folders
+	 */
+	public function folders(
+		bool $hierarchy = false
 	):array;
 
 }
