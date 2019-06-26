@@ -52,6 +52,8 @@ abstract class Payment
 
 	const ORIGIN_PLUGIN = 6;
 
+	const ORIGIN_POS = 7;
+
 	const PAYMENT_TYPE_DEBIT = 'debit';
 
 	const PAYMENT_TYPE_CREDIT = 'credit';
