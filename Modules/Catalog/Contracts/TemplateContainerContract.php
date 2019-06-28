@@ -10,7 +10,8 @@ interface TemplateContainerContract
 
 	public function register(
 		string $name, 
-		string $type
+		string $type, 
+		string $providerClass = ""
 	):TemplateContract;
 
 	public function getTemplates(

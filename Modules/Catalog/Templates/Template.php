@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Catalog\Templates;
 
+use Plenty\Modules\Catalog\Contracts\CatalogTemplateProviderContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
 use Plenty\Modules\Catalog\Validators\FilterValidator;
 use Plenty\Modules\Catalog\Validators\MappingValidator;
@@ -83,5 +84,12 @@ abstract class Template implements TemplateContract
 
 	abstract public function getIdentifier(
 	):string;
+
+	abstract public function boot(
+		CatalogTemplateProviderContract $provider
+	);
+
+	abstract public function isBooted(
+	):bool;
 
 }
