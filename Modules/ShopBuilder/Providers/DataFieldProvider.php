@@ -37,15 +37,4 @@ abstract class DataFieldProvider
 		return null;
 	}
 
-	/**
-	 * Assign keywords to a field to be respected during search.
-	 */
-	public function addSearchKeywords(
-		string $identifier, 
-		array $keywords = []
-	)
-	{
-		return null;
-	}
-
 }
