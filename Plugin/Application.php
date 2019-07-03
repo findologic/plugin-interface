@@ -71,6 +71,9 @@ abstract class Application
 	abstract public function isBackendRequest(
 	):bool;
 
+	abstract public function getPluginSetId(
+	):int;
+
 	/**
 	 * Returns the URL to the plugin resources
 	 */

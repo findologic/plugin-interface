@@ -11,6 +11,13 @@ abstract class Query
 {
 
 	/**
+	 * Add a basic select clause to the query.
+	 */
+	abstract public function select(
+		array $columns = []
+	):self;
+
+	/**
 	 * Add a basic where clause to the query.
 	 */
 	abstract public function where(
@@ -60,6 +67,75 @@ abstract class Query
 	 */
 	abstract public function orWhereNull(
 		string $fieldName
+	):self;
+
+	/**
+	 * Add a where between statement to the query.
+	 */
+	abstract public function whereBetween(
+		string $column, 
+		array $values, 
+		string $boolean = "and", 
+		bool $not = false
+	):self;
+
+	/**
+	 * Add a where not between statement to the query.
+	 */
+	abstract public function whereNotBetween(
+		string $column, 
+		array $values, 
+		string $boolean = "and"
+	):self;
+
+	/**
+	 * Add a "where date" statement to the query.
+	 */
+	abstract public function whereDate(
+		string $column, 
+		string $operator, 
+		 $value = null, 
+		string $boolean = "and"
+	):self;
+
+	/**
+	 * Add a "where month" statement to the query.
+	 */
+	abstract public function whereMonth(
+		string $column, 
+		string $operator, 
+		 $value = null, 
+		string $boolean = "and"
+	):self;
+
+	/**
+	 * Add a "where day" statement to the query.
+	 */
+	abstract public function whereDay(
+		string $column, 
+		string $operator, 
+		 $value = null, 
+		string $boolean = "and"
+	):self;
+
+	/**
+	 * Add a "where year" statement to the query.
+	 */
+	abstract public function whereYear(
+		string $column, 
+		string $operator, 
+		 $value = null, 
+		string $boolean = "and"
+	):self;
+
+	/**
+	 * Add a "where time" statement to the query.
+	 */
+	abstract public function whereTime(
+		string $column, 
+		string $operator, 
+		int $value = null, 
+		string $boolean = "and"
 	):self;
 
 	/**

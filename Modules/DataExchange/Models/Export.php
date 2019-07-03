@@ -36,6 +36,8 @@ abstract class Export
 
 	const DATA_TYPE_STOCK_MOVEMENT = 'stock_movement';
 
+	const DATA_TYPE_STOCK = 'stock';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';

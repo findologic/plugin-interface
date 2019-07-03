@@ -2,8 +2,6 @@
 namespace Plenty\Modules\Plugin\Contracts;
 
 use Illuminate\Support\Collection;
-use Plenty\Exceptions\ValidationException;
-use Plenty\Modules\Item\DataLayer\Models\Record;
 use Plenty\Modules\Plugin\Models\Plugin;
 use Plenty\Repositories\Models\PaginatedResult;
 
@@ -40,5 +38,10 @@ interface PluginRepositoryContract
 		string $pluginName, 
 		int $webstoreId
 	):bool;
+
+	public function decoratePlugin(
+		Plugin $plugin, 
+		int $pluginSetId = null
+	):Plugin;
 
 }
