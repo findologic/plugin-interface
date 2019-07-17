@@ -28,6 +28,7 @@ abstract class Message
 	public		$updatedAt;
 	public		$deletedAt;
 	public		$deletedBy;
+	public		$attachments;
 	
 	/**
 	 * Returns this model as an array.

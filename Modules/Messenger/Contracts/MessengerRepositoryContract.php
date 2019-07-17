@@ -4,6 +4,7 @@ namespace Plenty\Modules\Messenger\Contracts;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Messenger\Models\Attachment;
 use Plenty\Modules\Messenger\Models\Message;
 use Plenty\Repositories\Contracts\FilterableContract;
 
@@ -68,6 +69,14 @@ interface MessengerRepositoryContract
 	public function delete(
 		string $uuid
 	):int;
+
+	/**
+	 * Get a message attachment.
+	 */
+	public function getAttachment(
+		string $uuid, 
+		string $filename
+	):Attachment;
 
 	/**
 	 * Sets the filter array.

@@ -85,6 +85,16 @@ interface DocumentRepositoryContract
 		string $type
 	):array;
 
+	public function findCurrentOrderDocument(
+		int $orderId, 
+		string $type
+	):Document;
+
+	public function findRecentOrderDocument(
+		int $orderId, 
+		string $type
+	):Document;
+
 	public function deleteOrderShippingPackageDocuments(
 		int $packageId
 	):bool;
