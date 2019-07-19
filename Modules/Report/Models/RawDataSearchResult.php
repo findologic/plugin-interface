@@ -7,10 +7,6 @@ namespace Plenty\Modules\Report\Models;
  */
 abstract class RawDataSearchResult 
 {
-
-	const CREATED_AT = 'createdAt';
-
-	const UPDATED_AT = 'updatedAt';
 	public		$after;
 	public		$searchResult;
 	

@@ -151,10 +151,4 @@ interface PluginSetRepositoryContract
 		string $pluginSetHash
 	):int;
 
-	/**
-	 * Get the PluginSetID of the currently running plugin.
-	 */
-	public function getCurrentPluginSetId(
-	):int;
-
 }

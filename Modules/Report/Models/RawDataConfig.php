@@ -7,10 +7,6 @@ namespace Plenty\Modules\Report\Models;
  */
 abstract class RawDataConfig 
 {
-
-	const CREATED_AT = 'createdAt';
-
-	const UPDATED_AT = 'updatedAt';
 	public		$dataName;
 	public		$active;
 	public		$deleteRawDataAfterDays;

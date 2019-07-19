@@ -1,10 +1,7 @@
 <?php
 namespace Plenty\Modules\Report\Contracts;
 
-use Plenty\Modules\Cloud\Storage\Models\StorageObject;
-use Plenty\Modules\Report\Models\RawData;
 use Plenty\Modules\Report\Models\RawDataConfigs;
-use Plenty\Modules\Report\Models\RawDataCreator;
 use Plenty\Modules\Report\Models\RawDataSearchResult;
 
 /**
