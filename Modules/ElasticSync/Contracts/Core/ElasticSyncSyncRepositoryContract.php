@@ -75,6 +75,12 @@ interface ElasticSyncSyncRepositoryContract
 	):array;
 
 	/**
+	 * Get list of sync decimals.
+	 */
+	public function getListDecimals(
+	):array;
+
+	/**
 	 * Export the syncs.
 	 */
 	public function export(
