@@ -26,11 +26,11 @@ abstract class ImageDomainMutator implements MutatorInterface
 		int $plentyId
 	):self;
 
-	abstract public function getDependencies(
-	):array;
-
 	abstract public function mutate(
 		array $data
+	):array;
+
+	abstract public function getDependencies(
 	):array;
 
 }

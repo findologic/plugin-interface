@@ -15,11 +15,21 @@ abstract class ImageMutator implements MutatorInterface
 
 	const SORT_POSITION = 'position';
 
+	const SECTION_ALL = 'all';
+
+	const SECTION_ITEM = 'item';
+
+	const SECTION_VARIATION = 'variation';
+
 	abstract public function getPath(
 	):string;
 
 	abstract public function setSorting(
 		string $field
+	);
+
+	abstract public function setSections(
+		 $sections
 	);
 
 	abstract public function mutateObject(
