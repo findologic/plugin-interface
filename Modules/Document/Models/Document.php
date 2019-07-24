@@ -10,7 +10,13 @@ abstract class Document
 
 	const RECEIPT = 'receipt';
 
+	const CANCELLATION = 'cancellation';
+
 	const Z_REPORT = 'z_report';
+
+	const TILL_COUNT = 'till_count';
+
+	const POS_COUPON_RECEIPT = 'pos_coupon_receipt';
 
 	const INVOICE_EXTERNAL = 'invoice_external';
 

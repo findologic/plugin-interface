@@ -19,6 +19,10 @@ interface PluginRepositoryContract
 		int $itemsPerPage = \Plenty\Modules\Plugin\Models\Plugin::DEFAULT_ITEMS_PER_PAGE
 	):PaginatedResult;
 
+	public function getPluginSets(
+		int $pluginId
+	):array;
+
 	public function isActiveInPluginSet(
 		int $pluginId, 
 		int $pluginSetId
