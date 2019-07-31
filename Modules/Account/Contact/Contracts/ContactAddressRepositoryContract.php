@@ -14,6 +14,13 @@ interface ContactAddressRepositoryContract
 {
 
 	/**
+	 * Returns primary or last created contact addresses
+	 */
+	public function getPrimaryOrLastCreatedContactAddresses(
+		int $contactId
+	):array;
+
+	/**
 	 * Returns an address of a given contact for the given type.
 	 */
 	public function findContactAddressByTypeId(
