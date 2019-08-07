@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\VariationSku\Contracts;
 
+use Plenty\Modules\Item\VariationSku\Models\VariationSku;
 
 /**
  * The contract of the variation SKU bulk repository.
@@ -38,5 +39,12 @@ interface VariationSkuBulkRepositoryContract
 		array $ids, 
 		string $time = ""
 	);
+
+	/**
+	 * Deletes multiple SKUs.
+	 */
+	public function delete(
+		array $data
+	):int;
 
 }

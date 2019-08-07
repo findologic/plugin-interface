@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Search;
 
 use Illuminate\Contracts\Support\Arrayable;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;

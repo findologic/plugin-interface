@@ -1,11 +1,13 @@
 <?php
 namespace Plenty\Modules\Item\Search\Filter;
 
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
+use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNestedFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
+use Plenty\Modules\Pim\SearchService\Filter\ImageFilter as PimFilter;
+use Plenty\Modules\Pim\SearchService\Filter\LegacyFilter;
 
 /**
  * foo
@@ -36,6 +38,10 @@ abstract class ImageFilter implements TypeInterface
 
 	abstract public function addStatement(
 		StatementInterface $statement
+	);
+
+	abstract public function addQuery(
+		 $statement
 	);
 
 }

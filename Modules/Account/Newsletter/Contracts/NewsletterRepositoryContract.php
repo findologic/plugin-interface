@@ -93,6 +93,13 @@ interface NewsletterRepositoryContract
 	):array;
 
 	/**
+	 * Returns recipients by email
+	 */
+	public function getRecipientsByEMail(
+		string $email
+	):array;
+
+	/**
 	 * Lists recipients
 	 */
 	public function listRecipients(

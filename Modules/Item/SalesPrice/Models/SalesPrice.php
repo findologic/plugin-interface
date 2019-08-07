@@ -7,6 +7,8 @@ abstract class SalesPrice
 
 	const ITEMS_PER_PAGE = 50;
 
+	const INTERVAL_TYPES = ['none','daily','weekly','monthly','quarterly','semi-annual','annual'];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

@@ -33,6 +33,8 @@ interface VariationExportServiceContract
 
 	const PROPERTY = 'VariationEigenschaften';
 
+	const ADDITIONAL_SKU = 'VariationAdditionalSku';
+
 	const CROSS_SELLING = 'ItemCrossSelling';
 
 	const SHIPPING_PROFILE = 'ItemShippingProfile';

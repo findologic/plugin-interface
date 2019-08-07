@@ -64,4 +64,7 @@ interface IndexInterface
 	public function refresh(
 	):bool;
 
+	public function getElasticSearchVersion(
+	):float;
+
 }

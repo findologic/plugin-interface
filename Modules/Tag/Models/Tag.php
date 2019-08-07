@@ -14,6 +14,8 @@ abstract class Tag
 
 	const TAG_RELATIONSHIPS_RELATION = 'relationship';
 
+	const AVAILABLE_TYPES = ['item','contact'];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

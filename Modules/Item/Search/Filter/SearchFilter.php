@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Search\Filter;
 
+use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\BoostedTermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchAutoCompleteFilter;
@@ -11,6 +12,9 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Facet\Facet\Contracts\FacetSearchDefinitionServiceContract;
 use Plenty\Modules\Item\Search\Index\Settings;
 use Plenty\Modules\Item\Search\Query\SearchQuery;
+use Plenty\Modules\Pim\SearchService\Filter\LegacyFilter;
+use Plenty\Modules\Pim\SearchService\Query\ManagedSearchQuery;
+use Plenty\Modules\Pim\SearchService\Query\NameAutoCompleteQuery;
 
 /**
  * foo
@@ -40,6 +44,10 @@ abstract class SearchFilter implements TypeInterface
 
 	abstract public function addStatement(
 		StatementInterface $statement
+	);
+
+	abstract public function addQuery(
+		 $statement
 	);
 
 }

@@ -12,6 +12,8 @@ abstract class Barcode
 
 	const CREATED_AT = 'plenty_item_barcode_created_timestamp';
 
+	const BARCODE_TYPE = ['GTIN_8','GTIN_13','GTIN_14','GTIN_128','UPC','ISBN','QR','CODE_128'];
+
 	const ITEMS_PER_PAGE = 50;
 	public		$id;
 	public		$name;

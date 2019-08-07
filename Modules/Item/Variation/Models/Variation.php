@@ -10,6 +10,8 @@ abstract class Variation
 
 	const MAX_ITEMS_PER_PAGE = 100;
 
+	const PICKING_VALUES = ['single_picking','no_single_picking','exclude_from_picklist',''];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

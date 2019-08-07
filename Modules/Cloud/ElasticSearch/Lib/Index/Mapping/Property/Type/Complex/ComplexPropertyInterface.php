@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Mapping\Property\Type\Complex;
 
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\Mapping\Property\PropertyInterface;
 
 /**
@@ -14,6 +15,10 @@ interface ComplexPropertyInterface
 
 	public function addProperty(
 		PropertyInterface $property
+	);
+
+	public function setIndex(
+		IndexInterface $index
 	);
 
 	/**

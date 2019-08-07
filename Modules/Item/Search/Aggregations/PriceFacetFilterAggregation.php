@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Search\Aggregations;
 
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectFilterAggregation;
@@ -27,6 +28,10 @@ abstract class PriceFacetFilterAggregation implements AggregationInterface
 
 	abstract public function addFilter(
 		TypeInterface $filter
+	);
+
+	abstract public function setIndex(
+		 $index
 	);
 
 	abstract public function toArray(

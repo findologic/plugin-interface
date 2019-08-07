@@ -1,10 +1,14 @@
 <?php
 namespace Plenty\Modules\Item\Search\Filter;
 
+use Illuminate\Contracts\Support\Arrayable;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Data\Update\Handler\Traits\MultilingualTrait;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
+use Plenty\Modules\Pim\SearchService\Filter\LegacyFilter;
+use Plenty\Modules\Pim\SearchService\Filter\TextFilter as PimFilter;
 
 /**
  * foo
@@ -41,5 +45,27 @@ abstract class TextFilter implements TypeInterface
 	abstract public function addStatement(
 		StatementInterface $statement
 	);
+
+	abstract public function addQuery(
+		 $statement
+	);
+
+	abstract public static function isLanguageSupported(
+		string $lang
+	):bool;
+
+	abstract public static function isLanguageActivated(
+		string $lang
+	):bool;
+
+	abstract public static function getM10lByLanguage(
+		string $lang, 
+		string $fallback = "en"
+	):string;
+
+	abstract public static function getLanguageByM10l(
+		string $lang, 
+		string $fallback = "english"
+	):string;
 
 }

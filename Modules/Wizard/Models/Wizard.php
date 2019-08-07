@@ -17,6 +17,7 @@ abstract class Wizard
 	public		$steps;
 	public		$priority;
 	public		$relevance;
+	public		$keywords;
 	
 	/**
 	 * Returns this model as an array.

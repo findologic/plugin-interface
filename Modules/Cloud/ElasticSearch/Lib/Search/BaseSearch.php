@@ -2,12 +2,16 @@
 namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Search;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Collapse\CollapseInterface;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\ScoreModifier\ScoreModifierInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Suggestion\SuggestionInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
+use Plenty\Modules\Item\Search\Filter\CategoryFilter;
+use Plenty\Modules\Pim\MappingLayer\Traits\BaseSearchHelperTrait;
+use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
 /**
  * Base class for different Search classes
@@ -66,6 +70,22 @@ abstract class BaseSearch implements SearchInterface
 
 	abstract public function setMaxResultWindow(
 		int $maxResults = 10000
+	);
+
+	abstract public function setIndex(
+		 $index
+	);
+
+	abstract public function getFilterRaw(
+	);
+
+	abstract public function getQueriesRaw(
+	);
+
+	abstract public function getAggregationsRaw(
+	):array;
+
+	abstract public function getSorting(
 	);
 
 	abstract public function process(

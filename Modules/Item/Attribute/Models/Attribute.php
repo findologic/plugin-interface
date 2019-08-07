@@ -12,6 +12,14 @@ abstract class Attribute
 
 	const ITEMS_PER_PAGE = 50;
 
+	const FRUUGOATTRIBUTE = ['null','color','size'];
+
+	const OTTOATTRIBUTE = ['none','Dimension1','Dimension2','Dimension3','Dimension4'];
+
+	const GOOGLESHOPPINGATTRIBUTE = ['none','size','color','material','pattern'];
+
+	const TYPEOFSELECTIONINONLINESTORE = ['dropdown','image','box'];
+
 	const CREATED_AT = 'createdAt';
 	public		$id;
 	public		$backendName;

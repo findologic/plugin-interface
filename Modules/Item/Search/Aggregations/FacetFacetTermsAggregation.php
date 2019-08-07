@@ -4,6 +4,11 @@ namespace Plenty\Modules\Item\Search\Aggregations;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectTermsAggregation;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
+use Plenty\Modules\Item\Search\Helper\SearchHelper;
+use Plenty\Modules\Pim\MappingLayer\ElasticSearch\LegacyAggregation;
+use Plenty\Modules\Pim\SearchService\Helper\FacetHelper;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\VariationDataInterfaceResultInterface;
+use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
 /**
  * To be written

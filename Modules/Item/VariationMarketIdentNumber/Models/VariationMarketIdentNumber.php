@@ -10,6 +10,8 @@ abstract class VariationMarketIdentNumber
 
 	const ITEMS_PER_PAGE = 50;
 
+	const TYPES = ['ASIN','EPID'];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

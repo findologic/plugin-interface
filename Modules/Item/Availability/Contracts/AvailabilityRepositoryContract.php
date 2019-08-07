@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Availability\Contracts;
 
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Item\Availability\Models\Availability;
 
 /**
