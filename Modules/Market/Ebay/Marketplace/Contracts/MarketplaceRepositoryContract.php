@@ -16,4 +16,11 @@ interface MarketplaceRepositoryContract
 		array $filters = []
 	):array;
 
+	/**
+	 * Get the list of all available eBay marketplaces.
+	 */
+	public function allEbay(
+		array $filters = []
+	):array;
+
 }

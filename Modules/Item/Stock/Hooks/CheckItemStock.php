@@ -10,6 +10,7 @@ use Plenty\Modules\Item\DataLayer\Models\Record;
 use Plenty\Modules\Item\Stock\Contracts\BasketReservationContract;
 use Plenty\Modules\Item\Stock\Events\BasketItemWarnOversell;
 use Plenty\Modules\System\Contracts\WebstoreConfigurationRepositoryContract;
+use Plenty\Modules\System\Module\Contracts\PlentyModuleRepositoryContract;
 
 /**
  * CheckItemStock

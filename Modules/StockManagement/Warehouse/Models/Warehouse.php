@@ -15,6 +15,7 @@ abstract class Warehouse
 	public		$name;
 	public		$note;
 	public		$typeId;
+	public		$allocationReferrerIds;
 	public		$onStockAvailability;
 	public		$outOfStockAvailability;
 	public		$splitByShippingProfile;

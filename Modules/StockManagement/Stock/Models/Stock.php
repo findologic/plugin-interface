@@ -22,6 +22,7 @@ abstract class Stock
 	public		$reorderDelta;
 	public		$stockNet;
 	public		$reordered;
+	public		$warehousePriority;
 	public		$reservedBundle;
 	public		$averagePurchasePrice;
 	public		$updatedAt;

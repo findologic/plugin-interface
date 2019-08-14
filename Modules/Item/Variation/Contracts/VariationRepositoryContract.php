@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Variation\Contracts;
 
+use Illuminate\Support\Collection;
 use Plenty\Modules\Item\Variation\Models\Variation;
 use Plenty\Repositories\Models\DeleteResponse;
 
@@ -68,5 +69,9 @@ interface VariationRepositoryContract
 	public function changePrimaryVariation(
 		int $variationId
 	):Variation;
+
+	public function patchBulk(
+		array $rows
+	):Collection;
 
 }
