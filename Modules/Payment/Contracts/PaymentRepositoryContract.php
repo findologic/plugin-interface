@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Payment\Contracts;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Validation\ValidationException;
 use Plenty\Modules\Order\Models\Order;
@@ -91,7 +92,7 @@ interface PaymentRepositoryContract
 		 $propertyValue, 
 		int $itemsPerPage = 50, 
 		int $page = 1
-	):array;
+	);
 
 	/**
 	 * Creates a payment.
