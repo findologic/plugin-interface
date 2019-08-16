@@ -38,6 +38,9 @@ abstract class NextIndex implements IndexInterface
 	abstract public function getScrollRepositoryClassName(
 	);
 
+	abstract public function getElasticSearchVersion(
+	);
+
 	abstract public function hasUpdatedAt(
 	):bool;
 
@@ -84,9 +87,6 @@ and whether the index has already been created.
 	):bool;
 
 	abstract public function refresh(
-	);
-
-	abstract public function getElasticSearchVersion(
 	);
 
 }
