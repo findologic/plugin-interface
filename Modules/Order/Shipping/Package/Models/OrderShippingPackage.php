@@ -19,6 +19,7 @@ abstract class OrderShippingPackage
 	public		$labelPath;
 	public		$labelBase64;
 	public		$exportLabelBase64;
+	public		$returnPackageNumber;
 	public		$packageType;
 	public		$volume;
 	public		$palletId;
