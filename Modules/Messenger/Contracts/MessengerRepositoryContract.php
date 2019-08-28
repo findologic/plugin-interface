@@ -79,6 +79,14 @@ interface MessengerRepositoryContract
 	):Attachment;
 
 	/**
+	 * Update meta data from message
+	 */
+	public function updateMetaData(
+		string $uuid, 
+		array $metaData
+	):Message;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(

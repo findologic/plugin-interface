@@ -55,6 +55,13 @@ interface PropertyRelationValueRepositoryContract
 	);
 
 	/**
+	 * Delete all property relation values of a specified property relation.
+	 */
+	public function deleteRelationsByRelationId(
+		int $relationId
+	);
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

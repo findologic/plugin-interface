@@ -39,7 +39,9 @@ interface OrderItemRepositoryContract
 		int $orderId, 
 		int $page = 1, 
 		int $itemsPerPage = 50, 
-		array $with = []
+		array $with = [], 
+		string $sortBy = "id", 
+		string $sortOrder = "asc"
 	):PaginatedResult;
 
 	/**
