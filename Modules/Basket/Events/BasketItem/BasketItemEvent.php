@@ -9,7 +9,10 @@ use Plenty\Modules\Basket\Models\BasketItem;
 abstract class BasketItemEvent 
 {
 
-	abstract public function getBasketItem(
-	):BasketItem;
+	public function getBasketItem(
+	):BasketItem
+	{
+		return new BasketItem();
+	}
 
 }

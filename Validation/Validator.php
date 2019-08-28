@@ -22,8 +22,11 @@ abstract class Validator
 		//proxy method
 	}
 
-	abstract public function buildCustomMessages(
-	);
+	public function buildCustomMessages(
+	):array
+	{
+		return null;
+	}
 
 	/**
 	 * Get the value of the given attribute.

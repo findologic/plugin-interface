@@ -15,7 +15,10 @@ abstract class FacetMutator
 		array $b
 	):int;
 
-	abstract public function getDependencies(
-	):array;
+	public function getDependencies(
+	):array
+	{
+		return null;
+	}
 
 }

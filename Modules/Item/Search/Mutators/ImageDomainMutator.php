@@ -30,7 +30,10 @@ abstract class ImageDomainMutator implements MutatorInterface
 		array $data
 	):array;
 
-	abstract public function getDependencies(
-	):array;
+	public function getDependencies(
+	):array
+	{
+		return null;
+	}
 
 }

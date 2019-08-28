@@ -8,8 +8,11 @@ namespace Plenty\Modules\Cloud\ElasticSearch\Lib\Source\Mutator;
 abstract class BaseMutator 
 {
 
-	abstract public function getDependencies(
-	):array;
+	public function getDependencies(
+	):array
+	{
+		return null;
+	}
 
 	abstract public function mutate(
 		array $data

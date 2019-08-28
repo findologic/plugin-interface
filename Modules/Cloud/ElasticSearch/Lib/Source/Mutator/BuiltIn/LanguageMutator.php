@@ -31,7 +31,10 @@ abstract class LanguageMutator implements MutatorInterface
 		 $array
 	);
 
-	abstract public function getDependencies(
-	):array;
+	public function getDependencies(
+	):array
+	{
+		return null;
+	}
 
 }
