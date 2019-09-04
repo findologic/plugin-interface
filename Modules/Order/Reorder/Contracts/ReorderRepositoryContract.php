@@ -25,6 +25,14 @@ interface ReorderRepositoryContract
 	):Order;
 
 	/**
+	 * Delete an order item from a reorder
+	 */
+	public function deleteOrderItem(
+		int $orderId, 
+		int $orderItemId
+	):bool;
+
+	/**
 	 * Update currency
 	 */
 	public function updateCurrency(

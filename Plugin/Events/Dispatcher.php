@@ -14,6 +14,10 @@ use Plenty\Plugin\PluginApiGate;
 abstract class Dispatcher 
 {
 
+	abstract public function isPublicEvent(
+		string $event
+	):bool;
+
 	/**
 	 * Register an event listener with the dispatcher.
 	 */

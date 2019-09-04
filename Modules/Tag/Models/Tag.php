@@ -3,7 +3,7 @@ namespace Plenty\Modules\Tag\Models;
 
 
 /**
- * The Tag model.
+ * The Tag model
  */
 abstract class Tag 
 {

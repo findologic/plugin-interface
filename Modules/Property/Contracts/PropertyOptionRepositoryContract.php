@@ -33,6 +33,13 @@ interface PropertyOptionRepositoryContract
 	):PropertyOption;
 
 	/**
+	 * Creates property options
+	 */
+	public function createPropertyOptions(
+		array $data
+	):array;
+
+	/**
 	 * Updates a property option. The ID of property option must be specified.
 	 */
 	public function updatePropertyOption(
@@ -45,6 +52,13 @@ interface PropertyOptionRepositoryContract
 	 */
 	public function deletePropertyOption(
 		int $propertyOptionId
+	):array;
+
+	/**
+	 * Delete one or more property options.
+	 */
+	public function deletePropertyOptions(
+		array $optionIds
 	):array;
 
 	/**

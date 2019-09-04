@@ -88,6 +88,9 @@ abstract class BaseSearch implements SearchInterface
 	abstract public function getSorting(
 	);
 
+	abstract public function getScoreModifier(
+	);
+
 	abstract public function process(
 		array $data
 	);

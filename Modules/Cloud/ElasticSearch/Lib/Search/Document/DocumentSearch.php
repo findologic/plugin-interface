@@ -118,4 +118,7 @@ abstract class DocumentSearch implements SearchInterface
 	abstract public function getSorting(
 	);
 
+	abstract public function getScoreModifier(
+	);
+
 }

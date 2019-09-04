@@ -170,6 +170,13 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
+	 * Deprecated : Set order status to 4 or 5
+	 */
+	public function setOrderStatus45(
+		int $orderId
+	):Order;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
