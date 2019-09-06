@@ -6,7 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 /**
  * to be written
  */
-abstract class RandomScore implements TypeInterface
+abstract class RandomScore implements TypeInterface, ScoreModifierInterface
 
 {
 
