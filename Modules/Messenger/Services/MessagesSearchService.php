@@ -83,6 +83,10 @@ abstract class MessagesSearchService
 	abstract public function getSources(
 	);
 
+	abstract public function addDependenciesToSource(
+		 $sources
+	);
+
 	abstract public function getName(
 	);
 

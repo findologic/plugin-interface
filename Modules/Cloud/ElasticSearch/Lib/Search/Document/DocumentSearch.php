@@ -46,6 +46,10 @@ abstract class DocumentSearch implements SearchInterface
 	abstract public function getSources(
 	);
 
+	abstract public function addDependenciesToSource(
+		 $sources
+	);
+
 	abstract public function getName(
 	);
 
