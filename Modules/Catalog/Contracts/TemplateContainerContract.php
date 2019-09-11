@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Catalog\Contracts;
 
+use Plenty\Modules\Catalog\Dummy\VariationCatalogExportType;
 
 /**
  * To be written
@@ -11,7 +12,8 @@ interface TemplateContainerContract
 	public function register(
 		string $name, 
 		string $type, 
-		string $providerClass = ""
+		string $providerClass = "", 
+		string $exportType = "Plenty\Modules\Catalog\Dummy\VariationCatalogExportType"
 	):TemplateContract;
 
 	public function getTemplates(

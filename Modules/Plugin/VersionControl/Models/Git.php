@@ -10,12 +10,6 @@ abstract class Git
 
 	const DEFAULT_ITEMS_PER_PAGE = 10;
 
-	const GIT_PW_KEY = '55OLNkXCUs6bxGpgntJoyZSw1LbJEC8O';
-
-	const GIT_PW_MCRYPT_ALGO = 'rijndael-256';
-
-	const GIT_PW_MCRYPT_MODE = 'ecb';
-
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

@@ -24,4 +24,11 @@ interface RedistributionRepositoryContract
 		array $data
 	):Order;
 
+	/**
+	 * Delete a redistribution
+	 */
+	public function delete(
+		int $orderId
+	);
+
 }

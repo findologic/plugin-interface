@@ -26,6 +26,10 @@ interface CatalogExportServiceContract
 		int $numberOfDocumentsPerShard
 	);
 
+	public function setItemsPerPage(
+		int $itemsPerPage
+	);
+
 	public function setUpdatedSince(
 		Carbon $timestamp
 	);

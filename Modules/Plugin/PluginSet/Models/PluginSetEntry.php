@@ -18,6 +18,7 @@ abstract class PluginSetEntry
 	public		$pluginSetId;
 	public		$plugin;
 	public		$branchName;
+	public		$commit;
 	public		$position;
 	
 	/**

@@ -15,6 +15,9 @@ interface TemplateContract
 	public function getType(
 	):string;
 
+	public function getExportType(
+	):string;
+
 	public function getMappings(
 	):array;
 

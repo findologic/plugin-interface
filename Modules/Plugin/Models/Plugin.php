@@ -71,6 +71,7 @@ abstract class Plugin
 	public		$directDownloadLinks;
 	public		$forwardLink;
 	public		$branch;
+	public		$commit;
 	public		$subscriptionInformation;
 	public		$offerTrial;
 	public		$offerFreemium;

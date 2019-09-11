@@ -23,6 +23,7 @@ abstract class Account
 	public		$userId;
 	public		$deliveryTime;
 	public		$dealerMinOrderValue;
+	public		$supplierCurrency;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$contacts;

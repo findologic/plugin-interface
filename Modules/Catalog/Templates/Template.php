@@ -73,6 +73,9 @@ abstract class Template implements TemplateContract
 	abstract public function getName(
 	):string;
 
+	abstract public function getExportType(
+	):string;
+
 	abstract public function getType(
 	):string;
 

@@ -46,7 +46,9 @@ interface AttributeValueRepositoryContract
 		int $attributeId, 
 		int $page = 1, 
 		int $perPage = 50, 
-		array $columns = []
+		array $columns = [], 
+		array $filter = [], 
+		array $with = []
 	):array;
 
 	/**

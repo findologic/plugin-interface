@@ -8,4 +8,13 @@ namespace Plenty\Plugin;
 abstract class Controller 
 {
 
+	/**
+	 * Controller constructor.
+	 */
+	public function __construct(
+	)
+	{
+		return null;
+	}
+
 }
