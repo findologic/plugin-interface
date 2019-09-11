@@ -77,6 +77,13 @@ interface TemplateContract
 	public function getMetaInfo(
 	):array;
 
+	public function boot(
+		CatalogTemplateProviderContract $provider
+	);
+
+	public function isBooted(
+	):bool;
+
 	/**
 	 * Get the instance as an array.
 	 */

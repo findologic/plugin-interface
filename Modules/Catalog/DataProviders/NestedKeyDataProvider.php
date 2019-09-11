@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Catalog\DataProviders;
 
 use Plenty\Modules\Catalog\Contracts\NestedDataProviderContract;
+use Plenty\Modules\Catalog\Contracts\TemplateContract;
 
 /**
  * To be written
@@ -23,6 +24,14 @@ abstract class NestedKeyDataProvider
 
 	abstract public function getRows(
 	):array;
+
+	abstract public function setTemplate(
+		TemplateContract $template
+	);
+
+	abstract public function setMapping(
+		array $mapping
+	);
 
 	abstract public function getDataByValue(
 		string $id
