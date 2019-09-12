@@ -11,9 +11,9 @@ abstract class KeyFigureResult
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	public		$keyFigureConfigId;
+	public		$id;
 	public		$scaleBasisTime;
-	public		$groupId;
+	public		$configId;
 	public		$plentyIdHash;
 	public		$resultData;
 	public		$updatedAt;
