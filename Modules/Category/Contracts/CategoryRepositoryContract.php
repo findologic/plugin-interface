@@ -21,7 +21,8 @@ interface CategoryRepositoryContract
 	 */
 	public function get(
 		int $categoryId, 
-		string $lang = "de"
+		string $lang = "de", 
+		int $webstoreId = null
 	):Category;
 
 	/**
