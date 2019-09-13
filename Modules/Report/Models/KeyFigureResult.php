@@ -13,7 +13,7 @@ abstract class KeyFigureResult
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$scaleBasisTime;
-	public		$configId;
+	public		$idInterval;
 	public		$plentyIdHash;
 	public		$resultData;
 	public		$updatedAt;
