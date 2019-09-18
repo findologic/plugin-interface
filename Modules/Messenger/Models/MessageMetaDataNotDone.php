@@ -3,12 +3,12 @@ namespace Plenty\Modules\Messenger\Models;
 
 
 /**
- * The messenger MessageMetaData model
+ * The messenger MessageMetaDataNotDone model
  */
-abstract class MessageMetaData 
+abstract class MessageMetaDataNotDone 
 {
-	public		$readBy;
-	public		$notDoneByBackend;
+	public		$deactivated;
+	public		$tooltips;
 	
 	/**
 	 * Returns this model as an array.

@@ -16,6 +16,10 @@ interface MessengerRepositoryContract
 
 	const DEFAULT_MESSAGES_AMOUNT = 50;
 
+	const DEFAULT_PAGE_OF_MESSAGES = 1;
+
+	const DEFAULT_ITEMS_PER_PAGE_OF_MESSAGES = 50;
+
 	/**
 	 * Create a new Message.
 	 */
@@ -37,6 +41,14 @@ interface MessengerRepositoryContract
 		string $uuid = null, 
 		bool $successors = true, 
 		int $amount = self::DEFAULT_MESSAGES_AMOUNT
+	):array;
+
+	/**
+	 * Get messages.
+	 */
+	public function getMessages(
+		int $page = self::DEFAULT_PAGE_OF_MESSAGES, 
+		int $itemsPerPage = self::DEFAULT_ITEMS_PER_PAGE_OF_MESSAGES
 	):array;
 
 	/**

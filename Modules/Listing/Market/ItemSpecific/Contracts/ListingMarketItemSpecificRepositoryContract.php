@@ -7,6 +7,7 @@ use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Contracts\ExtendsCriteriaContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\PaginatedResult;
 use Zend\Form\Annotation\Type;
 
 /**
@@ -30,6 +31,15 @@ interface ListingMarketItemSpecificRepositoryContract
 		int $page = 1, 
 		int $itemsPerPage = 50
 	):ListingMarketItemSpecific;
+
+	/**
+	 * Gets all ListingMarketItemSpecifics.
+	 */
+	public function find(
+		array $filters = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50
+	):PaginatedResult;
 
 	/**
 	 * Updates a ListingMarketItemSpecific.
