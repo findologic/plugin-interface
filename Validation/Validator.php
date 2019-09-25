@@ -22,6 +22,10 @@ abstract class Validator
 		//proxy method
 	}
 
+	abstract public function each(
+		string $attributeName
+	):RulesCollection;
+
 	public function buildCustomMessages(
 	):array
 	{

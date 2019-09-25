@@ -31,4 +31,11 @@ interface RedistributionRepositoryContract
 		int $orderId
 	);
 
+	/**
+	 * Delete an order item from a redistribution
+	 */
+	public function deleteOrderItem(
+		int $orderItemId
+	):bool;
+
 }

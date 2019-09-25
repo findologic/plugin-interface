@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Messenger\Services;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Modules\Authentication\Configuration\AuthenticationConfiguration;
 use Plenty\Modules\Authentication\Contracts\UserRepositoryContract;
 use Plenty\Modules\Plugin\Services\PluginMonitor;
 use Ramsey\Uuid\Uuid;

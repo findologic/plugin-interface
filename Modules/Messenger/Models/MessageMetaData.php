@@ -8,6 +8,7 @@ namespace Plenty\Modules\Messenger\Models;
 abstract class MessageMetaData 
 {
 	public		$readBy;
+	public		$links;
 	public		$notDoneByBackend;
 	
 	/**
