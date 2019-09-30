@@ -3,6 +3,7 @@ namespace Plenty\Modules\Plugin\Contracts;
 
 use Illuminate\Support\Collection;
 use Plenty\Modules\Plugin\Models\Plugin;
+use Plenty\Modules\Plugin\PluginSet\Models\PluginSet;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -25,7 +26,7 @@ interface PluginRepositoryContract
 
 	public function isActiveInPluginSet(
 		int $pluginId, 
-		int $pluginSetId
+		 $pluginSetIdOrPluginSet
 	):bool;
 
 	public function isActiveInPluginSetByName(
