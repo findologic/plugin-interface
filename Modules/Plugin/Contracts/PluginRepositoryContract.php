@@ -12,6 +12,10 @@ use Plenty\Repositories\Models\PaginatedResult;
 interface PluginRepositoryContract 
 {
 
+	public function getPluginByName(
+		string $name
+	):Plugin;
+
 	/**
 	 * Search plugins using filters. Example: searchPlugins(['name' => 'PluginIWantToFind'])
 	 */
