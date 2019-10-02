@@ -23,6 +23,8 @@ interface VariationInheritanceServiceContract
 
 	const TYPE_AVAILABILITY = 'availability';
 
+	const TYPE_PROPERTY = 'property';
+
 	const TYPE_TAG = 'tag';
 
 	public function activate(
