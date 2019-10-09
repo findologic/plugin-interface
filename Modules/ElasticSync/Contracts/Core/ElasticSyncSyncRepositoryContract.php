@@ -185,6 +185,13 @@ interface ElasticSyncSyncRepositoryContract
 	):array;
 
 	/**
+	 * Update the Csv of a Sync.
+	 */
+	public function updateCsvSync(
+		array $data
+	);
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

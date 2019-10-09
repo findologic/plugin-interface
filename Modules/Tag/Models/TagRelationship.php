@@ -20,7 +20,9 @@ abstract class TagRelationship
 
 	const TAG_TYPE_ORDER = 'order';
 
-	const AVAILABLE_TYPES = ['category','ticket','variation','board','contact','order'];
+	const TAG_TYPE_MESSENGER = 'messenger';
+
+	const AVAILABLE_TYPES = ['category','ticket','variation','board','contact','order','messenger'];
 
 	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
 

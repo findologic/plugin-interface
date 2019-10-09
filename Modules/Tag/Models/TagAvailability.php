@@ -20,6 +20,8 @@ abstract class TagAvailability
 
 	const TAG_TYPE_ORDER = 'order';
 
+	const TAG_TYPE_MESSENGER = 'messenger';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
