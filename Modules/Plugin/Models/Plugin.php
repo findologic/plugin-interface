@@ -18,7 +18,7 @@ abstract class Plugin
 
 	const TYPE_RETURNS = 'returns';
 
-	const DEFAULT_ITEMS_PER_PAGE = 100;
+	const DEFAULT_ITEMS_PER_PAGE = 150;
 
 	const CREATED_AT = 'created_at';
 
