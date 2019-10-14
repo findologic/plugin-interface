@@ -22,8 +22,8 @@ abstract class PriceRangeAggregation implements AggregationInterface
 	);
 
 	abstract public function process(
-		 $data
-	);
+		array $data
+	):array;
 
 	abstract public function getAggregation(
 	);
