@@ -18,6 +18,7 @@ abstract class AttributeValueMarketName
 	public		$valueId;
 	public		$lang;
 	public		$name;
+	public		$name2;
 	public		$attributeId;
 	public		$referenceType;
 	public		$attributeValue;
