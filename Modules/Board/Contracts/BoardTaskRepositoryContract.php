@@ -10,13 +10,13 @@ use Plenty\Modules\Board\Models\BoardTask;
 use Plenty\Modules\Board\Models\BoardTaskReference;
 
 /**
- * This interface provides methods to access, create, update or delete tasks
+ * The BoardTaskRepositoryContract is the interface for the board task repository. This interface provides methods to access, create, update or delete tasks.
  */
 interface BoardTaskRepositoryContract 
 {
 
 	/**
-	 * Lists tasks for a specific column.
+	 * Lists tasks for a specific column. Will return at most 20 tasks starting at defined task.
 	 */
 	public function list(
 		string $columnId, 
@@ -26,7 +26,7 @@ interface BoardTaskRepositoryContract
 	):Collection;
 
 	/**
-	 * Creates a new task and assign it to a specified column.
+	 * Creates a new task and assigns it to a specified column.
 	 */
 	public function create(
 		string $boardId, 
@@ -61,21 +61,21 @@ interface BoardTaskRepositoryContract
 	):BoardTask;
 
 	/**
-	 * Add task reference to task object
+	 * Adds a task reference to a task object.
 	 */
 	public function addReference(
 		BoardTaskReference $boardTaskReference
 	):bool;
 
 	/**
-	 * Remove task reference from task object
+	 * Removes a task reference from a task object.
 	 */
 	public function removeReference(
 		BoardTaskReference $boardTaskReference
 	):bool;
 
 	/**
-	 * Updates the position of a specified task.
+	 * Updates the position of a specified task. Will also update the position of all following tasks in the same column.
 	 */
 	public function updatePosition(
 		string $taskId, 
@@ -91,7 +91,7 @@ interface BoardTaskRepositoryContract
 	):bool;
 
 	/**
-	 * Deletes all tasks of a column
+	 * Deletes all tasks of a column.
 	 */
 	public function deleteByColumn(
 		string $boardId, 
@@ -99,7 +99,7 @@ interface BoardTaskRepositoryContract
 	):bool;
 
 	/**
-	 * Get all tasks for the given column id having a reference with the given reference value.
+	 * Gets all tasks for the given column ID having a reference with the given reference value.
 	 */
 	public function allByColumnId(
 		string $columnId, 
@@ -108,7 +108,7 @@ interface BoardTaskRepositoryContract
 	);
 
 	/**
-	 * Get all tasks for the given column id having a reference with the given reference value.
+	 * Gets all tasks for the given column ID having a reference with the given reference value.
 	 */
 	public function allByBoardId(
 		string $boardId, 

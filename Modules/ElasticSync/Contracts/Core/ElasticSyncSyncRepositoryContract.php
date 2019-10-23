@@ -192,6 +192,20 @@ interface ElasticSyncSyncRepositoryContract
 	);
 
 	/**
+	 * Save the CSV on S3.
+	 */
+	public function importSyncJson(
+		array $data
+	);
+
+	/**
+	 * Import the sync with different plentyId.
+	 */
+	public function importSyncJsonDifferent(
+		array $data
+	);
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

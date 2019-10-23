@@ -58,6 +58,12 @@ abstract class MessagesSearchService
 		int $itemsPerPage = 50
 	):array;
 
+	/**
+	 * Returns total entries
+	 */
+	abstract public function getTotalEntries(
+	):int;
+
 	abstract public function toArray(
 	):array;
 

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Board\Models;
 
 
 /**
- * the board task model.
+ * The board task model.
  */
 abstract class BoardTask 
 {

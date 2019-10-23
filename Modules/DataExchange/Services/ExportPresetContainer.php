@@ -7,6 +7,7 @@ use Plenty\Modules\DataExchange\Contracts\Generator;
 use Plenty\Modules\DataExchange\Contracts\PluginGenerator;
 use Plenty\Modules\DataExchange\Contracts\ResultFields;
 use Plenty\Modules\DataExchange\Models\ExportPreset;
+use Plenty\Providers\ExportPresetServiceProvider;
 
 /**
  * Register export presets

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Board\Models;
 
 
 /**
- * the board model.
+ * The board model.
  */
 abstract class Board 
 {

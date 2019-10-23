@@ -68,6 +68,9 @@ abstract class Application
 	abstract public function isAdminPreview(
 	):bool;
 
+	abstract public function isTemplateSafeMode(
+	):bool;
+
 	abstract public function isBackendRequest(
 	):bool;
 

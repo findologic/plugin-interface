@@ -7,13 +7,13 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Board\Models\Board;
 
 /**
- * This interface provides all methods to access, create, update or delete boards.
+ * The BoardRepositoryContract is the interface for the board repository. This interface provides all methods to access, create, update or delete boards.
  */
 interface BoardRepositoryContract 
 {
 
 	/**
-	 * List all boards.
+	 * Lists all boards.
 	 */
 	public function list(
 		array $columns = []
@@ -43,14 +43,14 @@ interface BoardRepositoryContract
 	):Board;
 
 	/**
-	 * Copy a board and all its columns.
+	 * Copies a board and all its columns.
 	 */
 	public function copy(
 		string $boardId
 	):Board;
 
 	/**
-	 * Update tasks count value
+	 * Updates the tasks count value.
 	 */
 	public function updateTasksCount(
 		string $boardId

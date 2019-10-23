@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Plugin\Routing;
 
+use Illuminate\Routing\Route as IlluminateRoute;
+use Illuminate\Routing\RouteCollection;
 use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Http\Response;
 use Plenty\Plugin\Routing\Exceptions\RouteReservedException;
@@ -12,6 +14,10 @@ use Route as BaseRoute;
  */
 abstract class Router 
 {
+
+	abstract public static function addRoute(
+		 $route
+	);
 
 	/**
 	 * Register a new GET route with the router.

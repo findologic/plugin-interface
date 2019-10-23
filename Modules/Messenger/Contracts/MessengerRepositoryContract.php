@@ -99,6 +99,12 @@ interface MessengerRepositoryContract
 	):Message;
 
 	/**
+	 * Returns total message entries
+	 */
+	public function getTotalEntries(
+	):int;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(

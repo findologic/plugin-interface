@@ -1,8 +1,7 @@
 <?php
 namespace Plenty\Plugin;
 
-use Illuminate\Routing\Router;
-use Plenty\Modules\Plugin\Factories\PluginLoaderFactory;
+use Plenty\Modules\Plugin\Services\PluginRouteCacheService;
 use Plenty\Providers\RouteServiceProvider as PlentyRouteServiceProvider;
 
 /**

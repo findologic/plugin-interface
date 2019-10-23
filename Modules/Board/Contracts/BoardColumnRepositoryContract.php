@@ -6,7 +6,7 @@ use Illuminate\Support\Collection;
 use Plenty\Modules\Board\Models\BoardColumn;
 
 /**
- * This interface provides methods to access, create, update or delete columns
+ * The BoardColumnRepositoryContract is the interface for the board column repository. This interface provides methods to access, create, update or delete columns.
  */
 interface BoardColumnRepositoryContract 
 {
@@ -19,7 +19,7 @@ interface BoardColumnRepositoryContract
 	):Collection;
 
 	/**
-	 * Creates a new column and assign it to a specific board.
+	 * Creates a new column and assigns it to a specific board.
 	 */
 	public function create(
 		string $boardId, 
@@ -36,7 +36,7 @@ interface BoardColumnRepositoryContract
 	):BoardColumn;
 
 	/**
-	 * Copy a column and all its tasks.
+	 * Copies a column and all its tasks.
 	 */
 	public function copy(
 		string $boardId, 
@@ -44,7 +44,7 @@ interface BoardColumnRepositoryContract
 	):BoardColumn;
 
 	/**
-	 * Updates the position of a specified column.
+	 * Updates the position of a specified column. This will update the position of all affected columns on the same board too.
 	 */
 	public function updatePosition(
 		string $boardId, 

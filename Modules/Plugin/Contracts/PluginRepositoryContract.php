@@ -53,4 +53,9 @@ interface PluginRepositoryContract
 		int $pluginSetId = null
 	):Plugin;
 
+	public function installMarketplacePluginByItemId(
+		int $marketplacePluginItemId, 
+		int $pluginSetId = null
+	);
+
 }

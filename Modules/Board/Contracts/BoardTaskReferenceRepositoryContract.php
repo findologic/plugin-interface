@@ -6,13 +6,13 @@ use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Board\Models\BoardTaskReference;
 
 /**
- * This interface provides methods to create or delete references from tasks to contacts or tickets
+ * The BoardTaskReferenceRepositoryContract is the interface for the board task reference repository. This interface provides methods to create or delete references from tasks to contacts or tickets.
  */
 interface BoardTaskReferenceRepositoryContract 
 {
 
 	/**
-	 * Creates a new reference to a given task.
+	 * Creates a new reference to a given task. A reference may either point to a contact or to a ticket.
 	 */
 	public function create(
 		string $taskId, 
@@ -27,7 +27,7 @@ interface BoardTaskReferenceRepositoryContract
 	):bool;
 
 	/**
-	 * Check whether the reference key for the given reference type exists or not.
+	 * Checks whether the reference key for the given reference type exists or not.
 	 */
 	public function checkReferenceKey(
 		string $referenceType, 
