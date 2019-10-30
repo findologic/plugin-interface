@@ -4,13 +4,13 @@ namespace Plenty\Modules\Messenger\Events;
 use Plenty\Modules\Messenger\Models\Message;
 
 /**
- * The event is triggered after a new message was created
+ * The event is triggered after a new message was created.
  */
 abstract class MessageCreated 
 {
 
 	/**
-	 * If <tt>TRUE</tt>, the message is the first one, otherwise an answer message.
+	 * If TRUE, the message is the first one. Otherwise, it is a reply message.
 	 */
 	abstract public function isFirstMessage(
 	):bool;

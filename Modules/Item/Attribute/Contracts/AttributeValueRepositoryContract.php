@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\Attribute\Contracts;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Item\Attribute\Models\AttributeValue;
 use Plenty\Repositories\Contracts\FilterableContract;

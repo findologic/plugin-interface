@@ -3,13 +3,14 @@ namespace Plenty\Modules\Messenger\Models;
 
 
 /**
- * The messenger MessageMetaData model
+ * The MessageMetaData model of the messenger.
  */
 abstract class MessageMetaData 
 {
 	public		$readBy;
 	public		$links;
 	public		$notDoneByBackend;
+	public		$controls;
 	
 	/**
 	 * Returns this model as an array.

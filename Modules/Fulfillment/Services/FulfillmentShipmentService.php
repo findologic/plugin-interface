@@ -11,15 +11,21 @@ use Plenty\Modules\Plugin\Contracts\PluginRepositoryContract;
 use Plenty\Modules\User\Contracts\UserRepositoryContract;
 
 /**
- * Register, cancel shipments for an order.
+ * The FulfillmentShipmentService is the service for registering and cancelling shipments of an order.
  */
 abstract class FulfillmentShipmentService 
 {
 
+	/**
+	 * Cancel the shipment of an order.
+	 */
 	abstract public function cancelShipment(
 		int $orderId
 	):bool;
 
+	/**
+	 * Register the shipment of an order.
+	 */
 	abstract public function registerShipment(
 		int $orderId
 	):bool;

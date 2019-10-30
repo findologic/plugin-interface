@@ -3,7 +3,7 @@ namespace Plenty\Modules\Messenger\Models;
 
 
 /**
- * The messenger MessageMetaDataNotDone model
+ * The MessageMetaDataNotDone model of the messenger.
  */
 abstract class MessageMetaDataNotDone 
 {

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Messenger\Models;
 
 
 /**
- * The messenger Attachment model
+ * The Attachment model of the messenger.
  */
 abstract class Attachment 
 {

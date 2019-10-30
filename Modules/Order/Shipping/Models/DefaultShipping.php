@@ -3,7 +3,7 @@ namespace Plenty\Modules\Order\Shipping\Models;
 
 
 /**
- * The Default Shipping model
+ * The Default Shipping model is used to define the standard referrer, the standard shipping region and the payment methods.
  */
 abstract class DefaultShipping 
 {

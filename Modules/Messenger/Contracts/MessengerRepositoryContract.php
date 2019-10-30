@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Messenger\Models\Attachment;
 use Plenty\Modules\Messenger\Models\Message;
+use Plenty\Modules\Messenger\Models\MessageMetaDataControls;
 use Plenty\Repositories\Contracts\FilterableContract;
 
 /**
- * The contract defines methods to add and show/list messages.
+ * The MessengerRepositoryContract is the interface for the messenger repository. This interface defines methods to add and show/list messages.
  */
 interface MessengerRepositoryContract 
 {
@@ -21,21 +22,21 @@ interface MessengerRepositoryContract
 	const DEFAULT_ITEMS_PER_PAGE_OF_MESSAGES = 50;
 
 	/**
-	 * Create a new Message.
+	 * Creates a new message.
 	 */
 	public function add(
 		array $data
 	):Message;
 
 	/**
-	 * Show a message with all its successors.
+	 * Gets a message with all its successors.
 	 */
 	public function show(
 		string $uuid
 	);
 
 	/**
-	 * List messages.
+	 * Lists messages. If no reference UUID5 is given, the method returns the $amount first messages. If $successor is set to FALSE, the messages older than the referenced message will be returned.
 	 */
 	public function list(
 		string $uuid = null, 
@@ -44,7 +45,7 @@ interface MessengerRepositoryContract
 	):array;
 
 	/**
-	 * Get messages.
+	 * Lists messages.
 	 */
 	public function getMessages(
 		int $page = self::DEFAULT_PAGE_OF_MESSAGES, 
@@ -52,7 +53,7 @@ interface MessengerRepositoryContract
 	):array;
 
 	/**
-	 * Update ReadBy Array of message
+	 * Updates the readBy array of the message.
 	 */
 	public function updateReadBy(
 		int $readBy, 
@@ -60,7 +61,7 @@ interface MessengerRepositoryContract
 	);
 
 	/**
-	 * Update the visibility of the message.
+	 * Updates the visibility of the message. Attributes that are updated are Message.visibility, Message.linkedTo and Message.accessFor.
 	 */
 	public function updateVisibility(
 		array $data, 
@@ -68,7 +69,15 @@ interface MessengerRepositoryContract
 	);
 
 	/**
-	 * Set the doneAt date in the message.
+	 * Updates the message ui control options in the message meta data and returns the message.
+	 */
+	public function updateControls(
+		array $data, 
+		string $uuid
+	):Message;
+
+	/**
+	 * Sets the doneAt date in the message. If $doneAt is NULL, the doneAt date will be reset.
 	 */
 	public function setDone(
 		string $doneAt = null, 
@@ -76,14 +85,14 @@ interface MessengerRepositoryContract
 	);
 
 	/**
-	 * Deletes a message stream by uuid.
+	 * Deletes a message stream by the UUID. Returns the count of messages deleted.
 	 */
 	public function delete(
 		string $uuid
 	):int;
 
 	/**
-	 * Get a message attachment.
+	 * Gets a message attachment.
 	 */
 	public function getAttachment(
 		string $uuid, 
@@ -91,7 +100,7 @@ interface MessengerRepositoryContract
 	):Attachment;
 
 	/**
-	 * Update meta data from message
+	 * Updates the meta data of the message.
 	 */
 	public function updateMetaData(
 		string $uuid, 

@@ -10,18 +10,30 @@ use Plenty\Repositories\Models\DataModel;
 abstract class SuccessfullyRegisteredShipment 
 {
 
+	/**
+	 * Set the order ID.
+	 */
 	abstract public function setOrderId(
 		int $orderId
 	);
 
+	/**
+	 * Set the variable $hasNewPackageNumber.
+	 */
 	abstract public function setHasNewPackageNumber(
 		bool $hasNewPackageNumber
 	);
 
+	/**
+	 * Add a message.
+	 */
 	abstract public function addMessage(
 		string $message
 	);
 
+	/**
+	 * Add a package.
+	 */
 	abstract public function addPackage(
 		OrderShippingPackage $package
 	);

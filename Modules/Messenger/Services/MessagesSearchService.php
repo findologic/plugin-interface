@@ -24,34 +24,34 @@ use Plenty\Modules\Messenger\Index\MessengerIndex;
 use Plenty\Modules\Messenger\Models\Message;
 
 /**
- * Search service for the messenger
+ * Search service for the messenger.
  */
 abstract class MessagesSearchService 
 {
 
 	/**
-	 * Find the message with the given uuid.
+	 * Gets the message with the given uuid.
 	 */
 	abstract public function find(
 		string $uuid
 	):Message;
 
 	/**
-	 * Find the message with the given uuid.
+	 * Gets the message with the given UUID.
 	 */
 	abstract public function findOrFail(
 		string $uuid
 	):Message;
 
 	/**
-	 * Find a stream of messages.
+	 * Gets a stream of messages. The given UUID can be the UUID of the first message in the stream or one of the replied messages.
 	 */
 	abstract public function findMany(
 		string $uuid
 	):array;
 
 	/**
-	 * Get the messages for the given navigation page.
+	 * Lists the messages for the given navigation page.
 	 */
 	abstract public function navigate(
 		int $page = 1, 

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Messenger\Models;
 
 
 /**
- * The messenger MessageFrom model
+ * The MessageFrom model of the messenger.
  */
 abstract class MessageFrom 
 {

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Messenger\Models;
 
 
 /**
- * The messenger MessageLinkedTo model
+ * The MessageLinkedTo model of the messenger.
  */
 abstract class MessageLinkedTo 
 {

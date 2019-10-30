@@ -3,7 +3,7 @@ namespace Plenty\Modules\Messenger\Models;
 
 
 /**
- * The messenger MessageReferrer model
+ * The MessageReferrer model of the messenger.
  */
 abstract class MessageReferrer 
 {

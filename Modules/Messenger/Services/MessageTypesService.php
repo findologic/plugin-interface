@@ -8,7 +8,7 @@ use Plenty\Modules\Plugin\Services\PluginMonitor;
 use Ramsey\Uuid\Uuid;
 
 /**
- * Types and type validation for several types in messenger
+ * Types and type validation for several types in the messenger.
  */
 abstract class MessageTypesService 
 {
@@ -52,7 +52,7 @@ abstract class MessageTypesService
 	const FROM_TYPE_EMAIL = 'email';
 
 	/**
-	 * Get the valid types for "linked to" references.
+	 * Gets the valid types for "linked to" references.
 	 */
 	abstract public static function getValidLinkedToTypes(
 	):array;
@@ -66,7 +66,7 @@ abstract class MessageTypesService
 	):bool;
 
 	/**
-	 * Get the valid types for "from" references.
+	 * Gets the valid types for "from" references.
 	 */
 	abstract public static function getValidFromTypes(
 	):array;
@@ -80,7 +80,7 @@ abstract class MessageTypesService
 	):bool;
 
 	/**
-	 * Get the valid types for "referrer" references.
+	 * Gets the valid types for "referrer" references.
 	 */
 	abstract public static function getValidReferrerTypes(
 	):array;
@@ -95,7 +95,7 @@ abstract class MessageTypesService
 	):bool;
 
 	/**
-	 * Get the valid key types for the 'to' array.
+	 * Gets the valid key types for the 'to' array.
 	 */
 	abstract public static function getValidToTypes(
 	):array;
