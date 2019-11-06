@@ -134,6 +134,8 @@ abstract class OrderPropertyType
 
 	const AMAZON_SHIPPING_LABEL = 64;
 
+	const IS_EXPRESS_DELIVERY = 65;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

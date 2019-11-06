@@ -46,6 +46,11 @@ abstract class BasketItemQuantityCheckException extends BasketItemCheckException
 	const NOT_ENOUGH_STOCK_FOR_VARIATION = 3;
 
 	/**
+	 * minimum quantity not reached for variation
+	 */
+	const COUPON_REQUIRED = 4;
+
+	/**
 	 * BasketItemQuantityCheckException constructor.
 	 */
 	abstract public function __construct(

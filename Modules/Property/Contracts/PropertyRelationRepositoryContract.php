@@ -57,7 +57,7 @@ interface PropertyRelationRepositoryContract
 	public function savePropertyRelationFile(
 		int $relationId, 
 		array $data, 
-		string $file
+		string $file = ""
 	):string;
 
 	/**

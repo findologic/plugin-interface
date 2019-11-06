@@ -27,6 +27,11 @@ abstract class BasketItemCheckException extends HTTPException
 	const NOT_ENOUGH_STOCK_FOR_VARIATION = 3;
 
 	/**
+	 * promotion coupon is required
+	 */
+	const COUPON_REQUIRED = 4;
+
+	/**
 	 * BasketItemCheckException constructor.
 	 */
 	abstract public function __construct(
