@@ -11,7 +11,7 @@ use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * Repository for TagRelationship
+ * The TagRelationshipRepositoryContract is the interface for the tag relationship repository. This interface allows to update, create, delete and list tag relationships.
  */
 interface TagRelationshipRepositoryContract 
 {
@@ -56,7 +56,7 @@ interface TagRelationshipRepositoryContract
 	):array;
 
 	/**
-	 * Gets a specific tag relationship or returns null
+	 * Gets a specific tag relationship or returns null.
 	 */
 	public function findRelationship(
 		int $tagId, 
@@ -65,7 +65,7 @@ interface TagRelationshipRepositoryContract
 	):TagRelationship;
 
 	/**
-	 * Deletes tag links by reference value and relationship type
+	 * Deletes tag links by reference value and relationship type.
 	 */
 	public function delete(
 		int $relationshipValue, 
@@ -73,7 +73,7 @@ interface TagRelationshipRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Deletes tag links by uuid5 reference value and relationship type
+	 * Deletes tag links by uuid5 reference value and relationship type.
 	 */
 	public function deleteByUUID(
 		string $relationshipValue, 
@@ -81,7 +81,7 @@ interface TagRelationshipRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Returns all tagRelationships
+	 * Returns all tag relationships.
 	 */
 	public function listRelationships(
 		array $with = []

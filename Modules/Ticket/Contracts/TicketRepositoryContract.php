@@ -15,7 +15,7 @@ interface TicketRepositoryContract
 {
 
 	/**
-	 * Create a new ticket.
+	 * Creates a new ticket.
 	 */
 	public function createTicket(
 		array $data
@@ -31,7 +31,7 @@ interface TicketRepositoryContract
 	):array;
 
 	/**
-	 * Deletes a ticket by given ticketId
+	 * Deletes a ticket by the ID.
 	 */
 	public function deleteTicket(
 		int $ticketId
@@ -46,7 +46,7 @@ interface TicketRepositoryContract
 	):TicketMessage;
 
 	/**
-	 * Updates a ticket with given data.
+	 * Updates an existing ticket with given data.
 	 */
 	public function updateTicket(
 		array $data, 
@@ -54,7 +54,7 @@ interface TicketRepositoryContract
 	):Ticket;
 
 	/**
-	 * Get a ticket
+	 * Gets a ticket by the ID.
 	 */
 	public function findById(
 		int $ticketId, 

@@ -11,20 +11,20 @@ use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * The TagRepositoryContract is the interface for the tag repository.
+ * The TagRepositoryContract is the interface for the tag repository. This interface allows to create, update and delete tags.
  */
 interface TagRepositoryContract 
 {
 
 	/**
-	 * Create a new tag.
+	 * Creates a new tag.
 	 */
 	public function create(
 		string $name
 	):Tag;
 
 	/**
-	 * Update a tag.
+	 * Updates a tag.
 	 */
 	public function update(
 		array $data, 
@@ -32,7 +32,7 @@ interface TagRepositoryContract
 	):Tag;
 
 	/**
-	 * Deletes a tag by given tagId
+	 * Deletes a tag by the given tag ID.
 	 */
 	public function delete(
 		int $tagId
@@ -62,28 +62,28 @@ interface TagRepositoryContract
 	):array;
 
 	/**
-	 * Returns all tags
+	 * Returns all tags.
 	 */
 	public function listTags(
 		array $with = []
 	):Collection;
 
 	/**
-	 * Creates a new tag
+	 * Creates a new tag.
 	 */
 	public function createTag(
 		array $data
 	):Tag;
 
 	/**
-	 * Creates up to 50 new tags
+	 * Creates up to 50 new tags.
 	 */
 	public function createBulk(
 		array $data
 	):array;
 
 	/**
-	 * Updates up to 50 tags
+	 * Updates up to 50 tags.
 	 */
 	public function updateBulk(
 		array $data

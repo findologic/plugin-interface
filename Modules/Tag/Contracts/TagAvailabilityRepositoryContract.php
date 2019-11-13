@@ -6,7 +6,7 @@ use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * Repository for TagAvailability
+ * The TagAvailabilityRepositoryContract is the interface for the tag availability repository. This interface allows to update and create tag availabilities.
  */
 interface TagAvailabilityRepositoryContract 
 {

@@ -14,6 +14,9 @@ use Plenty\Repositories\Models\PaginatedResult;
 interface SalesRepresentativeRegionRepositoryContract 
 {
 
+	/**
+	 * Create a region for the sales representative
+	 */
 	public function createRegion(
 		array $data, 
 		int $contactId = null, 
@@ -27,24 +30,39 @@ interface SalesRepresentativeRegionRepositoryContract
 		array $with = []
 	):PaginatedResult;
 
+	/**
+	 * Get a region by the ID
+	 */
 	public function getRegionById(
 		int $accountContactRelationId
 	):SalesRepresentativeRegion;
 
+	/**
+	 * Delete a region by the ID
+	 */
 	public function deleteRegionById(
 		int $accountContactRelationId
 	):bool;
 
+	/**
+	 * Update an existing region by the ID
+	 */
 	public function updateRegionById(
 		int $accountContactRelationId, 
 		array $data
 	):SalesRepresentativeRegion;
 
+	/**
+	 * Get a region by contact ID and account ID
+	 */
 	public function getRegionByContactAndAccountId(
 		int $contactId, 
 		int $accountId
 	):SalesRepresentativeRegion;
 
+	/**
+	 * Get a region by the contact ID
+	 */
 	public function getRegionsByContactId(
 		int $contactId
 	):Collection;

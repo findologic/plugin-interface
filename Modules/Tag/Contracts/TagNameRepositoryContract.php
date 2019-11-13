@@ -6,7 +6,7 @@ use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * Repository for TagName
+ * The TagNameRepositoryContract is the interface for the tag name repository. This interface allows to update, create and list tag names.
  */
 interface TagNameRepositoryContract 
 {

@@ -7,20 +7,20 @@ use Plenty\Modules\Account\Contact\Models\ContactOptionType;
 use Plenty\Modules\Account\Contact\Models\ContactPosition;
 
 /**
- * The ContactParamConfigurationContract is the interface for the contact param configuration repository. This interface allows to create, update, delete, list and get contact positions, contact departments, contact option types and and contact option sub types.
+ * The ContactParamConfigurationContract is the interface for the contact param configuration repository. This interface allows to create, update, delete, list and get contact positions, contact departments, contact option types and and contact option sub-types.
  */
 interface ContactParamConfigurationContract 
 {
 
 	/**
-	 * Create a new contact position
+	 * Creates a contact position.
 	 */
 	public function createContactPosition(
 		array $data
 	):ContactPosition;
 
 	/**
-	 * Update an existing contact position
+	 * Updates an existing contact position.
 	 */
 	public function updateContactPosition(
 		array $data, 
@@ -28,21 +28,21 @@ interface ContactParamConfigurationContract
 	):ContactPosition;
 
 	/**
-	 * Delete an contact position by given id
+	 * Deletes a contact position by the given ID.
 	 */
 	public function deleteContactPosition(
 		int $contactPositionId
 	):bool;
 
 	/**
-	 * Find an existing contact position by given id
+	 * Finds an existing contact position by the given ID.
 	 */
 	public function findContactPositionById(
 		int $contactPositionId
 	):ContactPosition;
 
 	/**
-	 * Get list of contact position
+	 * Gets a list of contact positions.
 	 */
 	public function allContactPositions(
 		array $columns = [], 
@@ -50,14 +50,14 @@ interface ContactParamConfigurationContract
 	);
 
 	/**
-	 * Create a new contact department
+	 * Creates a contact department.
 	 */
 	public function createContactDepartment(
 		array $data
 	):ContactDepartment;
 
 	/**
-	 * Update an existing contact department
+	 * Updates an existing contact department.
 	 */
 	public function updateContactDepartment(
 		array $data, 
@@ -65,21 +65,21 @@ interface ContactParamConfigurationContract
 	):ContactDepartment;
 
 	/**
-	 * Delete an contact department by given id
+	 * Deletes a contact department by the given ID.
 	 */
 	public function deleteContactDepartment(
 		int $contactDepartmentId
 	):bool;
 
 	/**
-	 * Find an existing contact department by given id
+	 * Finds an existing contact department by the given ID.
 	 */
 	public function findContactDepartmentById(
 		int $contactDepartmentId
 	):ContactDepartment;
 
 	/**
-	 * Get list of contact department
+	 * Gets a list of contact departments.
 	 */
 	public function allContactDepartments(
 		array $columns = [], 
@@ -87,14 +87,14 @@ interface ContactParamConfigurationContract
 	);
 
 	/**
-	 * Create a new contact option type
+	 * Creates a contact option type.
 	 */
 	public function createContactOptionType(
 		array $data
 	):ContactOptionType;
 
 	/**
-	 * Update an existing contact option type
+	 * Updates an existing contact option type.
 	 */
 	public function updateContactOptionType(
 		array $data, 
@@ -102,21 +102,21 @@ interface ContactParamConfigurationContract
 	):ContactOptionType;
 
 	/**
-	 * Delete an contact option type by given id
+	 * Deletes a contact option type by the given ID.
 	 */
 	public function deleteContactOptionType(
 		int $contactOptionTypeId
 	):bool;
 
 	/**
-	 * Find an existing contact option type by given id
+	 * Finds an existing contact option type by the given ID.
 	 */
 	public function findContactOptionTypeById(
 		int $contactOptionTypeId
 	):ContactOptionType;
 
 	/**
-	 * Get list of contact option type
+	 * Gets a list of contact option types.
 	 */
 	public function allContactOptionType(
 		array $columns = [], 
@@ -125,14 +125,14 @@ interface ContactParamConfigurationContract
 	);
 
 	/**
-	 * Create a new contact option sub type
+	 * Creates a contact option sub-type.
 	 */
 	public function createContactOptionSubType(
 		array $data
 	):ContactOptionSubType;
 
 	/**
-	 * Update an existing contact options sub type
+	 * Updates an existing contact option sub-type.
 	 */
 	public function updateContactOptionSubType(
 		array $data, 
@@ -140,21 +140,21 @@ interface ContactParamConfigurationContract
 	):ContactOptionSubType;
 
 	/**
-	 * Delete an contact options sub type by given id
+	 * Deletes a contact option sub-type by the given ID.
 	 */
 	public function deleteContactOptionSubType(
 		int $contactOptionSubTypeId
 	):bool;
 
 	/**
-	 * Find an existing contact options sub type by given id
+	 * Finds an existing contact option sub-type by the given ID.
 	 */
 	public function findContactOptionSubTypeById(
 		int $contactOptionSubTypeId
 	):ContactOptionSubType;
 
 	/**
-	 * Get list of contact option sub type
+	 * Gets a list of contact option sub-types.
 	 */
 	public function allContactOptionSubType(
 		array $columns = [], 

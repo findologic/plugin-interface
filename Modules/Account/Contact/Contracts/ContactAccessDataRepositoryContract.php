@@ -9,21 +9,30 @@ interface ContactAccessDataRepositoryContract
 {
 
 	/**
-	 * Updates a password for contact.
+	 * Updates the password for a contact.
 	 */
 	public function updatePassword(
 		int $contactId, 
 		array $data
 	);
 
+	/**
+	 * Sends a new password to the contact.
+	 */
 	public function sendNewCustomerPassword(
 		int $contactId
 	);
 
+	/**
+	 * Unblocks the user.
+	 */
 	public function unblockUser(
 		int $contactId
 	);
 
+	/**
+	 * Gets the login URL.
+	 */
 	public function getLoginURL(
 		int $contactId
 	);

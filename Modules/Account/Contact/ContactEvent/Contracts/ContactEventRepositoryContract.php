@@ -20,7 +20,7 @@ interface ContactEventRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Lists contact events by contact id.
+	 * Lists contact events by the contact ID.
 	 */
 	public function listEventsByContactId(
 		int $contactId, 
@@ -30,14 +30,14 @@ interface ContactEventRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Adds an entry to the table customer events by contact id.
+	 * Adds an entry to the table customer events by the contact ID.
 	 */
 	public function createEvent(
 		array $data
 	):ContactEvent;
 
 	/**
-	 * Updates an entry of the table customer events by contact event id.
+	 * Updates an entry of the table customer events by the contact event ID.
 	 */
 	public function updateEvent(
 		int $contactEventId, 
@@ -45,7 +45,7 @@ interface ContactEventRepositoryContract
 	):ContactEvent;
 
 	/**
-	 * Deletes an entry of the table customer events by contact event id.
+	 * Deletes an entry of the table customer events by the contact event ID.
 	 */
 	public function deleteEvent(
 		int $contactEventId

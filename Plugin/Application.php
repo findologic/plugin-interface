@@ -84,4 +84,16 @@ abstract class Application
 		string $pluginName = ""
 	):string;
 
+	/**
+	 * Returns the URL from the cdn
+	 */
+	abstract public function getCdnDomain(
+	):string;
+
+	/**
+	 * Returns the plentyHash
+	 */
+	abstract public function getPlentyHash(
+	):string;
+
 }

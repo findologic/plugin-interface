@@ -8,8 +8,6 @@ namespace Plenty\Modules\Property\Models;
 abstract class PropertyGroupRelation 
 {
 
-	const table = 'plenty_property_group_relation';
-
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

@@ -35,19 +35,19 @@ interface NewsletterRepositoryContract
 	):Folder;
 
 	/**
-	 * Delete all entries
+	 * Deletes all entries.
 	 */
 	public function deleteAllEntries(
 	):array;
 
 	/**
-	 * Delete all folders
+	 * Deletes all folders.
 	 */
 	public function deleteAllFolders(
 	):array;
 
 	/**
-	 * Delete all recipients
+	 * Deletes all recipients.
 	 */
 	public function deleteAllRecipients(
 	):array;
@@ -74,33 +74,33 @@ interface NewsletterRepositoryContract
 	):Recipient;
 
 	/**
-	 * Lists all newsletter entries
+	 * Lists all newsletter entries.
 	 */
 	public function listAllEntries(
 	):array;
 
 	/**
-	 * Lists all newsletter folders
+	 * Lists all newsletter folders.
 	 */
 	public function listAllFolders(
 	):array;
 
 	/**
-	 * Lists all recipients
+	 * Lists all recipients.
 	 */
 	public function listAllRecipients(
 		array $data = []
 	):array;
 
 	/**
-	 * Returns recipients by email
+	 * Returns recipients by the email address.
 	 */
 	public function getRecipientsByEMail(
 		string $email
 	):array;
 
 	/**
-	 * Lists recipients
+	 * Lists all recipients.
 	 */
 	public function listRecipients(
 		array $columns, 
@@ -111,28 +111,28 @@ interface NewsletterRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Shows details from entry
+	 * Gets details by the entry ID.
 	 */
 	public function listEntryById(
 		int $entryId
 	):Entry;
 
 	/**
-	 * Shows details from folder
+	 * Gets details by the folder ID.
 	 */
 	public function listFolderById(
 		int $folderId
 	):Folder;
 
 	/**
-	 * Shows details from recipient
+	 * Gets details by the recipient ID.
 	 */
 	public function listRecipientById(
 		int $recipientId
 	):Recipient;
 
 	/**
-	 * Updates an entry. The ID of the entry must be specified.
+	 * Updates an existing entry. The ID of the entry must be specified.
 	 */
 	public function updateEntryById(
 		int $entryId, 
@@ -140,7 +140,7 @@ interface NewsletterRepositoryContract
 	):Entry;
 
 	/**
-	 * Updates a folder. The ID of the folder must be specified.
+	 * Updates an existing folder. The ID of the folder must be specified.
 	 */
 	public function updateFolderById(
 		int $folderId, 
@@ -148,7 +148,7 @@ interface NewsletterRepositoryContract
 	):Folder;
 
 	/**
-	 * Updates a recipient. The ID of the recipient must be specified.
+	 * Updates an existing recipient. The ID of the recipient must be specified.
 	 */
 	public function updateRecipientById(
 		int $recipientId, 

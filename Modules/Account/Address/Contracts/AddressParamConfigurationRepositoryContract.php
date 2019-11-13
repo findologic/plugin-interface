@@ -11,14 +11,14 @@ interface AddressParamConfigurationRepositoryContract
 {
 
 	/**
-	 * Create a new address relation type
+	 * Creates a new address relation type.
 	 */
 	public function createAddressRelationType(
 		array $data
 	):AddressRelationType;
 
 	/**
-	 * Update an existing address relation type
+	 * Updates an existing address relation type.
 	 */
 	public function updateAddressRelationType(
 		array $data, 
@@ -26,21 +26,21 @@ interface AddressParamConfigurationRepositoryContract
 	):AddressRelationType;
 
 	/**
-	 * Delete an address relation type by given id
+	 * Deletes an address relation type by the given ID.
 	 */
 	public function deleteAddressRelationType(
 		int $addressRelationTypeId
 	):bool;
 
 	/**
-	 * Find an existing address relation type by given id
+	 * Gets an existing address relation type by the given ID.
 	 */
 	public function findAddressRelationTypeById(
 		int $addressRelationTypeId
 	):AddressRelationType;
 
 	/**
-	 * Get list of address relation type
+	 * Gets a list of address relation types.
 	 */
 	public function allAddressRelationTypes(
 		array $columns = [], 
@@ -48,14 +48,14 @@ interface AddressParamConfigurationRepositoryContract
 	);
 
 	/**
-	 * Create a new address option type
+	 * Creates an address option type.
 	 */
 	public function createAddressOptionType(
 		array $data
 	):AddressOptionType;
 
 	/**
-	 * Update an existing address option type
+	 * Updates an existing address option type.
 	 */
 	public function updateAddressOptionType(
 		array $data, 
@@ -63,21 +63,21 @@ interface AddressParamConfigurationRepositoryContract
 	):AddressOptionType;
 
 	/**
-	 * Delete an address option type by given id
+	 * Deletes an address option type by the given ID.
 	 */
 	public function deleteAddressOptionType(
 		int $addressOptionTypeId
 	):bool;
 
 	/**
-	 * Find an existing address option type by given id
+	 * Finds an existing address option type by the given ID.
 	 */
 	public function findAddressOptionTypeById(
 		int $addressOptionTypeId
 	):AddressOptionType;
 
 	/**
-	 * Get list of address option type
+	 * Gets a list of address option types.
 	 */
 	public function allAddressOptionType(
 		array $columns = [], 

@@ -7,34 +7,34 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Ticket\Models\TicketMessage;
 
 /**
- * Repository contract for TicketMessage functionality
+ * The TicketMessageRepositoryContract is the interface for the ticket message repository. This interface allows to get one particular ticket message, list all ticket messages and list public and internal ticket messages.
  */
 interface TicketMessageRepositoryContract 
 {
 
 	/**
-	 * Get the <tt>TicketMessage</tt> for the given id.
+	 * Gets the ticket message by the given ID.
 	 */
 	public function get(
 		int $ticketMessageId
 	):TicketMessage;
 
 	/**
-	 * List all <tt>TicketMessage</tt>'s for a Ticket.
+	 * Lists all ticket messages of a ticket.
 	 */
 	public function list(
 		int $ticketId
 	);
 
 	/**
-	 * List all <tt>TicketMessage</tt>'s for a Ticket.
+	 * Lists all internal ticket messages of a ticket.
 	 */
 	public function listInternal(
 		int $ticketId
 	);
 
 	/**
-	 * List all <tt>TicketMessage</tt>'s for a Ticket.
+	 * Lists all public ticket messages of a ticket
 	 */
 	public function listPublic(
 		int $ticketId
