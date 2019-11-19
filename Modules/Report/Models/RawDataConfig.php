@@ -9,7 +9,6 @@ abstract class RawDataConfig
 {
 	public		$dataName;
 	public		$active;
-	public		$deleteRawDataAfterDays;
 	
 	/**
 	 * Returns this model as an array.
