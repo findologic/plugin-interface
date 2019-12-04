@@ -12,6 +12,8 @@ abstract class WarehouseLocation
 
 	const MAX_CHARACTERS_NOTES = 500;
 
+	const TYPES = ['small','medium','large','europallet'];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

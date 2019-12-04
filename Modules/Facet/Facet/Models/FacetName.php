@@ -3,7 +3,7 @@ namespace Plenty\Modules\Facet\Facet\Models;
 
 
 /**
- * The facet name model
+ * The facet name model.
  */
 abstract class FacetName 
 {

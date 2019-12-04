@@ -38,6 +38,12 @@ abstract class Export
 
 	const DATA_TYPE_STOCK = 'stock';
 
+	const DATA_TYPE_FACET = 'facet';
+
+	const DATA_TYPE_FACET_VALUE = 'facetValue';
+
+	const DATA_TYPE_FACET_VALUE_REFERENCE = 'facetValueReference';
+
 	const OUTPUT_TYPE_ADMIN = 'admin';
 
 	const OUTPUT_TYPE_DOWNLOAD = 'download';

@@ -3,16 +3,16 @@ namespace Plenty\Modules\Facet\Facet\Models;
 
 
 /**
- * The facet value model
+ * The facet value model.
  */
 abstract class FacetValue 
 {
 
 	const ITEMS_PER_PAGE = 50;
 
-	const CREATED_AT = 'createdAt';
+	const UPDATED_AT = 'plenty_facet_value_last_update_timestamp';
 
-	const UPDATED_AT = 'updatedAt';
+	const CREATED_AT = 'plenty_facet_value_insert_timestamp';
 	public		$id;
 	public		$facetId;
 	public		$cssClass;

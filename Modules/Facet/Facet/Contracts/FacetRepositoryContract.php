@@ -1,10 +1,14 @@
 <?php
 namespace Plenty\Modules\Facet\Facet\Contracts;
 
+use Exception;
 use Illuminate\Support\Collection;
+use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Facet\Facet\Models\Facet;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\DeleteResponse;
 
 /**
  * The contract for the facet repository
@@ -21,6 +25,23 @@ interface FacetRepositoryContract
 		int $plentyId, 
 		string $lang = "de"
 	):array;
+
+	public function findOne(
+		int $id
+	):Facet;
+
+	public function create(
+		array $data
+	):Facet;
+
+	public function update(
+		int $id, 
+		array $data
+	):Facet;
+
+	public function delete(
+		int $id
+	):DeleteResponse;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
