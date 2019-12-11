@@ -30,6 +30,7 @@ abstract class Order
 	public		$billingAddress;
 	public		$deliveryAddress;
 	public		$owner;
+	public		$hasDeliveryOrders;
 	public		$addresses;
 	public		$addressRelations;
 	public		$orderItems;

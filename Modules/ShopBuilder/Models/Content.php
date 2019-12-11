@@ -8,6 +8,8 @@ namespace Plenty\Modules\ShopBuilder\Models;
 abstract class Content 
 {
 
+	const DEFAULT_DROPZONE = 'defaultDropzone';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -17,6 +19,7 @@ abstract class Content
 	public		$updatedAt;
 	public		$type;
 	public		$widgets;
+	public		$dropzones;
 	public		$link;
 	
 	/**

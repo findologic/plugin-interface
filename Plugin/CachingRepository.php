@@ -1,12 +1,15 @@
 <?php
 namespace Plenty\Plugin;
 
+use Plenty\Log\Traits\Loggable;
 
 /**
  * caching repository
  */
 abstract class CachingRepository 
 {
+
+	const MAX_SIZE_CONFIG_KEY = 'database.redis.plugin_max_stored_bytes';
 
 	const MAX_CACHING_VALUE_SIZE = 512;
 
