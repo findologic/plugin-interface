@@ -16,7 +16,7 @@ abstract class KeyFigureConfig
 	public		$keyFigure;
 	public		$keyFigureName;
 	public		$filter;
-	public		$calculationTimeIntervals;
+	public		$target;
 	public		$calculatedAt;
 	public		$updatedAt;
 	public		$createdAt;
