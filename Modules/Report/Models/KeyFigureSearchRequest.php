@@ -7,14 +7,13 @@ namespace Plenty\Modules\Report\Models;
  */
 abstract class KeyFigureSearchRequest 
 {
-	public		$id;
 	public		$configId;
-	public		$timeInterval;
+	public		$interval;
 	public		$dataGroup;
-	public		$scaleBasisTimeBetween;
+	public		$scaleBasis;
 	public		$itemsPerPage;
+	public		$page;
 	public		$sortOrder;
-	public		$after;
 	
 	/**
 	 * Returns this model as an array.
