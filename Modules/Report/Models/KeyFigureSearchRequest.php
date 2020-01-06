@@ -11,9 +11,12 @@ abstract class KeyFigureSearchRequest
 	public		$interval;
 	public		$dataGroup;
 	public		$scaleBasis;
+	public		$realScaleBasis;
+	public		$aggregateFunction;
 	public		$itemsPerPage;
 	public		$page;
 	public		$sortOrder;
+	public		$searchId;
 	
 	/**
 	 * Returns this model as an array.

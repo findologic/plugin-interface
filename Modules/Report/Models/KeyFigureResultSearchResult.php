@@ -8,7 +8,8 @@ namespace Plenty\Modules\Report\Models;
 abstract class KeyFigureResultSearchResult 
 {
 	public		$keyFigureResults;
-	public		$after;
+	public		$interval;
+	public		$searchId;
 	
 	/**
 	 * Returns this model as an array.

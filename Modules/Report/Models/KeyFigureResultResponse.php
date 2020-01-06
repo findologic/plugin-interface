@@ -3,22 +3,16 @@ namespace Plenty\Modules\Report\Models;
 
 
 /**
- * Represents a key figure result
+ * The model represent a key figure result in condensed form to the presentation.
  */
-abstract class KeyFigureResult 
+abstract class KeyFigureResultResponse 
 {
-
-	const CREATED_AT = 'createdAt';
-
-	const UPDATED_AT = 'updatedAt';
-	public		$configId;
 	public		$scaleBasis;
 	public		$dataGroup;
-	public		$interval;
-	public		$plentyIdHash;
 	public		$primaryResult;
 	public		$furtherResult;
 	public		$calculatedAt;
+	public		$realScaleBasis;
 	
 	/**
 	 * Returns this model as an array.
