@@ -12,6 +12,8 @@ abstract class KeyFigureSearchRequest
 	public		$dataGroup;
 	public		$scaleBasis;
 	public		$realScaleBasis;
+	public		$resultUnit;
+	public		$target;
 	public		$aggregateFunction;
 	public		$itemsPerPage;
 	public		$page;

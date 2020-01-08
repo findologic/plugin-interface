@@ -11,6 +11,8 @@ abstract class KeyFigureResultResponse
 	public		$dataGroup;
 	public		$primaryResult;
 	public		$furtherResult;
+	public		$resultUnit;
+	public		$target;
 	public		$calculatedAt;
 	public		$realScaleBasis;
 	
