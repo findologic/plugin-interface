@@ -10,6 +10,8 @@ abstract class Model
 
 	const FIELD_TYPE_INT = 'int';
 
+	const FIELD_TYPE_UNSIGNED_INT = 'unsignedInteger';
+
 	const FIELD_TYPE_DECIMAL = 'decimal';
 
 	const FIELD_TYPE_STRING = 'string';
@@ -17,6 +19,10 @@ abstract class Model
 	const FIELD_TYPE_BOOL = 'bool';
 
 	const FIELD_TYPE_ARRAY = 'array';
+
+	const FIELD_TYPE_TEXT = 'text';
+
+	const FIELD_TYPES = ['int','decimal','string','bool','array','text'];
 	protected		$primaryKeyFieldName = "id";
 	protected		$primaryKeyFieldType = "int";
 	protected		$autoIncrementPrimaryKey = true;
