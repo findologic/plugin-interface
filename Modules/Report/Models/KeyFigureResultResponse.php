@@ -14,7 +14,6 @@ abstract class KeyFigureResultResponse
 	public		$resultUnit;
 	public		$target;
 	public		$calculatedAt;
-	public		$realScaleBasis;
 	
 	/**
 	 * Returns this model as an array.

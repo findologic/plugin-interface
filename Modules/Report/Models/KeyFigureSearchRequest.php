@@ -11,13 +11,14 @@ abstract class KeyFigureSearchRequest
 	public		$interval;
 	public		$dataGroup;
 	public		$scaleBasis;
-	public		$realScaleBasis;
 	public		$resultUnit;
 	public		$target;
+	public		$groupByDataGroup;
 	public		$aggregateFunction;
 	public		$itemsPerPage;
 	public		$page;
-	public		$sortOrder;
+	public		$scaleBasisSortOrder;
+	public		$primaryResultSortOrder;
 	public		$searchId;
 	
 	/**
