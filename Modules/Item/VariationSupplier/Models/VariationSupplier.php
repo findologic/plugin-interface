@@ -26,6 +26,8 @@ abstract class VariationSupplier
 	public		$packagingUnit;
 	public		$lastUpdateTimestamp;
 	public		$createdAt;
+	public		$currencyPurchasePrice;
+	public		$itemDescription;
 	
 	/**
 	 * Returns this model as an array.

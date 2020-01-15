@@ -43,7 +43,8 @@ interface ShippingServiceProviderRepositoryContract
 	 */
 	public function saveShippingServiceProvider(
 		string $pluginName, 
-		string $shippingServiceProviderName
+		string $shippingServiceProviderName, 
+		string $icon = null
 	):ShippingServiceProvider;
 
 	/**

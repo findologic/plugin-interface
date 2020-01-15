@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Plugin\DataBase\Contracts;
 
+use Illuminate\Database\Eloquent\Collection;
 
 /**
  * Database model

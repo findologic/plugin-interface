@@ -14,6 +14,9 @@ use Plenty\Repositories\Contracts\PaginationOptionsProvider;
 abstract class PaginatedResult 
 {
 
+	abstract public function paginate(
+	):self;
+
 	/**
 	 * Returns the page number as received
 	 */

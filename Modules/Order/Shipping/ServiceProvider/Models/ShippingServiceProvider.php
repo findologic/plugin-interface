@@ -14,6 +14,7 @@ abstract class ShippingServiceProvider
 	public		$id;
 	public		$name;
 	public		$pluginId;
+	public		$icon;
 	public		$createdAt;
 	public		$updatedAt;
 	

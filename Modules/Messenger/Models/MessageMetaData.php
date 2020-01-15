@@ -11,6 +11,7 @@ abstract class MessageMetaData
 	public		$links;
 	public		$notDoneByBackend;
 	public		$controls;
+	public		$timeCapture;
 	
 	/**
 	 * Returns this model as an array.

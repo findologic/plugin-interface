@@ -76,7 +76,8 @@ interface ContentRepositoryContract
 	 * Rebuild all contents linked to the current plugin set.
 	 */
 	public function rebuildContents(
-		string $containerName = null
+		string $containerName = null, 
+		int $pluginSetId = null
 	):int;
 
 }

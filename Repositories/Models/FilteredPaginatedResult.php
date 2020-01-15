@@ -21,6 +21,9 @@ abstract class FilteredPaginatedResult
 	abstract public function toArray(
 	):array;
 
+	abstract public function paginate(
+	):self;
+
 	/**
 	 * Returns the page number as received
 	 */
