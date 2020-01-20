@@ -13,6 +13,7 @@ abstract class RawData
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
 	public		$createdAtTimestamp;
+	public		$contentTimestamp;
 	public		$plentyIdHash;
 	public		$dataName;
 	public		$dataNameProcessStatus;
