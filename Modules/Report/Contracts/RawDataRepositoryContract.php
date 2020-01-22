@@ -19,7 +19,7 @@ interface RawDataRepositoryContract
 		string $processStatus, 
 		int $itemsPerPage = 20, 
 		string $sortOrder = "asc", 
-		string $after = ""
+		int $page = 1
 	):RawDataSearchResult;
 
 	/**
