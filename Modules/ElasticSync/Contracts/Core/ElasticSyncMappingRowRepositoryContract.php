@@ -34,7 +34,9 @@ interface ElasticSyncMappingRowRepositoryContract
 	public function listSyncMappingRows(
 		int $mappingId, 
 		array $filters = [], 
-		array $with = []
+		array $with = [], 
+		int $page = 1, 
+		int $itemsPerPage = 25
 	);
 
 	/**

@@ -84,7 +84,8 @@ interface PluginSetRepositoryContract
 	public function getOrCreatePluginSetEntry(
 		int $id, 
 		int $pluginId, 
-		bool $withTrashed = false
+		bool $withTrashed = false, 
+		bool $resetCache = true
 	):PluginSetEntry;
 
 	/**

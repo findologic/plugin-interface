@@ -53,4 +53,13 @@ interface PluginLayoutContainerRepositoryContract
 		int $dataProviderPluginId = null
 	);
 
+	public function exportByPluginSetId(
+		 $pluginSetOrId
+	):array;
+
+	public function importByPluginSetId(
+		 $pluginSetOrId, 
+		array $containers
+	);
+
 }

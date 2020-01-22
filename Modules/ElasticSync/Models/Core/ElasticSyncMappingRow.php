@@ -8,6 +8,10 @@ namespace Plenty\Modules\ElasticSync\Models\Core;
 abstract class ElasticSyncMappingRow 
 {
 
+	const MAX_ITEMS_PER_PAGE = 100;
+
+	const MAX_CHARACTERS_NOTES = 500;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

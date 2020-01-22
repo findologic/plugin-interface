@@ -13,7 +13,8 @@ interface ConfigurationRepositoryContract
 	public function saveConfiguration(
 		int $pluginId, 
 		array $configMap, 
-		int $setId = null
+		int $setId = null, 
+		bool $resetCache = true
 	):array;
 
 	public function copyToPluginSetEntry(
