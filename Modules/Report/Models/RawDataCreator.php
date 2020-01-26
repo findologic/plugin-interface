@@ -22,7 +22,6 @@ abstract class RawDataCreator
 	public		$dataUpdatedAtColumnName;
 	public		$defaultActive;
 	public		$interval;
-	public		$shouldProcessed;
 	
 	/**
 	 * Returns this model as an array.

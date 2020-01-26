@@ -15,6 +15,7 @@ abstract class RawDataFile
 	public		$plentyIdHash;
 	public		$dataName;
 	public		$processStatus;
+	public		$shouldProcess;
 	public		$path;
 	public		$createdAt;
 	public		$dataCreatedAt;
