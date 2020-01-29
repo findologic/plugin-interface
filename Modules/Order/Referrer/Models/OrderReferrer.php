@@ -12,6 +12,10 @@ abstract class OrderReferrer
 
 	const MAX_VALUE = 100;
 
+	const REFERRER_MANUAL = 0;
+
+	const REFERRER_WEBSTORE = 1;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
