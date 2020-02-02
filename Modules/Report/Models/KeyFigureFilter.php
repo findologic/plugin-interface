@@ -8,6 +8,9 @@ namespace Plenty\Modules\Report\Models;
 abstract class KeyFigureFilter 
 {
 	public		$filters;
+	public		$filterString;
+	public		$calculations;
+	public		$calculation;
 	
 	/**
 	 * Returns this model as an array.
