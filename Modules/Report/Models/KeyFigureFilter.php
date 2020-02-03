@@ -3,13 +3,11 @@ namespace Plenty\Modules\Report\Models;
 
 
 /**
- * The key figure filter model is the base class of all key figure filter classes. Each key figure class needs a filter class, which defines the allowed fields to be filtered.
+ * The key figure filter holds configured filters for a key figure calculation.
  */
 abstract class KeyFigureFilter 
 {
-	public		$filters;
-	public		$filterString;
-	public		$calculations;
+	public		$filterQuery;
 	public		$calculation;
 	
 	/**
