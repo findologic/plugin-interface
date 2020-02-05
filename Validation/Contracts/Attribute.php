@@ -126,6 +126,18 @@ interface Attribute
 	):self;
 
 	/**
+	 * The field under validation must be a valid plentyId.
+	 */
+	public function validPlentyUrl(
+	):self;
+
+	/**
+	 * The field under validation must be a unique domain.
+	 */
+	public function validPlentyDomain(
+	):self;
+
+	/**
 	 * The field under validation must have the type specified in the database.
 	 */
 	public function typeFromDb(

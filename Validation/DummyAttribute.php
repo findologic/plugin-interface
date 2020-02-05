@@ -509,6 +509,24 @@ and integers that can contain null values.
 	}
 
 	/**
+	 * The field must be a valid URL.
+	 */
+	public function validPlentyUrl(
+	):self
+	{
+		return $this;
+	}
+
+	/**
+	 * Custom validation rule for checking the existence of a given domain.
+	 */
+	public function validPlentyDomain(
+	):self
+	{
+		return $this;
+	}
+
+	/**
 	 * The field under validation must have the type specified in the database.
 	 */
 	public function typeFromDb(

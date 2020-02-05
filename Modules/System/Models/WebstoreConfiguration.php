@@ -175,6 +175,12 @@ abstract class WebstoreConfiguration
 	public		$itemRedirectActive;
 	public		$googleRecaptchaApiWebsitekey;
 	public		$itemSearchEngine;
+	public		$itemRatingAllowComments;
+	public		$itemRatingMaxRatingPoints;
+	public		$itemRatingActive;
+	public		$currencyConversion;
+	public		$urlTrailingSlash;
+	public		$isCookieSubdomainIndependent;
 	
 	/**
 	 * Returns this model as an array.

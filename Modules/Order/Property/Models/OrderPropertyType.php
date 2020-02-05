@@ -140,6 +140,8 @@ abstract class OrderPropertyType
 
 	const REPAIR_STATUS = 67;
 
+	const ORDER_ORIGIN_INTERFACE = 68;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
