@@ -48,7 +48,8 @@ interface BasketItemRepositoryContract
 	 * Deletes an item from the shopping cart. The ID of the item must be specified.
 	 */
 	public function removeBasketItem(
-		int $basketItemId
+		int $basketItemId, 
+		bool $dispatchAfterBasketChangedEvent = true
 	);
 
 }

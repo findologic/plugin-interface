@@ -23,4 +23,12 @@ abstract class FulfillmentReturnService
 		int $orderId
 	):bool;
 
+	/**
+	 * Register the return of an order
+	 */
+	abstract public function registerReturn(
+		int $orderId, 
+		string $returnProvider
+	):bool;
+
 }
