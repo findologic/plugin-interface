@@ -46,6 +46,20 @@ interface CategoryRepositoryContract
 	):array;
 
 	/**
+	 * Get the category by url.
+	 */
+	public function findCategoryByUrl(
+		string $level1, 
+		string $level2 = null, 
+		string $level3 = null, 
+		string $level4 = null, 
+		string $level5 = null, 
+		string $level6 = null, 
+		int $webstoreId = null, 
+		string $lang = null
+	):Category;
+
+	/**
 	 * Rebuild the category tree cache
 	 */
 	public function buildCache(
