@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Shipping\Returns\Services;
 
+use Plenty\Legacy\Services\Order\LegacyOrderEventService;
 use Plenty\Modules\Document\Contracts\DocumentRepositoryContract;
 use Plenty\Modules\Document\Models\Document;
 use Plenty\Modules\Order\Contracts\OrderRepositoryContract;

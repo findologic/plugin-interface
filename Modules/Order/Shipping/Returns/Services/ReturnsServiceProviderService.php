@@ -17,7 +17,8 @@ abstract class ReturnsServiceProviderService
 	abstract public function registerReturnsProvider(
 		string $returnsServiceProviderCode, 
 		string $returnsServiceProviderLabel, 
-		string $returnsServiceProviderClass
+		string $returnsServiceProviderClass, 
+		bool $useParentOrderId = true
 	):bool;
 
 	/**

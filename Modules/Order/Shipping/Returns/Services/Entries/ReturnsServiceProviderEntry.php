@@ -49,4 +49,7 @@ abstract class ReturnsServiceProviderEntry
 	abstract public function getProviderId(
 	):int;
 
+	abstract public function getUseParentOrderId(
+	):bool;
+
 }
