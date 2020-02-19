@@ -1,19 +1,14 @@
 <?php
-namespace Plenty\Modules\Item\Search\Aggregations;
+namespace Plenty\Modules\Pim\SearchService\Aggregations\Feedback;
 
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\AggregationInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Search\Aggregation\Object\ObjectRangeAggregation;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
-use Plenty\Modules\Pim\MappingLayer\ElasticSearch\LegacyAggregation;
-use Plenty\Modules\Pim\SearchService\Aggregations\Feedback\FeedbackRangeAggregation as PimAggregation;
-use Plenty\Modules\Pim\SearchService\Aggregations\Processors\FeedbackRangeAggregationProcessor;
-use Plenty\Modules\Pim\VariationDataInterface\Contracts\VariationDataInterfaceResultInterface;
-use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
 /**
  * To be written
  */
-abstract class FeedbackAggregation implements AggregationInterface
+abstract class FeedbackRangeAggregation implements AggregationInterface
 
 {
 
