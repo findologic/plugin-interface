@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Plugin;
 
-use Illuminate\Container\Container;
 use Illuminate\Support\Arr;
 use Plenty\Modules\Plugin\Compiler\Services\AllowedPHPCalls;
 use Plenty\Modules\Plugin\Compiler\Services\DirectoryService;
