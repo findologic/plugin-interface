@@ -23,6 +23,10 @@ abstract class FacetFacetValuesTermsAggregation implements AggregationInterface
 	abstract public function getAggregation(
 	):array;
 
+	abstract public function setInclude(
+		string $string
+	);
+
 	abstract public function toArray(
 	):array;
 
