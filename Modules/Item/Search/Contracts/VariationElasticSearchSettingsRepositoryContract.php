@@ -1,8 +1,10 @@
 <?php
 namespace Plenty\Modules\Item\Search\Contracts;
 
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Item\Search\Models\LanguageSettings;
 use Plenty\Modules\Item\Search\Models\SearchSettings;
+use Plenty\Modules\Item\Search\Models\SuggestSettings;
 
 /**
  * Read and update search settings
@@ -35,5 +37,12 @@ interface VariationElasticSearchSettingsRepositoryContract
 	public function saveSearchSettings(
 		array $data
 	):SearchSettings;
+
+	public function getSuggestSettings(
+	):SuggestSettings;
+
+	public function saveSuggestSettings(
+		array $data
+	):SuggestSettings;
 
 }
