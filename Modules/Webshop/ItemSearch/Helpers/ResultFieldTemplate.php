@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Webshop\ItemSearch\Helpers;
 
-use Plenty\Plugin\Events\Dispatcher;
 
 /**
  * ResultFieldTemplate

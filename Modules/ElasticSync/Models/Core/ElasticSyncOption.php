@@ -8,6 +8,12 @@ namespace Plenty\Modules\ElasticSync\Models\Core;
 abstract class ElasticSyncOption 
 {
 
+	const IDENTIFIER_TYPE_SYNC_OPTION = 'syncOption';
+
+	const IDENTIFIER_TYPE_SOURCE_DATA = 'sourceData';
+
+	const IDENTIFIER_TYPE_SOURCE_OPTION = 'sourceOption';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

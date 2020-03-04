@@ -30,6 +30,8 @@ abstract class OrderItemType
 
 	const TYPE_ORDER = 11;
 
+	const TYPE_DUNNING_CHARGE = 12;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

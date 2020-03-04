@@ -254,6 +254,7 @@ abstract class FacetSearchFactory
 	):self;
 
 	abstract public function withPropertyGroups(
+		array $displaySettings = []
 	):self;
 
 	abstract public function withOrderPropertySelectionValues(

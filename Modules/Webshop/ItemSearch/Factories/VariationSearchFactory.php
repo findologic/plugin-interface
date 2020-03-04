@@ -42,6 +42,7 @@ use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationAttributeMapExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationPropertyExtension;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\FacetExtensionContainer;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\OrderPropertySelectionValueMutator;
+use Plenty\Modules\Webshop\ItemSearch\Mutators\VariationPropertyTransformMutator;
 
 /**
  * VariationSearchFactory
@@ -276,6 +277,7 @@ abstract class VariationSearchFactory
 	):self;
 
 	abstract public function withPropertyGroups(
+		array $displaySettings = []
 	):self;
 
 	abstract public function withOrderPropertySelectionValues(

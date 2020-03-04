@@ -22,6 +22,8 @@ abstract class TagAvailability
 
 	const TAG_TYPE_MESSENGER = 'messenger';
 
+	const TAG_TYPE_MESSAGE_BILLABLE = 'messageBillable';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

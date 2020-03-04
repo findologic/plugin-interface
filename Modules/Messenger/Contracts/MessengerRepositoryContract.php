@@ -61,6 +61,14 @@ interface MessengerRepositoryContract
 	);
 
 	/**
+	 * Updates the tags of the message.
+	 */
+	public function updateTags(
+		array $tags, 
+		string $uuid
+	);
+
+	/**
 	 * Updates the visibility of the message. Attributes that are updated are Message.visibility, Message.linkedTo and Message.accessFor.
 	 */
 	public function updateVisibility(

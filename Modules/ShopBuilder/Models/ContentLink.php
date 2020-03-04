@@ -19,6 +19,7 @@ abstract class ContentLink
 	public		$active;
 	public		$relatedContentType;
 	public		$relatedContainerName;
+	public		$inherit;
 	public		$createdAt;
 	public		$updatedAt;
 	public		$content;

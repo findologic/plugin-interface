@@ -154,6 +154,14 @@ interface ElasticSyncSyncRepositoryContract
 	);
 
 	/**
+	 * Execute the new run procedure.
+	 */
+	public function newRun(
+		int $syncId, 
+		array $data
+	):array;
+
+	/**
 	 * Get Log ID
 	 */
 	public function report(

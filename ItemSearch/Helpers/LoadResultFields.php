@@ -23,6 +23,17 @@ trait LoadResultFields
      */
     private function loadResultFields($fullTemplateName): array
     {
+        return self::loadStaticResultFields($fullTemplateName);
+    }
+
+    /**
+     * @param string $fullTemplateName
+     * @return array
+     * @throws \Exception
+     * @since 0.4.2
+     */
+    private static function loadStaticResultFields($fullTemplateName): array
+    {
         /** @var Resources $resource */
         $resource = pluginApp(Resources::class);
 

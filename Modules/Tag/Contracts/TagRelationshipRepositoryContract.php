@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Tag\Contracts;
 
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Tag\Exceptions\TagException;
