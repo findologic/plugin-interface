@@ -17,7 +17,6 @@ abstract class KeyFigureConfig
 	public		$keyFigureName;
 	public		$filter;
 	public		$target;
-	public		$calculatedAt;
 	public		$updatedAt;
 	public		$createdAt;
 	
