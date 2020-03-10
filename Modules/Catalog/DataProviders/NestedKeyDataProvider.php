@@ -14,7 +14,7 @@ abstract class NestedKeyDataProvider
 	):string;
 
 	abstract public function getNestedRows(
-		string $parentId
+		 $parentId
 	):array;
 
 	abstract public function getMetaData(
