@@ -11,7 +11,8 @@ interface NestedDataProviderContract
 
 	public function getNestedData(
 		string $parentId, 
-		string $query = ""
+		string $query = "", 
+		array $meta = []
 	):array;
 
 	public function getDataByValue(

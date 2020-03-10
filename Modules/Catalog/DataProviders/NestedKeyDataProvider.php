@@ -14,12 +14,16 @@ abstract class NestedKeyDataProvider
 	):string;
 
 	abstract public function getNestedRows(
-		 $parentId
+		string $parentId
 	):array;
+
+	abstract public function getMetaData(
+	);
 
 	abstract public function getNestedData(
 		string $parentId, 
-		string $query = ""
+		string $query = "", 
+		array $meta = []
 	):array;
 
 	abstract public function getRows(
