@@ -59,7 +59,8 @@ interface OrderShippingPackageItemsRepositoryContract
 	 */
 	public function createItemsForPackageOrder(
 		array $data, 
-		int $packageId = 0
+		int $packageId = 0, 
+		bool $isCallFromLegacyCode = false
 	):array;
 
 	/**

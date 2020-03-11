@@ -1,10 +1,10 @@
 <?php
 namespace Plenty\Modules\Accounting\Vat\Contracts;
 
-use Plenty\Legacy\Services\Order\Tax\TaxInformation;
 use Plenty\Modules\Accounting\Exceptions\AccountingException;
 use Plenty\Modules\Accounting\Vat\Exceptions\VatException;
 use Plenty\Modules\Accounting\Vat\Models\Vat;
+use Plenty\Modules\Order\Legacy\Services\Tax\TaxInformation;
 
 /**
  * This interface provides methods to initialise the detection of a VAT configuration and to actually detect VAT rates or VAT fields.

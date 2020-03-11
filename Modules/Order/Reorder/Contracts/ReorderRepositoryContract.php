@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Modules\Order\Reorder\Contracts;
 
+use Carbon\Carbon;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Order\Models\Order;
 
 /**
@@ -44,6 +46,20 @@ interface ReorderRepositoryContract
 	public function updateCurrency(
 		int $orderId, 
 		array $data
+	):Order;
+
+	/**
+	 * Get the date when the reorder will probably be delivered.
+	 */
+	public function getDeliveryDate(
+		int $orderId
+	):Carbon;
+
+	/**
+	 * Calculate and save the delivery dates
+	 */
+	public function updateDeliveryDates(
+		int $orderId
 	):Order;
 
 }

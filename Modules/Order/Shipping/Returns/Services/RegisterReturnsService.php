@@ -1,10 +1,10 @@
 <?php
 namespace Plenty\Modules\Order\Shipping\Returns\Services;
 
-use Plenty\Legacy\Services\Order\LegacyOrderEventService;
 use Plenty\Modules\Document\Contracts\DocumentRepositoryContract;
 use Plenty\Modules\Document\Models\Document;
 use Plenty\Modules\Order\Contracts\OrderRepositoryContract;
+use Plenty\Modules\Order\Legacy\Services\LegacyOrderEventService;
 use Plenty\Modules\Order\Shipping\Returns\Models\OrderReturns;
 use Plenty\Modules\Order\Shipping\Returns\Models\RegisterOrderReturnsResponse;
 use Plenty\Modules\Order\Shipping\Returns\Models\RegisterReturnsResult;

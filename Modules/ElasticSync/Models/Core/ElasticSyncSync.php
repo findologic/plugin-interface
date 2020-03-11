@@ -23,6 +23,10 @@ abstract class ElasticSyncSync
 	public		$lastRun;
 	public		$createdAt;
 	public		$updatedAt;
+	public		$matching;
+	public		$options;
+	public		$mappings;
+	public		$reports;
 	
 	/**
 	 * Returns this model as an array.

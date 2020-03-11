@@ -142,6 +142,8 @@ abstract class OrderPropertyType
 
 	const ORDER_ORIGIN_INTERFACE = 68;
 
+	const AMAZON_TAX_REPORT_ID = 69;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

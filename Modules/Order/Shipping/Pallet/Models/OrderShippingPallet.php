@@ -12,6 +12,7 @@ abstract class OrderShippingPallet
 
 	const UPDATED_AT = 'updatedAt';
 	public		$id;
+	public		$weight;
 	public		$individualWeight;
 	public		$width;
 	public		$height;
