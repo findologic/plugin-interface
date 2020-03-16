@@ -11,6 +11,8 @@ use Plenty\Modules\Item\Search\Mutators\ImageMutator;
 use Plenty\Modules\Item\Search\Mutators\VariationPropertyGroupMutator;
 use Plenty\Modules\Pim\SearchService\Aggregations\CategoryAllTermsAggregation;
 use Plenty\Modules\Pim\SearchService\Aggregations\Processors\CategoryAllTermsAggregationProcessor;
+use Plenty\Modules\Pim\SearchService\Aggregations\Processors\SearchSuggestionsTermsAggregationProcessor;
+use Plenty\Modules\Pim\SearchService\Aggregations\SearchSuggestions\SearchSuggestionsTermsAggregation;
 use Plenty\Modules\Pim\SearchService\Filter\CategoryFilter;
 use Plenty\Modules\Pim\SearchService\Filter\ClientFilter;
 use Plenty\Modules\Pim\SearchService\Filter\CrossSellingFilter;
@@ -334,6 +336,7 @@ abstract class VariationSearchFactory
 	):self;
 
 	abstract public function withSuggestions(
+		string $query = ""
 	):self;
 
 	/**

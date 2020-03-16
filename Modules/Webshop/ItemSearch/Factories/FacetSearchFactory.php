@@ -311,6 +311,7 @@ abstract class FacetSearchFactory
 	):self;
 
 	abstract public function withSuggestions(
+		string $query = ""
 	):self;
 
 	/**
